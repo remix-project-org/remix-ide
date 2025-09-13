@@ -71,7 +71,7 @@ In collaborative workflows, sharing the state of the Remix VM is a great way to 
 - `Dev - Hardhat Provider`: Connects Remix to a local Hardhat test chain.
 
 - `Dev - Ganache Provider`: Connects Remix to a local Truffle Ganache test chain.
-  —
+
 - `Dev - Foundry Provider`: Connects Remix to a local Foundry Anvil test chain.
 
 - `Remix VM (Shanghai)` : The Remix VM with the functionality of the **Shanghai** fork.
@@ -86,10 +86,9 @@ In collaborative workflows, sharing the state of the Remix VM is a great way to 
 
 Forking a chain will bring that chain to the Remix VM. Once it is forked, you'll have access to the 10 accounts loaded with 100 ETH.
 
-You can also fork the _current Remix VM_ state—including when the Environment is
-**Remix VM – Mainnet fork**. Use the **Fork** control in the Environment menu to
-create a named fork, then switch between forks from the same dropdown. This lets
-you snapshot a working state, try changes, and return to the original if needed.
+You can also fork the Remix VM in its current state. Click the version control icon to the right of the Environment title to create a fork and then to name it. Switching between forks is done in the Environment dropdown menu. You can also reset the state of the VM by clicking the refresh icon to the right of the version control icon. Forking the VM lets you snapshot a working state, try changes, and return to the original if needed.
+
+![Fork VM state modal.](images/deploy-and-run/fork-vm-state.png)
 
 If **Save environment state** (Settings → General) is enabled, the Remix VM
 state (including forked VM states) is saved in the `.states` folder so you can
@@ -99,13 +98,18 @@ back up important work with Remixd or Git.
 ### Curate & delete Environments
 
 At the bottom of the **Environment** dropdown, click **Customize this list** to
-open the Environment Explorer. From there you can:
+open the Environment Explorer.
 
-- Show/hide networks that appear in the dropdown (e.g., Linea).
-- Delete old **in-browser forked states** you no longer need (look under
-  “Deploy to an In-browser Forked State” and click **Delete Environment**).
+![Customize environment list dropdown.](images/deploy-and-run/environment-dropdown.png)
 
-![Customize environment list dropdown.](images/run/customize-env-list.png)
+From there you can, show/hide networks that appear in the dropdown (e.g., Linea) but clicking the toggle attached to the cards.
+
+![Customize environment list.](images/deploy-and-run/customize-environment-list.png)
+
+You can also delete old **in-browser forked states** you no longer need (look under
+“Deploy to an In-browser Forked State” and click **Delete Environment**).
+
+![Delete forked environment.](images/deploy-and-run/delete-forked-env.png)
 
 ### Custom Fork
 
