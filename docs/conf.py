@@ -34,7 +34,7 @@ extensions = ['myst_parser', 'sphinx_copybutton', 'sphinx.ext.autosectionlabel']
 copybutton_prompt_text = r">>> |\$ "
 copybutton_prompt_is_regexp = True
 autosectionlabel_prefix_document = True
-myst_heading_anchors = 3 
+myst_heading_anchors = 5 
 
 # suppress warnings caused by non-consecutive header
 # see more details here https://myst-parser.readthedocs.io/en/latest/faq/index.html#suppress-warnings
