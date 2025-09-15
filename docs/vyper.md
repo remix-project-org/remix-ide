@@ -54,8 +54,8 @@ There are 4 ways to compile:
 
 1. Click the compile button in the plugin
 2. Right-click on a .vy file in the File Explorer and select `Compile for Vyper`.
-3. Click on the play button at the top left of the Editor when a .vy file is the active tab.
-4. CTRL + s when a .vy file is in the active tab of the Editor.
+3. Click on the play button at the top left of the Main Panel when a .vy file is the active tab.
+4. CTRL + s when a .vy file is in the active tab of the Main Panel.
 
 ## Remote vs Local compiler
 
@@ -67,7 +67,7 @@ The remote compilation is done using our remote containerized service that suppo
 
 ### Local Compiler
 
-The local compilation can be done by connecting Remix Online IDE to your file system with [Remixd](remixd.html) and then running a docker container that runs the Ape framework.
+The local compilation can be done by connecting Remix Online IDE to your file system with {doc}`Remixd </remixd>` and then running a docker container that runs the Ape framework.
 
 When the next version of Remix Desktop is ready, you’ll be able to run everything locally — both Remix, and the new Vyper compilers (still in Docker, of course).
 

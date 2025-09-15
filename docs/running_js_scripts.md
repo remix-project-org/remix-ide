@@ -6,7 +6,7 @@ Remix IDE supports execution of JS & TS scripts.
 
 Create a file with `.js` or `.ts` extension and put your logic inside it. To run a script either:
 
-- Click the green play button in the upper left of the Editor.
+- Click the play button at the upper left of the Main Panel.
 
 - Right click on the script name in the `File Explorers` and click on the **Run** option.
 
@@ -112,7 +112,7 @@ For more information about this example, please see: [running async/await script
 })()
 ```
 
-For more script examples, please see [Frequently Asked Scripts](FAS.html).
+For more script examples, please see {doc}`Frequently Asked Scripts </FAS>`.
 
 ## `require` in scripts at Remix
 
@@ -123,8 +123,8 @@ For now, NPM modules supported by Remix are:
 - ethers
 - web3
 - swarmgw
-- chai
-- starknet
+- Chai
+- Starknet
 - multihashes
 - zokrates-js
 - snarkjs

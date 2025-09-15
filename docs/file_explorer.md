@@ -28,13 +28,11 @@ There are two ways you can save the files you create and use on Remix to your ha
 
 #### Remixd
 
-Remixd is an NPM package that allows you to share a specified folder on your computer with Remix IDE. Thus, your files are saved on IndexedDB and on the specified folder. Learn more about Remixd on our [Remixd guide](remixd.html).
+Remixd is an NPM package that allows you to share a specified folder on your computer with Remix IDE. Thus, your files are saved on IndexedDB and on the specified folder. Learn more about Remixd on our {doc}`Remixd guide </remixd>`.
 
 #### Remix Desktop
 
 Remix Desktop is a version of the Remix IDE that exists as a native app on your computer instead of a browser app. Since it's a native app on your computer, the files are saved directly to your hard drive.
-
-Note that when using Remix Desktop, you cannot use a browser wallet like MetaMask, because Remix Desktop does not run in a browser. To connect to public networks, you need to use service like [Infura](https://www.infura.io/) and then use the WalletConnect plugin to approve transactions on your mobile device.
 
 ### Connecting Remix to remote Git repositories
 
