@@ -1,6 +1,6 @@
 # Deploy & Run
 
-![](images/a-run-icon.png) The Deploy & Run module is for sending transactions to the current **Environment**.
+The Deploy & Run module is for sending transactions to the current **Environment**.
 
 The three main actions of the Deploy & Run module are:
 
@@ -12,15 +12,19 @@ This documentation page will cover **Deploying** and **Accessing**. Interacting 
 
 ![](images/a-deploy-run1.png)
 
-To deploy a contract, you need to have a contract compiled. To check that there is a compiled contract, look in the <b>CONTRACT</b> select box under the VALUE input field.
+To deploy a contract, you need to have a contract compiled. To check that there is a compiled contract, look in the **CONTRACT** selectbox under the VALUE input field.
 
-If nothing is there, you'll need to compile a contract. If you do not see your desired contract in the CONTRACT select box list, make sure the file with the contract is the active tab in the Editor.
+If nothing is there, you'll need to compile a contract. If you do not see your desired contract in the CONTRACT selectbox list, make sure the file with the contract is the active tab in the Editor.
 
-Once the contract is selected, choose the chain for deployment and/or method for deployment in the **ENVIRONMENT** select box.
+Once the contract is selected, choose the chain for deployment and/or method for deployment in the **ENVIRONMENT** selectbox.
 
-**NOTE:** If you want to connect Remix with a browser wallet (like Metamask) you should use the Injected Provider. Then in the browser wallet, you can select your desired chain when you have input its configuration.
+```{note}
+If you want to connect Remix with a browser wallet (e.g., MetaMask,
+Phantom), use **Injected Provider**. Select your desired chain in the wallet.
 
-For assistance with getting the correct configuration (the RPC server address, etc.), click the plug icon next the word **ENVIRONMENT** to go to chainlist.org.
+```
+
+For assistance with getting the correct configuration (the RPC server address, etc.), click the plug icon next the word **ENVIRONMENT** to go to [chainlist.org](chainlist.org).
 
 ![](images/a-deploy-run-plug.png)
 
@@ -44,7 +48,7 @@ In collaborative workflows, sharing the state of the Remix VM is a great way to 
 
 - `Remix VM (Cancun)` : Cancun is the current fork of Ethereum
 
-- `Remix VM - Mainnet fork` : This will fork the Ethereum mainnet and load it into the Remix VM. This is useful for developing contracts that need to access deployed mainnet contracts. (See below for more info about forking.)
+- `Remix VM - Mainnet fork` : This will fork the Ethereum Mainnet and load it into the Remix VM. This is useful for developing contracts that need to access deployed mainnet contracts. (See below for more info about forking.)
 
 - `Remix VM - Sepolia fork` : Same as above except this forks the Sepolia testnet. (See below for more info about forking.)
 
@@ -57,6 +61,8 @@ In collaborative workflows, sharing the state of the Remix VM is a great way to 
 - `L2 - Optimism Provider`: Connects Remix to an Injected Provider (using a browser wallet) with the settings for the Optimism mainnet.
 
 - `L2 - Arbitrum One Provider`: Connects Remix to an Injected Provider (using a browser wallet) with the settings for the Arbitrum One network.
+- `L2 - Linea Provider`: Connects Remix to an Injected Provider (using a browser wallet) with the settings for the Linea mainnet.
+- `L2 - Gnosis Provider`: Connects Remix to an Injected Provider (using a browser wallet) with the settings for the Gnosis chain.
 
 - `Ephemery Testnet`: Connects Remix to an Injected Provider (using a browser wallet) with the settings for the Ephemery network. [Ephemery](https://github.com/ephemery-testnet/ephemery-resources) is a test chain that regularly refreshes. As such, it is much easier to get test ETH from its faucets.
 
@@ -65,7 +71,7 @@ In collaborative workflows, sharing the state of the Remix VM is a great way to 
 - `Dev - Hardhat Provider`: Connects Remix to a local Hardhat test chain.
 
 - `Dev - Ganache Provider`: Connects Remix to a local Truffle Ganache test chain.
-  —
+
 - `Dev - Foundry Provider`: Connects Remix to a local Foundry Anvil test chain.
 
 - `Remix VM (Shanghai)` : The Remix VM with the functionality of the **Shanghai** fork.
@@ -80,7 +86,30 @@ In collaborative workflows, sharing the state of the Remix VM is a great way to 
 
 Forking a chain will bring that chain to the Remix VM. Once it is forked, you'll have access to the 10 accounts loaded with 100 ETH.
 
-Careful though, if you refresh the browser, you’ll lose the forked chain.
+You can also fork the Remix VM in its current state. Click the version control icon to the right of the Environment title to create a fork and then to name it. Switching between forks is done in the Environment dropdown menu. You can also reset the state of the VM by clicking the refresh icon to the right of the version control icon. Forking the VM lets you snapshot a working state, try changes, and return to the original if needed.
+
+![Fork VM state modal.](images/deploy-and-run/fork-vm-state.png)
+
+If **Save environment state** (Settings → General) is enabled, the Remix VM
+state (including forked VM states) is saved in the `.states` folder so you can
+refresh and resume later. Browser storage can still be cleared or corrupted, so
+back up important work with Remixd or Git.
+
+### Curate & delete Environments
+
+At the bottom of the **Environment** dropdown, click **Customize this list** to
+open the Environment Explorer.
+
+![Customize environment list dropdown.](images/deploy-and-run/environment-dropdown.png)
+
+From there you can, show/hide networks that appear in the dropdown (e.g., Linea) but clicking the toggle attached to the cards.
+
+![Customize environment list.](images/deploy-and-run/customize-environment-list.png)
+
+You can also delete old **in-browser forked states** you no longer need (look under
+“Deploy to an In-browser Forked State” and click **Delete Environment**).
+
+![Delete forked environment.](images/deploy-and-run/delete-forked-env.png)
 
 ### Custom Fork
 
