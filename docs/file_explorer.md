@@ -18,9 +18,8 @@ Thus, it is important to have an alternative file backup/saving strategy.
 
 **Some recommended strategies include:**
 
-- [Saving to your hard drive](#file-storage-on-your-hard-drive)
-- Using [remote Git repositories](#connecting-remix-to-remote-git-repos)
-- [Backing up workspaces](#backup).
+- [Saving to your hard drive](#saving-files-on-your-hard-drive)
+- Using [remote Git repositories](#connecting-remix-to-remote-git-repositories)
 
 ### Saving files on your hard drive
 
