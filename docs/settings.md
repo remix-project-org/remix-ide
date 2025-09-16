@@ -1,15 +1,10 @@
 # Settings
 
-You can access **Settings** for Remix by clicking the gear icon on the left side of the Top Bar.
+You can access **Settings** for Remix by clicking the gear icon at the top right of Remix.
 
 ## General Settings
 
 ![Remix General Settings Page](images/settings/a-settings-general.png)
-
-
-### General Settings
-
-![](images/a-settings-general.png)
 
 - **Generate contract metadata** is used for deploying with libraries. See our blog post on the subject: [Deploying with Libraries](https://medium.com/remix-ide/deploying-with-libraries-on-remix-ide-24f5f7423b60?sk=68f9c2bf318e85e129e46fe44683a730)
 - **Always use Remix VM at Load** will make the Remix VM the selected **environment** when Remix loads.
