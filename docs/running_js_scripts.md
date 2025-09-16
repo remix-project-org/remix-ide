@@ -112,8 +112,6 @@ For more information about this example, please see: [running async/await script
 })()
 ```
 
-For more script examples, please see {doc}`Frequently Asked Scripts </FAS>`.
-
 ## `require` in scripts at Remix
 
 `require` or `import`statement is supported in a limited manner for Remix supported modules with Remix Scripts.
