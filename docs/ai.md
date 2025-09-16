@@ -6,14 +6,16 @@ When you load Remix, the **RemixAI Assistant** appears in the Right Side Panel.
 
 ![RemixAI Assistant Right Side Panel.](images/ai/remixai-right-panel.png)
 
-// David put the info about the minimize button here from Release 0.71
+<!-- // David put the info about the minimize button here from Release 0.71
 
-RemixAI is also integrated into other parts of the tool.
+The section below in comments should be links to anchors below in this doc.
+// RemixAI is also integrated into other parts of the tool including:
 
-- **Explaining a contract** icon at the button of the Main Panel when a .sol file is active.
-- **Explaining compiler errors** button when an error is thrown in the Solidity Compiler
-- **Right-click menu options** of the Editor
-- **Code requests in the Editor** by prepending an AI code request in a file with a double slash (//).
+// - **Explain contract** button at the bottom of the Editor when a .sol file is active
+// - **Explain compiler error** button when an error is thrown in the Solidity Compiler
+// - **Right-click menu options** in the Editor
+// - **Code requests in the Editor** by prepending an AI code request in a file with a double slash (//)
+-->
 
 ## Choosing an LLM for code explanations
 
@@ -22,7 +24,7 @@ In the RemixAI Assistant, there is a choice of LLMs for use in **code explanatio
 ![RemixAI LLM dropdown menu.](images/ai/llm-dropdown.png)
 
 ## Natural languages and RemixAI
-The RemixAI Assitant will respond to a question in the language that it is asked.
+The RemixAI Assistant will respond to a question in the language in which it's asked.
 
 ## Computer languages and RemixAI
 RemixAI will be able to answer questions about Solidity, JS/TS, Vyper and other computer languages.
