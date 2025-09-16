@@ -1,23 +1,35 @@
 # AI Tools
 
-Remix has its own AI tool named **RemixAI** and a sub-project called **RemixAI Copilot** for code completion. When you load Remix, the RemixAI Assistant appears in the Right Side Panel.
+Remix has its own AI tool named **RemixAI** and a sub-project called **RemixAI Copilot** for code completion. 
+
+When you load Remix, the **RemixAI Assistant** appears in the Right Side Panel.
 
 ![RemixAI Assistant Right Side Panel.](images/ai/remixai-right-panel.png)
 
-RemixAI is also used in the:
+<!-- // David put the info about the minimize button here from Release 0.71
 
-- **Explain contract** icon at the button of the Main Panel when a .sol file is active.
-- **Explain this error** button when an error is thrown in the Solidity Compiler
-- **Right-click menu options** of the Editor
-- **Triple slash** (///) for prepending an AI code request in a file in the Editor
+The section below in comments should be links to anchors below in this doc.
+// RemixAI is also integrated into other parts of the tool including:
 
-## Choosing an LLM for Code explanations
+// - **Explain contract** button at the bottom of the Editor when a .sol file is active
+// - **Explain compiler error** button when an error is thrown in the Solidity Compiler
+// - **Right-click menu options** in the Editor
+// - **Code requests in the Editor** by prepending an AI code request in a file with a double slash (//)
+-->
 
-In the RemixAI Assistant, you can choose which LLM to use for Code Explanations. The default LLM is MistralAI. But just click the MistralAI button and a modal will popup where you can select Anthropic, OpenAI, or MistralAI.
+## Choosing an LLM for code explanations
+
+In the RemixAI Assistant, there is a choice of LLMs for use in **code explanations** and in the AI Assistant. The default LLM is MistralAI. But click the MistralAI button and a modal will popup where you can select Anthropic, OpenAI, or MistralAI.
 
 ![RemixAI LLM dropdown menu.](images/ai/llm-dropdown.png)
 
-## Adding Context to the LLM
+## Natural languages and RemixAI
+The RemixAI Assistant will respond to a question in the language in which it's asked.
+
+## Computer languages and RemixAI
+RemixAI will be able to answer questions about Solidity, JS/TS, Vyper and other computer languages.
+
+## Adding context to the LLM
 
 Clicking the `@Add context` button will bring up a modal where you can set the context of your request.
 
@@ -29,7 +41,7 @@ You can also set the context to the current Workspace while you type, by startin
 
 When you type a space or a new line, the RemixAI Assistant will propose some code. The proposed code is a technique called, **code completion**. The RemixAI Assistant's suggested code will take into account what has already been written in the file.
 
-The switch to activate it is at the bottom left of the Main Panel when a file is active. Once activated, suggests code using MistralAI LLM.
+The switch to activate it is at the bottom left of the Main Panel when a file is active. Once activated, suggests code using MistralAI LLM.  For **code completion** there is no choice of LLM.
 
 ![Remix AI Copilot button.](images/ai/a-ai-switch.png)
 
@@ -59,23 +71,13 @@ Hit tab to accept the suggestion.
 
 ![RemixAI accepted completion.](images/ai/a-ai-completion-accepted.png)
 
-## Editor: Ask RemixAI with ///
+## Editor: Ask RemixAI with //
 
-In the Editor, when the Solidity Copilot is on, you can ask it a coding question with the `///` prompt.
+In the Editor, when the AI Copilot is on, you can ask it a coding question with the `//` prompt.
 For example:
 
 ```text
-/// write a function that returns an array with 3 elements from the function's parameters
-```
-
-## Terminal Queries using RemixAI
-
-Before your question, either type `gpt` or `sol-gpt`.
-
-For example:
-
-```text
-sol-gpt What is the goal of modifiers?
+// write a function that returns an array with 3 elements from the function's parameters
 ```
 
 ## Compilers: Explain Error

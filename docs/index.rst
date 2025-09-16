@@ -56,6 +56,7 @@ Useful links:
 
    file_explorer
    workspaces
+   ai
    git
    search_in_fe
    plugin_manager
@@ -73,7 +74,6 @@ Useful links:
    :caption: Solidity modules
 
    compile
-   ai
    debugger
    static_analysis
 
@@ -92,7 +92,6 @@ Useful links:
    :caption: External Tool Integrations
 
    hardhat
-   truffle
    slither
    foundry
 
@@ -105,7 +104,6 @@ Useful links:
    import
    contract_verification
    running_js_scripts
-   FAS
 
 .. toctree::
    :maxdepth: 2
