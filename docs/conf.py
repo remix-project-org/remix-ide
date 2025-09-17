@@ -42,6 +42,7 @@ suppress_warnings = ['myst.header']
 # myst will ignore all the internal links by default
 # see more details here https://myst-parser.readthedocs.io/en/latest/configuration.html?highlight=myst_all_links_external#global-configuration
 myst_all_links_external = True
+myst_links_external_new_tab = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -178,7 +179,7 @@ html_js_files = [
     "js/utils.js",
     "js/loaders.js",
     "js/initialize.js",
-    "js/cookbook-integration.js"
+    "js/cookbook-integration.js",
 ]
 
 html_css_files = ["css/fonts.css", "css/tokens.css", "css/custom.css"]
