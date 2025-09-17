@@ -1,6 +1,6 @@
 # AI Tools
 
-Remix has its own AI tool named **RemixAI** and a sub-project called **RemixAI Copilot** for code completion. 
+Remix has its own AI tool named **RemixAI** and a sub-project called **RemixAI Copilot** for code completion.
 
 When you load Remix, the **RemixAI Assistant** appears in the Right Side Panel.
 
@@ -24,9 +24,11 @@ In the RemixAI Assistant, there is a choice of LLMs for use in **code explanatio
 ![RemixAI LLM dropdown menu.](images/ai/llm-dropdown.png)
 
 ## Natural languages and RemixAI
+
 The RemixAI Assistant will respond to a question in the language in which it's asked.
 
 ## Computer languages and RemixAI
+
 RemixAI will be able to answer questions about Solidity, JS/TS, Vyper and other computer languages.
 
 ## Adding context to the LLM
@@ -41,7 +43,7 @@ You can also set the context to the current Workspace while you type, by startin
 
 When you type a space or a new line, the RemixAI Assistant will propose some code. The proposed code is a technique called, **code completion**. The RemixAI Assistant's suggested code will take into account what has already been written in the file.
 
-The switch to activate it is at the bottom left of the Main Panel when a file is active. Once activated, suggests code using MistralAI LLM.  For **code completion** there is no choice of LLM.
+The switch to activate it is at the bottom left of the Main Panel when a file is active. Once activated, suggests code using MistralAI LLM. For **code completion** there is no choice of LLM.
 
 ![Remix AI Copilot button.](images/ai/a-ai-switch.png)
 
