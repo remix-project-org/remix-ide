@@ -6,16 +6,18 @@ When you load Remix, the **RemixAI Assistant** appears in the Right Side Panel.
 
 ![RemixAI Assistant Right Side Panel.](images/ai/remixai-right-panel.png)
 
-<!-- // David put the info about the minimize button here from Release 0.71
+```{tip}
+You can minimize the RemixAI Right Side Panel by clicking the minimize icon at the top left of the Right Side Panel.
+```
 
-The section below in comments should be links to anchors below in this doc.
-// RemixAI is also integrated into other parts of the tool including:
+![Minimize AI side bar](images/ai/minimize-sidebar.png)
 
-// - **Explain contract** button at the bottom of the Editor when a .sol file is active
-// - **Explain compiler error** button when an error is thrown in the Solidity Compiler
-// - **Right-click menu options** in the Editor
-// - **Code requests in the Editor** by prepending an AI code request in a file with a double slash (//)
--->
+RemixAI is also integrated into other parts of the tool including:
+
+- [**Explain contract**](#choosing-an-llm-for-code-explanations) button at the bottom of the Editor when a .sol file is active.
+- [**Explain compiler error**](#compilers-explain-error) button when an error is thrown in the Solidity Compiler.
+- [**Right-click menu options**](#editor-right-click-menu) in the Editor.
+- [**Code requests in the Editor**](#editor-ask-remixai-with) by prepending an AI code request in a file with a double slash (//).
 
 ## Choosing an LLM for code explanations
 
@@ -23,13 +25,12 @@ In the RemixAI Assistant, there is a choice of LLMs for use in **code explanatio
 
 ![RemixAI LLM dropdown menu.](images/ai/llm-dropdown.png)
 
-## Natural languages and RemixAI
+The RemixAI Assistant will responds to questions in the language in which it's asked and is able to answer questions about Solidity, JS/TS, Vyper and other computer languages.
 
-The RemixAI Assistant will respond to a question in the language in which it's asked.
+```{note}
+You can click the "Explain Contract" button at the bottom of the Editor when a .sol file is active.
 
-## Computer languages and RemixAI
-
-RemixAI will be able to answer questions about Solidity, JS/TS, Vyper and other computer languages.
+```
 
 ## Adding context to the LLM
 
@@ -47,9 +48,9 @@ The switch to activate it is at the bottom left of the Main Panel when a file is
 
 ![Remix AI Copilot button.](images/ai/a-ai-switch.png)
 
+```{note}
 All other RemixAI tools are always on.
-
-When you load Remix, the RemixAI Assistant appears in the Right Side Panel.
+```
 
 ## Editor: Right-click Menu
 
