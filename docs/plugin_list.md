@@ -11,11 +11,11 @@ profile name: **fileManager**
 
 **Remixd** &nbsp; (No UI)
 <br>Remixd (with an npm package running locally) connects a folder on your filesystem to the Remix website. Please see the docs for instructions.
-<br>profile name: **remixd**
+<br>profile name: **Remixd**
 <br>[Documentation](https://remix-ide.readthedocs.io/en/latest/remixd.html)
 
 **Solidity Compiler** &nbsp; ![](images/pi-sol.png)<br>
-Compiles Solidity & YUL.
+Compiles Solidity & Yul.
 <br>profile name: **solidity**
 <br>{doc}`Documentation </compile>`
 
@@ -45,7 +45,7 @@ Static code analysis is a process to debug the code by examining it and without 
 
 **Vyper Compiler** &nbsp; ![](images/pi-vyper.png) &nbsp;
 <br>Compile Vyper code using local or remote Vyper compiler.
-<br>profile name: **vyper**
+<br>profile name: **Vyper**
 <br>[Documentation](https://remix-ide.readthedocs.io/en/latest/vyper.html)
 
 ## Additional Plugins
@@ -112,14 +112,14 @@ Deploy smart contracts using OpenZeppelin Defender directly from Remix IDE.
 <br>[Make an issue](https://github.com/OpenZeppelin/defender-deploy-plugin/issues)
 
 **Klaytn** &nbsp; ![](images/pi-klaytn.png)
-<br>Deploy & interact with smart contracts to the Klaytn public network, local klaytn nodes.
+<br>Deploy & interact with smart contracts to the Klaytn public network, local Klaytn nodes.
 <br>[Profile name](https://github.com/ethereum/remix-plugins-directory/blob/master/plugins/klaytn/profile.json): klaytn-remix-plugin
 <br>[Documentation](https://github.com/klaytn-ozys/plug-and-klay)
 <br>[Make an issue](https://github.com/klaytn-ozys/plug-and-klay/issues)
 
 **Learneth** &nbsp; ![](images/pi-learneth.png) &nbsp; Remix & Solidity Tutorials
 <br>Tutorials that contain quizzes that teach users Solidity and Remix features.
-<br>[Profile name](https://github.com/ethereum/remix-plugins-directory/blob/master/plugins/learneth/profile.json): learnEth
+<br>[Profile name](https://github.com/ethereum/remix-plugins-directory/blob/master/plugins/learneth/profile.json): LearnEth
 <br>[Documentation](https://remix-learneth-plugin.readthedocs.io/en/latest/index.html)
 <br>[Make an issue](https://github.com/bunsenstraat/remix-learneth-plugin/issues)
 

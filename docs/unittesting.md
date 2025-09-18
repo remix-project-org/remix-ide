@@ -10,7 +10,7 @@ Go to the plugin manager by clicking the ![](images/a-plug.png) (plug) icon and 
 
 ![](images/a-unit-testing-from-pm.png)
 
-Now the `double check` icon will appear on the left side icon bar. Clicking on the icon will load the plugin in the side panel.
+Now the `double check` icon will appear on the left side icon bar. Clicking on the icon will load the plugin in the Side Panel.
 
 <i>Alternatively, select `Solidity` environment from Remix IDE `Home` tab. This will activate `Solidity Unit Testing` plugin along with `Solidity Compiler`, `Deploy & Run Transactions` & `Solidity Static Analysis` plugins.</i>
 

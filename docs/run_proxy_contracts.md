@@ -14,7 +14,7 @@ To try this out, you will need to get a proxy contract. Go to wizard.openzeppeli
 
 ## Deploying
 
-When a UUPS contract is selected in Deploy & Run's Contract select box, you'll see some checkboxes below the Deploy button:
+When a UUPS contract is selected in Deploy & Run's Contract selectbox, you'll see some checkboxes below the Deploy button:
 
 ![](images/a-proxy-deploy1-noParams.png)
 

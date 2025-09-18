@@ -8,13 +8,13 @@ _(Supported since Remix IDE v0.12.0 and Remixd v0.3.6)_
 If you have not used `remixd` before, read more about it {doc}`in the Remixd documentation </remixd>`.
 ```
 
-If `remixd` is running locally on your device and shared folder is a **Hardhat project**, an additional websocket plugin will be listening on port `65522`. According to its documentation,
+If `remixd` is running locally on your device and shared folder is a **Hardhat project**, an additional WebSocket plugin will be listening on port `65522`. According to its documentation,
 
 > _Hardhat projects are npm projects with the hardhat package installed and a hardhat.config.js or hardhat.config.ts file._
 
-Remixd looks for the `hardhat.config.js` or `hardhat.config.ts` file in shared folder, and if it finds the file, the Hardhat websocket listener will run.
+Remixd looks for the `hardhat.config.js` or `hardhat.config.ts` file in shared folder, and if it finds the file, the Hardhat WebSocket listener will run.
 
-The Hardhat websocket listener is a websocket plugin similar to `remixd` and is used to perform Hardhat specific actions with Remix IDE.
+The Hardhat WebSocket listener is a WebSocket plugin similar to `remixd` and is used to perform Hardhat specific actions with Remix IDE.
 
 It doesn't need any separate installation as it is shipped with [remixd NPM](https://www.npmjs.com/package/@remix-project/remixd) module.
 
@@ -28,7 +28,7 @@ To use Hardhat compilation with Remix IDE efficiently:
 
 1. **Hardhat** should be installed locally on the system [https://hardhat.org/getting-started/#installation](https://hardhat.org/getting-started/#installation)
 2. Shared folder should be a Hardhat project containing `hardhat.config.js` or `hardhat.config.ts`
-3. `Remixd` Hardhat websocket listener should be running at `65522`
+3. `Remixd` Hardhat WebSocket listener should be running at `65522`
 
 ### How to use
 
@@ -46,7 +46,7 @@ The result of the compilation will be shown in the Remix IDE terminal
 
 ![](images/a-hardhat-compilation-success.png)
 
-and also in the **remixd** terminal.
+and also in the **Remixd** terminal.
 
 ![](images/a-hardhat-compilation-success-remixd.png)
 
