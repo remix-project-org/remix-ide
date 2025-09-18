@@ -964,3 +964,22 @@ span.fa.fa-book {
 .hidden {
   display: none !important;
 }
+
+/* 1) Keep images small and inside the card */
+.plugin-card .sd-card-img-top {
+  max-height: 96px;      /* try 80–120px to taste */
+  width: 100%;
+  object-fit: contain;
+}
+
+/* 2) Make cards tighter vertically */
+.plugin-card .sd-card-body { padding: .6rem .75rem; }
+.plugin-card .sd-card-body p { margin-bottom: .35rem; }
+
+/* 3) clamp long intros to 2 lines */
+.clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
