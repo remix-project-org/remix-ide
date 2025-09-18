@@ -88,7 +88,7 @@ To pass a tuple, you need to put in an array [].
 Similarly, to pass in a struct as a parameter of a function, it needs to be put in as an array [].
 
 ```{note}
-The file's pragma must be set to: `pragma experimental ABIEncoderV2;`
+The file's pragma must be set to: `pragma abicoder v2;`
 ```
 
 ### Example of passing nested struct to a function

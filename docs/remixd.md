@@ -83,7 +83,7 @@ Example:
 
 **NOTE**: `remixd -i slither` can be used to install Slither along with its dependencies
 
-#### HTTP vs HTTPS in the Remixd command
+#### HTTP vs HTTPS in the `remixd` command
 
 If your browser is on https://remix.ethereum.org (**secure http**) then use https in the command:<br>
 `remixd -s <absolute-path-to-the-shared-folder> --remix-ide https://remix.ethereum.org`
@@ -149,6 +149,6 @@ Assuming you don't get the 2nd modal, your connection to the `remixd` daemon is 
 
 Clicking on the **new folder** or **new file** icon under **localhost** will create a new file or folder in the shared folder. Similarly, if you **right click** on a file or folder you can **rename** or **delete** the file.
 
-### Closing a Remixd session
+### Closing a `remixd` session
 
 In the terminal where `remixd` is running, typing `ctrl-c` will close the session. Remix IDE will then put up a modal saying that `remixd` has stopped running.

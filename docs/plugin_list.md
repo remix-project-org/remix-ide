@@ -11,7 +11,7 @@ profile name: **fileManager**
 
 **Remixd** &nbsp; (No UI)
 <br>Remixd (with an npm package running locally) connects a folder on your filesystem to the Remix website. Please see the docs for instructions.
-<br>profile name: **Remixd**
+<br>profile name: **remixd**
 <br>[Documentation](https://remix-ide.readthedocs.io/en/latest/remixd.html)
 
 **Solidity Compiler** &nbsp; ![](images/pi-sol.png)<br>
@@ -45,7 +45,7 @@ Static code analysis is a process to debug the code by examining it and without 
 
 **Vyper Compiler** &nbsp; ![](images/pi-vyper.png) &nbsp;
 <br>Compile Vyper code using local or remote Vyper compiler.
-<br>profile name: **Vyper**
+<br>profile name: **vyper**
 <br>[Documentation](https://remix-ide.readthedocs.io/en/latest/vyper.html)
 
 ## Additional Plugins
