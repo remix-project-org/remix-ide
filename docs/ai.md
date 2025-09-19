@@ -32,6 +32,26 @@ You can click the "Explain Contract" button at the bottom of the Editor when a .
 
 ```
 
+## Using a Local LLM for Privacy
+
+When using an LLM, unless the LLM is local, the model is training itself on whatever you’re inputting. This “training” means the AI model is saving your information for its own use. So when you want to use an AI tool while keeping your information private, you can now use a local LLM.
+
+Remix supports Ollama, a local AI model runner that allows you to download large language models to run on your own machine.
+
+The Ollama LLMs supported by Remix include: `codestral:latest`,`quen3-coder:latest`, `gpt-oss:latest`, and `deepseek-coder-v2:latest` (great for code completion).
+
+In addition to privacy with Remix’s Ollama integration, you get:
+
+- No API Rate Throttling: No usage fees or rate limits
+- Offline Capability: Works without internet connection
+- Fill-in-Middle (FIM) Support: Advanced code completion capabilities
+
+```{note}
+The Ollama integration does not allow agentic workflows like online RemixAI currently does. Additionally, Ollama cannot edit Workspaces directly.
+```
+
+To use Ollama, click the select LLM dropdown, select "**Ollama**", then follow the instruction in the RemixAI Assistant.
+
 ## Adding context to the LLM
 
 Clicking the `@Add context` button will bring up a modal where you can set the context of your request.
@@ -77,6 +97,19 @@ For example:
 
 ```text
 // write a function that returns an array with 3 elements from the function's parameters
+```
+
+## Editor: Edit Files with Remix AI
+
+You can also edit files directly with the RemixAI Assistant and even generate new contracts. To edit a file, with the AI, switch from "Ask" to "Edit" on the RemixAI Right Side Panel.
+
+![Switch to Edit buttom](images/ai/edit-function.png)
+
+...and feed the AI instruction on what you need to edit or generate.
+
+```{tip}
+You can provide the file you want to edit or generate a new contract on [as context](#adding-context-to-llm) to get the best results.
+
 ```
 
 ## Compilers: Explain Error
