@@ -1,6 +1,6 @@
 # Settings
 
-You can access **Settings** for Remix by clicking the gear icon on the left side of the Top Bar.
+You can access **Settings** for Remix by clicking the gear icon at the top right of Remix.
 
 ## General Settings
 
@@ -18,8 +18,6 @@ You can access **Settings** for Remix by clicking the gear icon on the left side
 ### Themes
 
 The general settings section has a subsection where you change your themes. For themes Remix only supports the dark and light theme.
-
-![Remix appearance settings.](images/settings/remix-apperance.png)
 
 ## Analytics
 
