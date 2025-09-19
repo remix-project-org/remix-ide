@@ -10,15 +10,15 @@ We have a growing set of tutorials on our repo- but anyone can build tutorials o
 
 The tutorials contain .md files for instructions and can also contain example files, Solidity Unit Test files for quizzes, as well as answer files for quizzes.
 
-## Opening Learneth & associated links
+## Opening LearnEth & associated links
 
-Learneth is a plugin - so to access it, you need to activate the Learneth plugin in the Plugin Manager. Alternatively - this link will active it: click this link.
+LearnEth is a plugin - so to access it, you need to activate the LearnEth plugin in the Plugin Manager. Alternatively - this link will active it: click this link.
 
 ```
 https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth
 ```
 
-This link will activate Learneth and then will open a specific tutorial - in this case it will load the **proxy contract** tutorial:
+This link will activate LearnEth and then will open a specific tutorial - in this case it will load the **proxy contract** tutorial:
 
 ```
 https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth&call=LearnEth//startTutorial//ethereum/remix-workshops//master//proxycontract
@@ -26,9 +26,9 @@ https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth&call=LearnEth//sta
 
 **NOTE:** For other tricks about Remix URLs with parameters, go here: {doc}`locations </locations>`.
 
-### Learneth Tutorials
+### LearnEth Tutorials
 
-Here is the current list of Learneth Tutorials
+Here is the current list of LearnEth Tutorials
 
 **_Beginner_**
 
@@ -46,13 +46,13 @@ Here is the current list of Learneth Tutorials
     Deploy with Libraries
     Opcodes in the Debugger
 
-### Learneth & Tutorial Repos
+### LearnEth & Tutorial Repos
 
-The code for the Learneth plugin is located here:
+The code for the LearnEth plugin is located here:
 https://github.com/bunsenstraat/remix-learneth-plugin/blob/master/docs/index.rst
 
 Documentation for creating your own tutorials is located here:
 https://remix-learneth-plugin.readthedocs.io/en/latest/index.html
 
-Remix maintains and curates this repo of Learneth tutorials:
+Remix maintains and curates this repo of LearnEth tutorials:
 https://github.com/ethereum/remix-workshops

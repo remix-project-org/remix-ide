@@ -1,6 +1,6 @@
 # FAQ
 
-### Supported devices & Browsers
+## Supported devices & Browsers
 
 **Q:** What browsers will Remix work on?
 
@@ -10,7 +10,7 @@
 
 **A:** We do not support the use of Remix on tablets or mobile phones.
 
-### General
+## General
 
 **Q:** Are there keyboard shortcuts in Remix?
 
@@ -26,7 +26,7 @@
 
 `Ctrl+Shift+A` : Opens the Plugin Manager
 
-### Solidity compiler
+## Solidity Compiler
 
 **Q:** Error: compiler might be in a non-sane state
 
@@ -36,12 +36,12 @@ The compiler might be in a non-sane state, please be careful and do not use furt
 It is heavily recommended to use another browser not affected by this issue (Firefox is known to not be affected)."
 ```
 
-**A:** Old versions of solidity compiler had this problem with chrome.
+**A:** Old versions of Solidity Compiler had this problem with chrome.
 Please change the compiler version in Solidity Plugin to the newer one or use another browser.
 
 **Q:** I’m getting an issue with Maximum call stack exceed and various other errors, can't compile.
 
-**A:** Try a different browser or a newer solidity compiler version.
+**A:** Try a different browser or a newer Solidity Compiler version.
 
 **Q:** How to verify a contract that imports other contracts?
 
@@ -49,7 +49,7 @@ Please change the compiler version in Solidity Plugin to the newer one or use an
 
 A contract can be 'flattened' by right-clicking on it in the File Explorer and choosing the `Flatten` option. This will assemble all the original code as well as the imported code into a single file.
 
-### Deploy & Run
+## Deploy & Run
 
 **Q:** I am using an Infura endpoint in my app, but when I try to deploy against that endpoint in Remix IDE selecting "External HTTP Provider" and putting my endpoint in, it's telling me that it can't connect
 
@@ -104,13 +104,13 @@ contract daPeeps {
 The input of initPeepToPeeps takes a struct. If you input
 `[1,2]` the transaction will go through.
 
-### Plugin Developers
+## Plugin Developers
 
 **Q:** Where do plugin developers go with their questions?
 
 **A:** First, join our [Discord server](https://discord.com/invite/zUNteAzJs3) and then go to the development-plugin channel.
 
-### Analytics
+## Analytics
 
 **Q:** What information does Remix save when Matomo Analytics is enabled?
 

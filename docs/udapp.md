@@ -12,7 +12,7 @@ The deployed contract's address is visible as are a few other icons - one of whi
 
 When a contract is pinned, it will jump up to the **Pinned Contracts** section and Remix will save the contract's address and the ABI (in the .deploys folder of the current Workspace). When Remix is refreshed, the pinned contracts will be loaded into the Pinned Contracts section.
 
-#### Pinned contracts are chain & Workspace specific
+### Pinned contracts are chain & Workspace specific
 
 Because a pinned contract's address and ABI are stored in a File Explorer Workspace, the same Workspace must be active to see its pinned contracts. Similarly, only the pinned contracts of the currently selected chain will show.
 
@@ -28,7 +28,7 @@ The functions' buttons can have different colors.
 
 - Orange buttons are for `non-payable` functions. Non-payable functions change the state of the contract BUT **do not accept value** (typically ETH) being sent with the transaction. Clicking an orange button will create a transaction and will cost gas.
 
-- Red buttons are for `payable` functions. Clicking a red button will create a new transaction and this transaction can accept a **value** (typically ETH). The amount of value is set in in the **Value** field which is under the Gas Limit field.
+- Red buttons are for `payable` functions. Clicking a red button will create a new transaction and this transaction can accept a **value** (typically ETH). The amount of value is set in the **Value** field which is under the Gas Limit field.
 
 ![](images/a-jvm-calling-instance.png)
 
@@ -87,7 +87,9 @@ To pass a tuple, you need to put in an array [].
 
 Similarly, to pass in a struct as a parameter of a function, it needs to be put in as an array [].
 
-**NOTE:** the file's pragma must be set to: `pragma experimental ABIEncoderV2;`
+```{note}
+The file's pragma must be set to: `pragma abicoder v2;`
+```
 
 ### Example of passing nested struct to a function
 

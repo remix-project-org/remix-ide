@@ -20,9 +20,9 @@ In the console, you can run the commands listed below. Once you start to type a 
 
 **remix.help()**: Display this help message.
 
-**remix.loadgist(id)**: Load a gist in the file explorer.
+**remix.loadgist(id)**: Load a gist in the File Explorer.
 
-**remix.loadurl(url)**: Load the given url in the file explorer. The url can be of type github, swarm or ipfs.
+**remix.loadurl(url)**: Load the given url in the File Explorer. The url can be of type github, swarm or IPFS.
 
 ### A few Ethers JS examples
 
