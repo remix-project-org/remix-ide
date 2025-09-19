@@ -19,8 +19,6 @@ You can access **Settings** for Remix by clicking the gear icon at the top right
 
 The general settings section has a subsection where you change your themes. For themes Remix only supports the dark and light theme.
 
-![Remix appearance settings.](images/settings/remix-apperance.png)
-
 ## Analytics
 
 **Matomo Analytics** is our "opt-in" analytics platform. The option to turn on Matomo is offered when you first come to Remix. You can disable or enable Matomo here in the Settings panel. We do not collect any personally identifiable information (PII) and our reports are public. See our [blog post on the subject](https://medium.com/remix-ide/help-us-improve-remix-ide-66ef69e14931?source=friends_link&sk=cf9c62fbe1270543eb4bd912e567e2d6).
