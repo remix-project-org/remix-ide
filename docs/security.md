@@ -1,6 +1,6 @@
 # Using Remix Safely
 
-- It is dangerous to send transactions on contracts you don't understand (even if it's a get rich quick scheme that you've copied & pasted from a Discord DM or a youtube video and you really want to get rich).
+- It is dangerous to send transactions on contracts you don't understand (even if it's a get rich quick scheme that you've copied & pasted from a Discord DM or a youtube video and you really really want to get rich).
 
 - Check our [article](https://medium.com/remix-ide/remix-in-youtube-crypto-scams-71c338da32d?source=friends_link&sk=bb6efbbf88bc3e496611943d282ad797) on a current scam promoting "liquidity front runner bots".
 
@@ -8,11 +8,17 @@
 
 - Make sure all your imports include the **version number** otherwise you don't know what version of files you are getting and the builds are not reproducible.
 
-So **do not** use an import like this:<br>
-`import "@openzeppelin/contracts/token/ERC20/ERC20.sol";`
+So **do not** use an import like this:
 
-Rather, **use one** like this:<br>
-`import "@openzeppelin/contracts@4.7.3/token/ERC20/ERC20.sol";`
+```solidity
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+```
+
+Rather, **use one** like this:
+
+```solidity
+import "@openzeppelin/contracts@4.7.3/token/ERC20/ERC20.sol";
+```
 
 - When connecting a contract to an existing deployment, ensure that the thing you are connecting to is correct AND is the correct version.
 

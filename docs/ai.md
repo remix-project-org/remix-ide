@@ -7,7 +7,7 @@ When you load Remix, the **RemixAI Assistant** appears in the Right Side Panel.
 ![RemixAI Assistant Right Side Panel.](images/ai/remixai-right-panel.png)
 
 ```{tip}
-You can minimize the RemixAI Right Side Panel by clicking the minimize icon at the top left of the Right Side Panel.
+You can minimize the RemixAI Assistant by clicking the minimize icon at the top left of the Right Side Panel.
 ```
 
 ![Minimize AI side bar](images/ai/minimize-sidebar.png)
@@ -57,10 +57,6 @@ All other RemixAI tools are always on.
 When you right-click a function, a popup menu appears with some options executed by the RemixAI. They include, **Explain this function**, **Explain this code**, and **Generate documentation**.
 
 ![Remix AI right click menu.](images/ai/a-ai-editor-popup-menu.png)
-
-```{note}
-For both **Explain this function** or **Explain this code**, the answer will be printed out in Remix's Terminal.
-```
 
 The "Explain this code" option in the Editor's Right-click menu can be triggered with, or without, highlighting a block of code. If some code has not been highlighted, RemixAI will take into account the code surrounding the cursor.
 
