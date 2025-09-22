@@ -58,13 +58,13 @@ https://remix.ethereum.org/?#deactivate=debugger
 
 ### Minimizing Remix panels
 
-The following URL will **close everything except the main panel & the icon panel** (the side and terminal are minimized).
+The following URL will **close everything except the Main Panel & the icon panel** (the side and terminal are minimized).
 
 ```text
 https://remix.ethereum.org/?#embed=true
 ```
 
-To minimize just the side panel, use this URL:
+To minimize just the Side Panel, use this URL:
 
 ```text
 https://remix.ethereum.org/?#minimizesidepanel=true
@@ -88,7 +88,7 @@ To link to Remix with a theme specified use this url:
 
 To link to Remix with the list of plugins activated and with:
 
-- the Learneth gaining the side panel's focus (because it is the last in the list)
+- the LearnEth gaining the Side Panel's focus (because it is the last in the list)
 - the Light theme loaded
 - the terminal minimized
 - optimize off
@@ -193,7 +193,7 @@ https://remix.ethereum.org/?#activate=solidity,fileManager&gist=0fe90e825327ef31
 https://remix.ethereum.org/?#activate=solidity,LearnEth&gist=0fe90e825327ef313c88aedfe66ec142&call=fileManager//open//gist-0fe90e825327ef313c88aedfe66ec142/gridMix4.sol
 ```
 
-## Load a specific version of the Solidity compiler:
+## Load a specific version of the Solidity Compiler:
 
 ```text
 https://remix.ethereum.org/?#version=soljson-v0.6.6+commit.6c089d02
@@ -201,7 +201,7 @@ https://remix.ethereum.org/?#version=soljson-v0.6.6+commit.6c089d02
 
 **Note:** you need to specify both the Solidity version and the commit.
 
-## Load a custom Solidity compiler:
+## Load a custom Solidity Compiler:
 
 ```text
 https://remix.ethereum.org/#version=https://solidity-blog.s3.eu-central-1.amazonaws.com/data/08preview/soljson.js
@@ -215,7 +215,7 @@ https://remix.ethereum.org/#autoCompile=true
 
 ## Select the language for the Solidity Compiler
 
-Choose YUL or Solidity with the language parameter.
+Choose Yul or Solidity with the language parameter.
 
 ```text
 https://remix.ethereum.org/#language=Yul

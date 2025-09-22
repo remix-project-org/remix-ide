@@ -1,21 +1,23 @@
 # AI Tools
 
-Remix has its own AI tool named **RemixAI** and a sub-project called **RemixAI Copilot** for code completion. 
+Remix has its own AI tool named **RemixAI** and a sub-project called **RemixAI Copilot** for code completion.
 
 When you load Remix, the **RemixAI Assistant** appears in the Right Side Panel.
 
 ![RemixAI Assistant Right Side Panel.](images/ai/remixai-right-panel.png)
 
-<!-- // David put the info about the minimize button here from Release 0.71
+```{tip}
+You can minimize the RemixAI Assistant by clicking the minimize icon at the top left of the Right Side Panel.
+```
 
-The section below in comments should be links to anchors below in this doc.
-// RemixAI is also integrated into other parts of the tool including:
+![Minimize AI side bar](images/ai/minimize-sidebar.png)
 
-// - **Explain contract** button at the bottom of the Editor when a .sol file is active
-// - **Explain compiler error** button when an error is thrown in the Solidity Compiler
-// - **Right-click menu options** in the Editor
-// - **Code requests in the Editor** by prepending an AI code request in a file with a double slash (//)
--->
+RemixAI is also integrated into other parts of the tool including:
+
+- [**Explain contract**](#choosing-an-llm-for-code-explanations) button at the bottom of the Editor when a .sol file is active.
+- [**Explain compiler error**](#compilers-explain-error) button when an error is thrown in the Solidity Compiler.
+- [**Right-click menu options**](#editor-right-click-menu) in the Editor.
+- [**Code requests in the Editor**](#editor-ask-remixai-with) by prepending an AI code request in a file with a double slash (//).
 
 ## Choosing an LLM for code explanations
 
@@ -23,11 +25,12 @@ In the RemixAI Assistant, there is a choice of LLMs for use in **code explanatio
 
 ![RemixAI LLM dropdown menu.](images/ai/llm-dropdown.png)
 
-## Natural languages and RemixAI
-The RemixAI Assistant will respond to a question in the language in which it's asked.
+The RemixAI Assistant will responds to questions in the language in which it's asked and is able to answer questions about Solidity, JS/TS, Vyper and other computer languages.
 
-## Computer languages and RemixAI
-RemixAI will be able to answer questions about Solidity, JS/TS, Vyper and other computer languages.
+```{note}
+You can click the "Explain Contract" button at the bottom of the Editor when a .sol file is active.
+
+```
 
 ## Adding context to the LLM
 
@@ -41,23 +44,19 @@ You can also set the context to the current Workspace while you type, by startin
 
 When you type a space or a new line, the RemixAI Assistant will propose some code. The proposed code is a technique called, **code completion**. The RemixAI Assistant's suggested code will take into account what has already been written in the file.
 
-The switch to activate it is at the bottom left of the Main Panel when a file is active. Once activated, suggests code using MistralAI LLM.  For **code completion** there is no choice of LLM.
+The switch to activate it is at the bottom left of the Main Panel when a file is active. Once activated, suggests code using MistralAI LLM. For **code completion** there is no choice of LLM.
 
 ![Remix AI Copilot button.](images/ai/a-ai-switch.png)
 
+```{note}
 All other RemixAI tools are always on.
-
-When you load Remix, the RemixAI Assistant appears in the Right Side Panel.
+```
 
 ## Editor: Right-click Menu
 
 When you right-click a function, a popup menu appears with some options executed by the RemixAI. They include, **Explain this function**, **Explain this code**, and **Generate documentation**.
 
 ![Remix AI right click menu.](images/ai/a-ai-editor-popup-menu.png)
-
-```{note}
-For both **Explain this function** or **Explain this code**, the answer will be printed out in Remix's Terminal.
-```
 
 The "Explain this code" option in the Editor's Right-click menu can be triggered with, or without, highlighting a block of code. If some code has not been highlighted, RemixAI will take into account the code surrounding the cursor.
 

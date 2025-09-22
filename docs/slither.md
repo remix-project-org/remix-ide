@@ -8,11 +8,11 @@ _(Supported since Remix IDE v0.15.0 and Remixd v0.5.0)_
 
 When [remixd NPM](https://www.npmjs.com/package/@remix-project/remixd) module is installed, it also installs [Slither](https://github.com/crytic/slither) and [solc-select](https://github.com/crytic/solc-select#quickstart) and latest version of [solc](https://docs.soliditylang.org/en/latest/installing-solidity.html).
 
-`Python3.6+ (pip3)` needs to already be installed on the System. In case of any discrepancy, Slither can also be installed along with other dependencies using command `remixd -i slither` _(This packaging of Slither with the remixd module is supported since Remixd `v0.6.3`)_
+`Python3.6+ (pip3)` needs to already be installed on the System. In case of any discrepancy, Slither can also be installed along with other dependencies using command `remixd -i slither` _(This packaging of Slither with the Remixd module is supported since Remixd `v0.6.3`)_
 
-when `remixd` is running locally on your device, an additional websocket plugin will be listening on port `65523` which will be dedicated for Slither integration. (Supported since Remixd `v0.5.0`)
+when `remixd` is running locally on your device, an additional WebSocket plugin will be listening on port `65523` which will be dedicated for Slither integration. (Supported since Remixd `v0.5.0`)
 
-The Remixd Slither listener is a websocket plugin similar to Remixd and is used to perform Slither analysis with Remix IDE.
+The Remixd Slither listener is a WebSocket plugin similar to Remixd and is used to perform Slither analysis with Remix IDE.
 
 ![](images/a-slither-remixd.png)
 
@@ -30,7 +30,7 @@ There are setup with [remixd](https://www.npmjs.com/package/@remix-project/remix
 
 ### How to use
 
-If a project is shared through remixd and `localhost` workspace is loaded in Remix IDE, there will be an extra checkbox shown in `Solidity Static Analysis` plugin with the label `Enable Slither Analysis`.
+If a project is shared through Remixd and `localhost` workspace is loaded in Remix IDE, there will be an extra checkbox shown in `Solidity Static Analysis` plugin with the label `Enable Slither Analysis`.
 
 ![](images/a-slither-analysis.png)
 
@@ -48,7 +48,7 @@ The result of the analysis will be shown in the Remix IDE terminal
 
 ![](images/a-slither-analysis-success-terminal.png)
 
-and also in the **remixd** console.
+and also in the `remixd` console.
 
 ![](images/a-slither-analysis-success-remixd.png)
 
@@ -62,9 +62,9 @@ By default, it doesn't show the warnings for external libraries like remix-tests
 
 ### More Details
 
-Analysis for Slither is run using the version set in `Solidity Compiler` plugin on Remix IDE. Slither is a CLI tool and requires `solc` to run the analysis. Before running the analysis, Slither websocket plugin checks if current version of solc is same as the version set in Remix IDE.
+Analysis for Slither is run using the version set in `Solidity Compiler` plugin on Remix IDE. Slither is a CLI tool and requires `solc` to run the analysis. Before running the analysis, Slither WebSocket plugin checks if current version of solc is same as the version set in Remix IDE.
 
-If the compiler version set in Solidity Compiler is different from current version of solc installed locally, the Slither websocket plugin will update the `solc` to be the same as the required version `solc-select`.
+If the compiler version set in Solidity Compiler is different from current version of solc installed locally, the Slither WebSocket plugin will update the `solc` to be the same as the required version `solc-select`.
 
 For example, if current `solc` version on the system is 0.8.4 and on the Remix IDE 0.8.6 is set, `remixd` logs explain remote solc version selection
 

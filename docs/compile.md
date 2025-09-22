@@ -116,4 +116,4 @@ There is no error checking when using the .json file for configuration settings,
 
 ### Use a Custom Solidity Compiler
 
-For those writing your own custom solidity compiler, you can import that by clicking the **+** button (**X. in fig 1**) to open a modal where you can input the url of the compiler to be loaded.
+For those writing your own custom Solidity Compiler, you can import that by clicking the **+** button (**X. in fig 1**) to open a modal where you can input the url of the compiler to be loaded.

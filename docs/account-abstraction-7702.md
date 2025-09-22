@@ -97,6 +97,6 @@ When the transaction goes through, go to Remix’s terminal and click the new tr
 
 ![Remix terminal showing the smart contract account and its associated bundler.](images/account-abstraction-7702/a-aa-gsa-log.png)
 
-You will see both the Smart Contract Account and its associated Bundler.
+You will see both the Smart Contract Account and its associated bundler.
 
 Note: Following [EIP-155](https://eips.ethereum.org/EIPS/eip-155), Safe Smart Account contracts use a deterministic deployment proxy so for a contract deployed using a smart account, the msg.sender will be: 0x4e59b44847b379578588920cA78FbF26c0B4956C.

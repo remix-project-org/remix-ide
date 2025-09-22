@@ -63,7 +63,7 @@ You can view the output of some of these commands on the "**LOGS**" accordion it
 
 You can manage the multiple branches associated with your Workspace initialized with Git or cloned from GitHub from the "**BRANCHES**" accordion item.
 
-![Remix Git Plugin showing multiple branches](images/git/gh-git-branches.png)
+![Remix Git plugin showing multiple branches](images/git/gh-git-branches.png)
 
 You can view the current branch from the Footer.
 

@@ -169,7 +169,7 @@ Only use `--http.corsdomain *` when using a **test chain** AND using only **test
 
 ## Value:
 
-- This sets the amount of ETH, WEI, GWEI, etc. that is sent to a contract or a payable function. <br>
+- This sets the amount of ETH, WEI, Gwei, etc. that is sent to a contract or a payable function. <br>
   **Note:** payable functions have a red button.
 
 The **Value** field is always reset to 0 after each transaction execution. <br>
@@ -179,7 +179,7 @@ The **Value** field is **NOT** for gas.
 
 ## Deploy and AtAddress
 
-- In the image above, the select box is set to **Ballot**. This select box will contain the list of compiled contracts.
+- In the image above, the selectbox is set to **Ballot**. This selectbox will contain the list of compiled contracts.
 
 - `Deploy` sends a transaction that deploys the selected contract. When
   the transaction is mined, the newly created instance will be added
@@ -200,7 +200,7 @@ with extension **\*.abi** and copy the ABI content into it.
 
 Make sure this file is the active tab in the Editor. Then, in the field next to `At Address`, input the contract's address and click on `At Address`. If successful, an instance of the contract will appear below in the list of **Deployed Contracts**.
 
-**Note:** To generate the ABI, in the Solidity compiler after a contract is compiled, click on the **Compilation Details** button. A modal will come up that contains the ABI, among other info.
+**Note:** To generate the ABI, in the Solidity Compiler after a contract is compiled, click on the **Compilation Details** button. A modal will come up that contains the ABI, among other info.
 
 ## Pending Instances
 

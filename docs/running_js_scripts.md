@@ -76,7 +76,7 @@ In order to connect a contract with a script, add the **NatSpec** tag `@custom:d
 
 When you are ready to deploy the code for real, remove the NatSpec comment `@custom:dev-run-script`.
 
-**ShortCut**: `Ctrl+Shift+S` , when editing a solidity file, will compile that file and then will run the script. In contrast, Ctrl+S will only start the compiling.
+**ShortCut**: `Ctrl+Shift+S` , when editing a solidity file, will compile that file and then will run the script. In contrast, `ctrl+S` will only start the compiling.
 
 ## An Example Script
 
