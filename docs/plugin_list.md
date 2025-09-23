@@ -116,16 +116,6 @@ Compile Vyper code using local or remote Vyper compiler.
 Profile name: **vyper**
 :::
 
-:::{grid-item-card} Solhint
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link: static_analysis
-:link-type: doc
-
-This plugin is now part of the **Solidity Static Analysis** plugin.
-
-Profile name: **solhint**
-:::
 ::::
 
 ---
