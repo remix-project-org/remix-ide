@@ -8,14 +8,142 @@ Here is the list of Remix plugins that you will see in the Plugin Manager.
 :gutter: 4
 :align: center
 
+:::{grid-item-card} File Explorer
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link: file_explorer
+:link-type: doc
+:img-top: images/plugin-list/fileManager.webp
+
+The File Explorer is where you can see the files.
+
+Profile name: **fileManager**
+:::
+
+:::{grid-item-card} Remixd
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://remix-ide.readthedocs.io/en/latest/remixd.html
+:img-top: images/plugin-list/remixd.png
+
+Connect a local filesystem folder to Remix via the `remixd` npm package.
+
+Profile name: **remixd**
+:::
+
+:::{grid-item-card} Solidity Compiler
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link: compile
+:link-type: doc
+:img-top: images/plugin-list/solidity.webp
+
+Compiles Solidity & Yul.
+
+Profile name: **solidity**
+:::
+
+:::{grid-item-card} Deploy & Run
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link: run
+:link-type: doc
+:img-top: images/plugin-list/deployAndRun.webp
+
+Deploy & interact with smart contracts on the in-browser chain (JSVM), local nodes, and public networks.
+
+Profile name: **udapp**
+:::
+
+:::{grid-item-card} Debugger
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link: debugger
+:link-type: doc
+:img-top: images/plugin-list/debuggerLogo.webp
+
+Insert breakpoints, step through a contract, and debug transactions.
+
+Profile name: **debugger**
+:::
+
+:::{grid-item-card} Contract Verification
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link: contract-verification
+:link-type: doc
+:img-top: images/plugin-list/contractVerification.webp
+
+Verify contract code on Sourcify, Etherscan and Blockscout at the same time.
+
+Profile name: **contract-verification**
+:::
+
+:::{grid-item-card} Solidity Unit Testing
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link: unittesting
+:link-type: doc
+:img-top: images/pi-sut.png
+
+Run unit tests written in Solidity.
+
+Profile name: **solidityUnitTesting**
+:::
+
+:::{grid-item-card} Solidity Static Analysis
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link: static_analysis
+:link-type: doc
+:img-top: images/plugin-list/staticAnalysis.webp
+
+Static code analysis with integrations for **Slither** and **Solhint**.
+
+Profile name: **solidityStaticAnalysis**
+:::
+
+:::{grid-item-card} Vyper Compiler
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://remix-ide.readthedocs.io/en/latest/vyper.html
+:img-top: images/plugin-list/vyperLogo2.webp
+
+Compile Vyper code using local or remote Vyper compiler.
+
+Profile name: **vyper**
+:::
+
+:::{grid-item-card} Solhint
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link: static_analysis
+:link-type: doc
+
+This plugin is now part of the **Solidity Static Analysis** plugin.
+
+Profile name: **solhint**
+:::
+::::
+
+---
+
+## Additional Plugins
+
+::::{grid} 3
+:gutter: 4
+:align: center
+
 :::{grid-item-card} Arbitrum Stylus
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://docs.welldonestudio.io/code
-:img-top: images/pi-welldone1.png
+:img-top: images/plugin-list/arbitrum-arb-logo.png
 
-Deployment and execution of smart contracts via Arbitrum Stylus
+Deployment and execution of smart contracts via Arbitrum Stylus.
 
 Profile name: **remix-plugin-arbitrum**
 :::
@@ -26,7 +154,7 @@ Profile name: **remix-plugin-arbitrum**
 :link-type: url
 :link: https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/solidity-compiler/README.md
 
-Compile Solidity smart contracts for the Xinghuo BIF (Blockchain-based Industrial Finance) network.
+Compile Solidity smart contracts for the Xinghuo BIF network.
 
 Profile name: **bif-solidity**
 :::
@@ -58,6 +186,7 @@ Profile name: **bif-udapp-js**
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://www.buildbear.io/resources/guides-and-tutorials/remix_plugin
+:img-top: images/plugin-list/build_bear.jpg
 
 Create private, forked testnets from any EVM chain with explorer, faucet, and RPC.
 
@@ -69,22 +198,11 @@ Profile name: **buildbear**
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://github.com/groksmith/remix-contract-deployer-plugin#getting-started-with-contract-deployer-plugin
-:img-top: images/pi-deployer.png
+:img-top: images/plugin-list/contract-deployer.webp
 
 Deploy a contract to multiple chains (one at a time) with the same address.
 
 Profile name: **contract_deployer**
-:::
-
-:::{grid-item-card} Contract Verification
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: doc
-:link: contract-verification
-
-Verify contract code on Sourcify, Etherscan and Blockscout at the same time.
-
-Profile name: **contract-verification**
 :::
 
 :::{grid-item-card} Cookbook.dev — Find any contract
@@ -111,18 +229,6 @@ Develop and test privacy-preserving smart contracts on the COTI network.
 Profile name: **coti-remix-plugin**
 :::
 
-:::{grid-item-card} Debugger
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: doc
-:link: debugger
-:img-top: images/pi-debug.png
-
-Insert breakpoints, step through a contract, and debug transactions.
-
-Profile name: **debugger**
-:::
-
 :::{grid-item-card} Defender Deploy
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
@@ -132,30 +238,6 @@ Profile name: **debugger**
 Deploy smart contracts using OpenZeppelin Defender from Remix IDE.
 
 Profile name: **defender-deploy**
-:::
-
-:::{grid-item-card} Deploy & Run
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: doc
-:link: run
-:img-top: images/pi-deploy.png
-
-Deploy and interact with contracts on the in-browser chain (JSVM), local nodes, and public networks.
-
-Profile name: **udapp**
-:::
-
-:::{grid-item-card} File Explorer
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link: file_explorer
-:link-type: doc
-:img-top: images/pi-fe.png
-
-The File Explorer is where you can see the files.
-
-Profile name: **fileManager**
 :::
 
 :::{grid-item-card} Klaytn
@@ -170,16 +252,16 @@ Deploy and interact with smart contracts on the Klaytn public network and local 
 Profile name: **klaytn-remix-plugin**
 :::
 
-:::{grid-item-card} Learneth
+:::{grid-item-card} LearnEth
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix-learneth-plugin.readthedocs.io/en/latest/index.html
-:img-top: images/pi-learneth.png
+:img-top: images/plugin-list/learnEthLogo.webp
 
 Remix & Solidity tutorials with quizzes teaching Solidity and Remix features.
 
-Profile name: **learnEth**
+Profile name: **LearnEth**
 :::
 
 :::{grid-item-card} Nahmii compiler
@@ -193,22 +275,11 @@ Compile Solidity contracts for the Nahmii network.
 Profile name: **nahmii-compiler**
 :::
 
-:::{grid-item-card} Remixd (No UI)
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: url
-:link: https://remix-ide.readthedocs.io/en/latest/remixd.html
-
-Connect a local filesystem folder to Remix via the `remixd` npm package.
-
-Profile name: **remixd**
-:::
-
 :::{grid-item-card} Restore Backup Zip
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: doc
 :link: backup_restore
+:link-type: doc
 
 Restore your backup zip of Remix IDE workspaces (files and settings).
 
@@ -227,53 +298,6 @@ Monitor and analyze your smart contracts inside Remix using Sentio.
 Profile name: **sentio**
 :::
 
-:::{grid-item-card} Solhint
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: doc
-:link: static_analysis
-
-This plugin is now part of the **Solidity Analyzers** plugin.
-
-Profile name: **solhint**
-:::
-
-:::{grid-item-card} Solidity Compiler
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: doc
-:link: compile
-:img-top: images/pi-sol.png
-
-Compiles Solidity & YUL.
-
-Profile name: **solidity**
-:::
-
-:::{grid-item-card} Solidity Static Analysis
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: doc
-:link: static_analysis
-:img-top: images/pi-static.png
-
-Static code analysis with integrations for **Slither** and **Solhint**.
-
-Profile name: **solidityStaticAnalysis**
-:::
-
-:::{grid-item-card} Solidity Unit Testing
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: doc
-:link: unittesting
-:img-top: images/pi-sut.png
-
-Run unit tests written in Solidity.
-
-Profile name: **solidityUnitTesting**
-:::
-
 :::{grid-item-card} SolidityScan
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
@@ -290,7 +314,7 @@ Profile name: **solidityscan**
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://github.com/NethermindEth/starknet-remix-plugin
-:img-top: images/pi-starknet.png
+:img-top: images/plugin-list/starknetlogo.webp
 
 Compile contracts written in Cairo to Starknet.
 
@@ -307,18 +331,6 @@ Profile name: **Starknet**
 Verify contracts and import from your Tenderly project.
 
 Profile name: **tenderly**
-:::
-
-:::{grid-item-card} Vyper Compiler
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: url
-:link: https://remix-ide.readthedocs.io/en/latest/vyper.html
-:img-top: images/pi-vyper.png
-
-Compile Vyper code using local or remote Vyper compiler.
-
-Profile name: **vyper**
 :::
 
 :::{grid-item-card} Wallet Connect (Main Panel)
