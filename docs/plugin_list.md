@@ -71,7 +71,7 @@ Profile name: **debugger**
 :::{grid-item-card} Contract Verification
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
-:link: contract-verification
+:link: contract_verification
 :link-type: doc
 :img-top: images/plugin-list/contractVerification.webp
 
@@ -212,7 +212,7 @@ Profile name: **cookbook.dev**
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://docs.coti.io/coti-documentation/running-a-coti-node
-:img-top: images/pi-coti.png
+:img-top: images/plugin-list/coti-logo.webp
 
 Develop and test privacy-preserving smart contracts on the COTI network.
 
@@ -235,7 +235,7 @@ Profile name: **defender-deploy**
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://github.com/klaytn-ozys/plug-and-klay
-:img-top: images/pi-klaytn.png
+:img-top: images/plugin-list/klatyn-logo.webp
 
 Deploy and interact with smart contracts on the Klaytn public network and local nodes.
 
@@ -268,7 +268,6 @@ Profile name: **nahmii-compiler**
 :::{grid-item-card} Restore Backup Zip
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
-:link: backup_restore
 :link-type: doc
 
 Restore your backup zip of Remix IDE workspaces (files and settings).
@@ -281,7 +280,7 @@ Profile name: **backup-restore**
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://docs.sentio.xyz/docs/remix-ide-plugin
-:img-top: images/pi-sentio.png
+:img-top: images/plugin-list/sentio-logo.png
 
 Monitor and analyze your smart contracts inside Remix using Sentio.
 
@@ -316,7 +315,7 @@ Profile name: **Starknet**
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://docs.tenderly.co/monitoring/integrations#remix
-:img-top: images/pi-tenderly.png
+:img-top: images/plugin-list/tenderly-logo.png
 
 Verify contracts and import from your Tenderly project.
 
@@ -339,8 +338,7 @@ Profile name: **walletconnect**
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://github.com/matter-labs/zksync-remix-plugin
-:img-top: images/pi-zksync.png
-
+:img-top: images/plugin-list/zksync-logo.png
 Compile and deploy smart contracts for zkSync Era.
 
 Profile name: **ZKsync**
@@ -351,7 +349,7 @@ Profile name: **ZKsync**
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://zokrates.github.io/
-:img-top: images/pi-zok.png
+:img-top: images/plugin-list/zokrates-logo.png
 
 ZoKrates is a toolbox for zkSNARKs on Ethereum.
 
