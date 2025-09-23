@@ -6,11 +6,11 @@
 
 - The alpha version of remix is located at [https://remix-alpha.ethereum.org](https://remix-alpha.ethereum.org). This is not a stable version.
 
-- Github repo: [https://github.com/ethereum/remix-project](https://github.com/ethereum/remix-project). The README contains instructions for running Remix-IDE locally.
+- Github repo: [https://github.com/remix-project-org](https://github.com/remix-project-org). The README contains instructions for running Remix-IDE locally.
 
-- Remix Desktop is an Electron App. Here is the [release page](https://github.com/ethereum/remix-desktop/releases).
+- Remix Desktop is an Electron App. Here is the [release page](https://github.com/remix-project-org/remix-desktop/releases).
 
-- Remix has a VSCode extension called [Ethereum Remix](https://github.com/ethereum/remix-vscode).
+- Remix has a VSCode extension called [Ethereum Remix](https://github.com/remix-project-org/remix-vscode).
 
 - The Remix twitter account is [EthereumRemix](https://twitter.com/EthereumRemix).
 
@@ -48,7 +48,7 @@ Note: a plugin is called by its **name** as specified in its profile. There are 
 
 1. **Native Mandatory Plugins** that are always loaded (so you don't need to activate them using the url parameter **activate**). These include: **fileManager**, **settings**, **manager** (the plugin manager), and **udapp** (deploy & run).
 2. **Native Optional Plugins** that are loaded on demand: **debugger**, **hardhat-provider**, **solidity**, **solidityStaticAnalysis**, **solidityUnitTesting**, and **vyper**
-3. **External Plugins** to get these plugins' names, please go to [https://github.com/ethereum/remix-plugins-directory/tree/master/plugins](https://github.com/ethereum/remix-plugins-directory/tree/master/plugins).
+3. **External Plugins** to get these plugins' names, please go to [https://github.com/remix-project-org/remix-plugins-directory/tree/master/plugins](https://github.com/remix-project-org/remix-plugins-directory/tree/master/plugins).
 
 ### Deactivating a list of plugins
 
@@ -136,7 +136,7 @@ https://remix.ethereum.org/?#activate=solidityUnitTesting,solidity,LearnEth&call
 The `url` parameter takes a URL, loads it into the Editor and saves it into the code-sample workspace of the File Explorer:
 
 ```text
-https://remix.ethereum.org/#url=https://github.com/ethereum/remix-project/blob/master/apps/remix-ide/contracts/app/solidity/mode.sol
+https://remix.ethereum.org/#url=https://github.com/remix-project-org/remix-project/blob/master/apps/remix-ide/contracts/app/solidity/mode.sol
 ```
 
 ## Load an encoded base64 string into a .sol file in the Editor
@@ -160,7 +160,7 @@ https://remix.ethereum.org/#address=0xdac17f958d2ee523a2206206994597c13d831ec7
 With a github url of a Solidity contract like this one:
 
 ```text
-https://github.com/ethereum/remix-project/blob/master/apps/remix-ide/contracts/app/solidity/mode.sol
+https://github.com/remix-project-org/remix-project/blob/master/apps/remix-ide/contracts/app/solidity/mode.sol
 ```
 
 Then delete the **github** part and type in **remix.ethereum.org** in its place, like this:

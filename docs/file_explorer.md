@@ -37,7 +37,7 @@ Remix Desktop is a version of the Remix IDE that exists as a native app on your 
 
 Remix IDE supports version control with version control platforms like GitHub (or similar like GitLab) and in the InterPlanetary File System (IPFS), allowing you to store the code you write on remote repositories.
 
-The version control operations are managed with Git through a plugin known as **DGit** (Decentralized Git). Additionally, you can [manage your branches](#branch-management) on the Remix IDE using the branch icon that appears at the bottom of the File Explorer after you initialize Git.
+The version control operations are managed with Git through the **Git** plugin. Additionally, you can [manage your branches](#branch-management) on the Remix IDE using the branch icon that appears at the bottom of the File Explorer after you initialize Git.
 
 ![Remix IDE Git branches.](images/file-explorer/git-branches.png)
 
@@ -52,6 +52,10 @@ To use this feature, you need to add a GitHub access token with the "**Create Gi
 To generate a GitHub token, visit the [GitHub Settings page](https://github.com/settings/tokens) and select "**Generate new token**". Ensure you tick the **Create gists** checkbox and generate a new token. Copy the token and paste it in Remix's **Settings** module in the **Github Access Token** section. And then click "**Save**".
 
 After the initial setup, you can publish a gist by right-clicking on a file (publish the file), folder (publish the folder), or Side Bar (publish the entire workspace) and selecting the "**Publish folder to gist**".
+
+```{tip}
+You can publish multiple files by select all of them and right-clicking. The resulting pop-up menu will provide an option to publish them to a gist.
+```
 
 ## Creating new files
 

@@ -24,7 +24,7 @@ This works for Etherscan testnet URLs `https://ropsten.etherscan.io`, `https://g
 
 Solidity files in GitHub can be loaded on Remix with a similar tweak. For a file with URL like:
 
-`https://github.com/ethereum/remix-project/blob/master/apps/remix-ide/contracts/app/solidity/mode.sol`
+`https://github.com/remix-project-org/remix-project/blob/master/apps/remix-ide/contracts/app/solidity/mode.sol`
 
 change `github.com` to `remix.ethereum.org` like:
 

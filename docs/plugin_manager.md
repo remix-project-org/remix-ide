@@ -27,4 +27,4 @@ A modal will appear like the one below where you can view and erase the granted 
 A plugin in development can be loaded into Remix IDE by clicking the "Connect to a Local Plugin" link at the top of the Plugin Manager panel.
 
 To learn more about how to create your own plugin, go to
-[the README of remix-plugin repo](https://github.com/ethereum/remix-plugin).
+[the README of remix-plugin repo](https://github.com/remix-project-org/remix-plugin).
