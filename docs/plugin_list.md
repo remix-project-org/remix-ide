@@ -1,179 +1,358 @@
 # Plugin List
 
-Here is the list of Remix plugins that you will see in the Plugin Manager:
+Here is the list of Remix plugins that you will see in the Plugin Manager.
 
 ## Core Plugins
 
-**File Explorer** &nbsp; ![](images/pi-fe.png)<br>
-The File Explorers is where you can see the files.<br>
-profile name: **fileManager**
-<br>{doc}`Documentation </file_explorer>`
+::::{grid} 3
+:gutter: 4
+:align: center
 
-**Remixd** &nbsp; (No UI)
-<br>Remixd (with an npm package running locally) connects a folder on your filesystem to the Remix website. Please see the docs for instructions.
-<br>profile name: **remixd**
-<br>[Documentation](https://remix-ide.readthedocs.io/en/latest/remixd.html)
+:::{grid-item-card} File Explorer
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link: file_explorer
+:link-type: doc
+:img-top: images/plugin-list/fileManager.webp
 
-**Solidity Compiler** &nbsp; ![](images/pi-sol.png)<br>
+The File Explorer is where you can see the files.
+
+Profile name: **fileManager**
+:::
+
+:::{grid-item-card} Remixd
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://remix-ide.readthedocs.io/en/latest/remixd.html
+:img-top: images/plugin-list/remixd.png
+
+Connect a local filesystem folder to Remix via the `remixd` npm package.
+
+Profile name: **remixd**
+:::
+
+:::{grid-item-card} Solidity Compiler
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link: compile
+:link-type: doc
+:img-top: images/plugin-list/solidity.webp
+
 Compiles Solidity & Yul.
-<br>profile name: **solidity**
-<br>{doc}`Documentation </compile>`
 
-**Deploy & Run** &nbsp; ![](images/pi-deploy.png)<br>
+Profile name: **solidity**
+:::
+
+:::{grid-item-card} Deploy & Run
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link: run
+:link-type: doc
+:img-top: images/plugin-list/deployAndRun.webp
+
 Deploy & interact with smart contracts on the in-browser chain (JSVM), local nodes, and public networks.
-<br>profile name: **udapp**
-<br>{doc}`Documentation </run>`
 
-**Debugger** &nbsp; ![](images/pi-debug.png)<br>
-Insert breakpoints, step through a contract, check high level and low level parameters, and fetch & debug a transaction of a verified contract.
-<br>profile name: **debugger**
-<br>{doc}`Documentation </debugger>`
+Profile name: **udapp**
+:::
 
-**Contract Verification** &nbsp;<br>
-Verify contract code on Sourcify, Etherscan and Blockscout at the same time."
-<br>profile name: **contract-verification**
+:::{grid-item-card} Debugger
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link: debugger
+:link-type: doc
+:img-top: images/plugin-list/debuggerLogo.webp
 
-**Solidity Unit Testing** &nbsp; ![](images/pi-sut.png)<br>
-Run unit test written in Solidity.
-<br>profile name: **solidityUnitTesting**
-<br>{doc}`Documentation </unittesting>`
+Insert breakpoints, step through a contract, and debug transactions.
 
-**Solidity Static Analysis** &nbsp; ![](images/pi-static.png)<br>
-Static code analysis is a process to debug the code by examining it and without actually executing the code. This plugin also has integrations with {doc}`Slither </slither>` and with the linter, **Solhint**.
-<br>profile name: **solidityStaticAnalysis**
-<br>{doc}`Documentation </static_analysis>`
+Profile name: **debugger**
+:::
 
-**Vyper Compiler** &nbsp; ![](images/pi-vyper.png) &nbsp;
-<br>Compile Vyper code using local or remote Vyper compiler.
-<br>profile name: **vyper**
-<br>[Documentation](https://remix-ide.readthedocs.io/en/latest/vyper.html)
+:::{grid-item-card} Contract Verification
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link: contract_verification
+:link-type: doc
+:img-top: images/plugin-list/contractVerification.webp
+
+Verify contract code on Sourcify, Etherscan and Blockscout at the same time.
+
+Profile name: **contract-verification**
+:::
+
+:::{grid-item-card} Solidity Unit Testing
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link: unittesting
+:link-type: doc
+:img-top: images/pi-sut.png
+
+Run unit tests written in Solidity.
+
+Profile name: **solidityUnitTesting**
+:::
+
+:::{grid-item-card} Solidity Static Analysis
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link: static_analysis
+:link-type: doc
+:img-top: images/plugin-list/staticAnalysis.webp
+
+Static code analysis with integrations for **Slither** and **Solhint**.
+
+Profile name: **solidityStaticAnalysis**
+:::
+
+:::{grid-item-card} Vyper Compiler
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://remix-ide.readthedocs.io/en/latest/vyper.html
+:img-top: images/plugin-list/vyperLogo2.webp
+
+Compile Vyper code using local or remote Vyper compiler.
+
+Profile name: **vyper**
+:::
+
+::::
+
+---
 
 ## Additional Plugins
 
-(sorted alphabetically)
+::::{grid} 3
+:gutter: 4
+:align: center
 
-**Arbitrum Stylus** &nbsp; ![](images/pi-welldone1.png)<br>
-Deployment and execution of smart contracts via Arbitrum Stylus
-<br>[Profile name](https://remix-plugin-arbitrum.welldonestudio.io): remix-plugin-arbitrum
-<br>[Documentation](https://docs.welldonestudio.io/code)
-<br>[Make an issue](https://github.com/dsrvlabs/arbitrum-stylus/issues)
+:::{grid-item-card} Arbitrum Stylus
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://docs.welldonestudio.io/code
+:img-top: images/plugin-list/arbitrum-arb-logo.png
 
-**BIF Solidity** &nbsp;<br>
-Compile Solidity smart contracts for the Xinghuo BIF (Blockchain-based Industrial Finance) network.
-<br>[Profile name](https://bif.remix-project.cn/solidity-compiler/): bif-solidity
-<br>[Documentation](https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/solidity-compiler/README.md)
-<br>[Make an issue](https://github.com/caict-4iot-dev/remix-bif-plugins/issues)
+Deployment and execution of smart contracts via Arbitrum Stylus.
 
-**BIF UDApp** &nbsp;<br>
-Deploy and interact with Solidity smart contracts on the Xinghuo BIF (Blockchain-based Industrial Finance) network.
-<br>[Profile name](https://bif.remix-project.cn/udapp/): bif-udapp
-<br>[Documentation](https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/udapp/README.md)
-<br>[Make an issue](https://github.com/caict-4iot-dev/remix-bif-plugins/issues)
+Profile name: **remix-plugin-arbitrum**
+:::
 
-**BIF UDApp JS** &nbsp; <br>
-Deploy and interact with JavaScript-based smart contracts on the Xinghuo BIF (Blockchain-based Industrial Finance) network.
-<br>[Profile name](https://bif.remix-project.cn/udapp-js/): bif-udapp-js
-<br>[Documentation](https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/udapp-js/README.md)
-<br>[Make an issue](https://github.com/caict-4iot-dev/remix-bif-plugins/issues)
+:::{grid-item-card} BIF Solidity
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/solidity-compiler/README.md
 
-**BuildBear** &nbsp; <br>
-Create private, forked testnets from any EVM chain with integrated explorer, faucet, and RPC for enhanced smart contract development.
-<br>[Profile name](https://remix-plugin.buildbear.io): buildbear
-<br>[Documentation](https://www.buildbear.io/resources/guides-and-tutorials/remix_plugin)
-<br>[Make an issue](https://github.com/BuildBear/remix-plugin/issues)
+Compile Solidity smart contracts for the Xinghuo BIF network.
 
-**Contract Deployer** &nbsp; ![](images/pi-deployer.png)<br>
-Deploy a contract to multiple chains (1 at a time) with the same address.
-<br>[Profile name](https://github.com/groksmith/remix-contract-deployer-plugin): contract_deployer
-<br>[Documentation](https://github.com/groksmith/remix-contract-deployer-plugin#getting-started-with-contract-deployer-plugin)
-<br>[Make an issue](https://github.com/groksmith/remix-contract-deployer-plugin/issues)
+Profile name: **bif-solidity**
+:::
 
-**Contract Verification** &nbsp;<br>
-Verify contract code on Sourcify, Etherscan and Blockscout at the same time."
-<br>profile name: **contract-verification**
+:::{grid-item-card} BIF UDApp
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/udapp/README.md
 
-**Cookbook.dev - Find any contract** &nbsp; ![](images/cookbook.svg)<br>
+Deploy and interact with Solidity smart contracts on the Xinghuo BIF network.
+
+Profile name: **bif-udapp**
+:::
+
+:::{grid-item-card} BIF UDApp JS
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/udapp-js/README.md
+
+Deploy and interact with JavaScript-based smart contracts on the Xinghuo BIF network.
+
+Profile name: **bif-udapp-js**
+:::
+
+:::{grid-item-card} BuildBear
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://www.buildbear.io/resources/guides-and-tutorials/remix_plugin
+:img-top: images/plugin-list/build_bear.jpg
+
+Create private, forked testnets from any EVM chain with explorer, faucet, and RPC.
+
+Profile name: **buildbear**
+:::
+
+:::{grid-item-card} Contract Deployer
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://github.com/groksmith/remix-contract-deployer-plugin#getting-started-with-contract-deployer-plugin
+:img-top: images/plugin-list/contract-deployer.webp
+
+Deploy a contract to multiple chains (one at a time) with the same address.
+
+Profile name: **contract_deployer**
+:::
+
+:::{grid-item-card} Cookbook.dev — Find any contract
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://github.com/CookbookDev/cookbook-remix-plugin
+:img-top: images/cookbook.svg
+
 Find any smart contract, build your project faster.
-<br>[Profile name](https://github.com/ethereum/remix-plugins-directory/tree/master/plugins/cookbook.dev): cookbook.dev
-<br>[Website](https://ai.cookbook.dev/)
-<br>[Documentation](https://github.com/CookbookDev/cookbook-remix-plugin)
-<br>[Make an issue](https://github.com/CookbookDev/cookbook-remix-plugin/issues)
 
-**COTI Plugin** &nbsp; ![](images/pi-coti.png)<br>
-Develop and test privacy-preserving smart contracts on the COTI network directly within Remix IDE.
-<br>[Profile name](https://github.com/coti-io/coti-remix-plugin): coti-remix-plugin
-<br>[Documentation](https://docs.coti.io/coti-documentation/running-a-coti-node)
-<br>[Make an issue](https://github.com/coti-io/coti-remix-plugin/issues)
+Profile name: **cookbook.dev**
+:::
 
-**Defender Deploy** &nbsp;<br>
-Deploy smart contracts using OpenZeppelin Defender directly from Remix IDE.
-<br>[Profile name](https://remix.ethereum.org/#activate=defender-deploy): defender-deploy
-<br>[Documentation](https://docs.openzeppelin.com/defender/remix-plugin)
-<br>[Make an issue](https://github.com/OpenZeppelin/defender-deploy-plugin/issues)
+:::{grid-item-card} COTI Plugin
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://docs.coti.io/coti-documentation/running-a-coti-node
+:img-top: images/plugin-list/coti-logo.webp
 
-**Klaytn** &nbsp; ![](images/pi-klaytn.png)
-<br>Deploy & interact with smart contracts to the Klaytn public network, local Klaytn nodes.
-<br>[Profile name](https://github.com/ethereum/remix-plugins-directory/blob/master/plugins/klaytn/profile.json): klaytn-remix-plugin
-<br>[Documentation](https://github.com/klaytn-ozys/plug-and-klay)
-<br>[Make an issue](https://github.com/klaytn-ozys/plug-and-klay/issues)
+Develop and test privacy-preserving smart contracts on the COTI network.
 
-**LearnEth** &nbsp; ![](images/pi-learneth.png) &nbsp; Remix & Solidity Tutorials
-<br>Tutorials that contain quizzes that teach users Solidity and Remix features.
-<br>[Profile name](https://github.com/ethereum/remix-plugins-directory/blob/master/plugins/learneth/profile.json): LearnEth
-<br>[Documentation](https://remix-learneth-plugin.readthedocs.io/en/latest/index.html)
-<br>[Make an issue](https://github.com/bunsenstraat/remix-learneth-plugin/issues)
+Profile name: **coti-remix-plugin**
+:::
 
-**Nahmii compiler** &nbsp;
-<br>Compile solidity contracts for the Nahmii network
-<br>[Profile name](https://github.com/ethereum/remix-plugins-directory/blob/master/plugins/nahmii/profile.json): nahmii-compiler
-<br>[Make an issue](https://github.com/nahmii-community/remix-nahmii-compiler-plugin/issues)
+:::{grid-item-card} Defender Deploy
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://docs.openzeppelin.com/defender/remix-plugin
 
-**Restore Backup Zip** &nbsp;<br>
-Restore your backup of the zip file containing Remix IDE workspaces. The zip file will include both files and settings, to ensure data safety and portability.
-<br>[Profile name](https://remix.ethereum.org/#activate=backup-restore): backup-restore
-<br>[Documentation](https://remix-ide.readthedocs.io/en/latest/backup_restore.html)
-<br>[Make an issue](https://github.com/ethereum/remix-project/issues)
+Deploy smart contracts using OpenZeppelin Defender from Remix IDE.
 
-**Sentio** &nbsp; ![](images/pi-sentio.png)<br>
-Monitor and analyze your smart contracts directly within Remix IDE using Sentio's powerful observability tools.
-<br>[Profile name](https://remix.ethereum.org/#activate=sentio): sentio
-<br>[Documentation](https://docs.sentio.xyz/docs/remix-ide-plugin)
-<br>[Make an issue](https://github.com/sentioxyz/remix-plugin/issues)
+Profile name: **defender-deploy**
+:::
 
-**SolidityScan** &nbsp;<br>
-Perform real-time security analysis of your Solidity smart contracts directly within Remix IDE using SolidityScan's automated auditing tools.
-<br>[Profile name](https://remix.ethereum.org/#activate=solidityscan): solidityscan
-<br>[Documentation](https://docs.solidityscan.com/remix/)
-<br>[Make an issue](https://github.com/ethereum/remix-project/issues)
+:::{grid-item-card} Klaytn
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://github.com/klaytn-ozys/plug-and-klay
+:img-top: images/plugin-list/klatyn-logo.webp
 
-**Solhint**
-This plugin is now part of the Solidity Analyzers plugin.
+Deploy and interact with smart contracts on the Klaytn public network and local nodes.
 
-**Starknet** &nbsp; ![](images/pi-starknet.png) &nbsp;
-<br>Compile contracts written in Cairo to Starknet
-<br>[Profile name](https://github.com/ethereum/remix-plugins-directory/blob/master/plugins/starknet-cairo1-compiler/profile.json): Starknet
-<br>[Documentation](https://github.com/NethermindEth/starknet-remix-plugin)
-<br>[Make an issue](https://github.com/NethermindEth/starknet-remix-plugin/issues)
+Profile name: **klaytn-remix-plugin**
+:::
 
-**Tenderly** &nbsp; ![](images/pi-tenderly.png)
-<br>Verify Contracts. Import To Remix From your Tenderly project.
-<br>[Profile name](https://github.com/ethereum/remix-plugins-directory/blob/master/plugins/tenderly/profile.json): tenderly
-<br>[Documentation](https://docs.tenderly.co/monitoring/integrations#remix)
-<br>[Make an issue](/issues)
+:::{grid-item-card} LearnEth
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://remix-learneth-plugin.readthedocs.io/en/latest/index.html
+:img-top: images/plugin-list/learnEthLogo.webp
 
-**Wallet Connect** &nbsp; (Main Panel)
-<br>Approve transactions on your mobile device
-<br>[Profile name](https://github.com/ethereum/remix-plugins-directory/blob/master/plugins/wallet-connect/profile.json): walletconnect
-<br>[Make an issue](https://github.com/yann300/remix-walletconnect/issues)
+Remix & Solidity tutorials with quizzes teaching Solidity and Remix features.
 
-**zkSync** &nbsp; ![](images/pi-zksync.png) &nbsp;
-<br>Compile and deploy smart contracts for zkSync Era.
-<br>[Profile name](https://github.com/remix-project-org/remix-plugins-directory/blob/master/plugins/zksync/profile.json): ZKsync
-<br>[Documentation](https://github.com/matter-labs/zksync-remix-plugin)
-<br>[Make an issue](https://github.com/matter-labs/zksync-remix-plugin/issues)
+Profile name: **LearnEth**
+:::
 
-**Zokrates** &nbsp; ![](images/pi-zok.png) &nbsp;
-<br>ZoKrates is a toolbox for zkSNARKs on Ethereum.
-<br>[Profile name](https://github.com/ethereum/remix-plugins-directory/blob/master/plugins/zokrates/profile.json): ZoKrates
-<br>[Documentation](https://zokrates.github.io/)
-<br>[Make an issue](https://github.com/Zokrates/zokrates-remix-plugin/issues)
+:::{grid-item-card} Nahmii compiler
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://github.com/nahmii-community/remix-nahmii-compiler-plugin/issues
+
+Compile Solidity contracts for the Nahmii network.
+
+Profile name: **nahmii-compiler**
+:::
+
+:::{grid-item-card} Restore Backup Zip
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: doc
+
+Restore your backup zip of Remix IDE workspaces (files and settings).
+
+Profile name: **backup-restore**
+:::
+
+:::{grid-item-card} Sentio
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://docs.sentio.xyz/docs/remix-ide-plugin
+:img-top: images/plugin-list/sentio-logo.png
+
+Monitor and analyze your smart contracts inside Remix using Sentio.
+
+Profile name: **sentio**
+:::
+
+:::{grid-item-card} SolidityScan
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://docs.solidityscan.com/remix/
+
+Real-time security analysis of your Solidity smart contracts.
+
+Profile name: **solidityscan**
+:::
+
+:::{grid-item-card} Starknet
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://github.com/NethermindEth/starknet-remix-plugin
+:img-top: images/plugin-list/starknetlogo.webp
+
+Compile contracts written in Cairo to Starknet.
+
+Profile name: **Starknet**
+:::
+
+:::{grid-item-card} Tenderly
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://docs.tenderly.co/monitoring/integrations#remix
+:img-top: images/plugin-list/tenderly-logo.png
+
+Verify contracts and import from your Tenderly project.
+
+Profile name: **tenderly**
+:::
+
+:::{grid-item-card} Wallet Connect (Main Panel)
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://github.com/yann300/remix-walletconnect/issues
+
+Approve transactions on your mobile device.
+
+Profile name: **walletconnect**
+:::
+
+:::{grid-item-card} ZKsync
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://github.com/matter-labs/zksync-remix-plugin
+:img-top: images/plugin-list/zksync-logo.png
+Compile and deploy smart contracts for zkSync Era.
+
+Profile name: **ZKsync**
+:::
+
+:::{grid-item-card} Zokrates
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://zokrates.github.io/
+:img-top: images/plugin-list/zokrates-logo.png
+
+ZoKrates is a toolbox for zkSNARKs on Ethereum.
+
+Profile name: **ZoKrates**
+:::
+::::
