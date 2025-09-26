@@ -17,7 +17,7 @@ The Remixd plugin is a **WebSocket plugin** and it has no UI other than this mod
 Before you hit **Connect**, you need to install the [Remixd NPM module](https://www.npmjs.com/package/@remix-project/remixd) and run the **Remixd** command.
 
 The code of `remixd` is
-[here](https://github.com/ethereum/remix-project/tree/master/libs/remixd) .
+[here](https://github.com/remix-project-org/remix-project/tree/master/libs/remixd) .
 
 ## remixd Installation
 
