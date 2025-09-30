@@ -176,11 +176,11 @@ html_favicon = '../favicon.ico'
 html_static_path = ['_static']
 
 html_js_files = [
-    "js/constants.js",
-    "js/utils.js",
-    "js/loaders.js",
-    "js/initialize.js",
-    "js/cookbook-integration.js",
+    ("js/constants.js", {'defer': 'defer'}),
+    ("js/utils.js", {'defer': 'defer'}),
+    ("js/loaders.js", {'defer': 'defer'}),
+    ("js/initialize.js", {'defer': 'defer'}),
+    ("js/cookbook-integration.js",{'defer': 'defer'})
 ]
 
 html_css_files = ["css/fonts.css", "css/tokens.css", "css/custom.css"]

@@ -118,7 +118,8 @@ Profile name: **vyper**
 
 ::::
 
----
+## Internal Plugins
+
 
 ## Additional Plugins
 
