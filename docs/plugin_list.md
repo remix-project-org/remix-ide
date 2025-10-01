@@ -2,6 +2,10 @@
 
 Here is the list of Remix plugins that you will see in the Plugin Manager.
 
+```{tip}
+Click a card to open the Remix IDE with the plugin enabled.
+```
+
 ## Core Plugins
 
 ::::{grid} 3
@@ -17,111 +21,178 @@ Here is the list of Remix plugins that you will see in the Plugin Manager.
 
 The File Explorer is where you can see the files.
 
-Profile name: **fileManager**
+- [Documentation](https://remix-ide.readthedocs.io/en/latest/file_explorer)
+- Profile name: **fileManager**
+  :::
+
+:::{grid-item-card} Workspace Templates
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link: https://remix.ethereum.org/?#activate=templateSelection
+:img-top: images/plugin-list/bgRemi.webp
+
+Create workspaces from existing templates like the OpenZeppelin ER20 template.
+
+- Profile name: **templateSelection**
+
 :::
 
 :::{grid-item-card} Remixd
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
-:link: https://remix-ide.readthedocs.io/en/latest/remixd.html
+:link: https://remix.ethereum.org/?#activate=remixd
 :img-top: images/plugin-list/remixd.png
 
 Connect a local filesystem folder to Remix via the `remixd` npm package.
 
-Profile name: **remixd**
-:::
+- [Documentation](https://remix-ide.readthedocs.io/en/latest/remixd.html)
+
+- Profile name: **remixd**
+  :::
 
 :::{grid-item-card} Solidity Compiler
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
-:link: compile
-:link-type: doc
+:link: https://remix.ethereum.org/?#activate=solidity
+:link-type: url
 :img-top: images/plugin-list/solidity.webp
 
 Compiles Solidity & Yul.
 
-Profile name: **solidity**
-:::
+- [Documentation](https://remix-ide.readthedocs.io/en/latest/compile.html)
+- Profile name: **solidity**
+
+  :::
 
 :::{grid-item-card} Deploy & Run
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
-:link: run
-:link-type: doc
+:link: https://remix.ethereum.org/?#activate=udapp
+:link-type: url
 :img-top: images/plugin-list/deployAndRun.webp
 
 Deploy & interact with smart contracts on the in-browser chain (JSVM), local nodes, and public networks.
 
-Profile name: **udapp**
-:::
+- [Documentation](https://remix-ide.readthedocs.io/en/latest/run.html)
+- Profile name: **udapp**
+  :::
 
 :::{grid-item-card} Debugger
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
-:link: debugger
-:link-type: doc
+:link: https://remix.ethereum.org/?#activate=debugger
+:link-type: url
 :img-top: images/plugin-list/debuggerLogo.webp
 
 Insert breakpoints, step through a contract, and debug transactions.
 
-Profile name: **debugger**
-:::
+- [Documentation](https://remix-ide.readthedocs.io/en/latest/debugger.html)
+
+- Profile name: **debugger**
+  :::
 
 :::{grid-item-card} Contract Verification
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
-:link: contract_verification
-:link-type: doc
+:link: https://remix.ethereum.org/?#activate=contract_verification
+:link-type: url
 :img-top: images/plugin-list/contractVerification.webp
 
 Verify contract code on Sourcify, Etherscan and Blockscout at the same time.
 
-Profile name: **contract-verification**
-:::
+- [Documentation](https://remix-ide.readthedocs.io/en/latest/contract_verification.html)
+- Profile name: **contract-verification**
+  :::
 
 :::{grid-item-card} Solidity Unit Testing
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
-:link: unittesting
-:link-type: doc
+:link: https://remix.ethereum.org/?#activate=solidityUnitTesting
+:link-type: url
 :img-top: images/pi-sut.png
 
 Run unit tests written in Solidity.
 
-Profile name: **solidityUnitTesting**
-:::
+- [Documentation](https://remix-ide.readthedocs.io/en/latest/unittesting.html)
+- Profile name: **solidityUnitTesting**
+  :::
 
 :::{grid-item-card} Solidity Static Analysis
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
-:link: static_analysis
-:link-type: doc
+:link: https://remix.ethereum.org/?#activate=solidityStaticAnalysis
+:link-type: url
 :img-top: images/plugin-list/staticAnalysis.webp
 
 Static code analysis with integrations for **Slither** and **Solhint**.
 
-Profile name: **solidityStaticAnalysis**
-:::
+- [Documentation](https://remix-ide.readthedocs.io/en/latest/static_analysis.html)
+- Profile name: **solidityStaticAnalysis**
+  :::
 
 :::{grid-item-card} Vyper Compiler
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
-:link: https://remix-ide.readthedocs.io/en/latest/vyper.html
+:link: https://remix.ethereum.org/?#activate=vyper
 :img-top: images/plugin-list/vyperLogo2.webp
 
 Compile Vyper code using local or remote Vyper compiler.
 
-Profile name: **vyper**
-:::
+- [Documentation](https://remix-ide.readthedocs.io/en/latest/vyper.html)
+- Profile name: **vyper**
+  :::
 
 ::::
 
 ## Internal Plugins
 
+These plugins exists as part of the core plugins.
+
+::::{grid} 3
+:gutter: 4
+:align: center
+
+:::{grid-item-card} Solhint
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:img-top: images/plugin-list/solhint.png
+:link: https://remix.ethereum.org/?#activate=solidityStaticAnalysis
+
+This plugin is now part of the Solidity Analyzers plugin.
+
+:::
+
+:::{grid-item-card} Slither
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:img-top: images/plugin-list/slither-logo.png
+:link: https://remix.ethereum.org/?#activate=solidityStaticAnalysis
+
+This plugin is now part of the Solidity Analyzers plugin.
+
+:::
+
+:::{grid-item-card} Plugin Manager
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:img-top: images/plugin-list/pluginManager.webp
+:link: https://remix.ethereum.org/?#activate=pluginManager
+
+Displays a list of all available plugins.
+
+Profile name: **pluginManager**
+:::
+
+::::
 
 ## Additional Plugins
+
+These plugins are added by third-party developers.
 
 ::::{grid} 3
 :gutter: 4
@@ -131,58 +202,76 @@ Profile name: **vyper**
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
-:link: https://docs.welldonestudio.io/code
+:link: https://remix.ethereum.org/?#activate=remix-plugin-arbitrum
 :img-top: images/plugin-list/arbitrum-arb-logo.png
 
 Deployment and execution of smart contracts via Arbitrum Stylus.
 
-Profile name: **remix-plugin-arbitrum**
-:::
+- [Website](https://docs.welldonestudio.io/code)
+- Profile name: **remix-plugin-arbitrum**
+  :::
 
 :::{grid-item-card} BIF Solidity
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
-:link: https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/solidity-compiler/README.md
+:link: https://remix.ethereum.org/?#activate=bif-solidity
 
 Compile Solidity smart contracts for the Xinghuo BIF network.
 
-Profile name: **bif-solidity**
-:::
+- [Documentation](https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/solidity-compiler/README.md)
+- Profile name: **bif-solidity**
+  :::
 
 :::{grid-item-card} BIF UDApp
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
-:link: https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/udapp/README.md
+:link: https://remix.ethereum.org/?#activate=bif-udapp
 
 Deploy and interact with Solidity smart contracts on the Xinghuo BIF network.
 
-Profile name: **bif-udapp**
-:::
+- [Documentation](https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/udapp/README.md)
+- Profile name: **bif-udapp**
+  :::
 
 :::{grid-item-card} BIF UDApp JS
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
-:link: https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/udapp-js/README.md
+:link: https://remix.ethereum.org/?#activate=bif-udapp-js
 
 Deploy and interact with JavaScript-based smart contracts on the Xinghuo BIF network.
 
-Profile name: **bif-udapp-js**
-:::
+- [Documentation](https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/udapp-js/README.md)
+- Profile name: **bif-udapp-js**
+  :::
 
 :::{grid-item-card} BuildBear
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
-:link: https://www.buildbear.io/resources/guides-and-tutorials/remix_plugin
+:link: https://remix.ethereum.org/?#activate=buildbear
 :img-top: images/plugin-list/build_bear.jpg
 
 Create private, forked testnets from any EVM chain with explorer, faucet, and RPC.
 
-Profile name: **buildbear**
-:::
+- [Documentation](https://www.buildbear.io/resources/guides-and-tutorials/remix_plugin)
+- Profile name: **buildbear**
+  :::
+
+:::{grid-item-card} Circom Compiler
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://remix.ethereum.org/?#activate=circuit-compiler
+:img-top: images/plugin-list/circom-compiler-logo.png
+
+Write, compile, and generate proofs for Zero-Knowledge (ZK) circuits using the Circom language.
+
+- [Documentation](https://docs.circom.io/)
+- Profile name: **circuit-compiler**
+  :::
 
 :::{grid-item-card} Contract Deployer
 :columns: 12 6 4
@@ -247,10 +336,10 @@ Profile name: **klaytn-remix-plugin**
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
-:link: https://remix-learneth-plugin.readthedocs.io/en/latest/index.html
+:link: https://remix.ethereum.org/?#activate=solidityUnitTesting,LearnEth
 :img-top: images/plugin-list/learnEthLogo.webp
 
-Remix & Solidity tutorials with quizzes teaching Solidity and Remix features.
+Remix, Solidity, & blockchain tutorials with quizzes teaching Solidity and Remix features.
 
 Profile name: **LearnEth**
 :::
@@ -259,12 +348,28 @@ Profile name: **LearnEth**
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
-:link: https://github.com/nahmii-community/remix-nahmii-compiler-plugin/issues
+:link: https://remix.ethereum.org/?#activate=nahmii-compiler
+:img-top: images/plugin-list/nahi-compiler-logo.png
 
 Compile Solidity contracts for the Nahmii network.
 
-Profile name: **nahmii-compiler**
-:::
+- [Documentation](https://docs.n3.nahmii.io/docs/category/nahmii-30)
+- [Open an issue](https://github.com/nahmii-community/remix-nahmii-compiler-plugin/issues)
+- Profile name: **nahmii-compiler**
+  :::
+
+:::{grid-item-card} Noir Compiler
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://remix.ethereum.org/?#activate=noir-compiler
+:img-top: images/plugin-list/noir-compiler.png
+
+Enables support for Noir circuit compilation.
+
+- [Documentation](https://noir-lang.org/docs/)
+- Profile name: **noir-compiler**
+  :::
 
 :::{grid-item-card} Restore Backup Zip
 :columns: 12 6 4
