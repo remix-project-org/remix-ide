@@ -105,7 +105,7 @@ body,
   width: 100%;
 }
 
-.wy-menu-vertical>ul {
+.wy-menu-vertical > ul {
   margin: 0;
   margin-bottom: 3rem;
 }
@@ -129,7 +129,7 @@ body,
   position: relative;
 }
 
-.wy-menu-vertical li.current>a {
+.wy-menu-vertical li.current > a {
   font-weight: 400 !important;
 }
 
@@ -177,27 +177,27 @@ ul.current ul,
   display: block !important;
 }
 
-.wy-menu-vertical li>a {
+.wy-menu-vertical li > a {
   margin-inline-end: var(--space-vertical-menu-pad-x) !important;
 }
 
-.wy-menu-vertical .toctree-l1>a {
+.wy-menu-vertical .toctree-l1 > a {
   margin-inline-start: var(--space-vertical-menu-pad-x) !important;
 }
 
-.wy-menu-vertical .toctree-l2>a {
+.wy-menu-vertical .toctree-l2 > a {
   margin-inline-start: calc(1.5 * var(--space-vertical-menu-pad-x)) !important;
 }
 
-.wy-menu-vertical .toctree-l3>a {
+.wy-menu-vertical .toctree-l3 > a {
   margin-inline-start: calc(2 * var(--space-vertical-menu-pad-x)) !important;
 }
 
-.wy-menu-vertical .toctree-l4>a {
+.wy-menu-vertical .toctree-l4 > a {
   margin-inline-start: calc(2.5 * var(--space-vertical-menu-pad-x)) !important;
 }
 
-.wy-menu-vertical .toctree-l5>a {
+.wy-menu-vertical .toctree-l5 > a {
   margin-inline-start: calc(3 * var(--space-vertical-menu-pad-x)) !important;
 }
 
@@ -227,7 +227,7 @@ ul.wy-breadcrumbs {
 .wy-breadcrumbs *::after {
   font-size: var(--size-body);
   font-family: "Helvetica", sans-serif;
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
 
 .wy-breadcrumbs a.icon-home::before {
@@ -466,7 +466,7 @@ button.color-toggle {
 
 /* Primary color for icon if menu open */
 .unified-wrapper.menu-open .mobile-menu-button,
-.inner-header:has(.theme-dropdown-menu[aria-expanded=true]) .theme-button {
+.inner-header:has(.theme-dropdown-menu[aria-expanded="true"]) .theme-button {
   color: var(--color-primary);
 }
 
@@ -486,8 +486,8 @@ button.color-toggle {
   padding: 1rem 0.5rem !important;
 }
 
-.theme-dropdown-menu[aria-expanded=false] {
-  display: none
+.theme-dropdown-menu[aria-expanded="false"] {
+  display: none;
 }
 
 .color-toggle-icon {
@@ -654,7 +654,6 @@ body.wy-body-for-nav {
 .unified-header .nav-link:hover {
   color: var(--color-primary);
   box-shadow: 0 2px 0 var(--color-primary);
-
 }
 
 .unified-header .nav-link:focus {
@@ -760,7 +759,7 @@ a.skip-to-content:focus {
   color: var(--color-primary);
 }
 
-  .language-menu-wrapper .language-menu-items a:hover {
+.language-menu-wrapper .language-menu-items a:hover {
   color: var(--color-hover);
 }
 
@@ -774,8 +773,10 @@ button#language-button {
   text-transform: uppercase;
 }
 
-.language-menu-wrapper:has(button.language-button[aria-expanded=false]) .language-menu-items,
-.nav-dropdown:has(button.dropdown-button[aria-expanded=false]) .dropdown-items {
+.language-menu-wrapper:has(button.language-button[aria-expanded="false"])
+  .language-menu-items,
+.nav-dropdown:has(button.dropdown-button[aria-expanded="false"])
+  .dropdown-items {
   display: none;
 }
 
@@ -804,8 +805,9 @@ button#language-button {
   margin-inline-start: 0.375rem;
 }
 
-.language-menu-wrapper:has(button.language-button[aria-expanded=true]) .chevron-icon,
-.nav-dropdown:has(button.dropdown-button[aria-expanded=true]) .chevron-icon {
+.language-menu-wrapper:has(button.language-button[aria-expanded="true"])
+  .chevron-icon,
+.nav-dropdown:has(button.dropdown-button[aria-expanded="true"]) .chevron-icon {
   transform: scaleY(-1);
   transition: transform 100ms;
 }
@@ -852,7 +854,7 @@ button#language-button {
 }
 
 /* Force image backgrounds to white until all fixed for dark modes */
-[role=main].document img {
+[role="main"].document img {
   background-color: white;
 }
 
@@ -902,16 +904,15 @@ span.fa.fa-book {
  */
 
 @media (max-width: 768px) {
-
   /* Menu closed styles */
   .unified-header .nav-link {
     display: none;
   }
-  
+
   .unified-header .inner-header {
     padding-inline: 1rem;
   }
-  
+
   #language-button {
     display: flex;
     margin-inline-start: 1rem;
@@ -967,14 +968,18 @@ span.fa.fa-book {
 
 /* 1) Keep images small and inside the card */
 .plugin-card .sd-card-img-top {
-  max-height: 96px;      /* try 80–120px to taste */
+  max-height: 96px; /* try 80–120px to taste */
   width: 100%;
   object-fit: contain;
 }
 
 /* 2) Make cards tighter vertically */
-.plugin-card .sd-card-body { padding: .6rem .75rem; }
-.plugin-card .sd-card-body p { margin-bottom: .35rem; }
+.plugin-card .sd-card-body {
+  padding: 0.6rem 0.75rem;
+}
+.plugin-card .sd-card-body p {
+  margin-bottom: 0.35rem;
+}
 
 /* 3) clamp long intros to 2 lines */
 .clamp-2 {
@@ -982,4 +987,14 @@ span.fa.fa-book {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.plugin-card .sd-card-body a,
+.plugin-card .sd-card-footer a {
+  position: relative;
+  z-index: 2;
+}
+.plugin-card a.sd-stretched-link,
+.plugin-card a.stretched-link {
+  z-index: 1;
 }
