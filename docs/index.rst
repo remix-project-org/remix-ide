@@ -7,9 +7,9 @@ The IDE comes in two flavors (web app or desktop app).
 
 **Remix Online IDE**, see: `https://remix.ethereum.org <https://remix.ethereum.org>`__
 
-**Supported browsers:** Firefox, Chrome, Brave. We do not support use of Remix on tablets or mobile devices.
+**Supported browsers:** **Firefox**, **Chrome**, **Brave**. 
 
-**Translations of the Remix Documentation**: currently available in `English <https://remix-ide.readthedocs.io/en/latest/>`__, `Simplified Chinese <https://remix-ide.readthedocs.io/zh_CN/latest/>`__, `Spanish <https://remix-ide.readthedocs.io/es/latest/>`__, `Italian <https://remix-ide.readthedocs.io/it/latest/>`__, and `French <https://remix-ide.readthedocs.io/fr/latest/>`__.  More languages are on the way.
+.. important:: We do not support use of Remix on tablets or mobile devices.
 
 Remix Project
 ~~~~~~~~~~~~~
@@ -41,6 +41,7 @@ Useful links:
 
 
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :caption: Introduction
 
@@ -51,6 +52,7 @@ Useful links:
    FAQ
 
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :caption: Core Modules
 
@@ -70,6 +72,7 @@ Useful links:
    remixd
 
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :caption: Solidity modules
 
@@ -78,6 +81,7 @@ Useful links:
    static_analysis
 
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :caption: Unit Testing
 
@@ -88,6 +92,7 @@ Useful links:
    testing_using_Chai_&_Mocha
 
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :caption: External Tool Integrations
 
@@ -96,6 +101,7 @@ Useful links:
    foundry
 
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :caption: Guides
    
@@ -106,6 +112,7 @@ Useful links:
    running_js_scripts
 
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :caption: Advanced
 
@@ -113,6 +120,7 @@ Useful links:
    remix_commands
 
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :caption: Miscellaneous
 
