@@ -992,3 +992,13 @@ span.fa.fa-book {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.plugin-card .sd-card-body a,
+.plugin-card .sd-card-footer a {
+  position: relative;
+  z-index: 2;
+}
+.plugin-card a.sd-stretched-link,
+.plugin-card a.stretched-link {
+  z-index: 1;
+}
