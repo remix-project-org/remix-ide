@@ -21,7 +21,8 @@ Remix IDE is located at `remix.ethereum.org <https://remix.ethereum.org>`__ and 
 This set of documents covers instructions on how to use Remix.  
 Additional information can be found in our `blog <https://medium.com/remix-ide>`__ and in our tutorial tool, `LearnEth <https://remix-learneth-plugin.readthedocs.io/en/latest/index.html>`__ located inside of Remix IDE.
 
-Useful links:
+Useful Links
+------------
 
 - `Solidity Documentation <https://solidity.readthedocs.io>`__
 

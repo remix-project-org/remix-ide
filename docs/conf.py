@@ -180,7 +180,8 @@ html_js_files = [
     ("js/utils.js", {'defer': 'defer'}),
     ("js/loaders.js", {'defer': 'defer'}),
     ("js/initialize.js", {'defer': 'defer'}),
-    ("js/cookbook-integration.js",{'defer': 'defer'})
+    ("js/cookbook-integration.js",{'defer': 'defer'}),
+    ("js/auto-figure.js", {'defer': 'defer'})
 ]
 
 html_css_files = ["css/fonts.css", "css/tokens.css", "css/custom.css"]
