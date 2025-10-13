@@ -398,7 +398,6 @@ Monitor and analyze your smart contracts inside Remix using Sentio.
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=solidityscan
-:img-top: images/plugin-list/solidityscan.png
 
 Real-time security analysis of your Solidity smart contracts.
 
