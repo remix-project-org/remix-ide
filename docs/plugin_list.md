@@ -181,8 +181,46 @@ This plugin is now part of the Solidity Analyzers plugin.
 
 This plugin is now part of the Solidity Analyzers plugin.
 :::
-::::
 
+:::{grid-item-card} LearnEth
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://remix.ethereum.org/?#activate=LearnEth
+:img-top: images/plugin-list/learnEthLogo.webp
+
+Remix, Solidity, & blockchain tutorials with quizzes teaching Solidity and Remix features.
+
+- Profile name: **LearnEth**
+  :::
+
+:::{grid-item-card} Circom Compiler
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://remix.ethereum.org/?#activate=circuit-compiler
+:img-top: images/plugin-list/circom-compiler-logo.png
+
+Write, compile, and generate proofs for Zero-Knowledge (ZK) circuits using the Circom language.
+
+- [Documentation](https://docs.circom.io/)
+- Profile name: **circuit-compiler**
+  :::
+
+:::{grid-item-card} Noir Compiler
+:columns: 12 6 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://remix.ethereum.org/?#activate=noir-compiler
+:img-top: images/plugin-list/noir-compiler.png
+
+Enables support for Noir circuit compilation.
+
+- [Documentation](https://noir-lang.org/docs/)
+- Profile name: **noir-compiler**
+  :::
+::::
+  
 ## Additional Plugins
 
 These plugins are added by third-party developers.
@@ -253,19 +291,6 @@ Create private, forked testnets from any EVM chain with explorer, faucet, and RP
 - Profile name: **buildbear**
   :::
 
-:::{grid-item-card} Circom Compiler
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: url
-:link: https://remix.ethereum.org/?#activate=circuit-compiler
-:img-top: images/plugin-list/circom-compiler-logo.png
-
-Write, compile, and generate proofs for Zero-Knowledge (ZK) circuits using the Circom language.
-
-- [Documentation](https://docs.circom.io/)
-- Profile name: **circuit-compiler**
-  :::
-
 :::{grid-item-card} Cookbook.dev — Find any contract
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
@@ -330,18 +355,6 @@ Deploy and interact with smart contracts on the Klaytn public network and local 
 - Profile name: **klaytn-remix-plugin**
   :::
 
-:::{grid-item-card} LearnEth
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: url
-:link: https://remix.ethereum.org/?#activate=LearnEth
-:img-top: images/plugin-list/learnEthLogo.webp
-
-Remix, Solidity, & blockchain tutorials with quizzes teaching Solidity and Remix features.
-
-- Profile name: **LearnEth**
-  :::
-
 :::{grid-item-card} Nahmii compiler
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
@@ -354,30 +367,6 @@ Compile Solidity contracts for the Nahmii network.
 - [Documentation](https://docs.n3.nahmii.io/docs/category/nahmii-30)
 - [Open an issue](https://github.com/nahmii-community/remix-nahmii-compiler-plugin/issues)
 - Profile name: **nahmii-compiler**
-  :::
-
-:::{grid-item-card} Noir Compiler
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: url
-:link: https://remix.ethereum.org/?#activate=noir-compiler
-:img-top: images/plugin-list/noir-compiler.png
-
-Enables support for Noir circuit compilation.
-
-- [Documentation](https://noir-lang.org/docs/)
-- Profile name: **noir-compiler**
-  :::
-
-:::{grid-item-card} Restore Backup Zip
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: url
-:link: https://remix.ethereum.org/?#activate=backup-restore
-
-Restore your backup zip of Remix IDE workspaces (files and settings).
-
-- Profile name: **backup-restore**
   :::
 
 :::{grid-item-card} Sentio
@@ -442,19 +431,6 @@ Approve transactions on your mobile device.
 
 - [Website](https://github.com/yann300/remix-walletconnect/issues)
 - Profile name: **walletconnect**
-  :::
-
-:::{grid-item-card} ZKsync
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: url
-:link: https://remix.ethereum.org/?#activate=ZKsync
-:img-top: images/plugin-list/zksync-logo.png
-
-Compile and deploy smart contracts for zkSync Era.
-
-- [Website](https://github.com/matter-labs/zksync-remix-plugin)
-- Profile name: **ZKsync**
   :::
 
 :::{grid-item-card} Zokrates
