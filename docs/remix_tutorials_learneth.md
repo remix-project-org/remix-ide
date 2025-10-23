@@ -1,58 +1,37 @@
 # Tutorials in Remix
 
-**Learneth** is a tutorial platform integrated into Remix.
+You can do tutorials around blockchain development on Ethereum using the **LearnEth** plugin, a tutorial platform integrated into Remix.
 
-Tutorials can contain quizzes for testing students' work. These quizzes are run by Solidity Unit Tests.
+Some tutorials contain quizzes run by the Solidity Unit Tests plugin to test how much you learned from the tutorial.
 
-![](images/a-learneth.png)
-
-We have a growing set of tutorials on our repo- but anyone can build tutorials on their own repos and have their students load them up!
+![LearnEth Plugin](images/remix_tutorials/a-learneth.png)
 
 The tutorials contain .md files for instructions and can also contain example files, Solidity Unit Test files for quizzes, as well as answer files for quizzes.
 
-## Opening LearnEth & associated links
+## Using the LearnEth Plugin
 
-LearnEth is a plugin - so to access it, you need to activate the LearnEth plugin in the Plugin Manager. Alternatively - this link will active it: click this link.
+To open LearnEth, you need to activate the LearnEth plugin in the Plugin Manager. Alternatively, you can activate it by clicking the link below which automatically opens the Remix IDE with LearnEth enabled.
 
-```
+```text
 https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth
 ```
 
-This link will activate LearnEth and then will open a specific tutorial - in this case it will load the **proxy contract** tutorial:
+```{tip}
+For other tricks about Remix URLs with parameters, visit {doc}`locations. </locations>`
 
 ```
-https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth&call=LearnEth//startTutorial//ethereum/remix-workshops//master//proxycontract
+
+### Loading LearnEth with Other Repositories
+
+We have a growing set of tutorials on our default LearnEth content source. However, anyone can build tutorials on their own repos load them in the LearnEth plugin and it would work as it if were our default content source.
+
+![Import Repository into LearnEth](images/remix_tutorials/import-repo.gif)
+
+```{important}
+Your repository must follow the LearnEth conventions to work on LearnEth. Learn how to [create your own LearnEth tutorials](https://remix-learneth-plugin.readthedocs.io/en/latest/index.html).
 ```
 
-**NOTE:** For other tricks about Remix URLs with parameters, go here: {doc}`locations </locations>`.
+### Useful LearnEth Links
 
-### LearnEth Tutorials
-
-Here is the current list of LearnEth Tutorials
-
-**_Beginner_**
-
-    Remix Basics
-    Intro to Solidity
-
-**_Intermediate_**
-
-    Basic Use of web3.js
-    The Recorder
-
-**_Advanced_**
-
-    All About Proxy Contracts
-    Deploy with Libraries
-    Opcodes in the Debugger
-
-### LearnEth & Tutorial Repos
-
-The code for the LearnEth plugin is located here:
-https://github.com/bunsenstraat/remix-learneth-plugin/blob/master/docs/index.rst
-
-Documentation for creating your own tutorials is located here:
-https://remix-learneth-plugin.readthedocs.io/en/latest/index.html
-
-Remix maintains and curates this repo of LearnEth tutorials:
-https://github.com/ethereum/remix-workshops
+- LearnEth Plugin source code: [LearnEth Plugin repo](https://github.com/bunsenstraat/remix-learneth-plugin/)
+- Default LearnEth content source: [Remix Workshops repo](https://github.com/ethereum/remix-workshops)

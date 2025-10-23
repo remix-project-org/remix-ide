@@ -2,11 +2,11 @@
 
 The File Explorer is the plugin responsible for managing files. It includes a pop-up menu that is activated when you right-click on a file.
 
-![Remix Side Panel showing the File Explorer and the Icon Panel highlighting the File Explorer icon.](images/file-explorer/a-file-explorer1a.png)
+![Remix Side Panel showing the File Explorer and the Icon Panel highlighting the File Explorer icon.](images/file-explorer/a-file-explorer1a.png){.fig--landscape}
 
 The green shield icon at the top of the File Explorer page on the Sidebar indicates that the plugin is maintained by Remix Team. When you click the caret next to the icon, the Sidebar will display details about the plugin, including a link to its documentation page.
 
-![Remix Team shield icon and caret.](images/file-explorer/a-fe-top-caret.png)
+![Remix Team shield icon and caret.](images/file-explorer/a-fe-top-caret.png){.fig--landscape}
 
 ## File storage
 
@@ -61,7 +61,7 @@ You can publish multiple files by select all of them and right-clicking. The res
 
 There are two ways you can create files on the Remix IDE. The first way involves clicking the "Create new file" icon on the File Explorer's Side Bar and entering the name of the file on the input field that appears.
 
-![Remix File Explorer highlighting the create new file icon.](images/file-explorer/a-file-explorer-new-file2.png)
+![Remix File Explorer highlighting the create new file icon.](images/file-explorer/a-file-explorer-new-file2.png){.fig--landscape}
 
 Another way you can create files in Remix is by right-clicking on the Side Bar (creates the file at the root of your project) or right-clicking on a folder in the Side Bar (creates the file in the folder you clicked) and selecting "**New File**" from the dropdown options.
 
@@ -77,7 +77,7 @@ Note that (regardless of the method) when you save a file without providing a fi
 
 Right-clicking on a folder will bring a popup menu for operations you can do on that folder.
 
-![Remix File Explorer extra options.](images/file-explorer/a-fe-rtclick-file.png)
+![Remix File Explorer extra options.](images/file-explorer/a-fe-rtclick-file.png){.fig--landscape}
 
 The right-click popup menu also works with Remixd (which gives you access to a folder on your hard drive).
 

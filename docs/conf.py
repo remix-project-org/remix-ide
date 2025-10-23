@@ -31,7 +31,7 @@ import datetime
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['myst_parser', 'sphinx_copybutton', 'sphinx.ext.autosectionlabel', 'sphinx_design'] # required for sphinx v3.0.0
-myst_enable_extensions = ["colon_fence"]
+myst_enable_extensions = ["colon_fence", "attrs_inline"]
 copybutton_prompt_text = r">>> |\$ "
 copybutton_prompt_is_regexp = True
 autosectionlabel_prefix_document = True
@@ -176,11 +176,11 @@ html_favicon = '../favicon.ico'
 html_static_path = ['_static']
 
 html_js_files = [
-    ("js/constants.js", {'defer': 'defer'}),
-    ("js/utils.js", {'defer': 'defer'}),
-    ("js/loaders.js", {'defer': 'defer'}),
-    ("js/initialize.js", {'defer': 'defer'}),
-    ("js/cookbook-integration.js",{'defer': 'defer'})
+    "js/constants.js",
+    "js/utils.js",
+    "js/loaders.js",
+    "js/initialize.js",
+    "js/cookbook-integration.js"
 ]
 
 html_css_files = ["css/fonts.css", "css/tokens.css", "css/custom.css"]
@@ -313,7 +313,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'Remix', u'Remix Documentation',
-     author, 'Remix', 'One line description of project.',
+     author, 'Remix', 'The Web3 IDE',
      'Miscellaneous'),
 ]
 

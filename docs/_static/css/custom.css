@@ -12,6 +12,17 @@
   -webkit-font-smoothing: antialiased;
 }
 
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 24px 0;
+}
+
+img.fig--landscape {
+  width: min(100%, 640px);
+}
+
 body,
 div {
   transition: background 200ms ease-in-out;
