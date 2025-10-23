@@ -1,12 +1,14 @@
 # Plugin List
 
-Here is the list of Remix plugins that you will see in the Plugin Manager.
+Here is the list of Remix plugins reordered by ownership.
 
 ```{tip}
 Click a card to open the Remix IDE with the plugin enabled.
 ```
 
-## Core Plugins
+## Internal Plugins
+
+These are plugins that are managed by the Remix team.
 
 ::::{grid} 3
 :gutter: 4
@@ -140,15 +142,6 @@ Create workspaces from existing templates like the OpenZeppelin ERC20 template.
 
 - Profile name: **templateSelection**
   :::
-  ::::
-
-## Internal Plugins
-
-These plugins exist as part of the core plugins.
-
-::::{grid} 3
-:gutter: 4
-:align: center
 
 :::{grid-item-card} Plugin Manager
 :columns: 12 6 4
@@ -219,11 +212,11 @@ Enables support for Noir circuit compilation.
 - [Documentation](https://noir-lang.org/docs/)
 - Profile name: **noir-compiler**
   :::
-::::
-  
-## Additional Plugins
+  ::::
 
-These plugins are added by third-party developers.
+## External Plugins
+
+These are the plugins that are managed by external teams.
 
 ::::{grid} 3
 :gutter: 4
