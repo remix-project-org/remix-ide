@@ -2,19 +2,29 @@
 
 ## Supported devices & Browsers
 
-**Q:** What browsers will Remix work on?
+```{dropdown} Q: What browsers will Remix work on?
+:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-body: sd-fs-6
 
-**A:** We support Firefox, Chrome, and Brave. We do not test or look for errors in Safari, Edge or other browsers.
+We support Firefox, Chrome, and Brave. We do not test or look for errors in Safari, Edge or other browsers.
 
-**Q:** Will Remix work on a tablet or mobile device?
+```
 
-**A:** We do not support the use of Remix on tablets or mobile phones.
+```{dropdown} Q: Will Remix work on a tablet or mobile device?
+:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-body: sd-fs-6
+
+We do not support the use of Remix on tablets or mobile phones.
+
+```
 
 ## General
 
-**Q:** Are there keyboard shortcuts in Remix?
+```{dropdown} Q: Are there keyboard shortcuts in Remix?
+:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-body: sd-fs-6
 
-**A:** Yes - here is the list of keyboard shortcuts:
+Yes - here is the list of keyboard shortcuts:
 
 `Ctrl+S`: Compiles the active Solidity file
 
@@ -26,52 +36,70 @@
 
 `Ctrl+Shift+A` : Opens the Plugin Manager
 
+```
+
 ## Solidity Compiler
 
-**Q:** Error: compiler might be in a non-sane state
+```{dropdown} Q: Error: compiler might be in a non-sane state
+:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-body: sd-fs-6
 
-```text
+~~~text
 error: "Uncaught JavaScript exception: RangeError: Maximum call stack size exceeded.
 The compiler might be in a non-sane state, please be careful and do not use further compilation data to deploy to mainnet.
 It is heavily recommended to use another browser not affected by this issue (Firefox is known to not be affected)."
-```
+~~~
 
-**A:** Old versions of Solidity Compiler had this problem with chrome.
+Old versions of Solidity Compiler had this problem with Chrome.
 Please change the compiler version in Solidity Plugin to the newer one or use another browser.
 
-**Q:** I’m getting an issue with Maximum call stack exceed and various other errors, can't compile.
+```
 
-**A:** Try a different browser or a newer Solidity Compiler version.
+```{dropdown} Q: I’m getting an issue with Maximum call stack exceed and various other errors, can't compile.
+:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-body: sd-fs-6
 
-**Q:** How to verify a contract that imports other contracts?
+Try a different browser or a newer Solidity Compiler version.
 
-**A:** The verification tool does not recursively go through the import statements in a contract. So can only verify a 'flattened' contract.
-
-A contract can be 'flattened' by right-clicking on it in the File Explorer and choosing the `Flatten` option. This will assemble all the original code as well as the imported code into a single file.
+```
 
 ## Deploy & Run
 
-**Q:** I am using an Infura endpoint in my app, but when I try to deploy against that endpoint in Remix IDE selecting "External HTTP Provider" and putting my endpoint in, it's telling me that it can't connect
+```{dropdown} Q: I am using an Infura endpoint in my app, but when I try to deploy against that endpoint in Remix IDE selecting "External HTTP Provider" and putting my endpoint in, it's telling me that it can't connect
+:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-body: sd-fs-6
 
-**A:** If the endpoint you are using is http, it won't work.
+If the endpoint you are using is http, it won't work.
 
-**Q:** Where is deploy button?
+```
 
-**A:** It's in the **Deploy & Run Transactions** module.
+```{dropdown} Q: Where is deploy button?
+:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-body: sd-fs-6
 
-**Q:** How to pass a tuple to a public function in Remix?
+It's in the Deploy & Run Transactions module.
 
-**A:** Pass it as an array [].
+```
 
-**Q:** How to input a struct as input to a parameter of a function in the Deploy & Run module?
+```{dropdown} Q: How to pass a tuple to a public function in Remix?
+:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-body: sd-fs-6
 
-**A:** For inputting a struct, just like a tuple, pass it in as an array []. Also you need to put in the line:
+Pass it as an array `[]`.
+
+```
+
+```{dropdown} Q: How to input a struct as input to a parameter of a function in the Deploy & Run module?
+:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-body: sd-fs-6
+
+For inputting a struct, just like a tuple, pass it in as an array `[]`. Also you need to put in the line:
 
 `pragma experimental ABIEncoderV2;` at the top of the solidity file.
 
 For example, here's a solidity file with a struct as an input parameter.
 
-```Solidity
+~~~solidity
 pragma solidity >=0.4.22 <0.6.0;
 pragma experimental ABIEncoderV2;
 
@@ -99,22 +127,37 @@ contract daPeeps {
         return peep;
     }
 }
-```
+~~~
 
 The input of initPeepToPeeps takes a struct. If you input
 `[1,2]` the transaction will go through.
 
+```
+
+```{dropdown} Q: What should I do if the addresses don't load in the VM?
+:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-body: sd-fs-6
+
+**A:** Try deleting the state folder to refresh the local VM. Note that this resets the local VM, any deployed contracts and account state in the VM will be lost.
+```
+
 ## Plugin Developers
 
-**Q:** Where do plugin developers go with their questions?
+```{dropdown} Q: Where do plugin developers go with their questions?
+:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-body: sd-fs-6
 
-**A:** First, join our [Discord server](https://discord.com/invite/zUNteAzJs3) and then go to the development-plugin channel.
+First, join our [Discord server](https://discord.com/invite/zUNteAzJs3) and then go to the development-plugin channel.
+
+```
 
 ## Analytics
 
-**Q:** What information does Remix save when Matomo Analytics is enabled?
+```{dropdown} Q: What information does Remix save when Matomo Analytics is enabled?
+:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-body: sd-fs-6
 
-**A:** We want to know:
+We want to know:
 
 - Which plugins get activated & deactivated
 - If users check the box to publish a contract's metadata when deploying
@@ -122,22 +165,40 @@ The input of initPeepToPeeps takes a struct. If you input
 - The usage of the links to documentation
 - On the homepage, which file importing buttons are used
 
-**Q:** Is it opt-in or opt-out?
+```
 
-**A:** We use Matomo as an opt-in analytics platform.
+```{dropdown} Q: Is it opt-in or opt-out?
+:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-body: sd-fs-6
 
-**Q:** Where is the info stored? Is the info shared with 3rd parties?
+We use Matomo as an opt-in analytics platform.
 
-**A:** All data collected through Matomo is stored on our server. No data is given to third parties.
+```
+
+```{dropdown} Q: Where is the info stored? Is the info shared with 3rd parties?
+:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-body: sd-fs-6
+
+All data collected through Matomo is stored on our server. No data is given to third parties.
 
 We respect your privacy and do not collect nor store any personally identifiable information (PII).
 
-**Q:** What does Remix do with this info?
+```
 
-**A:** Our goal is to understand how many users we have, what plugins people are using, what is not getting used, what is not being used to its full potential.
+```{dropdown} Q: What does Remix do with this info?
+:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-body: sd-fs-6
+
+Our goal is to understand how many users we have, what plugins people are using, what is not getting used, what is not being used to its full potential.
 
 With this understanding, we can make adjustments to the UI as well as providing more tips and documentation. It's a way of getting constant anonymous feedback from our users.
 
-**Q:** After I agree opt-in, can I change my mind?
+```
 
-**A:** You can turn off or on Matomo in the Settings panel. There are no consequences for not opting-in or opting-out.
+```{dropdown} Q: After I agree opt-in, can I change my mind?
+:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-body: sd-fs-6
+
+You can turn off or on Matomo in the Settings panel. There are no consequences for not opting-in or opting-out.
+
+```
