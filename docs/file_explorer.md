@@ -37,7 +37,7 @@ Remix Desktop is a version of the Remix IDE that exists as a native app on your 
 
 Remix IDE supports version control with version control platforms like GitHub (or similar like GitLab) and in the InterPlanetary File System (IPFS), allowing you to store the code you write on remote repositories.
 
-The version control operations are managed with Git through the **Git** plugin. Additionally, you can [manage your branches](#branch-management) on the Remix IDE using the branch icon that appears at the bottom of the File Explorer after you initialize Git.
+The version control operations are managed with Git through the **Git** plugin. Additionally, you can manage your branches on the Remix IDE using the branch icon that appears at the bottom of the File Explorer after you initialize Git.
 
 ![Remix IDE Git branches.](images/file-explorer/git-branches.png)
 
