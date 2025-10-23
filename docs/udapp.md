@@ -2,15 +2,15 @@
 
 ## Interacting with deployed contracts
 
-After a contract is deployed or after it is accessed with AtAddress, the deployed instance will appear in the **Deploy/Unpinned Contracts** section at the bottom of the Deploy & Run panel.
+After a contract is deployed or after it is accessed with `AtAddress`, the deployed instance will appear in the **Deploy/Unpinned Contracts** section at the bottom of the Deploy & Run panel.
 
-![](images/a-deploy-run-deployed-instances.png)
+![Deployed Instances](images/udapp/a-deploy-run-deployed-instances.png)
 
 The deployed contract's address is visible as are a few other icons - one of which is the **pin** icon.
 
 ## Pinned contracts
 
-When a contract is pinned, it will jump up to the **Pinned Contracts** section and Remix will save the contract's address and the ABI (in the .deploys folder of the current Workspace). When Remix is refreshed, the pinned contracts will be loaded into the Pinned Contracts section.
+When a contract is pinned, it will jump up to the **Pinned Contracts** section and Remix will save the contract's address and the ABI in the `.deploys` folder of the current Workspace. When Remix is refreshed, the pinned contracts will be loaded into the **Pinned Contracts** section.
 
 ### Pinned contracts are chain & Workspace specific
 
@@ -20,7 +20,7 @@ Because a pinned contract's address and ABI are stored in a File Explorer Worksp
 
 To see a contract's functions, click the caret on the left side of the panel.
 
-![](images/a-deploy-run-caret.png)
+![Click Deployed Contracts caret](images/udapp/click-caret.png)
 
 The functions' buttons can have different colors.
 
@@ -30,10 +30,7 @@ The functions' buttons can have different colors.
 
 - Red buttons are for `payable` functions. Clicking a red button will create a new transaction and this transaction can accept a **value** (typically ETH). The amount of value is set in the **Value** field which is under the Gas Limit field.
 
-![](images/a-jvm-calling-instance.png)
-
-See more information about [Solidity
-modifiers](https://docs.soliditylang.org/en/latest/cheatsheet.html#modifiers) - in the Solidity docs.
+![Calling different function types](images/udapp/a-jvm-calling-instance.png)
 
 ## Inputting parameters
 
@@ -43,7 +40,7 @@ A function has two views - the collapsed and the expanded view, which is visible
 - Numbers and addresses do not need to be wrapped in double quotes.
 - Strings do not need to be wrapped.
 
-![](images/a-udapp-inputs.png)
+![Inputting Parameters in function calls](images/udapp/a-udapp-inputs.png)
 
 ### Inputting parameters in the collapsed view
 
@@ -57,7 +54,7 @@ In the example above the "delegate" function has 3 parameters.
 
 Clicking the 'down' caret brings you to the expanded view - where parameters are input one at a time.
 
-![](images/a-udapp-multi-param-man.png)
+![](images/udapp/a-udapp-multi-param-man.png)
 
 ## Low level interactions
 
@@ -65,11 +62,11 @@ Low level interactions are used to send funds or calldata or funds & calldata to
 
 The low level interactions section is below the functions in each deployed contract.
 
-![](images/a-deploy-run-open-instance.png)
+![](images/udapp/a-deploy-run-open-instance.png)
 
-Please note the following:
-
-- If you are executing a plain Ether transfer to a contract, you need to have the receive() function in your contract. If your contract has been deployed and you want to send it funds, you would input the amount of Ether or Wei etc. (see **A** in graphic below), and then input **NOTHING** in the calldata field of **Low level interactions** (see **B** in graphic) and click the Transact button (see **C** in graphic below).
+```{note}
+If you are executing a plain Ether transfer to a contract, you need to have the receive() function in your contract. If your contract has been deployed and you want to send it funds, you would input the amount of Ether or Wei etc. (see **A** in graphic below), and then input **NOTHING** in the calldata field of **Low level interactions** (see **B** in graphic) and click the Transact button (see **C** in graphic below).
+```
 
 ![](images/a-receive-fun.png)
 
@@ -80,6 +77,12 @@ Please note the following:
 - If you break the rules when using the **Low level interactions** you will be slapped with a warning.
 
 Please see the [solidity docs](https://solidity.readthedocs.io/en/latest/contracts.html#receive-ether-function) for more specifics about using the **fallback** and **receive** functions.
+
+## Scientific Notation in Function Inputs
+
+You can use scientific notation to pass numbers as function argument. For example, instead of inputting 12000000000000000000, you can input 12e18. This works for both arrays and single inputs.
+
+![Scientific Notation](images/udapp/scientific-notation.png)
 
 ## Inputting a tuple or struct to a function
 
