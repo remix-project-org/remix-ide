@@ -20,7 +20,7 @@ Because a pinned contract's address and ABI are stored in a File Explorer Worksp
 
 To see a contract's functions, click the caret on the left side of the panel.
 
-![Click Deployed Contracts caret](images/udapp/click-caret.gif)
+![Click Deployed Contracts caret](images/udapp/click-caret.png)
 
 The functions' buttons can have different colors.
 
@@ -31,9 +31,6 @@ The functions' buttons can have different colors.
 - Red buttons are for `payable` functions. Clicking a red button will create a new transaction and this transaction can accept a **value** (typically ETH). The amount of value is set in the **Value** field which is under the Gas Limit field.
 
 ![Calling different function types](images/udapp/a-jvm-calling-instance.png)
-
-See more information about [Solidity
-modifiers](https://docs.soliditylang.org/en/latest/cheatsheet.html#modifiers) in the Solidity docs.
 
 ## Inputting parameters
 
@@ -67,9 +64,9 @@ The low level interactions section is below the functions in each deployed contr
 
 ![](images/udapp/a-deploy-run-open-instance.png)
 
-Please note the following:
-
-- If you are executing a plain Ether transfer to a contract, you need to have the receive() function in your contract. If your contract has been deployed and you want to send it funds, you would input the amount of Ether or Wei etc. (see **A** in graphic below), and then input **NOTHING** in the calldata field of **Low level interactions** (see **B** in graphic) and click the Transact button (see **C** in graphic below).
+```{note}
+If you are executing a plain Ether transfer to a contract, you need to have the receive() function in your contract. If your contract has been deployed and you want to send it funds, you would input the amount of Ether or Wei etc. (see **A** in graphic below), and then input **NOTHING** in the calldata field of **Low level interactions** (see **B** in graphic) and click the Transact button (see **C** in graphic below).
+```
 
 ![](images/a-receive-fun.png)
 
