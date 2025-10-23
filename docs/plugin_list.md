@@ -1,6 +1,6 @@
 # Plugin List
 
-Here is the list of Remix plugins reordered by ownership.
+Here is the list of Remix plugins that you will see in the Plugin Manager.
 
 ```{tip}
 Click a card to open the Remix IDE with the plugin enabled.
