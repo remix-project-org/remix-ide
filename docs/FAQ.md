@@ -3,7 +3,7 @@
 ## Supported devices & Browsers
 
 ```{dropdown} Q: What browsers will Remix work on?
-:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
 We support Firefox, Chrome, and Brave. We do not test or look for errors in Safari, Edge or other browsers.
@@ -11,7 +11,7 @@ We support Firefox, Chrome, and Brave. We do not test or look for errors in Safa
 ```
 
 ```{dropdown} Q: Will Remix work on a tablet or mobile device?
-:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
 We do not support the use of Remix on tablets or mobile phones.
@@ -21,7 +21,7 @@ We do not support the use of Remix on tablets or mobile phones.
 ## General
 
 ```{dropdown} Q: Are there keyboard shortcuts in Remix?
-:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
 Yes - here is the list of keyboard shortcuts:
@@ -41,7 +41,7 @@ Yes - here is the list of keyboard shortcuts:
 ## Solidity Compiler
 
 ```{dropdown} Q: Error: compiler might be in a non-sane state
-:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
 ~~~text
@@ -56,7 +56,7 @@ Please change the compiler version in Solidity Plugin to the newer one or use an
 ```
 
 ```{dropdown} Q: I’m getting an issue with Maximum call stack exceed and various other errors, can't compile.
-:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
 Try a different browser or a newer Solidity Compiler version.
@@ -66,7 +66,7 @@ Try a different browser or a newer Solidity Compiler version.
 ## Deploy & Run
 
 ```{dropdown} Q: I am using an Infura endpoint in my app, but when I try to deploy against that endpoint in Remix IDE selecting "External HTTP Provider" and putting my endpoint in, it's telling me that it can't connect
-:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
 If the endpoint you are using is http, it won't work.
@@ -74,7 +74,7 @@ If the endpoint you are using is http, it won't work.
 ```
 
 ```{dropdown} Q: Where is deploy button?
-:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
 It's in the Deploy & Run Transactions module.
@@ -82,7 +82,7 @@ It's in the Deploy & Run Transactions module.
 ```
 
 ```{dropdown} Q: How to pass a tuple to a public function in Remix?
-:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
 Pass it as an array `[]`.
@@ -90,7 +90,7 @@ Pass it as an array `[]`.
 ```
 
 ```{dropdown} Q: How to input a struct as input to a parameter of a function in the Deploy & Run module?
-:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
 For inputting a struct, just like a tuple, pass it in as an array `[]`. Also you need to put in the line:
@@ -135,7 +135,7 @@ The input of initPeepToPeeps takes a struct. If you input
 ```
 
 ```{dropdown} Q: What should I do if the addresses don't load in the VM?
-:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
 **A:** Try deleting the state folder to refresh the local VM. Note that this resets the local VM, any deployed contracts and account state in the VM will be lost.
@@ -144,7 +144,7 @@ The input of initPeepToPeeps takes a struct. If you input
 ## Plugin Developers
 
 ```{dropdown} Q: Where do plugin developers go with their questions?
-:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
 First, join our [Discord server](https://discord.com/invite/zUNteAzJs3) and then go to the development-plugin channel.
@@ -154,7 +154,7 @@ First, join our [Discord server](https://discord.com/invite/zUNteAzJs3) and then
 ## Analytics
 
 ```{dropdown} Q: What information does Remix save when Matomo Analytics is enabled?
-:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
 We want to know:
@@ -168,7 +168,7 @@ We want to know:
 ```
 
 ```{dropdown} Q: Is it opt-in or opt-out?
-:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
 We use Matomo as an opt-in analytics platform.
@@ -176,7 +176,7 @@ We use Matomo as an opt-in analytics platform.
 ```
 
 ```{dropdown} Q: Where is the info stored? Is the info shared with 3rd parties?
-:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
 All data collected through Matomo is stored on our server. No data is given to third parties.
@@ -186,7 +186,7 @@ We respect your privacy and do not collect nor store any personally identifiable
 ```
 
 ```{dropdown} Q: What does Remix do with this info?
-:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
 Our goal is to understand how many users we have, what plugins people are using, what is not getting used, what is not being used to its full potential.
@@ -196,7 +196,7 @@ With this understanding, we can make adjustments to the UI as well as providing 
 ```
 
 ```{dropdown} Q: After I agree opt-in, can I change my mind?
-:class-title: sd-fs-5 sd-font-weight-bold sd-p-0 sd-m-0
+:class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
 You can turn off or on Matomo in the Settings panel. There are no consequences for not opting-in or opting-out.
