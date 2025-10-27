@@ -10,20 +10,23 @@ You can install it using NPM:
 
 - As a dev dependency:
 
-`npm install --save-dev @remix-project/remix-tests`
+```shell
+npm install --save-dev @remix-project/remix-tests
+```
 
 - As a global NPM module:
 
-`npm install -g @remix-project/remix-tests`
+```shell
+npm install -g @remix-project/remix-tests
+```
 
 To confirm installation, run:
 
 ```Shell
-$ remix-tests version
-0.1.36
+remix-tests version
 ```
 
-Version should be same as on NPM.
+You should get a version as output. For example `0.1.36`.
 
 ## How to use
 
@@ -49,7 +52,9 @@ Commands:
 
 General structure of a command is as:
 
-`$ remix-tests <options> <file/directory path>`
+```shell
+$ remix-tests <options> <file/directory path>
+```
 
 To run all test files inside `examples` directory
 
