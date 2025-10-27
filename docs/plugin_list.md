@@ -235,42 +235,6 @@ Deployment and execution of smart contracts via Arbitrum Stylus.
 - Profile name: **remix-plugin-arbitrum**
   :::
 
-:::{grid-item-card} BIF Solidity
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: url
-:link: https://remix.ethereum.org/?#activate=bif-solidity
-
-Compile Solidity smart contracts for the Xinghuo BIF network.
-
-- [Documentation](https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/solidity-compiler/README.md)
-- Profile name: **bif-solidity**
-  :::
-
-:::{grid-item-card} BIF UDApp
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: url
-:link: https://remix.ethereum.org/?#activate=bif-udapp
-
-Deploy and interact with Solidity smart contracts on the Xinghuo BIF network.
-
-- [Documentation](https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/udapp/README.md)
-- Profile name: **bif-udapp**
-  :::
-
-:::{grid-item-card} BIF UDApp JS
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: url
-:link: https://remix.ethereum.org/?#activate=bif-udapp-js
-
-Deploy and interact with JavaScript-based smart contracts on the Xinghuo BIF network.
-
-- [Documentation](https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/udapp-js/README.md)
-- Profile name: **bif-udapp-js**
-  :::
-
 :::{grid-item-card} BuildBear
 :columns: 12 6 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
