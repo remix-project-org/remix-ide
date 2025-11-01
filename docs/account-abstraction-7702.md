@@ -55,7 +55,7 @@ And when you open up the account (which is the new deployment), you can see that
 
 There is a graphic user interface (GUI) for creating Gnosis Safe Smart Accounts. This allows gasless transactions among other features.
 
-This functionality is only available when connected to the **Sepolia test network**.
+This functionality is only available when connected to the **Gnosis chain** or **Sepolia test network**.
 And when connected to Sepolia, a new button will be displayed: **Create Smart Account**.
 
 ![Deploy and run section showing a Create Smart Account button.](images/account-abstraction-7702/a-aa-gsa-create1.png)
@@ -99,4 +99,6 @@ When the transaction goes through, go to Remix’s terminal and click the new tr
 
 You will see both the Smart Contract Account and its associated bundler.
 
-Note: Following [EIP-155](https://eips.ethereum.org/EIPS/eip-155), Safe Smart Account contracts use a deterministic deployment proxy so for a contract deployed using a smart account, the msg.sender will be: 0x4e59b44847b379578588920cA78FbF26c0B4956C.
+```{note}
+Following [EIP-155](https://eips.ethereum.org/EIPS/eip-155), Safe Smart Account contracts use a deterministic deployment proxy so for a contract deployed using a smart account, the msg.sender will be: 0x4e59b44847b379578588920cA78FbF26c0B4956C.
+```
