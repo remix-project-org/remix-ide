@@ -10,11 +10,7 @@ The deployed contract's address is visible as are a few other icons - one of whi
 
 ## Pinned contracts
 
-When a contract is pinned, it will jump up to the **Pinned Contracts** section and Remix will save the contract's address and the ABI in the `.deploys` folder of the current Workspace. When Remix is refreshed, the pinned contracts will be loaded into the **Pinned Contracts** section.
-
-### Pinned contracts are chain & Workspace specific
-
-Because a pinned contract's address and ABI are stored in a File Explorer Workspace, the same Workspace must be active to see its pinned contracts. Similarly, only the pinned contracts of the currently selected chain will show.
+When a contract is pinned, its address and ABI are stored in the `.deploys` folder of the current Workspace. Upon reloading Remix, pinned contracts will automatically appear in the Deployed Contracts section, provided that both the Workspace and the connected blockchain network remain the same as when the contract was originally pinned.
 
 ## Functions
 
