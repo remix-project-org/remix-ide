@@ -1013,3 +1013,174 @@ span.fa.fa-book {
 .plugin-card a.stretched-link {
   z-index: 1;
 }
+
+/* === DARK MODE === */
+html[style*="--color-scheme: dark"] .rst-content .admonition.note,
+html[style*="--color-scheme: dark"] .wy-alert.note {
+  background: rgba(79, 156, 255, 0.04) !important;
+  border: 1px solid rgba(79, 156, 255, 0.35) !important;
+}
+html[style*="--color-scheme: dark"]
+  .rst-content
+  .admonition.note
+  > .admonition-title,
+html[style*="--color-scheme: dark"] .wy-alert.note > .wy-alert-title {
+  background: rgba(79, 156, 255, 0.3) !important;
+  color: #fff !important;
+}
+
+html[style*="--color-scheme: dark"] .rst-content .admonition.tip,
+html[style*="--color-scheme: dark"] .wy-alert.tip {
+  background: rgba(60, 190, 120, 0.04) !important;
+  border: 1px solid rgba(60, 190, 120, 0.35) !important;
+}
+html[style*="--color-scheme: dark"]
+  .rst-content
+  .admonition.tip
+  > .admonition-title,
+html[style*="--color-scheme: dark"] .wy-alert.tip > .wy-alert-title {
+  background: rgba(60, 190, 120, 0.3) !important;
+  color: #fff !important;
+}
+
+html[style*="--color-scheme: dark"] .rst-content .admonition.warning,
+html[style*="--color-scheme: dark"] .wy-alert.warning {
+  background: rgba(255, 171, 64, 0.04) !important;
+  border: 1px solid rgba(255, 171, 64, 0.4) !important;
+}
+html[style*="--color-scheme: dark"]
+  .rst-content
+  .admonition.warning
+  > .admonition-title,
+html[style*="--color-scheme: dark"] .wy-alert.warning > .wy-alert-title {
+  background: rgba(255, 171, 64, 0.3) !important;
+  color: #fff !important;
+}
+
+html[style*="--color-scheme: dark"] .rst-content .admonition.danger,
+html[style*="--color-scheme: dark"] .rst-content .admonition.error,
+html[style*="--color-scheme: dark"] .wy-alert.danger {
+  background: rgba(255, 82, 82, 0.035) !important;
+  border: 1px solid rgba(255, 82, 82, 0.4) !important;
+}
+html[style*="--color-scheme: dark"]
+  .rst-content
+  .admonition.danger
+  > .admonition-title,
+html[style*="--color-scheme: dark"]
+  .rst-content
+  .admonition.error
+  > .admonition-title,
+html[style*="--color-scheme: dark"] .wy-alert.danger > .wy-alert-title {
+  background: rgba(255, 82, 82, 0.28) !important;
+  color: #fff !important;
+}
+
+/* fallback for generic .admonition with no extra class */
+html[style*="--color-scheme: dark"]
+  .rst-content
+  .admonition:not([class*="note"]):not([class*="tip"]):not(
+    [class*="warning"]
+  ):not([class*="danger"]):not([class*="error"]),
+html[style*="--color-scheme: dark"]
+  .wy-alert:not(.note):not(.tip):not(.warning):not(.danger) {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+html[style*="--color-scheme: dark"]
+  .rst-content
+  .admonition:not([class*="note"]):not([class*="tip"]):not(
+    [class*="warning"]
+  ):not([class*="danger"]):not([class*="error"])
+  > .admonition-title,
+html[style*="--color-scheme: dark"]
+  .wy-alert:not(.note):not(.tip):not(.warning):not(.danger)
+  > .wy-alert-title {
+  background: rgba(85, 165, 217, 0.35) !important;
+  color: #fff !important;
+}
+
+/* === BLACK MODE === */
+html[style*="--color-scheme: black"] .rst-content .admonition.note,
+html[style*="--color-scheme: black"] .wy-alert.note {
+  background: rgba(79, 156, 255, 0.035) !important;
+  border: 1px solid rgba(79, 156, 255, 0.3) !important;
+}
+html[style*="--color-scheme: black"]
+  .rst-content
+  .admonition.note
+  > .admonition-title,
+html[style*="--color-scheme: black"] .wy-alert.note > .wy-alert-title {
+  background: rgba(79, 156, 255, 0.25) !important;
+  color: #fff !important;
+}
+
+html[style*="--color-scheme: black"] .rst-content .admonition.tip,
+html[style*="--color-scheme: black"] .wy-alert.tip {
+  background: rgba(60, 190, 120, 0.035) !important;
+  border: 1px solid rgba(60, 190, 120, 0.3) !important;
+}
+html[style*="--color-scheme: black"]
+  .rst-content
+  .admonition.tip
+  > .admonition-title,
+html[style*="--color-scheme: black"] .wy-alert.tip > .wy-alert-title {
+  background: rgba(60, 190, 120, 0.25) !important;
+  color: #fff !important;
+}
+
+html[style*="--color-scheme: black"] .rst-content .admonition.warning,
+html[style*="--color-scheme: black"] .wy-alert.warning {
+  background: rgba(255, 171, 64, 0.035) !important;
+  border: 1px solid rgba(255, 171, 64, 0.35) !important;
+}
+html[style*="--color-scheme: black"]
+  .rst-content
+  .admonition.warning
+  > .admonition-title,
+html[style*="--color-scheme: black"] .wy-alert.warning > .wy-alert-title {
+  background: rgba(255, 171, 64, 0.24) !important;
+  color: #fff !important;
+}
+
+html[style*="--color-scheme: black"] .rst-content .admonition.danger,
+html[style*="--color-scheme: black"] .rst-content .admonition.error,
+html[style*="--color-scheme: black"] .wy-alert.danger {
+  background: rgba(255, 82, 82, 0.03) !important;
+  border: 1px solid rgba(255, 82, 82, 0.35) !important;
+}
+html[style*="--color-scheme: black"]
+  .rst-content
+  .admonition.danger
+  > .admonition-title,
+html[style*="--color-scheme: black"]
+  .rst-content
+  .admonition.error
+  > .admonition-title,
+html[style*="--color-scheme: black"] .wy-alert.danger > .wy-alert-title {
+  background: rgba(255, 82, 82, 0.22) !important;
+  color: #fff !important;
+}
+
+html[style*="--color-scheme: black"]
+  .rst-content
+  .admonition:not([class*="note"]):not([class*="tip"]):not(
+    [class*="warning"]
+  ):not([class*="danger"]):not([class*="error"]),
+html[style*="--color-scheme: black"]
+  .wy-alert:not(.note):not(.tip):not(.warning):not(.danger) {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+html[style*="--color-scheme: black"]
+  .rst-content
+  .admonition:not([class*="note"]):not([class*="tip"]):not(
+    [class*="warning"]
+  ):not([class*="danger"]):not([class*="error"])
+  > .admonition-title,
+html[style*="--color-scheme: black"]
+  .wy-alert:not(.note):not(.tip):not(.warning):not(.danger)
+  > .wy-alert-title {
+  background: rgba(85, 165, 217, 0.3) !important;
+  color: #fff !important;
+}
