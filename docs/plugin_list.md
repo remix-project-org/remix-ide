@@ -6,7 +6,9 @@ Here is the list of Remix plugins that you will see in the Plugin Manager.
 Click a card to open the Remix IDE with the plugin enabled.
 ```
 
-## Core Plugins
+## Internal Plugins
+
+These are plugins that are managed by the Remix team.
 
 ::::{grid} 3
 :gutter: 4
@@ -140,15 +142,6 @@ Create workspaces from existing templates like the OpenZeppelin ERC20 template.
 
 - Profile name: **templateSelection**
   :::
-  ::::
-
-## Internal Plugins
-
-These plugins exist as part of the core plugins.
-
-::::{grid} 3
-:gutter: 4
-:align: center
 
 :::{grid-item-card} Plugin Manager
 :columns: 12 6 4
@@ -219,11 +212,11 @@ Enables support for Noir circuit compilation.
 - [Documentation](https://noir-lang.org/docs/)
 - Profile name: **noir-compiler**
   :::
-::::
-  
-## Additional Plugins
+  ::::
 
-These plugins are added by third-party developers.
+## External Plugins
+
+These are the plugins that are managed by external teams.
 
 ::::{grid} 3
 :gutter: 4
@@ -240,42 +233,6 @@ Deployment and execution of smart contracts via Arbitrum Stylus.
 
 - [Website](https://docs.welldonestudio.io/code)
 - Profile name: **remix-plugin-arbitrum**
-  :::
-
-:::{grid-item-card} BIF Solidity
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: url
-:link: https://remix.ethereum.org/?#activate=bif-solidity
-
-Compile Solidity smart contracts for the Xinghuo BIF network.
-
-- [Documentation](https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/solidity-compiler/README.md)
-- Profile name: **bif-solidity**
-  :::
-
-:::{grid-item-card} BIF UDApp
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: url
-:link: https://remix.ethereum.org/?#activate=bif-udapp
-
-Deploy and interact with Solidity smart contracts on the Xinghuo BIF network.
-
-- [Documentation](https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/udapp/README.md)
-- Profile name: **bif-udapp**
-  :::
-
-:::{grid-item-card} BIF UDApp JS
-:columns: 12 6 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: url
-:link: https://remix.ethereum.org/?#activate=bif-udapp-js
-
-Deploy and interact with JavaScript-based smart contracts on the Xinghuo BIF network.
-
-- [Documentation](https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/udapp-js/README.md)
-- Profile name: **bif-udapp-js**
   :::
 
 :::{grid-item-card} BuildBear
