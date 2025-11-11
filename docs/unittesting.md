@@ -1,40 +1,35 @@
-# Unit Testing Plugin
+# Solidity Unit Testing Plugin
 
-Click the
-![](images/a-user-testing-icon.png) (double check)
-icon from icon bar to move to the `Solidity Unit Testing` plugin.
+The Solidity Unit Testing plugin allows you to write and run automated tests for your Solidity smart contracts to verify they work correctly before deployment.
 
-If you haven't used this plugin before and are not seeing the `double check` icon, you have to activate it from Remix plugin manager.
+It helps you generate test files, write test functions using a built-in assertion library (like `Assert.equal`, `Assert.notEqual`), and execute those tests in a separate environment to see pass/fail results.
 
-Go to the plugin manager by clicking the ![](images/a-plug.png) (plug) icon and activate `Solidity Unit Testing` plugin.
+## Activating the Solidity Unit Testing Plugin
 
-![](images/a-unit-testing-from-pm.png)
+To activate the plugin, go to the Plugin Manager, search "Unit Testing" and enable the "Solidity Unit Testing" plugin.
 
-Now the `double check` icon will appear on the left side icon bar. Clicking on the icon will load the plugin in the Side Panel.
+<!-- ![Enable Solidity Unit Testing plugin](images/unit-testing/activate-test-plugin.gif) -->
 
-<i>Alternatively, select `Solidity` environment from Remix IDE `Home` tab. This will activate `Solidity Unit Testing` plugin along with `Solidity Compiler`, `Deploy & Run Transactions` & `Solidity Static Analysis` plugins.</i>
+When the plugin loads, you’ll see a screen like this:
 
-After successful loading, plugin looks like this:
-
-![](images/a-unit-testing-feature.png)
+![Unit testing page](images/unit-testing/a-unit-testing-feature.png)
 
 ## Test directory
 
-Plugin asks you to provide a directory which will be your unit testing workspace (not to be confused with a Workspace in the File Explorer). To select directory, as soon as you add `/` to the path, it shows the possible options. [Rob Edit]
+When you load the plugin, you need to specify a directory where the plugin will load and store test files. By default, it's a **tests** folder at the root of your Workspace.
 
-![](images/a-unit-testing-test-directory.png)
+```{note}
+The plugin will not automatically create directories. You must click "Create" to generate the specified folder structure.
 
-Once selected, this directory will be used to load test files and to store newly generated test files.
+```
 
-Default test directory is `browser/tests`.
+After specifying the test folder, click the "**Create**" button. Alternatively, you can select an existing folder as the **tests** folder by typing "/" followed by the name of the folder.
 
-## Generate
+![Test Directory](images/unit-testing/a-unit-testing-test-directory.png)
 
-Select the Solidity file which you want to test and click on the `Generate` button. In the `test` directory, a test file will be created for your selected file.
+## Generating Tests
 
-If no file is selected, a generic test file named, `newFile_test.sol` will be created.
-
-This file contains information about developing tests for a contract.
+The plugin can generate generic test files that contain information about developing tests for a contract. The name of the generic test file is determined by the currently active `.sol` file on the Main Panel. If there is no active file, a generic test file named, **newFile_test.sol** will be created.
 
 Below is an example of a generic test file:
 
@@ -82,11 +77,11 @@ contract testSuite {
 }
 ```
 
-## Write Tests
+## Writing Tests
 
 Write sufficient unit tests to ensure that your contract works as expected under different scenarios.
 
-Remix injects a built-in `assert` library for testing. You can visit the library documentation {doc}`here </assert_library>`.
+Remix injects a built-in **assert** library for testing. You can visit the library documentation {doc}`here </assert_library>`.
 
 Additionally, Remix allows the usage of special functions in the test file to make testing more structural. They are:
 
@@ -97,31 +92,36 @@ Additionally, Remix allows the usage of special functions in the test file to ma
 
 To get started, see {ref}`this simple example <unittesting_examples:1. Simple example>`.
 
-## Run
+```{tip}
+You can use {doc}`RemixAI </ai>` to generate tests for your files.
+
+```
+
+## Running Tests
 
 Once you are done with writing tests, select the file(s) and click on `Run` to execute the tests. The execution will run in a separate environment. After completing the execution of one file, a test summary will be shown:
 
-![](images/a-unit-testing-run-result.png)
+![](images/unit-testing/a-unit-testing-run-result.png)
 
 For failed tests, there will be more assertion details to analyze the issue. Clicking on failed test will highlight the relevant line of code in the editor.
 
-## Stop
+## Stopping Tests
 
 If you have selected multiple files to run the tests and want to stop the execution, click on `Stop` button. It will stop execution after running the tests for current file.
 
-## Customization
+## Customizing Tests
 
 Remix facilitates users with various types of customizations to test a contract properly.
 
-**1. Custom Compiler Context**
+### 1. Custom Compiler Context
 
-`Solidity Unit Testing` refers to the `Solidity Compiler` plugin for compiler configurations. Configure `Compiler`, `EVM Version`, `Enable Optimization` & `runs` in the `Solidity Compiler` plugin and this will be used in the `Solidity Unit Testing` plugin for contract compilation before running unit tests.
+Solidity Unit Testing refers to the Solidity Compiler plugin for compiler configurations. Configure `Compiler`, `EVM Version`, `Enable Optimization` & `runs` in the Solidity Compiler plugin and this will be used in the Solidity Unit Testing plugin for contract compilation before running unit tests.
 
-![](images/a-unit-testing-custom-compiler-config.png)
+![](images/unit-testing/a-unit-testing-custom-compiler-config.png)
 
-**2. Custom Transaction Context**
+### 2. Custom Transaction Context
 
-For interacting with a contract's method, the prime parameters of a transaction are `from` address, `value` & `gas`. Typically, a method's behaviour is tested with different values of these parameters.
+For interacting with a contract's method, the main parameters of a transaction are `from` address, `value` & `gas`. Typically, a method's behaviour is tested with different values of these parameters.
 
 One can input custom values for `msg.sender` & `msg.value` of transaction using NatSpec comments, like:
 
@@ -134,22 +134,22 @@ function checkSenderIs0AndValueis10 () public payable {
 }
 ```
 
-<b>Instructions to use:</b>
+Instructions to use:
 
 1. Parameters must be defined in the method's NatSpec
 2. Each parameter key should be prefixed with a hash (**#**) and end with a colon following a space (**:&nbsp;**) like `#sender: ` & `#value: `
 3. For now, customization is only available for parameters `sender` & `value`
 4. Sender is the `from` address of a transaction which is accessed using `msg.sender` inside a contract method. It should be defined in a fixed format as '**account-**<account_index>'
 5. `<account_index>` varies from `0-2` before remix-ide release v0.10.0 and `0-9` afterwards
-6. `remix_accounts.sol` must be imported in your test file to use custom `sender`
+6. **remix_accounts.sol** must be imported in your test file to use custom `sender`
 7. Value is `value` sent along with a transaction in `wei` which is accessed using `msg.value` inside a contract method. It should be a number.
 
 Regarding `gas`, Remix estimates the required gas for each transaction internally. Still if a contract deployment fails with `Out-of-Gas` error, it tries to redeploy it by doubling the gas. Deployment failing with double gas will show error: `contract deployment failed after trying twice: The contract code couldn't be stored, please check your gas limit`
 
 Various test examples can be seen in [examples](https://remix-ide.readthedocs.io/en/latest/unittesting_examples.html) section.
 
-## Points to remember
+## Points to Remember
 
 - A test contract cannot have a method with parameters. Having one such method will show error: `Method 'methodname' can not have parameters inside a test contract`
 - Number of test accounts are `3` before remix-ide release v0.10.0 and `10` afterwards
-- While a test file which imports `remix_accounts.sol` might not compile successfully with `Solidity Compiler` plugin, do not worry, this will have no bearing on its success with `Solidity Unit Testing` plugin.
+- While a test file which imports **remix_accounts.sol** might not compile successfully with Solidity Compiler plugin, do not worry, this will have no bearing on its success with Solidity Unit Testing plugin.
