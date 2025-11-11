@@ -50,7 +50,7 @@ make run
 
 ## Contributing
 
-We wholeheartedly welcome everyone to contribute. Suggestions, issues, queries and feedback are our pleasure. Please join our [Discord](https://discord.gg/Sacg4gchvS) server.
+We wholeheartedly welcome everyone to contribute. Suggestions, issues, queries and feedback are our pleasure. Please join our [Discord](https://discord.gg/snsrYVU4Q7) server.
 
 ### Translating
 
