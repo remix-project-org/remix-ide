@@ -147,7 +147,7 @@ The input of initPeepToPeeps takes a struct. If you input
 :class-title: sd-fs-5 sd-font-weight-bold
 :class-body: sd-fs-6
 
-First, join our [Discord server](https://discord.com/invite/zUNteAzJs3) and then go to the development-plugin channel.
+First, join our [Discord server](https://discord.com/invite/snsrYVU4Q7) and then go to the development-plugin channel.
 
 ```
 
