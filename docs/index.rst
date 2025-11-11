@@ -36,7 +36,7 @@ Useful Links
 
 - `Remix on Twitter <https://twitter.com/EthereumRemix>`__
 
-- `Our Discord support channel <https://discord.com/invite/ZZSGegD7jm>`__
+- `Our Discord support channel <https://discord.com/invite/snsrYVU4Q7>`__
 
 - `Ethereum.org's Developer resources <https://ethereum.org/en/developers/>`__
 
