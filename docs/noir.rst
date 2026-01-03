@@ -86,12 +86,12 @@ On-Chain verification (with Solidity)
 Follow the steps below to verify your proof on-chain using Solidity:
 
 1. In the Noir plugin, click **"View Verifier.sol"** to open the verifier contract.
-2. Go to the **"Solidity Compiler"** plugin in Remix, open **"Advanced Configurations"**, and check **"Enable optimization"**. Compile `Verifier.sol`.
-3. Go to the **"Deploy & Run Transactions"** plugin and deploy the `HonkVerifier` contract.
-4. Find the `verify` function on the deployed contract.
-5. Go back to the Noir plugin, click **"View Proof"**, and copy the entire `0x...` hexadecimal string. Paste it into the `_proof` parameter of the `verify` function.
-6. Click **"View Public Inputs"**, copy the entire `["0x...", ...]` JSON array string, and paste it into the `_publicInputs` parameter.
-7. Execute the `verify` transaction (call). If it returns `true`, the verification is successful.
+2. Go to the **"Solidity Compiler"** plugin in Remix, open **"Advanced Configurations"**, and check **"Enable optimization"**. Compile ``Verifier.sol``.
+3. Go to the **"Deploy & Run Transactions"** plugin and deploy the ``HonkVerifier`` contract.
+4. Find the ``verify`` function on the deployed contract.
+5. Go back to the Noir plugin, click **"View Proof"**, and copy the entire ``0x...`` hexadecimal string. Paste it into the ``_proof`` parameter of the ``verify`` function.
+6. Click **"View Public Inputs"**, copy the entire ``["0x...", ...]`` JSON array string, and paste it into the ``_publicInputs`` parameter.
+7. Execute the ``verify`` transaction (call). If it returns ``true``, the verification is successful.
 
 .. video:: ./images/noir/verify-proof.mp4
   :nocontrols:
