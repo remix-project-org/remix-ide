@@ -111,6 +111,7 @@ Useful Links
    import
    contract_verification
    running_js_scripts
+   noir
 
 .. toctree::
    :hidden:
