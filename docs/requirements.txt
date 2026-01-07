@@ -4,3 +4,4 @@ myst-parser
 sphinx-autobuild
 sphinx-copybutton
 sphinx-design
+sphinxcontrib-video

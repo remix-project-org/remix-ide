@@ -30,7 +30,7 @@ import datetime
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['myst_parser', 'sphinx_copybutton', 'sphinx.ext.autosectionlabel', 'sphinx_design'] # required for sphinx v3.0.0
+extensions = ['myst_parser', 'sphinx_copybutton', 'sphinx.ext.autosectionlabel', 'sphinx_design', "sphinxcontrib.video"] # required for sphinx v3.0.0
 myst_enable_extensions = ["colon_fence", "attrs_inline"]
 copybutton_prompt_text = r">>> |\$ "
 copybutton_prompt_is_regexp = True
