@@ -12,6 +12,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+nav.nav-bar {
+  padding-bottom: 0px !important;
+}
+
 img {
   display: block;
   height: auto;
