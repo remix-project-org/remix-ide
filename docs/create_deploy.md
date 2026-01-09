@@ -10,7 +10,7 @@ Let's go through a basic workflow:
 
 ## Creating a new file
 
-![](images/a-file-explorer-new-file2a.png)
+![](images/file-explorer/a-file-explorer-new-file2.png)
 
 In the File Explorer, create a new file by clicking on the new file icon, and name it. The `.sol` is default extension in Remix, if a file is named without an extension, `.sol` will appended.
 
@@ -63,15 +63,15 @@ At the top of this plugin is the Environment selectbox. Here you can choose wher
 
 For a brief synopsis:
 
-**Injected Provider** is used to connect Remix with a Browser Wallet (e.g. Metamask) which is generally for deploying to a public network.
+- **Injected Provider** is used to connect Remix with a Browser Wallet (e.g. Metamask) which is generally for deploying to a public network.
 
-**Remix VM** is a test blockchain in the browser. There are quite a few "flavors" of the Remix VM. Each "flavor" is associated with a different hard fork with the name in parathesies - e.g. Remix VM (Shanghai) or for the choice of a chain to fork into the Remix VM.
+- **Remix VM** is a test blockchain in the browser. There are quite a few "flavors" of the Remix VM. Each "flavor" is associated with a different hard fork with the name in parathesies - e.g. Remix VM (Shanghai) or for the choice of a chain to fork into the Remix VM.
 
-The **Remix VM** is convenient because it is a blockchain that runs in the browser and nothing else needs to be installed in order to run it.
+- The **Remix VM** is convenient because it is a blockchain that runs in the browser and nothing else needs to be installed in order to run it.
 
-**Dev** is for connecting Remix to a local chain running on your computer.
+- **Dev** is for connecting Remix to a local chain running on your computer.
 
-**L2** is for connecting Remix to Optimism or Arbitrum via a browser wallet. Its essentially the same as Injected Provider, but it sets the wallet with the configuration of the specified L2.
+- **L2** is for connecting Remix to Optimism or Arbitrum via a browser wallet. Its essentially the same as Injected Provider, but it sets the wallet with the configuration of the specified L2.
 
 (For details see [Running transactions](https://remix-ide.readthedocs.io/en/latest/run.html))
 
@@ -83,11 +83,11 @@ The Remix VM comes with 10 accounts funded with 100 ether.
 
 **NOTE:** When you are in the **Remix VM** and you reload the browser - the **Remix VM** will also restart to its fresh & default state. For a more realistic testing environment, use a public testnet.
 
-![](images/a-run-remix-vm-accounts.png)
+![](images/create_deploy/a-run-remix-vm-accounts.png)
 
 ## Deploying a contract
 
-![](images/a-run-testContract.png)
+![](images/create_deploy/a-run-testContract.png)
 
 The constructor of `testContract` needs a parameter of the type `uint256`.
 Input a uint256 and click on `Deploy`.
@@ -100,7 +100,7 @@ The terminal will give information about the transaction.
 
 The newly created instance is displayed in the **Deployed Contracts** section.
 
-![](images/a-remix-vm-instance.png)
+![](images/create_deploy/a-remix-vm-inst ance.png)
 
 ## Interacting with the deployed instance
 
