@@ -13,7 +13,7 @@ You can create a new workspace by clicking the Workspaces dropdown and click the
 When you click the button, Remix takes you to the Workspace Templates page, where you can create a blank workspace or a workspace from a list of available templates. The available templates include but are not limited to the following:
 
 - Remix Generic templates
-- OpenZeppelin templates (ERC20, ERC721, ERC1155)
+- OpenZeppelin contract wizard (ERC20, ERC721, ERC1155)
 - Cookbook.dev templates
 - Gnosis Safe MultiSig template
 - Zero-Knowledge Proof (ZKP) templates (Circom, Noir, and Generic)
@@ -24,12 +24,16 @@ When you click the button, Remix takes you to the Workspace Templates page, wher
 
 When you click the "**Create**" the button, a modal with customization options will popup. The options differ depending on the template you choose.
 
-For example, when you create a Workspace with an OpenZeppelin template, you can add customize the features of the contract you create. The image below shows the options available for customizing an OpenZeppelin ERC721 contract template.
+For example, when you create a Workspace with an OpenZeppelin contract wizard, you can add customize the features of the contract you create. The image below shows the options available for customizing an OpenZeppelin ERC721 contract template.
 ![OpenZeppelin ERC721 contract template.](images/workspaces/a-fe-modal-oz.png)
 
 For other templates, the modal only contains a textbox for editing the Workspace name and an option to initialize it with Git.
 
 ![Create Workspace with template modal](images/workspaces/create-workspace-with-template-modal.png)
+
+```{tip}
+You can describe the workspace you want to create to the RemixAI and it will generate it for you. See the {doc}`RemixAI docs </ai>` to learn more.
+```
 
 ### Initializing a Workspace with Git
 

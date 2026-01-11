@@ -59,7 +59,7 @@ You can publish multiple files by select all of them and right-clicking. The res
 
 ## Creating new files
 
-There are two ways you can create files on the Remix IDE. The first way involves clicking the "Create new file" icon on the File Explorer's Side Bar and entering the name of the file on the input field that appears.
+There are two ways you can create files on the Remix IDE. The first way involves clicking the **"Create"** dropdown, selecting the **"New file"** option, and entering the name of the file on the input field that appears.
 
 ![Remix File Explorer highlighting the create new file icon.](images/file-explorer/a-file-explorer-new-file2.png){.fig--landscape}
 
