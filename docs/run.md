@@ -10,7 +10,7 @@ The three main actions of the Deploy & Run module are:
 
 This documentation page will cover **Deploying** and **Accessing**. Interacting will be covered in {doc}`Deploy & Run part 2 </udapp>`.
 
-![](images/a-deploy-run1.png)
+![](images/deploy-and-run/a-deploy-run1.png)
 
 To deploy a contract, you need to have a contract compiled. To check that there is a compiled contract, look in the **CONTRACT** selectbox under the VALUE input field.
 
@@ -26,7 +26,7 @@ Phantom), use **Injected Provider**. Select your desired chain in the wallet.
 
 For assistance with getting the correct configuration (the RPC server address, etc.), click the plug icon next the word **ENVIRONMENT** to go to [chainlist.org](chainlist.org).
 
-![](images/a-deploy-run-plug.png)
+![](images/deploy-and-run/a-deploy-run-plug.png)
 
 ## Remix VM
 
@@ -40,7 +40,7 @@ Saving the state means you can refresh the browser and not lose your work, the c
 
 In collaborative workflows, sharing the state of the Remix VM is a great way to work out bugs. Just have your teammates load the **state.json** file into their instance of Remix.
 
-![](images/a-deploy-run-state-file.png)
+![](images/deploy-and-run/a-deploy-run-state-file.png)
 
 ## Environment
 
@@ -177,7 +177,7 @@ Only use `--http.corsdomain *` when using a **test chain** AND using only **test
 The **Value** field is always reset to 0 after each transaction execution. <br>
 The **Value** field is **NOT** for gas.
 
-![](images/a-Runtab-deploy-atAddress.png)
+![](images/deploy-and-run/a-Runtab-deploy-atAddress.png)
 
 ## Deploy and AtAddress
 
@@ -233,7 +233,7 @@ For instance:
 - Working in a dev environment often requires setting up the
   state initially.
 
-![](images/a-recorder.png)
+![](images/deploy-and-run/a-recorder.png)
 
 When checked, the option `Run transactions using the last compilation result` allows you to develop a contract and easily set the state using **the latest compiled versions of the contracts.**
 

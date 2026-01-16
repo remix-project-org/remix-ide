@@ -41,11 +41,16 @@ When performing Git operations on Github and when creating GISTs, it may be nece
 
 ### Etherscan Access Token
 
-When debugging verified contracts with the Remix Debugger, it is necessary to input your Etherscan access token in the Settings panel. Whereas, when verifying a contract with the Contract Verification - Etherscan plugin, the API key is input there and not in the Settings panel.
+When debugging verified contracts with the Remix Debugger, it is necessary to input your Etherscan access token in the Settings panel. Whereas, when verifying a contract with the Contract Verification plugin (on Etherscan), you have to add it in the Settings section of the Contract Verification plugin.
 
 Visit the [Etherscan API page](https://etherscan.io/myapikey) to get your Etherscan API key.
 
 ![Remix Etherscan Access Token page.](images/settings/a-settings-etherscan.png)
+*Adding Etherscan Access Token on the Settings Page*
+
+![Contract Verification plugin settings page.](images/settings/etherscan-token-cv-plugin.png)
+*Adding Etherscan Access Token on the Contract Verification plugin Settings Page*
+
 
 ### Sindri Credentials
 
