@@ -16,19 +16,21 @@ Then, start `Anvil` by running the command below in the Remix Desktop terminal:
 anvil
 ```
 
+![Running the anvil command in the Remix Desktop terminal](images/foundry/anvil-command.png)
+
 Then select **Foundry Provider** in the **Environments** section of the **Deploy & Run** module.
 
-![Foundry Provider option in the Environment dropdown](images/a-foundry-provider.png)
+![Foundry Provider option in the Environment dropdown](images/foundry/a-foundry-provider.png)
 
 As soon as you select **Foundry Provider**, a modal is opened asking for the **Anvil JSON-RPC Endpoint**.
 
-![Modal prompting for the Anvil JSON-RPC Endpoint](images/a-foundry-provider-modal.png)
+![Modal prompting for the Anvil JSON-RPC Endpoint](images/foundry/a-foundry-provider-modal.png)
 
 If the Anvil node is running with default options, the default endpoint value in the modal doesn't need to be changed. If the Anvil node host and port are different, the JSON-RPC endpoint should be updated in the modal's text box.
 
 Once the correct endpoint is filled in the modal, click **OK** and the accounts from the Anvil node will be loaded in the **ACCOUNT** section. The network id will also be shown.
 
-![Remix IDE connected to Foundry Provider showing loaded accounts](images/a-foundry-provider-connected.png)
+![Remix IDE connected to Foundry Provider showing loaded accounts](images/foundry/a-foundry-provider-connected.png)
 
 Now, you can start deploying the contract from Remix IDE to the local Anvil node as usual.
 
@@ -38,6 +40,6 @@ Foundry manages dependencies using git submodules and can remap dependencies to 
 
 To support such compilation, Remix suggests running [compilation using a compiler config file](https://remix-ide.readthedocs.io/en/latest/compile.html#json-file-for-compiler-configuration). Remix adds some default Forge remappings in the compiler config file when a Foundry project is loaded on Remix Desktop.
 
-![Compiler config file with default Forge remappings](images/a-foundry-cc.png)
+![Compiler config file with default Forge remappings](images/foundry/a-foundry-cc.png)
 
 Further, more remappings can be added manually if required.
