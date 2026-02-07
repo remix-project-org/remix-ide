@@ -23,7 +23,12 @@ Thus, it is important to have an alternative file backup/saving strategy.
 
 ### Remix Desktop
 
-Remix Desktop is a version of the Remix IDE that exists as a native app on your computer instead of a browser app. Since it's a native app on your computer, the files are saved directly to your hard drive.
+Remix Desktop is a version of the Remix IDE that exists as a native app on your computer instead of a browser app. Since it's a native app on your computer, the files are saved directly to your hard drive. You can download Remix Desktop on [the releases page](https://github.com/remix-project-org/remix-desktop/releases).
+
+```{tip}
+For more information, see the {doc}`Remix Desktop <desktop/>` documentation. 
+
+```
 
 ### Connecting Remix to remote Git repositories
 

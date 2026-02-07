@@ -1,6 +1,6 @@
 # Hardhat
 
-Remix IDE has built-in support for [Hardhat](https://hardhat.org/), a popular Ethereum development environment for compiling, deploying, testing, and debugging Solidity smart contracts. Through Remix Desktop, Remix connects to your local Hardhat project, giving you access to Hardhat compilation, the Hardhat Provider for deploying to a local node, and Hardhat's `console.log` functionality.
+Remix IDE has built-in support for [Hardhat](https://hardhat.org/), a Ethereum development environment for compiling, deploying, testing, and debugging Solidity smart contracts. With Remix Desktop, you can connect to a local Hardhat project, giving you access to Hardhat compilation and the Hardhat Provider for deploying to a local node.
 
 ## Enable Hardhat Compilation
 
@@ -17,8 +17,6 @@ When you open a Hardhat project on Remix Desktop, there will be an extra checkbo
 
 ![Enable Hardhat Compilation checkbox in the Solidity Compiler plugin](images/hardhat/a-hardhat-compilation.png)
 
-There is an info icon alongside the label which redirects to a specific section of Remix official documentation that explains how to use Hardhat compilation.
-
 Check the `Enable Hardhat Compilation` box to run the compilation for Hardhat along with Remix using the compiler configuration in the `Solidity Compiler` plugin.
 
 On clicking the `Compile` button, a `remix-compiler.config.js` file will be created in the project root which stores the compiler configuration set in Remix's `Solidity Compiler` plugin. It is passed to Hardhat for compilation.
@@ -33,7 +31,7 @@ The result of the compilation will be shown in the Remix IDE terminal.
 In Hardhat, contracts are deployed by starting a local node. Read more about it in the [Hardhat documentation](https://hardhat.org/getting-started/#connecting-a-wallet-or-dapp-to-hardhat-network).
 ```
 
-**Hardhat Provider** is a plugin on Remix IDE which enables users to deploy the contract to the Hardhat `localhost` network. This can be chosen from the `ENVIRONMENT` dropdown of the `Deploy and Run Transactions` plugin.
+**Hardhat Provider** enables deployment to the Hardhat localhost network. This can be chosen in the **ENVIRONMENT** dropdown of the **Deploy and Run** plugin.
 
 ![Hardhat Provider option in the Environment dropdown](images/hardhat/a-hardhat-provider-dropdown.png)
 
@@ -53,7 +51,7 @@ Now, you can start deploying the contract from Remix IDE to the Hardhat local no
 
 Remix IDE supports the Hardhat console library while using `Remix VM`. It can be used while making a transaction or running unit tests.
 
-### Deploy and Run Transactions
+### Using `console.log`
 
 To try it out, you need to put an import statement and use `console.log` to print the value as shown in the image.
 
