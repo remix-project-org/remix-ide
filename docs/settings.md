@@ -17,7 +17,7 @@ You can access **Settings** for Remix by clicking the gear icon at the top right
 
 ### Appearance
 
-The general settings section has a subsection (Appearance) where you change your themes. For themes Remix only supports the dark and light theme.
+The Appearance subsection allows you to customize the look of Remix. You can choose between the Dark and Light themes.
 
 ## Analytics
 
