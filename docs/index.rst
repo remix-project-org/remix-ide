@@ -71,6 +71,7 @@ Useful Links
    run
    udapp
    run_proxy_contracts
+   quickdapp
    account-abstraction-7702
    terminal
    remixd
