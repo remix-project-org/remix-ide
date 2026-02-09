@@ -15,9 +15,9 @@ You can access **Settings** for Remix by clicking the gear icon at the top right
 - **Enable Personal Mode for web3 provider** can be used when one is connecting to a **local node**. It is used to have Remix temporarily save the passphrase - so that you don't need to **unlock** the account in Geth. Remix will not persist the passphrase - so if you refresh your browser the passphrase will be gone.
 - **Save environment state** controls if state of the Remix VM (Remix's simulated blockchain) is saved in a file in the File Explorer. With this option enabled, the Remix VM's state will be saved, so if the browser is closed, the state of the VM will be preserved when you return. This is true as long as the storage in your browser does not get cleared or corrupted.
 
-### Themes
+### Appearance
 
-The general settings section has a subsection where you change your themes. For themes Remix only supports the dark and light theme.
+The Appearance subsection allows you to customize the look of Remix. You can choose between the Dark and Light themes.
 
 ## Analytics
 
@@ -31,7 +31,11 @@ The general settings section has a subsection where you change your themes. For 
 
 These settings are primarily for the code completion functions of Remix's AI tool, Solidity Copilot. See this {doc}`doc page </ai>` for more information about AI in Remix.
 
-## Connected Accounts
+## Connected Services
+
+The Connected Services section allows you to configure credentials and access tokens for external services that integrate with Remix. These connections enable features like Git operations, contract verification, circuit compilation, and decentralized storage.
+
+![Connected Services](images/settings/connected-services.png)
 
 ### Github credentials
 
