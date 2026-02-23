@@ -20,7 +20,7 @@ import datetime
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-# sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('_ext'))
 
 # -- General configuration ------------------------------------------------
 
@@ -30,7 +30,7 @@ import datetime
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['myst_parser', 'sphinx_copybutton', 'sphinx.ext.autosectionlabel', 'sphinx_design', "sphinxcontrib.video"] # required for sphinx v3.0.0
+extensions = ['myst_parser', 'sphinx_copybutton', 'sphinx.ext.autosectionlabel', 'sphinx_design', "sphinxcontrib.video", 'llms_txt'] # required for sphinx v3.0.0
 myst_enable_extensions = ["colon_fence", "attrs_inline"]
 copybutton_prompt_text = r">>> |\$ "
 copybutton_prompt_is_regexp = True
@@ -198,6 +198,8 @@ html_meta = {
     "description": "Remix IDE documentation — develop, test and deploy Ethereum smart contracts.",
     "keywords": "remix ide, ethereum, solidity, blockchain",
 }
+
+llms_txt_description = "Remix IDE documentation — develop, test and deploy Ethereum smart contracts."
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.

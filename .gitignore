@@ -13,6 +13,8 @@ docs/_build/doctrees/
 *.doctree
 .gitignore.swp
 .venv
+__pycache__
+*.pyc
 dirhtml
 styles/microsoft
 styles/proselint
