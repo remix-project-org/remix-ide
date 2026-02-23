@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Run Slither static analysis on Solidity contracts in Remix IDE via Remixd integration to detect security vulnerabilities."
+    "keywords": "slither remix, static analysis, smart contract security, remixd, solidity"
+---
+
 # Slither
 
 _(Supported since Remix IDE v0.15.0 and Remixd v0.5.0)_

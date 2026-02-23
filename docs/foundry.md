@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Connect Remix IDE to Foundry Anvil, use Foundry remappings, and deploy contracts to a local Anvil node."
+    "keywords": "remix foundry, anvil, foundry remappings, local deployment, ethereum"
+---
+
 # Foundry
 
 ## Deploying to Anvil

@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Deploy and interact with smart contracts in Remix IDE using multiple environments including the JavaScript VM, Injected Provider, and custom RPC endpoints."
+    "keywords": "remix deploy, run module, javascript vm, injected provider, deploy contracts"
+---
+
 # Deploy & Run
 
 The Deploy & Run module is for sending transactions to the current **Environment**.

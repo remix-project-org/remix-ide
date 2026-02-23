@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Remix IDE uses the Monaco editor with Solidity, JavaScript, and TypeScript syntax highlighting, auto-save, and code formatting."
+    "keywords": "remix editor, monaco editor, solidity highlighting, code editor, remix ide"
+---
+
 # Editor
 
 - Remix uses the Monaco editor. This is the same editor used by VSCode.

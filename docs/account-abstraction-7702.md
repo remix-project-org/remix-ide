@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Use Remix IDE to work with EIP-4337 and EIP-7702 account abstraction and smart account features on Ethereum."
+    "keywords": "account abstraction, eip 4337, eip 7702, smart accounts, remix ide"
+---
+
 # Account Abstraction & Smart Accounts
 
 Remix has functionality for working with EIP 4337 and EIP 7702.

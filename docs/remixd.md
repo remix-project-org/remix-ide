@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Connect Remix IDE to your local filesystem using Remixd to edit, compile, and deploy contracts from your computer."
+    "keywords": "remixd, local filesystem, remix ide, npm, local development"
+---
+
 # Remixd: Access your Local Filesystem
 
 [![npm version](https://badge.fury.io/js/%40remix-project%2Fremixd.svg)](https://www.npmjs.com/package/@remix-project/remixd)

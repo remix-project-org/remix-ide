@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Interact with deployed contracts in Remix IDE — call functions, send transactions, and inspect contract state in the Deploy & Run panel."
+    "keywords": "remix udapp, deployed contracts, interact contracts, remix ide, send transactions"
+---
+
 # Deploy & Run (part 2)
 
 ## Interacting with deployed contracts

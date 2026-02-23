@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Integrate Remix IDE with a Hardhat project using Remixd to compile and debug contracts with the Hardhat provider."
+    "keywords": "hardhat remix, hardhat integration, remixd, hardhat provider, ethereum development"
+---
+
 # Hardhat
 
 _(Supported since Remix IDE v0.12.0 and Remixd v0.3.6)_

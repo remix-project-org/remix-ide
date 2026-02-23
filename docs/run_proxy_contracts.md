@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Deploy and manage UUPS proxy contracts in Remix IDE with built-in support for upgradeable smart contract patterns."
+    "keywords": "remix proxy contracts, uups, upgradeable contracts, erc1967, remix ide"
+---
+
 # Deploy & Run Proxy Contracts
 
 Remix IDE has the functionality to assist in the handling of proxy contracts that use the UUPS pattern.

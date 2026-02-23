@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Step-by-step guide to creating a new Solidity file and deploying your first smart contract in Remix IDE."
+    "keywords": "create contract, deploy contract, remix ide, solidity, getting started"
+---
+
 # Creating and Deploying a Contract
 
 Let's go through a basic workflow:

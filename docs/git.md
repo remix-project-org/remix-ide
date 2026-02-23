@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Use Git version control in Remix IDE to initialize repositories, connect to GitHub, and manage branches, commits, and pull requests."
+    "keywords": "remix git, github integration, version control, remix ide git, branches"
+---
+
 # Working with Git in Remix
 
 In Remix, you can initialize Git for version control in your workspaces.

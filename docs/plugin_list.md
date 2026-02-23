@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Complete list of plugins available in Remix IDE's Plugin Manager for extending the IDE with additional tools and functionality."
+    "keywords": "remix plugins list, remix ide plugins, plugin manager, solidity tools"
+---
+
 # Plugin List
 
 Here is the list of Remix plugins that you will see in the Plugin Manager.

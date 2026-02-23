@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Learn Ethereum and Solidity development with interactive tutorials through the LearnEth plugin integrated in Remix IDE."
+    "keywords": "remix tutorials, learneth, solidity learning, ethereum development, blockchain tutorials"
+---
+
 # Tutorials in Remix
 
 You can do tutorials around blockchain development on Ethereum using the **LearnEth** plugin, a tutorial platform integrated into Remix.

@@ -194,6 +194,11 @@ html_extra_path = ["_static/fonts"]
 # using the given strftime format.
 html_last_updated_fmt = '%b %d, %Y'
 
+html_meta = {
+    "description": "Remix IDE documentation — develop, test and deploy Ethereum smart contracts.",
+    "keywords": "remix ide, ethereum, solidity, blockchain",
+}
+
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
 #html_use_smartypants = True

@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Best practices for using Remix IDE safely, including how to avoid common smart contract scams and security pitfalls."
+    "keywords": "remix ide, security, smart contract scams, safe usage, ethereum"
+---
+
 # Using Remix Safely
 
 - It is dangerous to send transactions on contracts you don't understand (even if it's a get rich quick scheme that you've copied & pasted from a Discord DM or a youtube video and you really really want to get rich).

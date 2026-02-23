@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Learn how to debug Ethereum smart contract transactions in Remix IDE by stepping through execution and inspecting state."
+    "keywords": "remix debug tutorial, transaction debugging, solidity, remix ide, step through"
+---
+
 # Debugging Transactions
 
 (also see this page's companion: {doc}`the Debugger Tour </debugger>`)

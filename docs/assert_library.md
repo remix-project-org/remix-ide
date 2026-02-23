@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Reference for the Remix Assert library — assertion functions for writing Solidity unit tests in Remix IDE."
+    "keywords": "remix assert library, solidity assertions, unit testing, assert.equal, remix ide"
+---
+
 # Remix Assert Library
 
 - [Remix Assert Library](#remix-assert-library)

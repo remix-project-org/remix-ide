@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Configure Remix IDE settings including themes, compiler options, gas limits, and editor preferences."
+    "keywords": "remix settings, remix ide configuration, themes, compiler settings, gas limit"
+---
+
 # Settings
 
 You can access **Settings** for Remix by clicking the gear icon at the top right of Remix.

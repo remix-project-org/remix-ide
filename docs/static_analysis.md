@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Run static analysis on Solidity smart contracts in Remix IDE to detect security vulnerabilities and bad practices before deployment."
+    "keywords": "solidity static analysis, remix analyzers, smart contract security, vulnerability detection"
+---
+
 # Solidity Analyzers
 
 Static code analysis is a process of debugging code by examining it without executing it.

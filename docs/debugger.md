@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Step through Ethereum smart contract transactions in Remix IDE's debugger to inspect state, storage, and call stack at each step."
+    "keywords": "remix debugger, smart contract debugging, transaction debugger, solidity debug"
+---
+
 # Debugger
 
 The Debugger shows the contract's state while stepping through a transaction.

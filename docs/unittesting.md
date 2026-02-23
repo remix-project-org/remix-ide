@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Write and run automated unit tests for Solidity smart contracts in Remix IDE using the built-in Solidity Unit Testing plugin."
+    "keywords": "solidity unit testing, remix testing, smart contract tests, assert, remix ide"
+---
+
 # Solidity Unit Testing Plugin
 
 The Solidity Unit Testing plugin allows you to write and run automated tests for your Solidity smart contracts to verify they work correctly before deployment.
