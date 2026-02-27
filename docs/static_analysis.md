@@ -2,9 +2,9 @@
 
 Static code analysis is a process of debugging code by examining it without executing it.
 
-The `Solidity Analyzers` plugin gangs three analysis tools together to perform static analysis on Solidity smart contracts. Each tool checks for security vulnerabilities and bad development practices, among other issues. It can be activated from Remix `Plugin Manager`.
+The `Solidity Analyzers` plugin combines three analysis tools to perform static analysis on Solidity smart contracts. Each tool checks for security vulnerabilities and bad development practices, among other issues. The plugin can be activated from the Remix `Plugin Manager`.
 
-![](images/a-ssa-activate.png)
+![Activating Solidity Analyzers from the Plugin Manager](images/a-ssa-activate.png)
 
 `Solidity Analyzers` can also be loaded by clicking on the `Solidity` icon in the featured plugins section of Remix's home tab. This button loads the following plugins: Solidity Compiler, Solidity Unit Testing, and Static Analyzers.
 
@@ -15,7 +15,7 @@ The `Solidity Analyzers` plugin gangs three analysis tools together to perform s
 - [Slither Static Analysis](https://crytic.github.io/slither/slither.html): a comprehensive static analysis tool
 
 ```{note}
-Slither can only be used when Remix is connected to the local computer's filesystem with {doc}`Remixd </remixd>`.
+Slither can only be used on {doc}`Remix Desktop </desktop>`.
 ```
 
 ## How to use
@@ -24,27 +24,27 @@ Slither can only be used when Remix is connected to the local computer's filesys
 
 At the top of the panel, check the tools that you want to use.
 
-![](images/a-ssa-1.png)
+![Solidity Analyzers panel with tool selection checkboxes](images/a-ssa-1.png)
 
 ### Errors & Warnings
 
-By default, `Solidity Analyzers` will show both errors and warnings. The combined number of errors and warnings are shown in the badge in that tools tab.
+By default, `Solidity Analyzers` will show both errors and warnings. The combined number of errors and warnings is shown in the badge on that tool's tab.
 
-![](images/a-ssa-err-warn.png)
+![Error and warning badges on the analysis tool tabs](images/a-ssa-err-warn.png)
 
 If you check `Hide warnings`, warnings will be hidden and you'll exclusively see the errors.
 
-**NOTE:** Remix Analysis does not flag error - it only shows warnings so if you check `Hide warnings`, nothing will show in the Remix Analysis tab.
+**NOTE:** Remix Analysis does not flag errors — it only shows warnings, so if you check `Hide warnings`, nothing will be shown in the Remix Analysis tab.
 
-![](images/a-ssa-show-hide-warnings.png)
+![Hide warnings checkbox in Solidity Analyzers](images/a-ssa-show-hide-warnings.png)
 
 #### Warnings from external libraries
 
-By default, warnings from external libraries are not shown. If you check the box `Show warnings for external libraries`, the tools will also analyse the external libraries for warnings.
+By default, warnings from external libraries are not shown. If you check the box `Show warnings for external libraries`, the tools will also analyze the external libraries for warnings.
 
 ## Slither
 
-To run [Slither](https://github.com/crytic/slither#slither-the-solidity-source-analyzer) with this plugin, you need to connect Remix IDE to your filesystem with [Remixd](remix.html). Once Remixd is running, Slither is automatically loaded.
+To run [Slither](https://github.com/crytic/slither#slither-the-solidity-source-analyzer) with this plugin, you need to open your workspace on Remix Desktop.
 
 ## Solhint
 
@@ -54,7 +54,7 @@ The [Solhint](https://github.com/protofire/solhint#rules) linter can be run with
 
 Remix Analysis has 4 categories: `Security`, `Gas & Economy`, `ERC` & `Miscellaneous`.
 
-Here is the list of modules under each category along with the example code which **should be avoided or used very carefully while development**:
+Here is the list of modules under each category along with example code which **should be avoided or used very carefully during development**:
 
 ### Category: Security
 
@@ -121,7 +121,7 @@ x.call('something');
 x.send(1 wei);
 ```
 
-- **Blockhash usage: Semantics maybe unclear**
+- **Blockhash usage: Semantics may be unclear**
 
 `blockhash` is used to access the last 256 block hashes. A miner computes the block hash by "summing up" the information in the current block mined. By summing up the information in a clever way a miner can try to influence the outcome of a transaction in the current block.
 
@@ -145,7 +145,7 @@ selfdestruct(address(0x123abc..));
 
 - **Gas costs: Too high gas requirement of functions**
 
-If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage
+If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage.
 
 _Example:_
 
@@ -193,7 +193,7 @@ contract arr {
 
 - **For loop over dynamic array: Iterations depend on dynamic array's size**
 
-Loops that do not have a fixed number of iterations, for example, loops that depend on storage values, have to be used carefully: Due to the block gas limit, transactions can only consume a certain amount of gas. The number of iterations in a loop can grow beyond the block gas limit which can stall the complete contract at a certain point. Additionally, using unbounded loops can incur in a lot of avoidable gas costs. Carefully test how many items at maximum you can pass to such functions to make it successful.
+Loops that do not have a fixed number of iterations, for example, loops that depend on storage values, have to be used carefully: Due to the block gas limit, transactions can only consume a certain amount of gas. The number of iterations in a loop can grow beyond the block gas limit which can stall the complete contract at a certain point. Additionally, using unbounded loops can incur a lot of avoidable gas costs. Carefully test how many items at maximum you can pass to such functions to make it successful.
 
 _Example:_
 
@@ -212,7 +212,7 @@ contract forLoopArr {
 
 - **Ether transfer in loop: Transferring Ether in a for/while/do-while loop**
 
-Ether payout should not be done in a loop. Due to the block gas limit, transactions can only consume a certain amount of gas. The number of iterations in a loop can grow beyond the block gas limit which can cause the complete contract to be stalled at a certain point. If required, make sure that number of iterations are low and you trust each address involved.
+Ether payout should not be done in a loop. Due to the block gas limit, transactions can only consume a certain amount of gas. The number of iterations in a loop can grow beyond the block gas limit which can cause the complete contract to be stalled at a certain point. If required, make sure that the number of iterations is low and you trust each address involved.
 
 _Example:_
 
@@ -240,7 +240,7 @@ contract etherTransferInLoop {
 
 - **ERC20: 'decimals' should be 'uint8'**
 
-ERC20 Contracts `decimals` function should have `uint8` as return type.
+ERC20 contracts' `decimals` function should have `uint8` as the return type.
 
 _Example:_
 
@@ -361,4 +361,4 @@ function contribute() payable public {
 
 `remix-analyzer` is the library which works underneath the Remix Analysis tool.
 
-`remix-analyzer` is an [NPM package](https://www.npmjs.com/package/@remix-project/remix-analyzer). It can be used as a library in a solution supporting node.js. Find more information about this type of usage in the [remix-analyzer repository](https://github.com/ethereum/remix-project/tree/master/libs/remix-analyzer#how-to-use)
+`remix-analyzer` is an [NPM package](https://www.npmjs.com/package/@remix-project/remix-analyzer). It can be used as a library in a solution supporting Node.js. Find more information about this type of usage in the [remix-analyzer repository](https://github.com/ethereum/remix-project/tree/master/libs/remix-analyzer#how-to-use).

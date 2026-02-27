@@ -18,20 +18,17 @@ Thus, it is important to have an alternative file backup/saving strategy.
 
 **Some recommended strategies include:**
 
-- [Saving to your hard drive](#saving-files-on-your-hard-drive)
+- [Using Remix Desktop](#remix-desktop)
 - Using [remote Git repositories](#connecting-remix-to-remote-git-repositories)
 
-### Saving files on your hard drive
+### Remix Desktop
 
-There are two ways you can save the files you create and use on Remix to your hard drive. You can use Remixd or Remix Desktop.
+Remix Desktop is a version of the Remix IDE that exists as a native app on your computer instead of a browser app. Since it's a native app on your computer, the files are saved directly to your hard drive. You can download Remix Desktop on [the releases page](https://github.com/remix-project-org/remix-desktop/releases).
 
-#### Remixd
+```{tip}
+For more information, see the {doc}`Remix Desktop <desktop/>` documentation. 
 
-Remixd is an NPM package that allows you to share a specified folder on your computer with Remix IDE. Thus, your files are saved on IndexedDB and on the specified folder. Learn more about Remixd on our {doc}`Remixd guide </remixd>`.
-
-#### Remix Desktop
-
-Remix Desktop is a version of the Remix IDE that exists as a native app on your computer instead of a browser app. Since it's a native app on your computer, the files are saved directly to your hard drive.
+```
 
 ### Connecting Remix to remote Git repositories
 
@@ -78,12 +75,6 @@ Note that (regardless of the method) when you save a file without providing a fi
 Right-clicking on a folder will bring a popup menu for operations you can do on that folder.
 
 ![Remix File Explorer extra options.](images/file-explorer/a-fe-rtclick-file.png){.fig--landscape}
-
-The right-click popup menu also works with Remixd (which gives you access to a folder on your hard drive).
-
-```{note}
-When working with Remixd, and when adding files to the shared folder from your computer (and not from Remix), you'll need to open and close the containing folder or switch in and out of **localhost** workspace to refresh the view.
-```
 
 ### Right-Click on a Solidity file
 

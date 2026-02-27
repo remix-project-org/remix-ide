@@ -1,29 +1,45 @@
 # Foundry
 
+[Foundry](https://getfoundry.sh/) is an Ethereum development toolkit for compiling, testing, and deploying Solidity smart contracts. With **Remix Desktop**, you can connect to a local Foundry project folder and deploy to a local Anvil chain. These features are not available on the online IDE, you must use {doc}`Remix Desktop <desktop/>` to access them.
+
 ## Deploying to Anvil
 
-To deploy to Anvil, Foundry's test chain, it needs to be running on your computer. Then select the **Foundry Provider** in the **Environments** section of the **Deploy & Run** module.
+To deploy to Anvil, Foundry's local test chain, Anvil needs to be installed and running on your computer.
 
-![](images/a-foundry-provider.png)
+```{note}
+You can install Anvil by following the instructions in [this guide](https://getfoundry.sh/introduction/installation).
+```
 
-As soon as you select `Foundry Provider`, a modal is opened asking for the `Anvil JSON-RPC Endpoint`.
+Then, start `Anvil` by running the command below in the Remix Desktop terminal:
 
-![](images/a-foundry-provider-modal.png)
+```shell
+anvil
+```
 
-If Foundry Anvil node is running with default options, the default endpoint value in modal doesn't need to be changed. If the Anvil node host and port are different, then the JSON-RPC endpoint should be updated in the modal's text box.
+![Running the anvil command in the Remix Desktop terminal](images/foundry/anvil-command.png)
 
-Once the correct endpoint is filled in the modal, just click on `OK` and the accounts from the Anvil node will be loaded in the `ACCOUNT` section. Network id will also be shown.
+Then select **Foundry Provider** in the **Environments** section of the **Deploy & Run** module.
 
-![](images/a-foundry-provider-connected.png)
+![Foundry Provider option in the Environment dropdown](images/foundry/a-foundry-provider.png)
 
-Now, one can start deploying the contract from Remix IDE to the local Anvil node as usual.
+As soon as you select **Foundry Provider**, a modal is opened asking for the **Anvil JSON-RPC Endpoint**.
+
+![Modal prompting for the Anvil JSON-RPC Endpoint](images/foundry/a-foundry-provider-modal.png)
+
+If the Anvil node is running with default options, the default endpoint value in the modal doesn't need to be changed. If the Anvil node host and port are different, the JSON-RPC endpoint should be updated in the modal's text box.
+
+Once the correct endpoint is filled in the modal, click **OK** and the accounts from the Anvil node will be loaded in the **ACCOUNT** section. The network id will also be shown.
+
+![Remix IDE connected to Foundry Provider showing loaded accounts](images/foundry/a-foundry-provider-connected.png)
+
+Now, you can start deploying the contract from Remix IDE to the local Anvil node as usual.
 
 ## Foundry Remappings
 
-Foundry manages dependencies using git submodules and can remap dependencies to make them easier to import. So import defined by remappings can have compilation errors on Remix IDE.
+Foundry manages dependencies using git submodules and can remap dependencies to make them easier to import. So imports defined by remappings can have compilation errors on Remix IDE.
 
-To support such compilation, Remix suggests running [compilation using a compiler config file](https://remix-ide.readthedocs.io/en/latest/compile.html#json-file-for-compiler-configuration). Remix adds some default Forge remappings in the compiler config file when a Foundry project is loaded in Remix IDE using Remixd.
+To support such compilation, Remix suggests running [compilation using a compiler config file](https://remix-ide.readthedocs.io/en/latest/compile.html#json-file-for-compiler-configuration). Remix adds some default Forge remappings in the compiler config file when a Foundry project is loaded on Remix Desktop.
 
-![](images/a-foundry-cc.png)
+![Compiler config file with default Forge remappings](images/foundry/a-foundry-cc.png)
 
-Further, more remappings can be added manually, if required.
+Further, more remappings can be added manually if required.
