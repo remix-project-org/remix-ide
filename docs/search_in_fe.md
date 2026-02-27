@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Search and replace text across your Remix IDE workspace files with support for regular expressions."
+    "keywords": "remix search, find and replace, search in files, regex, remix ide"
+---
+
 # Search in Files
 
 The **Search in Files** plugin is loaded by default. It also includes functionality to search & replace as well as searching with regular expressions.

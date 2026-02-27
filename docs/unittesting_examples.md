@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Solidity unit testing examples for Remix IDE to help you write effective smart contract tests."
+    "keywords": "solidity testing examples, remix unit tests, smart contract test examples"
+---
+
 # Testing by Example
 
 Here are some examples which can give you better understanding to plan your tests.

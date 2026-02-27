@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Verify deployed smart contracts on Sourcify, Etherscan, Blockscout, and Routescan directly from Remix IDE."
+    "keywords": "contract verification, etherscan verify, sourcify, remix ide, smart contract"
+---
+
 # Contract Verification
 
 Remix has a plugin for contract verification. With this plugin, you can verify your contracts on Sourcify, Etherscan, Blockscout and Routescan.

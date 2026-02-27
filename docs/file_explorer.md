@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Manage your smart contract files in Remix IDE using the File Explorer — create, rename, delete, and organize files and folders."
+    "keywords": "remix file explorer, file management, remix ide files, workspaces"
+---
+
 # File Explorer
 
 The File Explorer is the plugin responsible for managing files. It includes a pop-up menu that is activated when you right-click on a file.

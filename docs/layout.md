@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Learn how to navigate Remix IDE's layout: Top Bar, Icon Panel, Side Panel, Main Panel, Terminal, and Status Bar."
+    "keywords": "remix ide, layout, navigation, icon panel, side panel, terminal"
+---
+
 # Navigating Remix
 
 Remix's layout consists of the following components: the Top Bar, Icon Panel, Side Panel, Main Panel, Terminal, and the Status Bar.

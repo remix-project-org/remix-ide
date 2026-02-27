@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Run Solidity unit tests from the command line using the remix-tests CLI tool, the same engine powering Remix IDE's testing plugin."
+    "keywords": "remix-tests cli, solidity testing cli, command line testing, npm, remix"
+---
+
 # Command Line Interface
 
 ## remix-tests [![](https://badge.fury.io/js/%40remix-project%2Fremix-tests.svg)](https://www.npmjs.com/package/@remix-project/remix-tests)

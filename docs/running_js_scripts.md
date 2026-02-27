@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Execute JavaScript and TypeScript scripts in Remix IDE to automate deployment, testing, and interaction with smart contracts."
+    "keywords": "remix scripts, javascript remix, ethers.js, run scripts, remix ide automation"
+---
+
 # Running Scripts
 
 Remix IDE supports execution of JS & TS scripts.  For some script examples using Ethers.js, go to the scripts folder in the Default Workspace or the Basic Workspace.

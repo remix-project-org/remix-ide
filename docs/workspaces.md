@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Remix Workspaces let you separate and manage multiple projects in Remix IDE. Learn how to create, switch, clone, and share workspaces."
+    "keywords": "remix workspaces, project management, remix ide, workspace templates"
+---
+
 # Remix Workspaces
 
 Workspaces in Remix are special folders that separate projects. Files in one workspace cannot import or access files in different workspace. You can select a workspace from the **Workspaces** dropdown on the Top Bar.

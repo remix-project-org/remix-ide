@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Connect Remix IDE to Foundry Anvil, use Foundry remappings, and deploy contracts to a local Anvil node."
+    "keywords": "remix foundry, anvil, foundry remappings, local deployment, ethereum"
+---
+
 # Foundry
 
 [Foundry](https://getfoundry.sh/) is an Ethereum development toolkit for compiling, testing, and deploying Solidity smart contracts. With **Remix Desktop**, you can connect to a local Foundry project folder and deploy to a local Anvil chain. These features are not available on the online IDE, you must use {doc}`Remix Desktop <desktop/>` to access them.

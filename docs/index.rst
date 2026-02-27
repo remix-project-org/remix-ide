@@ -1,6 +1,10 @@
 Welcome to Remix's documentation!
 =====================================
 
+.. meta::
+   :description: Official documentation for Remix IDE — the browser-based Ethereum development environment for writing, testing, and deploying Solidity smart contracts.
+   :keywords: remix ide documentation, ethereum ide, solidity, smart contracts, blockchain development
+
 **Remix IDE** is used for the entire journey of smart contract development by users at every knowledge level. 
 It requires no setup, fosters a fast development cycle, and has a rich set of plugins with intuitive GUIs.  
 The IDE comes in two flavors (web app or desktop app).

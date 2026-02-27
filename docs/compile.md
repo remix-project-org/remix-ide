@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Compile Solidity smart contracts in Remix IDE with basic and advanced configuration options including optimization and EVM version settings."
+    "keywords": "solidity compiler, remix compile, evm version, optimization, remix ide"
+---
+
 # Solidity Compiler
 
 Clicking the Solidity icon in the icon panel brings you to the Solidity Compiler. The default view of the Solidity Compiler shows the basic configuration. To open the Advanced Configuration panel, click the **Advanced Configuration** button (**C. in fig. 1**). For details on advanced features - see below.

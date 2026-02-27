@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Import external libraries and dependencies into your Solidity contracts in Remix IDE from npm, GitHub, IPFS, or local files."
+    "keywords": "solidity import, remix import, npm packages, github imports, solidity dependencies"
+---
+
 # Importing & Loading Source Files in Solidity
 
 There are two main reasons for loading external files into Remix:

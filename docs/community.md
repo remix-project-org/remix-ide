@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Get help with Remix IDE and connect with the community through Discord, Twitter, and other channels."
+    "keywords": "remix community, remix discord, remix support, ethereum community, remix twitter"
+---
+
 # Community Support
 
 Do you have questions about Remix? Join our [Discord](https://discord.com/invite/qhpCQGWkmf) server and get some help!

@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Console commands available in Remix IDE for loading files, running scripts, and interacting with web3 and ethers libraries."
+    "keywords": "remix commands, remix console, web3, ethers.js, remix ide cli"
+---
+
 # Remix Commands
 
 In the console, you can run the commands listed below. Once you start to type a command, there is _auto complete_. These commands are using the following libraries:

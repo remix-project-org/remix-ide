@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Test JavaScript and TypeScript scripts in Remix IDE using the Chai assertion library and Mocha test framework."
+    "keywords": "chai mocha remix, javascript testing, remix ide, mocha tests, chai assertions"
+---
+
 # Testing using Chai & Mocha
 
 _(Supported since Remix IDE v0.22.0)_

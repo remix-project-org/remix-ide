@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Compile Vyper smart contracts directly in Remix IDE using the Vyper compiler plugin."
+    "keywords": "vyper compiler, remix vyper, vyper smart contracts, ethereum, remix ide"
+---
+
 # Vyper Compiler
 
 Vyper contracts can be compiled in Remix with the **Vyper compiler**.

@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Integrate Remix IDE with a Hardhat project using Remixd to compile and debug contracts with the Hardhat provider."
+    "keywords": "hardhat remix, hardhat integration, remixd, hardhat provider, ethereum development"
+---
+
 # Hardhat
 
 Remix IDE has built-in support for [Hardhat](https://hardhat.org/), a Ethereum development environment for compiling, deploying, testing, and debugging Solidity smart contracts. With Remix Desktop, you can connect to a local Hardhat project, giving you access to Hardhat compilation and the Hardhat Provider for deploying to a local node.

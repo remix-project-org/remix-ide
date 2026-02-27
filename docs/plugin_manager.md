@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Activate, deactivate, and manage plugins in Remix IDE using the Plugin Manager to customize your development environment."
+    "keywords": "remix plugin manager, remix plugins, remix ide extensions, activate plugins"
+---
+
 # Plugin Manager
 
 In Remix IDE you only load the functionality you need. Controlling which plugins are active or inactive happens in the **Plugin Manager**.

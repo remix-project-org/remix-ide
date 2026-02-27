@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Remix Desktop is a standalone app for macOS, Linux, and Windows with direct local filesystem access and all the features of Remix IDE."
+    "keywords": "remix desktop, ethereum ide, desktop app, local filesystem, solidity"
+---
+
 # Remix Desktop
 
 Remix Desktop is a standalone desktop application that provides the same features as Remix IDE, with direct access to the local filesystem. It is available for macOS, Linux, and Windows, and supports running multiple instances simultaneously.

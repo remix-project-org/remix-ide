@@ -1,6 +1,10 @@
 AI Tools
 ========
 
+.. meta::
+   :description: RemixAI is Remix IDE's built-in AI assistant and Copilot for Solidity smart contract development, code completion, and explanation.
+   :keywords: remixai, ai assistant, code completion, solidity ai, remix ide ai
+
 Remix has its own AI tool named **RemixAI** and a sub-project called
 **RemixAI Copilot** for code completion.
 

@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Frequently asked questions about Remix IDE: supported browsers, file storage, troubleshooting, and common issues."
+    "keywords": "remix ide faq, remix questions, remix troubleshooting, remix browsers"
+---
+
 # FAQ
 
 ## Supported devices & Browsers

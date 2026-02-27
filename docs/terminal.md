@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Use the Remix IDE terminal to run scripts, view transaction logs, and interact with the blockchain via the console."
+    "keywords": "remix terminal, remix console, transaction logs, remix ide, scripting"
+---
+
 # Terminal
 
 ![](images/a-terminal-and-more.png)

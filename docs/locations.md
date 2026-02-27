@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Find Remix IDE URLs, deep links, and URL parameters for loading workspaces, files, and plugins directly."
+    "keywords": "remix ide url, remix links, remix parameters, remix ethereum org"
+---
+
 # Remix URLs & Links with Parameters
 
 ## Main Remix URLs

@@ -1,6 +1,10 @@
 Noir Compiler
 =============
 
+.. meta::
+   :description: Compile Noir zero-knowledge circuits in Remix IDE, generate ZK proofs, and verify them using Solidity smart contracts.
+   :keywords: noir compiler, zero knowledge, zk proof, remix ide, noir zkp
+
 Noir lets you build zero-knowledge applications without writing cryptographic circuits. This guide covers the entire workflow of using the Noir Compiler plugin in Remix IDE to compile Noir code, generate a zero-knowledge proof, and verify the generated proof using a Solidity smart contract and a js script.
 
 Creating a Noir Workspace

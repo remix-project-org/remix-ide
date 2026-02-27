@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Use Remix IDE as a code viewer to inspect verified smart contracts from Etherscan or any GitHub repository."
+    "keywords": "remix code viewer, etherscan contracts, github contracts, view contracts, remix ide"
+---
+
 # Remix as code viewer
 
 ## Through Etherscan

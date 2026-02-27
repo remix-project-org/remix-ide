@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "Run Slither static analysis on Solidity contracts in Remix IDE via Remixd integration to detect security vulnerabilities."
+    "keywords": "slither remix, static analysis, smart contract security, remixd, solidity"
+---
+
 # Slither
 
 [Slither](https://github.com/crytic/slither) is a static analysis framework for Solidity. It runs a suite of vulnerability detectors and provides information about contract details. Slither analysis is available in Remix Desktop through the `Solidity Static Analysis` plugin.
