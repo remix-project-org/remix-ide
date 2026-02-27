@@ -3,7 +3,6 @@ Arbitrum
 blockchain
 Blockhash
 Blockscout
-Breakpoint
 breakpoint
 buildbear
 Bundler
@@ -20,9 +19,7 @@ Dev
 dev
 Deployer
 Devs
-dapp
-dapps
-Dapp
+dApp
 EIP's
 EOAs
 Ephemery
