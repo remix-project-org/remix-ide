@@ -30,7 +30,7 @@ sys.path.insert(0, os.path.abspath('_ext'))
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['myst_parser', 'sphinx_copybutton', 'sphinx.ext.autosectionlabel', 'sphinx_design', "sphinxcontrib.video", 'llms_txt'] # required for sphinx v3.0.0
+extensions = ['myst_parser', 'sphinx_copybutton', 'sphinx.ext.autosectionlabel', 'sphinx_design', "sphinxcontrib.video", 'llms_txt', 'sphinxext.opengraph'] # required for sphinx v3.0.0
 myst_enable_extensions = ["colon_fence", "attrs_inline"]
 copybutton_prompt_text = r">>> |\$ "
 copybutton_prompt_is_regexp = True
@@ -198,6 +198,20 @@ html_meta = {
     "description": "Remix IDE documentation — develop, test and deploy Ethereum smart contracts.",
     "keywords": "remix ide, ethereum, solidity, blockchain",
 }
+
+# -- Open Graph / Social media meta tags ----------------------------------
+ogp_site_url = "https://remix-ide.readthedocs.io/en/latest/"
+ogp_image = "https://remix-ide.readthedocs.io/en/latest/_static/img/og-image.png"
+ogp_description_length = 200
+ogp_type = "article"
+ogp_site_name = "Remix IDE Documentation"
+ogp_social_cards = {
+    "enable": False,
+}
+ogp_custom_meta_tags = [
+    '<meta name="twitter:card" content="summary_large_image" />',
+    '<meta name="twitter:site" content="@EthereumRemix" />',
+]
 
 llms_txt_description = "Remix IDE documentation — develop, test and deploy Ethereum smart contracts."
 
