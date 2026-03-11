@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 20:28+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../workspaces.md:0
+msgid "Remix Workspaces let you separate and manage multiple projects in Remix IDE. Learn how to create, switch, clone, and share workspaces."
+msgstr ""
+
+#: ../../workspaces.md:0
+msgid "remix workspaces, project management, remix ide, workspace templates"
+msgstr ""
+
+#: ../../workspaces.md:8
+msgid "Remix Workspaces"
+msgstr ""
+
+#: ../../workspaces.md:10
+msgid "Workspaces in Remix are special folders that separate projects. Files in one workspace cannot import or access files in different workspace. You can select a workspace from the **Workspaces** dropdown on the Top Bar."
+msgstr ""
+
+#: ../../workspaces.md:12
+msgid "![Remix IDE Workspaces highlighting the dropdown.](images/workspaces/a-fe-workspaces1.png)"
+msgstr ""
+
+#: ../../workspaces.md:12
+msgid "Remix IDE Workspaces highlighting the dropdown."
+msgstr ""
+
+#: ../../workspaces.md:14
+msgid "Creating a new Workspace"
+msgstr ""
+
+#: ../../workspaces.md:16
+msgid "You can create a new workspace by clicking the Workspaces dropdown and click the \"**Create a new workspace**\" button."
+msgstr ""
+
+#: ../../workspaces.md:18
+msgid "![Workspaces dropdown highlighting the Create new workspace button](images/workspaces/a-fe-workspaces-new.png)"
+msgstr ""
+
+#: ../../workspaces.md:18
+msgid "Workspaces dropdown highlighting the Create new workspace button"
+msgstr ""
+
+#: ../../workspaces.md:20
+msgid "When you click the button, Remix takes you to the Workspace Templates page, where you can create a blank workspace or a workspace from a list of available templates. The available templates include but are not limited to the following:"
+msgstr ""
+
+#: ../../workspaces.md:22
+msgid "Remix Generic templates"
+msgstr ""
+
+#: ../../workspaces.md:23
+msgid "OpenZeppelin contract wizard (ERC20, ERC721, ERC1155)"
+msgstr ""
+
+#: ../../workspaces.md:24
+msgid "Cookbook.dev templates"
+msgstr ""
+
+#: ../../workspaces.md:25
+msgid "Gnosis Safe MultiSig template"
+msgstr ""
+
+#: ../../workspaces.md:26
+msgid "Zero-Knowledge Proof (ZKP) templates (Circom, Noir, and Generic)"
+msgstr ""
+
+#: ../../workspaces.md:27
+msgid "Uniswap v4 templates"
+msgstr ""
+
+#: ../../workspaces.md:28
+msgid "Solidity CREATE2 templates"
+msgstr ""
+
+#: ../../workspaces.md:29
+msgid "Etherscan scripts for verifying contracts"
+msgstr ""
+
+#: ../../workspaces.md:30
+msgid "CI scripts for unit tests and security analysis"
+msgstr ""
+
+#: ../../workspaces.md:32
+msgid "When you click the \"**Create**\" the button, a modal with customization options will popup. The options differ depending on the template you choose."
+msgstr ""
+
+#: ../../workspaces.md:34
+msgid "For example, when you create a Workspace with an OpenZeppelin contract wizard, you can add customize the features of the contract you create. The image below shows the options available for customizing an OpenZeppelin ERC721 contract template. ![OpenZeppelin ERC721 contract template.](images/workspaces/a-fe-modal-oz.png)"
+msgstr ""
+
+#: ../../workspaces.md:34
+msgid "OpenZeppelin ERC721 contract template."
+msgstr ""
+
+#: ../../workspaces.md:37
+msgid "For other templates, the modal only contains a textbox for editing the Workspace name and an option to initialize it with Git."
+msgstr ""
+
+#: ../../workspaces.md:39
+msgid "![Create Workspace with template modal](images/workspaces/create-workspace-with-template-modal.png)"
+msgstr ""
+
+#: ../../workspaces.md:39
+msgid "Create Workspace with template modal"
+msgstr ""
+
+#: ../../workspaces.md:42
+msgid "You can describe the workspace you want to create to the RemixAI and it will generate it for you. See the {doc}`RemixAI docs </ai>` to learn more."
+msgstr ""
+
+#: ../../workspaces.md:45
+msgid "Initializing a Workspace with Git"
+msgstr ""
+
+#: ../../workspaces.md:47
+msgid "To initialize a new Workspace for Git, check the box at the bottom of the Create Workspace modal. ![Create Workspace with template modal with Initialize Workspace with Git highlighted.](images/workspaces/a-fe-create-ws-modal.png)"
+msgstr ""
+
+#: ../../workspaces.md:47
+msgid "Create Workspace with template modal with Initialize Workspace with Git highlighted."
+msgstr ""
+
+#: ../../workspaces.md:50
+msgid "Git initialized workspaces will have the Git icon next to them in the **Workspaces** selectbox."
+msgstr ""
+
+#: ../../workspaces.md:52
+msgid "![Workspaces initialized with Git](images/workspaces/a-fe-select-git.png)"
+msgstr ""
+
+#: ../../workspaces.md:52
+msgid "Workspaces initialized with Git"
+msgstr ""
+
+#: ../../workspaces.md:54
+msgid "Workspace configuration"
+msgstr ""
+
+#: ../../workspaces.md:56
+msgid "Each Workspace contains a configuration file named `remix.config.json` that keeps track of script dependencies and compiler configurations. The file is located at your the root of each workspace. When you want a new Workspace to have the same configuration as an existing one, copy the `remix.config.json` file from the existing Workspace to the new one."
+msgstr ""

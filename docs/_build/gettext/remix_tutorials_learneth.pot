@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-23, Remix;
+# Copyright (C) 2019 - 2026, Remix Team
 # This file is distributed under the same license as the Remix - Ethereum IDE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Remix - Ethereum IDE 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-24 17:10+0200\n"
+"POT-Creation-Date: 2026-03-11 20:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,78 +16,90 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../remix_tutorials_learneth.md:1
-msgid "Tutorials in Remix"
+#: ../../remix_tutorials_learneth.md:0
+msgid "Learn Ethereum and Solidity development with interactive tutorials through the LearnEth plugin integrated in Remix IDE."
 msgstr ""
 
-#: ../../remix_tutorials_learneth.md:4
-msgid "**Learneth** is a tutorial platform integrated into Remix."
-msgstr ""
-
-#: ../../remix_tutorials_learneth.md:6
-msgid "Tutorials can contain quizzes for testing students' work.  These quizzes are run by Solidity Unit Tests."
+#: ../../remix_tutorials_learneth.md:0
+msgid "remix tutorials, learneth, solidity learning, ethereum development, blockchain tutorials"
 msgstr ""
 
 #: ../../remix_tutorials_learneth.md:8
-msgid "![](images/a-learneth.png)"
+msgid "Tutorials in Remix"
 msgstr ""
 
 #: ../../remix_tutorials_learneth.md:10
-msgid "We have a growing set of tutorials on our repo- but anyone can build tutorials on their own repos and have their students load them up!"
+msgid "You can do tutorials around blockchain development on Ethereum using the **LearnEth** plugin, a tutorial platform integrated into Remix."
 msgstr ""
 
 #: ../../remix_tutorials_learneth.md:12
-msgid "The tutorials contain .md files for instructions and can also contain example files, Solidity Unit Test files for quizzes, as well as answer files for quizzes."
+msgid "Some tutorials contain quizzes run by the Solidity Unit Tests plugin to test how much you learned from the tutorial."
 msgstr ""
 
 #: ../../remix_tutorials_learneth.md:14
-msgid "Opening Learneth & associated links"
+msgid "![LearnEth Plugin](images/remix_tutorials/a-learneth.png)"
 msgstr ""
 
-#: ../../remix_tutorials_learneth.md:15
-msgid "Learneth is a plugin - so to access it, you need to activate the Learneth plugin in the Plugin Manager.   Alternatively - this link will active it: click this link."
+#: ../../remix_tutorials_learneth.md:14
+msgid "LearnEth Plugin"
 msgstr ""
 
-#: ../../remix_tutorials_learneth.md:21
-msgid "This link will activate Learneth and then will open a specific tutorial - in this case it will load the **proxy contract** tutorial:"
+#: ../../remix_tutorials_learneth.md:16
+msgid "The tutorials contain `.md` files for instructions and can also contain example files, Solidity Unit Test files for quizzes, as well as answer files for quizzes and when you finish a tutorial, it will be marked \"Completed\"."
+msgstr ""
+
+#: ../../remix_tutorials_learneth.md:18
+msgid "Using the LearnEth Plugin"
+msgstr ""
+
+#: ../../remix_tutorials_learneth.md:20
+msgid "To open LearnEth, you need to activate the LearnEth plugin in the Plugin Manager. Alternatively, you can activate it by clicking the link below which automatically opens the Remix IDE with LearnEth enabled."
 msgstr ""
 
 #: ../../remix_tutorials_learneth.md:27
-msgid "**NOTE:** For other tricks about Remix URLs with parameters, go here: [locations](locations.html)."
-msgstr ""
-
-#: ../../remix_tutorials_learneth.md:29
-msgid "Learneth Tutorials"
+msgid "For other tricks about Remix URLs with parameters, visit {doc}`locations. </locations>`"
 msgstr ""
 
 #: ../../remix_tutorials_learneth.md:31
-msgid "Here is the current list of Learneth Tutorials"
+msgid "When you open a LearnEth tutorial, the example files associated with it will be loaded into a new Workspace called \"LearnEth Tutorials\"."
 msgstr ""
 
 #: ../../remix_tutorials_learneth.md:33
-msgid "***Beginner***"
+msgid "![LearnEth Layout](images/remix_tutorials/learneth-layout.png)"
+msgstr ""
+
+#: ../../remix_tutorials_learneth.md:33
+msgid "LearnEth Layout"
+msgstr ""
+
+#: ../../remix_tutorials_learneth.md:36
+msgid "Loading LearnEth with Other Repositories"
 msgstr ""
 
 #: ../../remix_tutorials_learneth.md:38
-msgid "***Intermediate***"
+msgid "We have a growing set of tutorials on our default LearnEth content source. However, anyone can build tutorials on their own repos load them in the LearnEth plugin and it would work as it if were our default content source."
+msgstr ""
+
+#: ../../remix_tutorials_learneth.md:40
+msgid "![Import Repository into LearnEth](images/remix_tutorials/import-repo.gif)"
+msgstr ""
+
+#: ../../remix_tutorials_learneth.md:40
+msgid "Import Repository into LearnEth"
 msgstr ""
 
 #: ../../remix_tutorials_learneth.md:43
-msgid "***Advanced***"
+msgid "Your repository must follow the LearnEth conventions to work on LearnEth. Learn how to [create your own LearnEth tutorials](https://remix-learneth-plugin.readthedocs.io/en/latest/index.html)."
 msgstr ""
 
-#: ../../remix_tutorials_learneth.md:50
-msgid "Learneth & Tutorial Repos"
+#: ../../remix_tutorials_learneth.md:46
+msgid "Useful LearnEth Links"
 msgstr ""
 
-#: ../../remix_tutorials_learneth.md:52
-msgid "The code for the Learneth plugin is located here: https://github.com/bunsenstraat/remix-learneth-plugin/blob/master/docs/index.rst"
+#: ../../remix_tutorials_learneth.md:48
+msgid "LearnEth Plugin source code: [LearnEth Plugin repo](https://github.com/bunsenstraat/remix-learneth-plugin/)"
 msgstr ""
 
-#: ../../remix_tutorials_learneth.md:55
-msgid "Documentation for creating your own tutorials is located here: https://remix-learneth-plugin.readthedocs.io/en/latest/index.html"
-msgstr ""
-
-#: ../../remix_tutorials_learneth.md:58
-msgid "Remix maintains and curates this repo of Learneth tutorials: https://github.com/ethereum/remix-workshops"
+#: ../../remix_tutorials_learneth.md:49
+msgid "Default LearnEth content source: [Remix Workshops repo](https://github.com/ethereum/remix-workshops)"
 msgstr ""

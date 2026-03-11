@@ -1,0 +1,194 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 20:28+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../git.md:0
+msgid "Use Git version control in Remix IDE to initialize repositories, connect to GitHub, and manage branches, commits, and pull requests."
+msgstr ""
+
+#: ../../git.md:0
+msgid "remix git, github integration, version control, remix ide git, branches"
+msgstr ""
+
+#: ../../git.md:8
+msgid "Working with Git in Remix"
+msgstr ""
+
+#: ../../git.md:10
+msgid "In Remix, you can initialize Git for version control in your workspaces."
+msgstr ""
+
+#: ../../git.md:12
+msgid "Connecting to GitHub"
+msgstr ""
+
+#: ../../git.md:14
+msgid "Before you can use Git in any of your workspaces, you have to login with GitHub using the \"**Login with GitHub**\" button on the Top Bar."
+msgstr ""
+
+#: ../../git.md:16
+msgid "![Remix Top Bar showing login with GitHub button.](images/git/login-with-github.png)"
+msgstr ""
+
+#: ../../git.md:16
+msgid "Remix Top Bar showing login with GitHub button."
+msgstr ""
+
+#: ../../git.md:18
+msgid "Alternatively, you can add username and email to the Github section of the Git plugin. You can find the Git plugin on the Icon Panel represented by a branch icon."
+msgstr ""
+
+#: ../../git.md:20
+msgid "![Git plugin settings.](images/git/gh-login-manually.png)"
+msgstr ""
+
+#: ../../git.md:20
+msgid "Git plugin settings."
+msgstr ""
+
+#: ../../git.md:22
+msgid "Git operations in Remix"
+msgstr ""
+
+#: ../../git.md:24
+msgid "Initializing Git in a Workspace"
+msgstr ""
+
+#: ../../git.md:26
+msgid "For information about initializing a workspace, see the section about initializing Git on the {ref}`Remix Workspaces <workspaces:initializing a workspace with git>` page."
+msgstr ""
+
+#: ../../git.md:28
+msgid "Cloning an existing repository into Remix"
+msgstr ""
+
+#: ../../git.md:30
+msgid "You can clone an existing repository from GitHub into Remix using \"**CLONE**\" accordion item in the Git plugin. You can clone a repository by loading it from GitHub using the \"**Load from GitHub**\" button and selecting one from your list of public repositories."
+msgstr ""
+
+#: ../../git.md:32
+msgid "Alternatively, you can clone a repository by providing its URL in the \"**CLONE FROM URL**\" text box. When you clone a repository, Remix initializes it as a separate Workspace. See {doc}`Remix Workspaces <workspaces>` to learn more about Workspaces."
+msgstr ""
+
+#: ../../git.md:35
+msgid "Remix stores your files in the browser and browser storage is limited. Cloning a repository that is too large will cause the Remix IDE. This is why you have to manually specify the depth and branches you want to clone. If you are using {doc}`Remixd </remixd>` you don't have to worry about cloning large repositories."
+msgstr ""
+
+#: ../../git.md:38
+msgid "![Remix Git plugin clone section.](images/git/gh-clone.png)"
+msgstr ""
+
+#: ../../git.md:38
+#: ../../git.md:44
+msgid "Remix Git plugin clone section."
+msgstr ""
+
+#: ../../git.md:40
+msgid "Committing changes to Git"
+msgstr ""
+
+#: ../../git.md:42
+msgid "You can commit the changes you made to your current Workspace using the \"**SOURCE CONTROL**\" accordion item in the Git plugin. Stage files individually using the plus icon next to them or all at once using the plus icon on the \"**Changes**\" dropdown label. Enter commit messages in the text box and commit the staged changes using the \"**Commit**\" button."
+msgstr ""
+
+#: ../../git.md:44
+msgid "![Remix Git plugin clone section.](images/git/gh-commit.png)"
+msgstr ""
+
+#: ../../git.md:46
+msgid "Adding a remote repository"
+msgstr ""
+
+#: ../../git.md:48
+msgid "You can add a remote repository to your Workspace on Remix using the \"**REMOTE**\" accordion item by either loading from GitHub or adding it manually using a remote URL."
+msgstr ""
+
+#: ../../git.md:50
+msgid "![Remix Git plugin highlighting the REMOTE tool.](images/git/gh-remote-repo.png)"
+msgstr ""
+
+#: ../../git.md:50
+msgid "Remix Git plugin highlighting the REMOTE tool."
+msgstr ""
+
+#: ../../git.md:52
+msgid "Running common commands"
+msgstr ""
+
+#: ../../git.md:54
+msgid "The Git plugin has limited support for Git commands, as of Remix v0.70, you can run the following:"
+msgstr ""
+
+#: ../../git.md:56
+msgid "`git push`"
+msgstr ""
+
+#: ../../git.md:57
+msgid "`git push --force`"
+msgstr ""
+
+#: ../../git.md:58
+msgid "`git fetch`"
+msgstr ""
+
+#: ../../git.md:59
+msgid "`git pull`"
+msgstr ""
+
+#: ../../git.md:61
+msgid "You can run these commands through the \"**COMMANDS**\" accordion item in the Git plugin."
+msgstr ""
+
+#: ../../git.md:63
+msgid "![Remix Git plugin showing common Git commands.](images/git/gh-git-commands.png)"
+msgstr ""
+
+#: ../../git.md:63
+msgid "Remix Git plugin showing common Git commands."
+msgstr ""
+
+#: ../../git.md:66
+msgid "You can view the output of some of these commands on the \"**LOGS**\" accordion item."
+msgstr ""
+
+#: ../../git.md:69
+msgid "Managing multiple branches"
+msgstr ""
+
+#: ../../git.md:71
+msgid "You can manage the multiple branches associated with your Workspace initialized with Git or cloned from GitHub from the \"**BRANCHES**\" accordion item."
+msgstr ""
+
+#: ../../git.md:73
+msgid "![Remix Git plugin showing multiple branches](images/git/gh-git-branches.png)"
+msgstr ""
+
+#: ../../git.md:73
+msgid "Remix Git plugin showing multiple branches"
+msgstr ""
+
+#: ../../git.md:75
+msgid "You can view the current branch from the Footer."
+msgstr ""
+
+#: ../../git.md:77
+msgid "![Remix IDE branch indicator.](images/git/a-fe-branch-man1.png)"
+msgstr ""
+
+#: ../../git.md:77
+msgid "Remix IDE branch indicator."
+msgstr ""

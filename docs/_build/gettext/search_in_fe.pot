@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-23, Remix;
+# Copyright (C) 2019 - 2026, Remix Team
 # This file is distributed under the same license as the Remix - Ethereum IDE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Remix - Ethereum IDE 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-12 15:08-0400\n"
+"POT-Creation-Date: 2026-03-11 20:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,30 +16,38 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../search_in_fe.md:1
+#: ../../search_in_fe.md:0
+msgid "Search and replace text across your Remix IDE workspace files with support for regular expressions."
+msgstr ""
+
+#: ../../search_in_fe.md:0
+msgid "remix search, find and replace, search in files, regex, remix ide"
+msgstr ""
+
+#: ../../search_in_fe.md:8
 msgid "Search in Files"
 msgstr ""
 
-#: ../../search_in_fe.md:3
-msgid "The **Search in Files** plugin is loaded by default.  It also includes functionality to search & replace as well as searching with regular expressions."
-msgstr ""
-
-#: ../../search_in_fe.md:5
-msgid "![](images/a-search.png)"
-msgstr ""
-
-#: ../../search_in_fe.md:7
-msgid "This plugin searches through text in the files of the current workspace.  It does not search across workspaces."
-msgstr ""
-
-#: ../../search_in_fe.md:9
-msgid "Search and Replace"
-msgstr ""
-
 #: ../../search_in_fe.md:10
-msgid "Clicking on the caret to the left of the text input box will reveal the **replace** functionality."
+msgid "The **Search in Files** plugin is loaded by default. It also includes functionality to search & replace as well as searching with regular expressions."
 msgstr ""
 
 #: ../../search_in_fe.md:12
+msgid "![](images/a-search.png)"
+msgstr ""
+
+#: ../../search_in_fe.md:14
+msgid "This plugin searches through text in the files of the current workspace. It does not search across workspaces."
+msgstr ""
+
+#: ../../search_in_fe.md:16
+msgid "Search and Replace"
+msgstr ""
+
+#: ../../search_in_fe.md:18
+msgid "Clicking on the caret to the left of the text input box will reveal the **replace** functionality."
+msgstr ""
+
+#: ../../search_in_fe.md:20
 msgid "![](images/a-search-open.png)"
 msgstr ""

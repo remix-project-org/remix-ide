@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-23, Remix;
+# Copyright (C) 2019 - 2026, Remix Team
 # This file is distributed under the same license as the Remix - Ethereum IDE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Remix - Ethereum IDE 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-24 17:10+0200\n"
+"POT-Creation-Date: 2026-03-11 20:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,102 +16,110 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../unittesting_examples.md:1
-msgid "Testing by Example"
+#: ../../unittesting_examples.md:0
+msgid "Solidity unit testing examples for Remix IDE to help you write effective smart contract tests."
 msgstr ""
 
-#: ../../unittesting_examples.md:4
-msgid "Here are some examples which can give you better understanding to plan your tests."
-msgstr ""
-
-#: ../../unittesting_examples.md:6
-msgid "**Note:** Examples in this section are intended to give you a push for development. We don't recommend to rely on them without verifying at your end."
+#: ../../unittesting_examples.md:0
+msgid "solidity testing examples, remix unit tests, smart contract test examples"
 msgstr ""
 
 #: ../../unittesting_examples.md:8
+msgid "Testing by Example"
+msgstr ""
+
+#: ../../unittesting_examples.md:10
+msgid "Here are some examples which can give you better understanding to plan your tests."
+msgstr ""
+
+#: ../../unittesting_examples.md:12
+msgid "**Note:** Examples in this section are intended to give you a push for development. We don't recommend to rely on them without verifying at your end."
+msgstr ""
+
+#: ../../unittesting_examples.md:14
 msgid "1. Simple example"
 msgstr ""
 
-#: ../../unittesting_examples.md:9
+#: ../../unittesting_examples.md:16
 msgid "In this example, we test setting & getting variables."
 msgstr ""
 
-#: ../../unittesting_examples.md:11
+#: ../../unittesting_examples.md:18
 msgid "Contract/Program to be tested: `Simple_storage.sol`"
 msgstr ""
 
-#: ../../unittesting_examples.md:32
+#: ../../unittesting_examples.md:40
 msgid "Test contract/program: `simple_storage_test.sol`"
 msgstr ""
 
-#: ../../unittesting_examples.md:60
+#: ../../unittesting_examples.md:68
 msgid "2. Testing a method involving `msg.sender`"
 msgstr ""
 
-#: ../../unittesting_examples.md:61
+#: ../../unittesting_examples.md:70
 msgid "In Solidity, `msg.sender` plays a great role in access management of a smart contract methods interaction. Different `msg.sender` can help to test a contract involving multiple accounts with different roles. Here is an example for testing such case:"
 msgstr ""
 
-#: ../../unittesting_examples.md:63
+#: ../../unittesting_examples.md:72
 msgid "Contract/Program to be tested: `Sender.sol`"
 msgstr ""
 
-#: ../../unittesting_examples.md:85
+#: ../../unittesting_examples.md:94
 msgid "Test contract/program: `Sender_test.sol`"
 msgstr ""
 
-#: ../../unittesting_examples.md:137
+#: ../../unittesting_examples.md:146
 msgid "3. Testing method execution"
 msgstr ""
 
-#: ../../unittesting_examples.md:139
+#: ../../unittesting_examples.md:148
 msgid "With Solidity, one can directly verify the changes made by a method in storage by retrieving those variables from a contract. But testing for a successful method execution takes some strategy. Well that is not entirely true, when a test is successful - it is usually obvious why it passed. However, when a test fails, it is essential to understand why it failed."
 msgstr ""
 
-#: ../../unittesting_examples.md:141
+#: ../../unittesting_examples.md:150
 msgid "To help in such cases, Solidity introduced the `try-catch` statement in version `0.6.0`. Previously, we had to use low-level calls to track down what was going on."
 msgstr ""
 
-#: ../../unittesting_examples.md:143
+#: ../../unittesting_examples.md:152
 msgid "Here is an example test file that use both **try-catch** blocks and **low level calls**:"
 msgstr ""
 
-#: ../../unittesting_examples.md:145
+#: ../../unittesting_examples.md:154
 msgid "Contract/Program to be tested: `AttendanceRegister.sol`"
 msgstr ""
 
-#: ../../unittesting_examples.md:174
+#: ../../unittesting_examples.md:183
 msgid "Test contract/program: `AttendanceRegister_test.sol`"
 msgstr ""
 
-#: ../../unittesting_examples.md:262
+#: ../../unittesting_examples.md:270
 msgid "4. Testing a method involving `msg.value`"
 msgstr ""
 
-#: ../../unittesting_examples.md:263
+#: ../../unittesting_examples.md:272
 msgid "In Solidity, ether can be passed along with a method call which is accessed inside contract as `msg.value`. Sometimes, multiple calculations in a method are performed based on `msg.value` which can be tested with various values using Remix's Custom transaction context. See the example:"
 msgstr ""
 
-#: ../../unittesting_examples.md:265
+#: ../../unittesting_examples.md:274
 msgid "Contract/Program to be tested: `Value.sol`"
 msgstr ""
 
-#: ../../unittesting_examples.md:285
+#: ../../unittesting_examples.md:295
 msgid "Test contract/program: `Value_test.sol`"
 msgstr ""
 
-#: ../../unittesting_examples.md:331
+#: ../../unittesting_examples.md:341
 msgid "5. Testing a method involving `msg.sender` and `msg.value`"
 msgstr ""
 
-#: ../../unittesting_examples.md:332
+#: ../../unittesting_examples.md:343
 msgid "In the following test, we will be emulating multiple accounts making deposits in a smart contract to the same recipient and finally having the recipient withdraw the lump sum of all donations. We are also verifying that the donations match the expected amounts. This example really drives home how could you switch between different accounts, while using a set of different msg.value amounts."
 msgstr ""
 
-#: ../../unittesting_examples.md:334
+#: ../../unittesting_examples.md:345
 msgid "Contract/Program to be tested: `Donations.sol`"
 msgstr ""
 
-#: ../../unittesting_examples.md:379
+#: ../../unittesting_examples.md:391
 msgid "Test contract/program: `Donations_test.sol`"
 msgstr ""

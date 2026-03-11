@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-23, Remix;
+# Copyright (C) 2019 - 2026, Remix Team
 # This file is distributed under the same license as the Remix - Ethereum IDE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Remix - Ethereum IDE 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-24 17:10+0200\n"
+"POT-Creation-Date: 2026-03-11 20:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,34 +16,42 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../terminal.md:1
-msgid "Terminal"
+#: ../../terminal.md:0
+msgid "Use the Remix IDE terminal to run scripts, view transaction logs, and interact with the blockchain via the console."
 msgstr ""
 
-#: ../../terminal.md:4
-msgid "![](images/a-terminal-and-more.png)"
-msgstr ""
-
-#: ../../terminal.md:6
-msgid "Features, available in the terminal:"
+#: ../../terminal.md:0
+msgid "remix terminal, remix console, transaction logs, remix ide, scripting"
 msgstr ""
 
 #: ../../terminal.md:8
-msgid "It integrates a JavaScript interpreter and the `web3` object. It enables the execution of the JavaScript script which interacts with the current context. (note that `web3` is only available if the `web provider` or `injected provider` mode is selected)."
+msgid "Terminal"
+msgstr ""
+
+#: ../../terminal.md:10
+msgid "![](images/a-terminal-and-more.png)"
 msgstr ""
 
 #: ../../terminal.md:12
-msgid "It displays important actions made while interacting with the Remix IDE (i.e. sending a new transaction)."
+msgid "Features, available in the terminal:"
 msgstr ""
 
 #: ../../terminal.md:14
-msgid "It displays transactions that are mined in the current context. You can choose to display all transactions or only transactions that refers to the contracts Remix knows (e.g transaction created from the Remix IDE)."
+msgid "It integrates a JavaScript interpreter and the `web3` object. It enables the execution of the JavaScript script which interacts with the current context. (note that `web3` is only available if the `web provider` or `injected provider` mode is selected)."
 msgstr ""
 
 #: ../../terminal.md:18
-msgid "It allows searching for the data and clearing the logs from the terminal."
+msgid "It displays important actions made while interacting with the Remix IDE (i.e. sending a new transaction)."
 msgstr ""
 
 #: ../../terminal.md:20
+msgid "It displays transactions that are mined in the current context. You can choose to display all transactions or only transactions that refers to the contracts Remix knows (e.g transaction created from the Remix IDE)."
+msgstr ""
+
+#: ../../terminal.md:24
+msgid "It allows searching for the data and clearing the logs from the terminal."
+msgstr ""
+
+#: ../../terminal.md:26
 msgid "You can run scripts by inputting them at the bottom after the `>`."
 msgstr ""
