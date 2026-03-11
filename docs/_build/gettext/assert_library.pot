@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-23, Remix;
+# Copyright (C) 2019 - 2026, Remix Team
 # This file is distributed under the same license as the Remix - Ethereum IDE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Remix - Ethereum IDE 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-24 17:10+0200\n"
+"POT-Creation-Date: 2026-03-11 20:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,110 +16,126 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../assert_library.md:1
-msgid "Remix Assert Library"
+#: ../../assert_library.md:0
+msgid "Reference for the Remix Assert library — assertion functions for writing Solidity unit tests in Remix IDE."
 msgstr ""
 
-#: ../../assert_library.md:4
-msgid "[Assert.ok(value[, message])](#assert-ok-value-message)"
-msgstr ""
-
-#: ../../assert_library.md:5
-msgid "[Assert.equal(actual, expected[, message])](#assert-equal-actual-expected-message)"
-msgstr ""
-
-#: ../../assert_library.md:6
-msgid "[Assert.notEqual(actual, expected[, message])](#assert-notequal-actual-expected-message)"
-msgstr ""
-
-#: ../../assert_library.md:7
-msgid "[Assert.greaterThan(value1, value2[, message])](#assert-greaterthan-value1-value2-message)"
+#: ../../assert_library.md:0
+msgid "remix assert library, solidity assertions, unit testing, assert.equal, remix ide"
 msgstr ""
 
 #: ../../assert_library.md:8
-msgid "[Assert.lesserThan(value1, value2[, message])](#assert-lesserthan-value1-value2-message)"
+msgid "Remix Assert Library"
+msgstr ""
+
+#: ../../assert_library.md:10
+msgid "[Remix Assert Library](#remix-assert-library)"
 msgstr ""
 
 #: ../../assert_library.md:11
-msgid "Assert"
+msgid "[Assert](#assert)"
+msgstr ""
+
+#: ../../assert_library.md:12
+msgid "[Assert.ok(value\\[, message\\])](#assertokvalue-message)"
 msgstr ""
 
 #: ../../assert_library.md:13
-msgid "Assert.ok(value[, message])"
+msgid "[Assert.equal(actual, expected\\[, message\\])](#assertequalactual-expected-message)"
 msgstr ""
 
 #: ../../assert_library.md:14
-msgid "`value`: \\<bool\\>"
+msgid "[Assert.notEqual(actual, expected\\[, message\\])](#assertnotequalactual-expected-message)"
 msgstr ""
 
 #: ../../assert_library.md:15
-#: ../../assert_library.md:30
-#: ../../assert_library.md:50
-#: ../../assert_library.md:66
-#: ../../assert_library.md:85
+msgid "[Assert.greaterThan(value1, value2\\[, message\\])](#assertgreaterthanvalue1-value2-message)"
+msgstr ""
+
+#: ../../assert_library.md:16
+msgid "[Assert.lesserThan(value1, value2\\[, message\\])](#assertlesserthanvalue1-value2-message)"
+msgstr ""
+
+#: ../../assert_library.md:18
+msgid "Assert"
+msgstr ""
+
+#: ../../assert_library.md:20
+msgid "Assert.ok(value[, message])"
+msgstr ""
+
+#: ../../assert_library.md:22
+msgid "`value`: \\<bool\\>"
+msgstr ""
+
+#: ../../assert_library.md:23
+#: ../../assert_library.md:40
+#: ../../assert_library.md:62
+#: ../../assert_library.md:80
+#: ../../assert_library.md:101
 msgid "`message`: \\<string\\>"
 msgstr ""
 
-#: ../../assert_library.md:17
+#: ../../assert_library.md:25
 msgid "Tests if value is truthy. `message` is returned in case of failure."
 msgstr ""
 
-#: ../../assert_library.md:19
-#: ../../assert_library.md:34
-#: ../../assert_library.md:54
-#: ../../assert_library.md:70
-#: ../../assert_library.md:89
+#: ../../assert_library.md:27
+#: ../../assert_library.md:44
+#: ../../assert_library.md:66
+#: ../../assert_library.md:84
+#: ../../assert_library.md:105
 msgid "Examples:"
 msgstr ""
 
-#: ../../assert_library.md:27
+#: ../../assert_library.md:36
 msgid "Assert.equal(actual, expected[, message])"
 msgstr ""
 
-#: ../../assert_library.md:28
-#: ../../assert_library.md:48
+#: ../../assert_library.md:38
+#: ../../assert_library.md:60
 msgid "`actual`: \\<uint | int | bool | address | bytes32 | string\\>"
 msgstr ""
 
-#: ../../assert_library.md:29
-#: ../../assert_library.md:49
+#: ../../assert_library.md:39
+#: ../../assert_library.md:61
 msgid "`expected`: \\<uint | int | bool | address | bytes32 | string\\>"
 msgstr ""
 
-#: ../../assert_library.md:32
+#: ../../assert_library.md:42
 msgid "Tests if `actual` & `expected` values are same. `message` is returned in case of failure."
 msgstr ""
 
-#: ../../assert_library.md:47
+#: ../../assert_library.md:58
 msgid "Assert.notEqual(actual, expected[, message])"
 msgstr ""
 
-#: ../../assert_library.md:52
+#: ../../assert_library.md:64
 msgid "Tests if `actual` & `expected` values are not same. `message` is returned in case of failure."
 msgstr ""
 
-#: ../../assert_library.md:63
+#: ../../assert_library.md:76
 msgid "Assert.greaterThan(value1, value2[, message])"
 msgstr ""
 
-#: ../../assert_library.md:64
-#: ../../assert_library.md:83
+#: ../../assert_library.md:78
+#: ../../assert_library.md:99
 msgid "`value1`: \\<uint | int\\>"
 msgstr ""
 
-#: ../../assert_library.md:65
-#: ../../assert_library.md:84
+#: ../../assert_library.md:79
+#: ../../assert_library.md:100
 msgid "`value2`: \\<uint | int\\>"
 msgstr ""
 
-#: ../../assert_library.md:68
+#: ../../assert_library.md:82
 msgid "Tests if `value1` is greater than `value2`. `message` is returned in case of failure."
 msgstr ""
 
-#: ../../assert_library.md:82
+#: ../../assert_library.md:97
 msgid "Assert.lesserThan(value1, value2[, message])"
 msgstr ""
 
-#: ../../assert_library.md:87
+#: ../../assert_library.md:103
 msgid "Tests if `value1` is lesser than `value2`. `message` is returned in case of failure."
 msgstr ""

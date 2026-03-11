@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 20:28+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../vyper.md:0
+msgid "Compile Vyper smart contracts directly in Remix IDE using the Vyper compiler plugin."
+msgstr ""
+
+#: ../../vyper.md:0
+msgid "vyper compiler, remix vyper, vyper smart contracts, ethereum, remix ide"
+msgstr ""
+
+#: ../../vyper.md:8
+msgid "Vyper Compiler"
+msgstr ""
+
+#: ../../vyper.md:10
+msgid "Vyper contracts can be compiled in Remix with the **Vyper compiler**."
+msgstr ""
+
+#: ../../vyper.md:12
+msgid "![](images/a-vyper-pi-basic.png)"
+msgstr ""
+
+#: ../../vyper.md:14
+msgid "The plugin can be activated by going to:"
+msgstr ""
+
+#: ../../vyper.md:16
+msgid "the Plugin Manager and clicking on the Vyper compiler's activate button."
+msgstr ""
+
+#: ../../vyper.md:17
+msgid "the File Explorer, then by right-clicking on a .vy file and selecting compile in the pop-up menu."
+msgstr ""
+
+#: ../../vyper.md:18
+msgid "https://remix.ethereum.org/#activate=vyper"
+msgstr ""
+
+#: ../../vyper.md:20
+msgid "Compiling a Vyper file"
+msgstr ""
+
+#: ../../vyper.md:22
+msgid "A Vyper file (with a `.vy` extension) needs to be the active file in the Editor. To get some example files, click on the **Clone Vyper examples repo** button. This will clone a repo and put it in a new Workspace. Go to the File Explorer to see the files."
+msgstr ""
+
+#: ../../vyper.md:24
+msgid "Specifying Vyper version, EVM versions, and optimize"
+msgstr ""
+
+#: ../../vyper.md:26
+msgid "To specify the Vyper version, the EVM version, and optimize setting, add a comment at the top of your .vy code as in the examples below:"
+msgstr ""
+
+#: ../../vyper.md:28
+msgid "Specify Vyper version"
+msgstr ""
+
+#: ../../vyper.md:30
+msgid "As of 0.3.10, the recommended way to specify the version pragma is as follows:"
+msgstr ""
+
+#: ../../vyper.md:36
+msgid "Old way to specify Vyper version"
+msgstr ""
+
+#: ../../vyper.md:42
+msgid "EVM version"
+msgstr ""
+
+#: ../../vyper.md:48
+msgid "Optimize"
+msgstr ""
+
+#: ../../vyper.md:54
+msgid "For optimize, the choices options are `none`, `codesize`, or `optimize`."
+msgstr ""
+
+#: ../../vyper.md:56
+msgid "For more info see the Vyperlang [docs](https://docs.vyperlang.org/en/stable/)."
+msgstr ""
+
+#: ../../vyper.md:58
+msgid "Initiating compilation"
+msgstr ""
+
+#: ../../vyper.md:60
+msgid "There are 4 ways to compile:"
+msgstr ""
+
+#: ../../vyper.md:62
+msgid "Click the compile button in the plugin"
+msgstr ""
+
+#: ../../vyper.md:63
+msgid "Right-click on a .vy file in the File Explorer and select `Compile for Vyper`."
+msgstr ""
+
+#: ../../vyper.md:64
+msgid "Click on the play button at the top left of the Main Panel when a .vy file is the active tab."
+msgstr ""
+
+#: ../../vyper.md:65
+msgid "CTRL + s when a .vy file is in the active tab of the Main Panel."
+msgstr ""
+
+#: ../../vyper.md:67
+msgid "Remote vs Local compiler"
+msgstr ""
+
+#: ../../vyper.md:69
+msgid "The default is to use the remote compiler. To see the settings open up the Advanced Settings accordion box."
+msgstr ""
+
+#: ../../vyper.md:71
+msgid "Remote Compiler"
+msgstr ""
+
+#: ../../vyper.md:73
+msgid "The remote compilation is done using our remote containerized service that supports the official Vyper plugin for the Ape framework which ApeWorX maintains."
+msgstr ""
+
+#: ../../vyper.md:75
+msgid "Local Compiler"
+msgstr ""
+
+#: ../../vyper.md:77
+msgid "The local compilation can be done by connecting Remix Online IDE to your file system with {doc}`Remixd </remixd>` and then running a docker container that runs the Ape framework."
+msgstr ""
+
+#: ../../vyper.md:79
+msgid "When the next version of Remix Desktop is ready, you’ll be able to run everything locally — both Remix, and the new Vyper compilers (still in Docker, of course)."
+msgstr ""
+
+#: ../../vyper.md:81
+msgid "Compiler errors"
+msgstr ""
+
+#: ../../vyper.md:83
+msgid "When there are compiler errors in the Vyper plugin, a card will appear at the bottom of the compiler."
+msgstr ""
+
+#: ../../vyper.md:85
+msgid "Errors appear one at a time. Fix one error, and the next one, if it exists, will appear."
+msgstr ""
+
+#: ../../vyper.md:87
+msgid "![](images/a-vyper-compiler-error.png)"
+msgstr ""

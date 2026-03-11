@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-23, Remix;
+# Copyright (C) 2019 - 2026, Remix Team
 # This file is distributed under the same license as the Remix - Ethereum IDE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Remix - Ethereum IDE 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-24 17:10+0200\n"
+"POT-Creation-Date: 2026-03-11 20:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,18 +16,30 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../community.md:1
-msgid "Community Support"
+#: ../../community.md:0
+msgid "Get help with Remix IDE and connect with the community through Discord, Twitter, and other channels."
 msgstr ""
 
-#: ../../community.md:4
-msgid "We know that blockchain ecosystem is very new and that lots of information is scattered around the web. That is why we created a community support channel where we and other users try to answer your questions if you get stuck using Remix. Please, join [the community](https://gitter.im/ethereum/remix) and ask for help."
+#: ../../community.md:0
+msgid "remix community, remix discord, remix support, ethereum community, remix twitter"
 msgstr ""
 
 #: ../../community.md:8
-msgid "For anyone who is interested in developing a custom plugin for Remix or who wants to contribute to the codebase, we opened a [contributors' channel](https://gitter.im/ethereum/remix-dev) especially for developers working on Remix tools."
+msgid "Community Support"
 msgstr ""
 
-#: ../../community.md:11
-msgid "We would kindly ask you to respect the space and to use it for getting help with your work and the developers' channel for discussions related to working on Remix codebase. If you have ideas for collaborations or you want to promote your project, try to find some more appropriate channels to do so. Or you can contact the main contributors directly on Gitter or Twitter."
+#: ../../community.md:10
+msgid "Do you have questions about Remix? Join our [Discord](https://discord.com/invite/qhpCQGWkmf) server and get some help!"
+msgstr ""
+
+#: ../../community.md:12
+msgid "We post announcements and tips on [Twitter](https://twitter.com/ethereumremix)."
+msgstr ""
+
+#: ../../community.md:14
+msgid "For those interested in contributing to our codebase, make a PR to the [Remix Project repo](https://github.com/remix-project-org/remix-project/)."
+msgstr ""
+
+#: ../../community.md:16
+msgid "If you'd like to develop a plugin for Remix, check this [guide](https://remix-plugins-directory.readthedocs.io/en/latest/)."
 msgstr ""

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-23, Remix;
+# Copyright (C) 2019 - 2026, Remix Team
 # This file is distributed under the same license as the Remix - Ethereum IDE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Remix - Ethereum IDE 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-12 15:08-0400\n"
+"POT-Creation-Date: 2026-03-11 20:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,138 +16,255 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../settings.md:1
-msgid "Settings"
+#: ../../settings.md:0
+msgid "Configure Remix IDE settings including themes, compiler options, gas limits, and editor preferences."
 msgstr ""
 
-#: ../../settings.md:4
-msgid "To get to **Settings** click the gear at the very bottom of the icon panel."
-msgstr ""
-
-#: ../../settings.md:6
-msgid "Reset Button"
-msgstr ""
-
-#: ../../settings.md:7
-msgid "The Reset button at the top of the Setting panel will reset all of the settings back to the default."
+#: ../../settings.md:0
+msgid "remix settings, remix ide configuration, themes, compiler settings, gas limit"
 msgstr ""
 
 #: ../../settings.md:8
-msgid "General Settings"
+msgid "Settings"
 msgstr ""
 
 #: ../../settings.md:10
-msgid "![](images/a-settings-general.png)"
+msgid "You can access **Settings** for Remix by clicking the gear icon at the top right of Remix."
 msgstr ""
 
 #: ../../settings.md:12
-msgid "Generate contract metadata is used for deploying with libraries.  See our blog post on the subject: [Deploying with Libraries](https://medium.com/remix-ide/deploying-with-libraries-on-remix-ide-24f5f7423b60?sk=68f9c2bf318e85e129e46fe44683a730)"
-msgstr ""
-
-#: ../../settings.md:13
-msgid "Always use Remix VM at Load: will make the Remix VM the selected **environment** when Remix loads."
+msgid "General Settings"
 msgstr ""
 
 #: ../../settings.md:14
-msgid "Text wrap: controls if the text in the editor should be wrapped."
+msgid "![Remix General Settings Page](images/settings/a-settings-general.png)"
 msgstr ""
 
-#: ../../settings.md:15
-msgid "Personal mode: can be used when one is connecting to a **local node**.  It is used to have Remix temporarily save the passphrase - so that you don't need to **unlock** the account in GETH.  Remix will not persist the passphrase - so if you refresh your browser the passphrase will be gone."
+#: ../../settings.md:14
+msgid "Remix General Settings Page"
 msgstr ""
 
 #: ../../settings.md:16
-msgid "Matomo Analytics: This is where you can turn off and on your approval for us to use Matomo.  We do not collect any personally identifiable information (PII) and our reports are public.  See our [blog post on the subject](https://medium.com/remix-ide/help-us-improve-remix-ide-66ef69e14931?source=friends_link&sk=cf9c62fbe1270543eb4bd912e567e2d6)."
+msgid "**Generate contract metadata** is used for deploying with libraries. See our blog post on the subject: [Deploying with Libraries](https://medium.com/remix-ide/deploying-with-libraries-on-remix-ide-24f5f7423b60?sk=68f9c2bf318e85e129e46fe44683a730)"
+msgstr ""
+
+#: ../../settings.md:17
+msgid "**Always use Remix VM at Load** will make the Remix VM the selected **environment** when Remix loads."
 msgstr ""
 
 #: ../../settings.md:18
-msgid "Github Access Token"
+msgid "**Word wrap** controls if word wrap is enabled in the Editor."
+msgstr ""
+
+#: ../../settings.md:19
+msgid "**Enable code completion in editor** controls code completion. Autocompleting Solidity code happens when you type in the Editor. This option has the Compiler run in the background. For more information about autocomplete, see the {ref}`Editor docs <solidity_editor:autocomplete>`."
 msgstr ""
 
 #: ../../settings.md:20
-msgid "When performing Git operations on Github and when creating GISTs, it may be necessary to input an access token.  This token has the specific permissions for your Git commands. Depending on the operation, you may also need to input your Github username & email address.  Remix does not save your password info outside of your browser's localstorage.  [https://github.com/settings/tokens](https://github.com/settings/tokens)"
+msgid "**Display gas estimates in editor** controls if gas estimates are shown. The gas estimates only works when a compilation is successful."
+msgstr ""
+
+#: ../../settings.md:21
+msgid "**Display errors in editor while typing**"
 msgstr ""
 
 #: ../../settings.md:22
-msgid "![](images/a-settings-gh-token.png)"
+msgid "**Enable Personal Mode for web3 provider** can be used when one is connecting to a **local node**. It is used to have Remix temporarily save the passphrase - so that you don't need to **unlock** the account in Geth. Remix will not persist the passphrase - so if you refresh your browser the passphrase will be gone."
 msgstr ""
 
-#: ../../settings.md:24
-msgid "Etherscan Access Token"
+#: ../../settings.md:23
+msgid "**Save environment state** controls if state of the Remix VM (Remix's simulated blockchain) is saved in a file in the File Explorer. With this option enabled, the Remix VM's state will be saved, so if the browser is closed, the state of the VM will be preserved when you return. This is true as long as the storage in your browser does not get cleared or corrupted."
 msgstr ""
 
-#: ../../settings.md:26
-msgid "You need to input your Etherscan access token when debugging verified contracts with the Remix Debugger.  When verifying a contract with the Etherscan plugin, you need to put the API key in that plugin and not in the Settings panel."
+#: ../../settings.md:25
+msgid "Appearance"
 msgstr ""
 
-#: ../../settings.md:28
-msgid "Click [here](https://etherscan.io/myapikey) to get your Etherscan API key."
+#: ../../settings.md:27
+msgid "The Appearance subsection allows you to customize the look of Remix. You can choose between the Dark and Light themes."
 msgstr ""
 
-#: ../../settings.md:30
-msgid "![](images/a-settings-etherscan.png)"
+#: ../../settings.md:29
+msgid "Analytics"
 msgstr ""
 
-#: ../../settings.md:32
-msgid "Swarm Settings"
+#: ../../settings.md:31
+msgid "**Matomo Analytics** is our \"opt-in\" analytics platform. The option to turn on Matomo is offered when you first come to Remix. You can disable or enable Matomo here in the Settings panel. We do not collect any personally identifiable information (PII) and our reports are public. See our [blog post on the subject](https://medium.com/remix-ide/help-us-improve-remix-ide-66ef69e14931?source=friends_link&sk=cf9c62fbe1270543eb4bd912e567e2d6)."
 msgstr ""
 
-#: ../../settings.md:34
-msgid "In the Solidity Compiler, after the compilation is completed, there is a button to publish to Swarm."
+#: ../../settings.md:33
+msgid "![Remix Analytics Page.](images/settings/remix-analytics.png)"
 msgstr ""
 
-#: ../../settings.md:36
-msgid "![](images/a-settings-pub-swarm.png)"
+#: ../../settings.md:33
+msgid "Remix Analytics Page."
 msgstr ""
 
-#: ../../settings.md:38
-msgid "Without putting in an address & postage stamp, you'll be using the public gateway, which may not persist your content as surely as if you put in your own info."
+#: ../../settings.md:35
+msgid "RemixAI Assistant"
 msgstr ""
 
-#: ../../settings.md:40
-msgid "![](images/a-settings-swarm.png)"
+#: ../../settings.md:37
+msgid "![RemixAI Assistant Settings Page](images/settings/a-settings-ai1.png)"
 msgstr ""
 
-#: ../../settings.md:42
-msgid "IPFS Settings"
+#: ../../settings.md:37
+msgid "RemixAI Assistant Settings Page"
 msgstr ""
 
-#: ../../settings.md:44
-msgid "Just like the Swarm settings above, IPFS settings are for publishing your contracts to IPFS from the Solidity Compiler."
+#: ../../settings.md:39
+msgid "These settings are primarily for the code completion functions of Remix's AI tool, Solidity Copilot. See this {doc}`doc page </ai>` for more information about AI in Remix."
+msgstr ""
+
+#: ../../settings.md:41
+#: ../../settings.md:45
+msgid "Connected Services"
+msgstr ""
+
+#: ../../settings.md:43
+msgid "The Connected Services section allows you to configure credentials and access tokens for external services that integrate with Remix. These connections enable features like Git operations, contract verification, circuit compilation, and decentralized storage."
 msgstr ""
 
 #: ../../settings.md:45
-msgid "If you do not put in any settings here, you will be using the public INFURA node. This will not guarantee your data will persist."
+msgid "![Connected Services](images/settings/connected-services.png)"
 msgstr ""
 
 #: ../../settings.md:47
-msgid "Other options are to:"
-msgstr ""
-
-#: ../../settings.md:48
-msgid "Use your own INFURA IPFS node. This requires a subscription. [Learn more](https://infura.io/product/ipfs)"
+msgid "Github credentials"
 msgstr ""
 
 #: ../../settings.md:49
-msgid "Use any external IPFS which doesn’t require any authentification."
+msgid "When performing Git operations on Github and when creating GISTs, it may be necessary to input an access token. This token has the specific permissions for your Git commands. Depending on the operation, you may also need to input your Github username & email address. Remix does not save your password info outside of your browser's localstorage."
 msgstr ""
 
-#: ../../settings.md:50
-msgid "Use your own local ipfs node (which usually runs under http://localhost:5001)"
+#: ../../settings.md:51
+msgid "![Remix GitHub Credentials page.](images/settings/a-settings-gh-token.png)"
 msgstr ""
 
-#: ../../settings.md:52
-msgid "![](images/a-settings-ipfs.png)"
+#: ../../settings.md:51
+msgid "Remix GitHub Credentials page."
 msgstr ""
 
-#: ../../settings.md:54
-msgid "Themes"
+#: ../../settings.md:53
+msgid "Etherscan Access Token"
 msgstr ""
 
 #: ../../settings.md:55
-msgid "Choose themes here.  The Dark & Light themes are the themes that the Remix team actively maintains."
+msgid "**The Etherscan Access token is used in three operations in Remix:**"
 msgstr ""
 
 #: ../../settings.md:57
-msgid "![](images/a-settings-themes.png)"
+msgid "When using the Deploy & Verify button, the token can be saved either in the Settings panel or in the Contract Verification plugin's Settings tab."
+msgstr ""
+
+#: ../../settings.md:58
+msgid "When using the Contract Verification plugin, the Etherscan Access token must be placed in the Contract Verification plugin's Settings tab."
+msgstr ""
+
+#: ../../settings.md:59
+msgid "When debugging verified contracts with the Remix Debugger, the token must be input in the Settings panel."
+msgstr ""
+
+#: ../../settings.md:61
+msgid "See the {doc}`Contract Verification plugin Docs </contract_verification>` for more info."
+msgstr ""
+
+#: ../../settings.md:64
+msgid "Visit the [Etherscan API page](https://etherscan.io/myapikey) to get your Etherscan API key."
+msgstr ""
+
+#: ../../settings.md:67
+msgid "![Remix Etherscan Access Token page.](images/settings/a-settings-etherscan.png) _Adding Etherscan Access Token on the Settings Page_"
+msgstr ""
+
+#: ../../settings.md:67
+msgid "Remix Etherscan Access Token page."
+msgstr ""
+
+#: ../../settings.md:70
+msgid "![Contract Verification plugin settings page.](images/settings/etherscan-token-cv-plugin.png) _Adding Etherscan Access Token on the Contract Verification plugin Settings Page_"
+msgstr ""
+
+#: ../../settings.md:70
+msgid "Contract Verification plugin settings page."
+msgstr ""
+
+#: ../../settings.md:73
+msgid "Sindri Credentials"
+msgstr ""
+
+#: ../../settings.md:75
+msgid "The access token is used to compile ZKP circuits and generate proofs with Sindri. To generate the token go to [Sindri](https://sindri.app)."
+msgstr ""
+
+#: ../../settings.md:77
+msgid "![Remix Sindri settings page.](images/settings/a-settings-sindri.png)"
+msgstr ""
+
+#: ../../settings.md:77
+msgid "Remix Sindri settings page."
+msgstr ""
+
+#: ../../settings.md:79
+msgid "Swarm Settings"
+msgstr ""
+
+#: ../../settings.md:81
+msgid "In the Solidity Compiler, after the compilation is completed, there is a button to publish to Swarm."
+msgstr ""
+
+#: ../../settings.md:83
+msgid "![Remix Solidity Compiler highlighting Publish on Swarm.](images/settings/a-settings-pub-swarm.png)"
+msgstr ""
+
+#: ../../settings.md:83
+msgid "Remix Solidity Compiler highlighting Publish on Swarm."
+msgstr ""
+
+#: ../../settings.md:85
+msgid "Without putting in an address & postage stamp, you'll be using the public gateway, which may not persist your content as surely as if you put in your own info."
+msgstr ""
+
+#: ../../settings.md:87
+msgid "![Remix Swarm Settings.](images/settings/a-settings-swarm.png)"
+msgstr ""
+
+#: ../../settings.md:87
+msgid "Remix Swarm Settings."
+msgstr ""
+
+#: ../../settings.md:89
+msgid "IPFS Settings"
+msgstr ""
+
+#: ../../settings.md:91
+msgid "Just like the Swarm settings above, IPFS settings are for publishing your contracts to IPFS from the Solidity Compiler."
+msgstr ""
+
+#: ../../settings.md:93
+msgid "If you do not put in any settings here, you will be using the public Infura node. This will not guarantee your data will persist."
+msgstr ""
+
+#: ../../settings.md:95
+msgid "Other options are to:"
+msgstr ""
+
+#: ../../settings.md:97
+msgid "Use your own Infura IPFS node. This requires a subscription. [Learn more](https://infura.io/product/ipfs)."
+msgstr ""
+
+#: ../../settings.md:98
+msgid "Use any external IPFS which doesn’t require any authentication."
+msgstr ""
+
+#: ../../settings.md:99
+msgid "Use your own local IPFS node (which usually runs under http://localhost:5001)"
+msgstr ""
+
+#: ../../settings.md:101
+msgid "![Remix IPFS settings](images/settings/a-settings-ipfs.png)"
+msgstr ""
+
+#: ../../settings.md:101
+msgid "Remix IPFS settings"
 msgstr ""

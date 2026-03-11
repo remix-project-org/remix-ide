@@ -1,0 +1,302 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 20:28+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../desktop.md:0
+msgid "Remix Desktop is a standalone app for macOS, Linux, and Windows with direct local filesystem access and all the features of Remix IDE."
+msgstr ""
+
+#: ../../desktop.md:0
+msgid "remix desktop, ethereum ide, desktop app, local filesystem, solidity"
+msgstr ""
+
+#: ../../desktop.md:0
+#: ../../desktop.md:8
+msgid "Remix Desktop"
+msgstr ""
+
+#: ../../desktop.md:10
+msgid "Remix Desktop is a standalone desktop application that provides the same features as Remix IDE, with direct access to the local filesystem. It is available for macOS, Linux, and Windows, and supports running multiple instances simultaneously."
+msgstr ""
+
+#: ../../desktop.md:12
+msgid "Why Remix Desktop?"
+msgstr ""
+
+#: ../../desktop.md:14
+msgid "The web version of Remix is perfect for prototyping and learning, Remix Desktop is designed for local development workflows."
+msgstr ""
+
+#: ../../desktop.md:16
+msgid "With Remix Desktop, you can:"
+msgstr ""
+
+#: ../../desktop.md:18
+msgid "Work directly with local files and folders"
+msgstr ""
+
+#: ../../desktop.md:19
+msgid "Use Remix offline"
+msgstr ""
+
+#: ../../desktop.md:20
+msgid "Integrate smoothly with local tooling (Git, local nodes, scripts, native terminal)"
+msgstr ""
+
+#: ../../desktop.md:21
+msgid "Maintain the same familiar Remix UI and plugins"
+msgstr ""
+
+#: ../../desktop.md:22
+msgid "Access a local development blockchain - like Anvil"
+msgstr ""
+
+#: ../../desktop.md:24
+msgid "Remix Desktop vs Remix online"
+msgstr ""
+
+#: ../../desktop.md:0
+msgid "Feature"
+msgstr ""
+
+#: ../../desktop.md:0
+msgid "Remix Online"
+msgstr ""
+
+#: ../../desktop.md:0
+msgid "Local filesystem access"
+msgstr ""
+
+#: ../../desktop.md:0
+msgid "Limited"
+msgstr ""
+
+#: ../../desktop.md:0
+msgid "Full"
+msgstr ""
+
+#: ../../desktop.md:0
+msgid "Offline support"
+msgstr ""
+
+#: ../../desktop.md:0
+msgid "No"
+msgstr ""
+
+#: ../../desktop.md:0
+msgid "Yes"
+msgstr ""
+
+#: ../../desktop.md:0
+msgid "Installation required"
+msgstr ""
+
+#: ../../desktop.md:0
+msgid "Plugin support"
+msgstr ""
+
+#: ../../desktop.md:0
+msgid "User interface"
+msgstr ""
+
+#: ../../desktop.md:0
+msgid "Same"
+msgstr ""
+
+#: ../../desktop.md:0
+msgid "Git-friendly workflow"
+msgstr ""
+
+#: ../../desktop.md:0
+msgid "Partial"
+msgstr ""
+
+#: ../../desktop.md:35
+msgid "Installing Remix Desktop"
+msgstr ""
+
+#: ../../desktop.md:37
+msgid "Remix Desktop is available for macOS, Linux, and Windows. To install it for your operating system, visit the [Remix Desktop releases page](https://github.com/remix-project-org/remix-desktop/releases) and choose the installer for your operating system."
+msgstr ""
+
+#: ../../desktop.md:39
+msgid "![Remix Desktop releases page](images/desktop/releases.png)"
+msgstr ""
+
+#: ../../desktop.md:39
+msgid "Remix Desktop releases page"
+msgstr ""
+
+#: ../../desktop.md:41
+msgid "macOS"
+msgstr ""
+
+#: ../../desktop.md:43
+msgid "Two builds are available on macOS:"
+msgstr ""
+
+#: ../../desktop.md:45
+msgid "The arm64 build for Apple Silicon Chips (M1, M2, ...): If your system matches this build, download the installer named `Remix-Desktop-<version>-arm64.dmg`."
+msgstr ""
+
+#: ../../desktop.md:46
+msgid "The x64 build for Intel-based Macs: If your system matches this build, download the installer named `Remix-Desktop-<version>.dmg`."
+msgstr ""
+
+#: ../../desktop.md:48
+msgid "Linux"
+msgstr ""
+
+#: ../../desktop.md:50
+msgid "For most Linux distributions, Remix Desktop is provided as an AppImage. If you are on Linux download the file with `Remix-Desktop-<version>.AppImage`."
+msgstr ""
+
+#: ../../desktop.md:52
+msgid "Windows"
+msgstr ""
+
+#: ../../desktop.md:54
+msgid "On Windows, download the Remix Desktop installer (`.exe`) corresponding to your system architecture."
+msgstr ""
+
+#: ../../desktop.md:56
+msgid "Files you do not need to download"
+msgstr ""
+
+#: ../../desktop.md:58
+msgid "Some files in the release list are not intended for manual installation:"
+msgstr ""
+
+#: ../../desktop.md:60
+msgid "`latest.yml`, `latest-mac.yml`, `latest-linux.yml`: These are update metadata files used by the auto-updater. You do not need to download this because Remix desktop prompts you to auto-update anytime there is a new update."
+msgstr ""
+
+#: ../../desktop.md:61
+msgid "`Source code (zip)` and `Source code (tar.gz)`: These are intended for building Remix Desktop from source. There is no need to download them unless you intend to build the desktop app from source."
+msgstr ""
+
+#: ../../desktop.md:63
+msgid "Working offline with Remix Desktop"
+msgstr ""
+
+#: ../../desktop.md:65
+msgid "Remix Desktop allows you to work offline with low or no internet connectivity. Most features work offline by default, but there are some plugins that require an internet connection. For example, you can't deploy to a public network without the internet. But you can download versions of Solidity Compilers before you go offline."
+msgstr ""
+
+#: ../../desktop.md:67
+msgid "To download a Solidity Compiler version, select it when you're online and Remix Desktop will automatically download it. Downloaded versions will remain available for offline use."
+msgstr ""
+
+#: ../../desktop.md:69
+msgid "![Solidity Compiler with downloaded versions on Remix Desktop](images/desktop/desktop-compiler.png)"
+msgstr ""
+
+#: ../../desktop.md:69
+msgid "Solidity Compiler with downloaded versions on Remix Desktop"
+msgstr ""
+
+#: ../../desktop.md:71
+msgid "The offline/online indicator on the Icon Bar tracks your network and notifies you when you're online/offline."
+msgstr ""
+
+#: ../../desktop.md:73
+msgid "Using Remix Desktop with other IDEs"
+msgstr ""
+
+#: ../../desktop.md:75
+msgid "Remix Desktop accesses files directly from your file system allowing you to use your preferred IDE to write and edit code and use Remix for compiling, debugging, and testing."
+msgstr ""
+
+#: ../../desktop.md:77
+msgid "Using your native terminal in Remix Desktop"
+msgstr ""
+
+#: ../../desktop.md:79
+msgid "You can access your system's native terminal inside Remix Desktop. You can open the native terminal from the app’s menu bar by selecting **Terminal**."
+msgstr ""
+
+#: ../../desktop.md:81
+msgid "![Native Terminal Remix Desktop](/images/desktop/desktop-terminal.png)"
+msgstr ""
+
+#: ../../desktop.md:81
+msgid "Native Terminal Remix Desktop"
+msgstr ""
+
+#: ../../desktop.md:83
+msgid "Using a browser wallet in Remix Desktop"
+msgstr ""
+
+#: ../../desktop.md:85
+msgid "Remix Desktop does not include a \"built-in wallet\" but you can use a Browser Wallet."
+msgstr ""
+
+#: ../../desktop.md:87
+msgid "When you select **Injected Provider** (for example, MetaMask) in Remix Desktop, the connection is handled through your web browser:"
+msgstr ""
+
+#: ../../desktop.md:89
+msgid "Remix Desktop opens your default browser automatically"
+msgstr ""
+
+#: ../../desktop.md:90
+msgid "The browser navigates to a special local URL (for example, http://localhost:49589/)"
+msgstr ""
+
+#: ../../desktop.md:91
+msgid "MetaMask displays a connection request in the browser"
+msgstr ""
+
+#: ../../desktop.md:93
+msgid "This local URL acts as a bridge between Remix Desktop and the browser wallet."
+msgstr ""
+
+#: ../../desktop.md:95
+msgid "As a result, even though you are working in Remix Desktop, wallet interactions (such as signing transactions) are still performed in your browser via MetaMask."
+msgstr ""
+
+#: ../../desktop.md:97
+msgid "Other wallet in Remix Desktop"
+msgstr ""
+
+#: ../../desktop.md:98
+msgid "In addition to using a browser wallet, you can also use a node provider like Alchemy or Infura.  You can also use WalletConnect."
+msgstr ""
+
+#: ../../desktop.md:100
+msgid "Hard drive security and performance"
+msgstr ""
+
+#: ../../desktop.md:102
+msgid "Remix Desktop leverages the power of your local hard drive, allowing it to handle larger Solidity contracts and more complex Circom and Noir circuits."
+msgstr ""
+
+#: ../../desktop.md:104
+msgid "By running locally, Remix Desktop takes advantage of your machine’s storage and performance capabilities."
+msgstr ""
+
+#: ../../desktop.md:106
+msgid "Working with HardHat and Foundry"
+msgstr ""
+
+#: ../../desktop.md:107
+msgid "Going between Foundry or HardHat and Remix Desktop is seemless because all are running on your hard drive.  Please see the {doc}`Working with HardHat or Foundry</debugger>` page for more information including about using Remix Desktop for deploying a HardHat or Foundry compiled file."
+msgstr ""
+
+#: ../../desktop.md:109
+msgid "Similarly it is easy to use the {doc}`Debugger</debugger>` in Remix Desktop to untangle Solidity problems in a HardHat or Foundry project."
+msgstr ""

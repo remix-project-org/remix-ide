@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-23, Remix;
+# Copyright (C) 2019 - 2026, Remix Team
 # This file is distributed under the same license as the Remix - Ethereum IDE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Remix - Ethereum IDE 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-12 15:08-0400\n"
+"POT-Creation-Date: 2026-03-11 20:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,91 +16,99 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../remix_commands.md:1
-#: ../../remix_commands.md:14
-msgid "Remix Commands"
+#: ../../remix_commands.md:0
+msgid "Console commands available in Remix IDE for loading files, running scripts, and interacting with web3 and ethers libraries."
 msgstr ""
 
-#: ../../remix_commands.md:4
-msgid "In the console, you can run the commands listed below.  Once you start to type a command, there is *auto complete*.  These commands are using the following libraries:"
-msgstr ""
-
-#: ../../remix_commands.md:6
-msgid "**remix**:  Remix has a number of CLI commands for loading & executing file in a workspace.  See the list below."
+#: ../../remix_commands.md:0
+msgid "remix commands, remix console, web3, ethers.js, remix ide cli"
 msgstr ""
 
 #: ../../remix_commands.md:8
-msgid "**ethers**: Remix IDE enables the use of ethersjs commands. See the [Ethers docs](https://docs.ethers.io/) for the full list."
+#: ../../remix_commands.md:20
+msgid "Remix Commands"
 msgstr ""
 
 #: ../../remix_commands.md:10
-msgid "**web3**: Remix IDE enables the use of web3js commands. See the [Web3js docs](https://web3js.readthedocs.io/) for the full list."
+msgid "In the console, you can run the commands listed below. Once you start to type a command, there is _auto complete_. These commands are using the following libraries:"
 msgstr ""
 
 #: ../../remix_commands.md:12
-msgid "**swarmgw**: This library can be used to upload/download files to Swarm via https://swarm-gateways.net/."
+msgid "**remix**: Remix has a number of CLI commands for loading & executing file in a workspace. See the list below."
+msgstr ""
+
+#: ../../remix_commands.md:14
+msgid "**ethers**: Remix IDE enables the use of ethersjs commands. See the [Ethers docs](https://docs.ethers.org/v6/) for the full list."
 msgstr ""
 
 #: ../../remix_commands.md:16
-msgid "**remix.execute(filepath)**: Run the script specified by file path. If filepath is empty, script currently displayed in the editor is executed."
+msgid "**web3**: Remix IDE enables the use of web3js commands. See the [Web3js docs](https://web3js.readthedocs.io/) for the full list."
 msgstr ""
 
 #: ../../remix_commands.md:18
-msgid "**remix.exeCurrent()**: Run the script currently displayed in the editor."
-msgstr ""
-
-#: ../../remix_commands.md:20
-msgid "**remix.getFile(path)**: Returns the content of the file located at the given path"
+msgid "**swarmgw**: This library can be used to upload/download files to Swarm via https://swarm-gateways.net/."
 msgstr ""
 
 #: ../../remix_commands.md:22
-msgid "**remix.help()**: Display this help message."
+msgid "**remix.execute(filepath)**: Run the script specified by file path. If filepath is empty, script currently displayed in the editor is executed."
 msgstr ""
 
 #: ../../remix_commands.md:24
-msgid "**remix.loadgist(id)**: Load a gist in the file explorer."
+msgid "**remix.exeCurrent()**: Run the script currently displayed in the editor."
 msgstr ""
 
 #: ../../remix_commands.md:26
-msgid "**remix.loadurl(url)**: Load the given url in the file explorer. The url can be of type github, swarm or ipfs."
+msgid "**remix.getFile(path)**: Returns the content of the file located at the given path"
 msgstr ""
 
 #: ../../remix_commands.md:28
+msgid "**remix.help()**: Display this help message."
+msgstr ""
+
+#: ../../remix_commands.md:30
+msgid "**remix.loadgist(id)**: Load a gist in the File Explorer."
+msgstr ""
+
+#: ../../remix_commands.md:32
+msgid "**remix.loadurl(url)**: Load the given url in the File Explorer. The url can be of type github, swarm or IPFS."
+msgstr ""
+
+#: ../../remix_commands.md:34
 msgid "A few Ethers JS examples"
 msgstr ""
 
-#: ../../remix_commands.md:29
+#: ../../remix_commands.md:36
 msgid "**ethers.providers**: A Provider abstracts a connection to the Ethereum blockchain, for issuing queries and sending state changing transactions."
 msgstr ""
 
-#: ../../remix_commands.md:31
-msgid "**ethers.utils**: The utility functions exposed in both the ethers umbrella package and the ethers-utils.  eg ethers.utils.formatBytes32String( text )"
+#: ../../remix_commands.md:38
+msgid "**ethers.utils**: The utility functions exposed in both the ethers umbrella package and the ethers-utils. eg ethers.utils.formatBytes32String( text )"
 msgstr ""
 
-#: ../../remix_commands.md:33
+#: ../../remix_commands.md:40
 msgid "A few Web3 JS examples"
 msgstr ""
 
-#: ../../remix_commands.md:35
+#: ../../remix_commands.md:42
 msgid "**web3.eth.abi**: The web3.eth.abi functions let you de- and encode parameters to ABI (Application Binary Interface) for function calls to the EVM (Ethereum Virtual Machine)."
 msgstr ""
 
-#: ../../remix_commands.md:37
+#: ../../remix_commands.md:44
 msgid "**web3.providers**: Contains the current available providers."
 msgstr ""
 
-#: ../../remix_commands.md:39
-msgid "**web3.utils**: This package provides utility functions for Ethereum dapps and other **web3.js packages."
+#: ../../remix_commands.md:46
+msgid "**web3.utils**: This package provides utility functions for Ethereum dapps and other \\*\\*web3.js packages."
 msgstr ""
 
-#: ../../remix_commands.md:41
+#: ../../remix_commands.md:48
 msgid "A few Swarm examples (these will be updated soon)"
 msgstr ""
 
-#: ../../remix_commands.md:43
-msgid "**swarmgw.get(url, cb)**: Download files from Swarm via https**://swarm-gateways.net/"
+#: ../../remix_commands.md:50
+msgid "**swarmgw.get(url, cb)**: Download files from Swarm via https\\*\\*://swarm-gateways.net/"
 msgstr ""
 
-#: ../../remix_commands.md:45
-msgid "**swarmgw.put(content, cb)**: Upload files to Swarm via https**://swarm-gateways.net/"
+#: ../../remix_commands.md:52
+msgid "**swarmgw.put(content, cb)**: Upload files to Swarm via https\\*\\*://swarm-gateways.net/"
 msgstr ""
