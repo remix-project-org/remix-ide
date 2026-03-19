@@ -127,6 +127,7 @@ Useful Links
    import
    contract_verification
    running_js_scripts
+   deploy_dapp
 
 .. toctree::
    :hidden:
