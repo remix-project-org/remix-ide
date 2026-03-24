@@ -54,11 +54,11 @@ If the contract's constructor function has parameters, you will need to specify 
 
 ## Loading deployed contracts
 
-If a contract has already been deployed, you can load it into Remix using the "**Add**" button on the Deployed Contracts section.
+If a contract has already been deployed, you can load it into Remix using the "**Add Contract**" button on the **Deployed Contracts** section.
 Adding an already deployed contract costs no gas, since no redeployment is required. To load a deployed contract:
 
 1. Make sure the contract's source code or ABI is in the active tab of the Editor. If using source code, it must be compiled with the same settings as the originally deployed contract.
-2. Enter the deployed contract's address in the contract address field that appears when you click the "**Add**" button.
+2. Enter the deployed contract's address in the contract address field that appears when you click the "**Add Contract**" button.
 3. The contract instance will appear in the **Deployed Contracts** list, ready to interact with.
 
 ![The Deployed Contracts section showing the contract address field and Add button.](images/deploy-and-run/load-contract.png)
