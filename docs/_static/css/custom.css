@@ -1198,3 +1198,34 @@ html[style*="--color-scheme: black"]
   background: rgba(85, 165, 217, 0.3) !important;
   color: #fff !important;
 }
+
+/* Image zoom modal */
+.img-zoom-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.85);
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+.img-zoom-overlay.active {
+  display: flex;
+}
+
+.img-zoom-overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  cursor: zoom-out;
+}
+
+.wy-nav-content img:not(.img-no-zoom) {
+  cursor: zoom-in;
+}

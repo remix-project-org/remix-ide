@@ -347,3 +347,31 @@ const hideFlyoverMenu = () => {
     }
   }, 100); // Check every 100 milliseconds
 }
+/**
+ * Sets up click-to-zoom on all content images.
+ * Creates a fullscreen overlay that closes on click or Escape.
+ */
+const setupImageZoom = () => {
+  const overlay = document.createElement("div");
+  overlay.classList.add("img-zoom-overlay");
+  const zoomedImg = document.createElement("img");
+  overlay.appendChild(zoomedImg);
+  document.body.appendChild(overlay);
+
+  const closeOverlay = () => overlay.classList.remove("active");
+
+  overlay.addEventListener("click", closeOverlay);
+
+  document.querySelectorAll(".wy-nav-content img:not(.img-no-zoom)").forEach((img) => {
+    img.addEventListener("click", (e) => {
+      e.stopPropagation();
+      zoomedImg.src = img.src;
+      zoomedImg.alt = img.alt;
+      overlay.classList.add("active");
+    });
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeOverlay();
+  });
+}

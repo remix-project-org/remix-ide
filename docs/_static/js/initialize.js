@@ -17,6 +17,7 @@ const onDOMContentLoaded = () => {
   toggleMobileMenu({ expanded: false });
   updateFlyoverMenu();
   setTimeout(hideFlyoverMenu, 250);
+  setupImageZoom();
 };
 
 function main() {

@@ -1,8 +1,8 @@
 ---
 myst:
   html_meta:
-    "description": "Deploy and interact with smart contracts in Remix IDE using multiple environments including the JavaScript VM, Injected Provider, and custom RPC endpoints."
-    "keywords": "remix deploy, run module, javascript vm, injected provider, deploy contracts"
+    "description": "Deploy and interact with smart contracts in Remix IDE using multiple environments including the Remix VM, Browser Extension, WalletConnect, and custom RPC endpoints."
+    "keywords": "remix deploy, run module, remix vm, browser extension, walletconnect, deploy contracts, hardhat, foundry"
 ---
 
 # Deploy & Run
@@ -17,77 +17,150 @@ The three main actions of the Deploy & Run module are:
 
 This documentation page will cover **Deploying** and **Accessing**. Interacting will be covered in {doc}`Deploy & Run part 2 </udapp>`.
 
-![](images/deploy-and-run/a-deploy-run1.png)
+![Deploy & Run plugin](images/deploy-and-run/a-deploy-run1.png)
 
-To deploy a contract, you need to have a contract compiled. To check that there is a compiled contract, look in the **CONTRACT** selectbox under the VALUE input field.
+## Deploying a contract
 
-If nothing is there, you'll need to compile a contract. If you do not see your desired contract in the CONTRACT selectbox list, make sure the file with the contract is the active tab in the Editor.
+To deploy a contract, it must first be compiled. There are three ways you can compile a contract:
 
-Once the contract is selected, choose the chain for deployment and/or method for deployment in the **ENVIRONMENT** selectbox.
+1. You can compile your contract directly from the {doc}`Solidity Compiler plugin </compile>`. This allows you to configure the compiler's behavior, including the Solidity version, optimization settings, and EVM target before compiling.
+2. You can use the "**Compile**" button that appears in the main panel when you have an active Solidity file. The compilation uses the configuration from the Solidity Compiler plugin, applying whatever settings were last saved there.
+3. You can compile directly from the Deploy & Run plugin using the "Deploy" section. It displays a list of the contracts active in the editor, along with a "**Compile**" button that compiles using the settings stored in the Solidity Compiler plugin.
+
+![The Deploy tab showing the contract selector and Compile button.](images/deploy-and-run/deploy-tab.png)
+
+Once you have compiled and selected your contract, choose the chain for deployment and/or method for deployment, deployment wallet, and EVM version in the **ENVIRONMENT** section.
+
+![The Environment tab showing environment selector, account, gas limit, and value fields.](images/deploy-and-run/environment-tab.png)
 
 ```{note}
 If you want to connect Remix with a browser wallet (e.g., MetaMask,
-Phantom), use **Injected Provider**. Select your desired chain in the wallet.
+Phantom), set your environment to **Browser Extension** and choose your preferred wallet/chain.
 
 ```
 
-For assistance with getting the correct configuration (the RPC server address, etc.), click the plug icon next the word **ENVIRONMENT** to go to [chainlist.org](chainlist.org).
+Before clicking **Deploy**, you can configure two additional fields:
 
-![](images/deploy-and-run/a-deploy-run-plug.png)
+- **Gas Limit**: Sets the maximum amount of gas allowed for the deployment transaction. Remix pre-fills a sensible default, but you can increase it if your contract is complex or if the deployment reverts due to an out-of-gas error.
+- **Value**: The amount of ETH (or WEI, Gwei, etc.) sent along with the deployment transaction. Only relevant if your contract has a payable constructor. Otherwise, leave it at 0.
 
-## Remix VM
+Clicking "**Deploy**" sends a transaction that deploys the selected contract. When
+the transaction is mined, the newly created instance will be added
+(this might take several seconds) to the "**Deployed Contracts**" section.
+
+```{note}
+If the contract's constructor function has parameters, you will need to specify them.
+```
+
+## Loading deployed contracts
+
+If a contract has already been deployed, you can load it into Remix using the "**Add**" button on the Deployed Contracts section.
+Adding an already deployed contract costs no gas, since no redeployment is required. To load a deployed contract:
+
+1. Make sure the contract's source code or ABI is in the active tab of the Editor. If using source code, it must be compiled with the same settings as the originally deployed contract.
+2. Enter the deployed contract's address in the contract address field that appears when you click the "**Add**" button.
+3. The contract instance will appear in the **Deployed Contracts** list, ready to interact with.
+
+![The Deployed Contracts section showing the contract address field and Add button.](images/deploy-and-run/load-contract.png)
+
+```{warning}
+Only load contracts from addresses you trust.
+```
+
+### Using the ABI to load contracts
+
+If you don't have the source code but have the contract's **ABI**, you can still load and interact with it.
+
+The ABI is a JSON array that describes a contract's functions, inputs, and outputs. To use it:
+
+1. Create a new file in Remix with a `.abi` extension and paste the ABI content into it.
+2. Make sure this file is the active tab in the Editor.
+3. Enter the contract address in the **Contract address** field and click the "**Add**" button. The contract will appear in the **Deployed Contracts** list.
+
+```{note}
+To get the ABI of a contract you've compiled, open the Solidity Compiler plugin, compile the contract, then click **Compilation Details**. The ABI is listed in the modal that appears.
+```
+
+## Supported Environments
+
+The Deploy & Run plugin supports several environments that determine where your transactions are sent and how they are signed. You can choose between an in-browser sandbox (including forked chains), a browser wallet, a mobile wallet, or a locally running node.
+
+### Remix VM
 
 The Remix VM is a sandbox blockchain in the browser. Transactions do not require an approval to run. Remix VM comes with 10 accounts, each loaded with 100 ETH.
 
-In the current version of Remix, the **state** of the Remix VM chain is saved in the **.states folder** in the File Explorer. This was not the case in earlier versions of Remix where this chain would reset when the browser was refreshed.
+The Remix VM supports multiple EVM forks letting you simulate different network conditions without connecting to a live chain.
 
-To prevent saving of the Remix VM chain state, uncheck the **Save environment state** in the Settings panel.
+The **state** of the Remix VM chain is saved in the **.states folder** in the File Explorer. If you do not want the Remix VM state to be saved, uncheck **Save environment state** in the Settings panel.
 
-Saving the state means you can refresh the browser and not lose your work, the caveat being that browser storage is inherently unstable. Of course if you push to a remote repo, or if you use Remixd to share a folder on your hard drive, then you are not relying on the browser to save your work.
+Saving the state means you can refresh the browser and not lose your work, the caveat being that browser storage is inherently unstable. Of course if you push to a remote repo, then you are not relying on the browser to save your work.
+
+<!-- TODO: Add info about cloud storage after beta -->
 
 In collaborative workflows, sharing the state of the Remix VM is a great way to work out bugs. Just have your teammates load the **state.json** file into their instance of Remix.
 
-![](images/deploy-and-run/a-deploy-run-state-file.png)
+![The File Explorer showing the .states folder containing the state.json file.](images/deploy-and-run/a-deploy-run-state-file.png)
 
-## Environment
+### Browser Extensions
 
-- `Injected Provider - provider name`: Connects Remix to an Injected Web3 Provider. The most common injected provider is `Metamask`.
+Browser extensions allow you to connect Remix to a wallet installed in your browser, such as **MetaMask** or **Phantom**. This is the standard way to deploy contracts to a live network or testnet using your own accounts.
 
-- `Remix VM (Cancun)` : Cancun is the current fork of Ethereum
+To use a browser extension:
 
-- `Remix VM - Mainnet fork` : This will fork the Ethereum Mainnet and load it into the Remix VM. This is useful for developing contracts that need to access deployed mainnet contracts. (See below for more info about forking.)
+1. Install a supported wallet extension e.g., MetaMask. (This option will not be visible if you do not have an extension installed).
+2. Set the **ENVIRONMENT** to **Browser Extension** in the Deploy & Run panel.
 
-- `Remix VM - Sepolia fork` : Same as above except this forks the Sepolia testnet. (See below for more info about forking.)
+Transactions sent through a browser extension require approval in the wallet popup before they are broadcast to the network.
 
-- `Remix VM - Custom fork` : Forks a chain at the block number and in an EVM version of your choice. (See below for more info about forking.)
+```{note}
+Make sure your wallet is unlocked and set to the correct network before deploying.
+```
 
-- `Testnet - Sepolia` Connects Remix to an Injected Provider (using a browser wallet) with the settings for the Sepolia test network.
+### Mobile Wallets (Wallet Connect)
 
-- `WalletConnect`: Connects Remix to a wallet on a mobile device.
+WalletConnect allows you to connect Remix to a wallet on your mobile device by scanning a QR code. This is useful when you want to sign transactions with a hardware-backed or mobile wallet rather than a browser extension.
 
-- `L2 - Optimism Provider`: Connects Remix to an Injected Provider (using a browser wallet) with the settings for the Optimism mainnet.
+To use WalletConnect:
 
-- `L2 - Arbitrum One Provider`: Connects Remix to an Injected Provider (using a browser wallet) with the settings for the Arbitrum One network.
-- `L2 - Linea Provider`: Connects Remix to an Injected Provider (using a browser wallet) with the settings for the Linea mainnet.
-- `L2 - Gnosis Provider`: Connects Remix to an Injected Provider (using a browser wallet) with the settings for the Gnosis chain.
+1. Set the **ENVIRONMENT** to **WalletConnect**.
+2. A QR code will appear, scan it with your mobile wallet app (e.g., MetaMask Mobile, Rainbow, Trust Wallet).
+3. Approve the connection in your wallet. Remix will then use your mobile wallet's accounts and selected network.
 
-- `Ephemery Testnet`: Connects Remix to an Injected Provider (using a browser wallet) with the settings for the Ephemery network. [Ephemery](https://github.com/ephemery-testnet/ephemery-resources) is a test chain that regularly refreshes. As such, it is much easier to get test ETH from its faucets.
+Transactions triggered in Remix will appear as signing requests on your mobile device.
 
-- `Custom - External HTTP Provider`: Connects Remix to a remote node. The URL of the selected provider — Geth, Parity or any Ethereum client — needs to be input. (See below for more info about External HTTP Provider.)
+### VM Forks
 
-- `Dev - Hardhat Provider`: Connects Remix to a local Hardhat test chain.
+The Remix VM can fork a live network, loading its state into the in-browser sandbox. This lets you test contracts against real on-chain data (such as existing token balances, deployed protocols, or mainnet contract state) without spending real ETH.
 
-- `Dev - Ganache Provider`: Connects Remix to a local Truffle Ganache test chain.
+The following fork options are available:
 
-- `Dev - Foundry Provider`: Connects Remix to a local Foundry Anvil test chain.
+- **Mainnet fork**: Forks the Ethereum mainnet at the latest block.
+- **Sepolia fork**: Forks the Sepolia testnet, useful for testing against testnet deployments.
+- **Custom fork**: Forks any EVM-compatible chain at a block number of your choice. See [Custom Fork](#custom-fork) below.
 
-- `Remix VM (Shanghai)` : The Remix VM with the functionality of the **Shanghai** fork.
+Forked environments come pre-loaded with the same 10 accounts and 100 ETH per account as the standard Remix VM, but all existing on-chain state is accessible.
 
-- `Remix VM (Paris)` : The Remix VM with the functionality of the **Paris** fork.
+#### Custom Fork
 
-- `Remix VM (London)` : The Remix VM with the functionality of the **London** fork.
+The Custom fork option allows you to specify a chain’s RPC server, a block number, and an EVM version.
 
-- `Remix VM (Berlin)` : The Remix VM with the functionality of the **Berlin** fork.
+![The Custom Fork modal showing fields for Node URL, block number, and EVM version.](images/deploy-and-run/custom-fork.png)
+
+You can get the **Node URL** from chainlist.org. If the chain does not load, you may need to choose a different RPC server. You will also need to choose an EVM version appropriate to the block number. If you choose a very low block number, post-Merge EVM versions won’t work since they didn’t exist at that point in the chain’s history.
+
+### Development Environments
+
+Development environments connect Remix to locally running nodes or L2 networks, making them suitable for advanced testing and integration workflows.
+
+- **Hardhat Provider**: Connects to a locally running [Hardhat](https://hardhat.org/) node. Transactions execute instantly and do not require wallet approval, making it fast for iterative development.
+
+- **Foundry Provider**: Connects to a locally running [Anvil](https://book.getfoundry.sh/anvil/) node (part of the Foundry toolchain). Like Hardhat, it runs a local chain with pre-funded accounts and instant transaction finality.
+
+- **External HTTP Provider**: Connects Remix to any remote or local Ethereum-compatible node via an RPC URL (e.g., a Geth or Erigon instance). Enter the node's HTTP endpoint when prompted. Read more about [connecting to an External Provider](#more-about-external-http-provider).
+
+```{note}
+When using a local provider (Hardhat or Foundry), make sure the node is running before selecting the environment in Remix.
+```
 
 ## Forking chains in Remix
 
@@ -100,31 +173,7 @@ You can also fork the Remix VM in its current state. Click the version control i
 If **Save environment state** (Settings → General) is enabled, the Remix VM
 state (including forked VM states) is saved in the `.states` folder so you can
 refresh and resume later. Browser storage can still be cleared or corrupted, so
-back up important work with Remixd or Git.
-
-### Curate & delete Environments
-
-At the bottom of the **Environment** dropdown, click **Customize this list** to
-open the Environment Explorer.
-
-![Customize environment list dropdown.](images/deploy-and-run/environment-dropdown.png)
-
-From there you can, show/hide networks that appear in the dropdown (e.g., Linea) but clicking the toggle attached to the cards.
-
-![Customize environment list.](images/deploy-and-run/customize-environment-list.png)
-
-You can also delete old **in-browser forked states** you no longer need (look under
-“Deploy to an In-browser Forked State” and click **Delete Environment**).
-
-![Delete forked environment.](images/deploy-and-run/delete-forked-env.png)
-
-### Custom Fork
-
-The Custom fork option allows you to specify a chain's RPC server, a block number, and an EVM version.
-
-![](images/a-custom-fork.png)
-
-You can get the **Node URL** from chainlist.org. If the chain does not load, you may need to choose a different RPC server. You will also need to choose an EVM version appropriate to the block number. So, if you choose a very low block number, the EVM with the Merge “flavor” won’t work because this version of the EVM came out after your chosen block.
+back up important work with Git.
 
 ## More about External HTTP Provider
 
@@ -154,69 +203,16 @@ Also see [Geth Docs on Dev mode](https://geth.ethereum.org/docs/developers/dapp-
 
 The Web3 Provider Endpoint for a local node is **http://localhost:8545**
 
----
-
 ```{warning}
-**WARNING:** Don't get lazy. It is a bad idea to use the Geth flag <b>--http.corsdomain</b> with a wildcard: `--http.corsdomain *`
+Avoid using a wildcard with the Geth flag `--http.corsdomain`. Using `--http.corsdomain *` allows any origin to access your node. Only use this when running a **test chain** with **test accounts**. For real accounts or mainnet, always specify the exact URL, e.g. `--http.corsdomain 'https://remix.ethereum.org'`.
 ```
 
-If you put the wildcard `*`, it means everyone can request the node. Whereas, if you put a URL, it restricts the urls to just that one instance - e.g. `--http.corsdomain 'https://remix-alpha.ethereum.org'`
-
-Only use `--http.corsdomain *` when using a **test chain** AND using only **test accounts**. For real accounts or on the mainchain, **specify the url**.
-
----
-
-## Account:
-
-- Account: the list of accounts associated with the current
-  environment (and their associated balances). On the Remix VM, you have a choice of five accounts. If using Injected Provider with MetaMask, you need to switch the account in MetaMask.
-
-## Gas Limit:
-
-- This sets the maximum amount of gas allowed to be spent for all the contract
-  transactions created in Remix.
-
-## Value:
-
-- This sets the amount of ETH, WEI, Gwei, etc. that is sent to a contract or a payable function. <br>
-  **Note:** payable functions have a red button.
-
-The **Value** field is always reset to 0 after each transaction execution. <br>
-The **Value** field is **NOT** for gas.
-
-![](images/deploy-and-run/a-Runtab-deploy-atAddress.png)
-
-## Deploy and AtAddress
-
-- In the image above, the selectbox is set to **Ballot**. This selectbox will contain the list of compiled contracts.
-
-- `Deploy` sends a transaction that deploys the selected contract. When
-  the transaction is mined, the newly created instance will be added
-  (this might take several seconds). <br>**Note:** If the contract's constructor function has parameters, you will need to specify them.
-
-- `AtAddress` is used to access a contract that has already been deployed. Because the contract is already deployed, accessing a contract with **AtAddress** does not cost gas.
-
-**Note:** When using AtAddress, be sure you trust the contract at that address.
-
-To use **AtAddress**, you need to have the **source code** or **ABI** of the deployed contract **in the active tab** of the Editor. When using the source code, it must be compiled with the same compilation settings as the deployed contract that you are trying to access.
-
-## Using the ABI with AtAddress
-
-The **ABI** is a JSON array which describes the contract's interface.
-
-To interact with a contract using the ABI, create a new file in Remix
-with extension **\*.abi** and copy the ABI content into it.
-
-Make sure this file is the active tab in the Editor. Then, in the field next to `At Address`, input the contract's address and click on `At Address`. If successful, an instance of the contract will appear below in the list of **Deployed Contracts**.
-
-**Note:** To generate the ABI, in the Solidity Compiler after a contract is compiled, click on the **Compilation Details** button. A modal will come up that contains the ABI, among other info.
-
-## Pending Instances
+<!-- ## Pending Instances
 
 Validating a transaction may take several seconds. During this time, the GUI
 shows it in a pending mode. When the transaction is mined, the number of
 pending transactions updates, and the transaction is added to the log
-({doc}`see terminal </terminal>`).
+({doc}`see terminal </terminal>`). -->
 
 ## Using the Recorder
 
@@ -240,7 +236,7 @@ For instance:
 - Working in a dev environment often requires setting up the
   state initially.
 
-![](images/deploy-and-run/a-recorder.png)
+![The Recorder panel showing the transactions recorded count and save button.](images/deploy-and-run/recorder.png)
 
 When checked, the option `Run transactions using the last compilation result` allows you to develop a contract and easily set the state using **the latest compiled versions of the contracts.**
 
@@ -248,26 +244,11 @@ When checked, the option `Run transactions using the last compilation result` al
 
 To create this file in the Recorder, you first need to have run some transactions. In the image above, it shows a `0` next to **Transactions Recorded**. So, this isn't the right moment to save transactions because, well, because there aren't any. But, each time you make a transaction, that number will increment. So, when you are ready with some transactions, click the floppy disk icon and the scenario.json file will be created.
 
-The JSON file below is an example of the scenario.json file.
+The example below shows a `scenario.json` file containing three transactions, all sent from `account{0}`:
 
-In it, three transactions are executed:
-
-The first corresponds to the deployment of the lib `testLib`.
-
-The second corresponds to the deployment of the contract `test` with the
-first parameter of the constructor set to 11. That contract depends
-on a library. The linkage is done using the property `linkReferences`.
-In that case we use the address of the previously created library :
-`created{1512830014773}`. The number is the id (timestamp) of the
-transaction that led to the creation of the library.
-
-The third record corresponds to the call to the function `set` of the
-contract `test` (the property to is set to: `created{1512830015080}`) .
-Input parameters are `1` and
-`0xca35b7d915458ef540ade6068dfe2f44e8fa733c`
-
-All these transactions are created using the value of the accounts
-`account{0}`.
+1. **Deploy `testLib`**: deploys a library contract with no constructor parameters.
+2. **Deploy `test`**: deploys a contract with constructor parameter `11`. It depends on `testLib`, so the `linkReferences` property maps the library name to the address of the previously created instance using the timestamp ID `created{1512830014773}`.
+3. **Call `set` on `test`**: calls the `set` function on the deployed `test` contract (referenced as `created{1512830015080}`) with parameters `1` and `0xca35b7d915458ef540ade6068dfe2f44e8fa733c`.
 
 ```
 {
