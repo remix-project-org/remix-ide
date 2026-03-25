@@ -58,38 +58,25 @@ A function has two views - the collapsed and the expanded view, which is visible
 .. image:: images/udapp/a-udapp-inputs.png
    :alt: Inputting Parameters in function calls
 
-Inputting parameters in the collapsed view
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In the collapsed view:
+Clicking the function brings you to the expanded view, where you can input the parameters required for the function.
 
-- Parameters are separated by commas.
-
-In the example above the "delegate" function has 3 parameters.
-
-Inputting parameters in the expanded view
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Clicking the 'down' caret brings you to the expanded view - where parameters are input one at a time.
-
-.. image:: images/udapp/a-udapp-multi-param-man.png
-   :alt: Expanded view with parameters input one at a time
 
 Low level interactions
 ----------------------
 
-Low level interactions are used to send funds or calldata or funds & calldata to a contract through the **receive()** or **fallback()** function. Typically, you should only need to implement the fallback function if you are following an upgrade or proxy pattern.
+Low level interactions are used to send funds or calldata or funds & calldata to a contract through the ``receive()`` or ``fallback()`` function. Typically, you should only need to implement the fallback function if you are following an upgrade or proxy pattern.
 
-The low level interactions section is below the functions in each deployed contract.
+To find the low level interactions section, you have to click the contract from the Deployed Contracts section, then click the plus icon with the label "Low level interaction". 
 
-.. image:: images/udapp/a-deploy-run-open-instance.png
+.. image:: images/udapp/low-level-interaction.png
    :alt: Low level interactions section
 
 .. note::
 
-   If you are executing a plain Ether transfer to a contract, you need to have the receive() function in your contract. If your contract has been deployed and you want to send it funds, you would input the amount of Ether or Wei etc. (see **A** in graphic below), and then input **NOTHING** in the calldata field of **Low level interactions** (see **B** in graphic) and click the Transact button (see **C** in graphic below).
+   If you are executing a plain Ether transfer to a contract, you need to have the ``receive()`` function in your contract. If your contract has been deployed and you want to send it funds, you would input the amount of Ether or Wei etc. (see **A** in graphic below), and then input **NOTHING** in the calldata field of **Low level interactions** (see **B** in graphic) and click the Transact button (see **C** in graphic below).
 
-.. image:: images/a-receive-fun.png
+.. image:: images/udapp/receive-function.png
    :alt: Receive function example
 
 - If you are sending calldata to your contract with Ether, then you need to use the fallback() function and have it with the state mutability of **payable**.
