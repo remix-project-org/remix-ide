@@ -49,17 +49,14 @@ The functions' buttons can have different colors.
 Inputting parameters
 --------------------
 
-A function has two views - the collapsed and the expanded view, which is visible after clicking the caret on the right side of the panel.
+A function has two views - the collapsed and the expanded view. Clicking the function brings you to the expanded view, where you can input the parameters required for the function.
 
 - The input box shows the expected type of each parameter.
 - Numbers and addresses do not need to be wrapped in double quotes.
-- Strings do not need to be wrapped.
+- Strings must be wrapped in double quotes.
 
 .. image:: images/udapp/a-udapp-inputs.png
    :alt: Inputting Parameters in function calls
-
-
-Clicking the function brings you to the expanded view, where you can input the parameters required for the function.
 
 
 Low level interactions
@@ -67,7 +64,7 @@ Low level interactions
 
 Low level interactions are used to send funds or calldata or funds & calldata to a contract through the ``receive()`` or ``fallback()`` function. Typically, you should only need to implement the fallback function if you are following an upgrade or proxy pattern.
 
-To find the low level interactions section, you have to click the contract from the Deployed Contracts section, then click the plus icon with the label "Low level interaction". 
+To find the low level interactions section, you have to click the contract from the Deployed Contracts section, then click the plus icon with the label "Low level interaction".
 
 .. image:: images/udapp/low-level-interaction.png
    :alt: Low level interactions section
@@ -79,9 +76,11 @@ To find the low level interactions section, you have to click the contract from 
 .. image:: images/udapp/receive-function.png
    :alt: Receive function example
 
-- If you are sending calldata to your contract with Ether, then you need to use the fallback() function and have it with the state mutability of **payable**.
+When using low level interactions, keep the following rules in mind:
 
-- If you are not sending ether to the contract but **are** sending call data then you need to use the fallback() function.
+- If you are sending calldata to your contract with Ether, then you need to use the ``fallback()`` function and have it with the state mutability of **payable**.
+
+- If you are not sending ether to the contract but **are** sending call data then you need to use the ``fallback()`` function.
 
 - If you break the rules when using the **Low level interactions** you will see a warning.
 
@@ -104,7 +103,7 @@ Similarly, to pass in a struct as a parameter of a function, it needs to be put 
 
 .. note::
 
-   The file's pragma must be set to: ``pragma abicoder v2;``
+   For Solidity versions before 0.8.0, add ``pragma abicoder v2;`` or ``pragma experimental ABIEncoderV2;`` to your file. This is enabled by default in 0.8.0 and later.
 
 Example of passing nested struct to a function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -113,19 +112,19 @@ Consider a nested struct defined like this:
 
 .. code-block:: solidity
 
+   struct Flower {
+       uint flowerNum;
+       string color;
+   }
    struct Garden {
        uint slugCount;
        uint wormCount;
        Flower[] theFlowers;
    }
-   struct Flower {
-       uint flowerNum;
-       string color;
-   }
 
 If a function has the signature ``fertilizer(Garden memory gardenPlot)`` then the correct syntax is:
 
-.. code-block:: solidity
+.. code-block:: text
 
    [1,2,[[3,"Petunia"]]]
 
@@ -133,32 +132,28 @@ To continue on this example, here's a sample contract:
 
 .. code-block:: solidity
 
-   pragma solidity >=0.4.22 <0.7.0;
-   pragma experimental ABIEncoderV2;
+   pragma solidity ^0.8.0;
 
    contract Sunshine {
-       struct Garden {
-         uint slugCount;
-         uint wormCount;
-         Flower[] theFlowers;
-       }
        struct Flower {
            uint flowerNum;
            string color;
        }
+       struct Garden {
+           uint slugCount;
+           uint wormCount;
+           Flower[] theFlowers;
+       }
 
-       function fertilizer(Garden memory gardenPlot) public {
-           uint a = gardenPlot.slugCount;
-           uint b = gardenPlot.wormCount;
-           Flower[] memory cFlowers = gardenPlot.theFlowers;
-           uint d = gardenPlot.theFlowers[0].flowerNum;
-           string memory e = gardenPlot.theFlowers[0].color;
+       function fertilizer(Garden memory gardenPlot) public pure returns (uint, string memory) {
+           require(gardenPlot.theFlowers.length > 0, "No flowers");
+           return (gardenPlot.theFlowers[0].flowerNum, gardenPlot.theFlowers[0].color);
        }
    }
 
 After compiling, deploying the contract and opening up the deployed instance, we can then add the following input parameters to the function named **fertilizer**:
 
-.. code-block:: solidity
+.. code-block:: text
 
    [1,2,[[3,"Black-eyed Susan"],[4,"Pansy"]]]
 
