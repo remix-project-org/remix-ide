@@ -32,9 +32,7 @@ After QuickDapp generates your Dapp, expand the "**Publish to IPFS**" tab in Qui
 
 Once your Dapp is on IPFS, you can link it to a human-readable ENS subdomain under `remixdapp.eth` (e.g. `myapp.remixdapp.eth`) so users can access it without needing the raw CID.
 
-Registration transactions are processed on **Arbitrum One (L2)**, with gas fees covered by the Remix backend, so you pay nothing. Subdomain resolution on Mainnet uses the **CCIP-Read (EIP-3668)** standard, where the ENS Resolver fetches data from Arbitrum via a gateway server and returns a signed response.
-
-To register the subdomain, expand the "**Register ENS (Arbitrum)**" tab in the QuickDapp right panel.
+Registration transactions are processed on **Arbitrum One (L2)**, with gas fees covered by the Remix backend, so you pay nothing. To register the subdomain, expand the "**Register ENS (Arbitrum)**" tab in the QuickDapp right panel.
 
 ```{note}
 This tab only becomes visible after the deployment to IPFS is complete.
