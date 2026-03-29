@@ -76,6 +76,7 @@ Useful Links
    udapp
    run_proxy_contracts
    quickdapp
+   deploy_dapp
    account-abstraction-7702
    terminal
    remixd
@@ -127,7 +128,6 @@ Useful Links
    import
    contract_verification
    running_js_scripts
-   deploy_dapp
 
 .. toctree::
    :hidden:
