@@ -20,7 +20,7 @@ Remix IDE
 Remix About page
 
 - GitHub repo: https://github.com/remix-project-org/remix-website/
-- Website URL: https://remix-project.org
+- Website URL: https://remix.live
 
 ## About Remix Project
 
