@@ -13,22 +13,22 @@ There are two ways to start a debugging session, each one corresponds to a diffe
 
 - Use Case 1: for debugging a transaction made in Remix - click the **Debug button** in the transaction log in Remix's Terminal.
 
-- Use Case 2: for debugging a transaction where you have a **txn hash** from **verified contract** or where you have the txn hash and the compiled source code with the same compilation settings as the deployed contract.
+- Use Case 2: for debugging a transaction where you have a **txn hash** from a **verified contract** or where you have the txn hash and the compiled source code with the same compilation settings as the deployed contract.
 
 ### Initiate Debugging from the transaction log in the Terminal
 
 Let's start with a basic contract ( or replace the contract below with your own )
 
 ```Solidity
-pragma solidity >=0.5.1 <0.6.0;
+pragma solidity ^0.8.0;
 contract Donation {
     address owner;
     event fundMoved(address _to, uint _amount);
-    modifier onlyowner { if (msg.sender == owner) _; }
+    modifier onlyowner { require(msg.sender == owner); _; }
     address[] _giver;
     uint[] _values;
 
-    constructor() public {
+    constructor() {
         owner = msg.sender;
     }
 
@@ -36,7 +36,7 @@ contract Donation {
         addGiver(msg.value);
     }
 
-    function moveFund(address payable _to, uint _amount) onlyowner  public {
+    function moveFund(address payable _to, uint _amount) onlyowner public {
         uint balance = address(this).balance;
         uint amount = _amount;
         if (amount <= balance) {
@@ -85,7 +85,7 @@ Then click the `Donate` button.
 
 This will send the Ether to the function.
 
-Because we are using the `Remix VM`, everything happens almost instantly. (If we had been using Injected Web 3, then we would have needed to approve the transaction, pay for gas and wait for the transaction to get mined.)
+Because we are using the `Remix VM`, everything happens almost instantly. (If we had been using Injected Provider, then we would have needed to approve the transaction, pay for gas and wait for the transaction to get mined.)
 
 Remix displays information related to each transaction result in the terminal.
 
@@ -113,7 +113,7 @@ To find a transaction hash:
 
 ![](images/a-debug6-term-txn-hash.png)
 
-Then click in the debugger paste the hash and click on the `Start debugging` button.
+Then, in the debugger, paste the hash and click the `Start debugging` button.
 
 ![](images/a-debug7-debugger.png)
 
@@ -121,7 +121,7 @@ Then click in the debugger paste the hash and click on the `Start debugging` but
 
 ![](images/a-debug8-top3.png)
 
-The debugger allows one to see detailed informations about the
+The debugger allows one to see detailed information about the
 transaction's execution. It uses the editor to display the
 location in the source code where the current execution is.
 
@@ -150,13 +150,13 @@ step through the transaction execution.
 ### Instructions
 
 The Instructions panel displays the bytecode of the current executing
-contract- with the current step highlighted.
+contract — with the current step highlighted.
 
 Important note: When this panel is hidden, the slider will have a
 coarser granularity and only stop at _expression boundaries_, even if they
 are compiled into multiple EVM instructions. When the panel is
 displayed, it will be possible to step over every instruction, even
-those that refers to the same expression.
+those that refer to the same expression.
 
 ### Solidity Locals
 
@@ -170,15 +170,15 @@ executing contract.
 
 ### Low level panels
 
-These panels display low level informations about the execution:
+These panels display low level information about the execution:
 
 > - Stack
-> - Storages Changes
+> - Storage Changes
 > - Memory
 > - Call Data
 > - Call Stack
 > - Return Value (only if the current step is a RETURN opcode)
-> - Full Storages Changes (only at the end of the execution & it displays all the storage changes)
+> - Full Storage Changes (only at the end of the execution & it displays all the storage changes)
 
 ### Reverted Transaction
 
