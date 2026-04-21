@@ -1,0 +1,281 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-22 00:35+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../debugger.rst:-1
+msgid "Step through Ethereum smart contract transactions in Remix IDE's debugger to inspect state, storage, and call stack at each step."
+msgstr ""
+
+#: ../../debugger.rst:-1
+msgid "remix debugger, smart contract debugging, transaction debugger, solidity debug"
+msgstr ""
+
+#: ../../debugger.rst:2
+msgid "Debugger"
+msgstr ""
+
+#: ../../debugger.rst:8
+msgid "The Debugger shows the contract's state while stepping through a transaction."
+msgstr ""
+
+#: ../../debugger.rst:10
+msgid "It can be used on transactions created in Remix or by providing a transaction hash. The latter requires either that you have the contract's source code compiled with the same settings as the deployed contract, or that the contract is verified on a block explorer."
+msgstr ""
+
+#: ../../debugger.rst:13
+msgid "Starting a Debugging Session"
+msgstr ""
+
+#: ../../debugger.rst:15
+msgid "There are two ways to start a debugging session."
+msgstr ""
+
+#: ../../debugger.rst:17
+msgid "The first is to click the **Debug** button next to a transaction in the Terminal. The Debugger will be activated and will gain focus in the **Side Panel**."
+msgstr ""
+
+#: ../../debugger.rst:19
+msgid "Debug button in the Remix terminal next to a transaction log entry"
+msgstr ""
+
+#: ../../debugger.rst:22
+msgid "The second is to use the Debugger directly. **Activate** the Debugger in the Plugin Manager and then click the **bug icon** in the Icon Panel. Input a transaction hash (you must also have the contract's source code open in the editor), then click the button with the Play icon to start debugging."
+msgstr ""
+
+#: ../../debugger.rst:32
+msgid "The debugger will highlight the relevant code in the Editor. If you want to go back to editing the code without the Debugger's highlights, then click the button with the Stop icon."
+msgstr ""
+
+#: ../../debugger.rst:34
+msgid "To learn more about how to use this tool, go to the :doc:`Debugging Transactions </tutorial_debug>` page."
+msgstr ""
+
+#: ../../debugger.rst:36
+msgid "This page will go over the Debugger's *Use generated sources* option, its navigation, and its panels."
+msgstr ""
+
+#: ../../debugger.rst:38
+msgid "Overview of the Remix Debugger interface"
+msgstr ""
+
+#: ../../debugger.rst:42
+msgid "Use generated sources"
+msgstr ""
+
+#: ../../debugger.rst:44
+msgid "When Solidity compiles a contract, it generates internal Yul routines (such as ABI encoding/decoding and overflow checks) that are embedded in the bytecode but are not part of your source code. By default, the debugger has no source to map these opcodes to and skips over them."
+msgstr ""
+
+#: ../../debugger.rst:46
+msgid "When **Use generated sources** is enabled, these routines are surfaced in a separate ``.yul`` file in the editor. The debugger can then step through every opcode in the transaction without gaps, including the compiler-generated ones. This is particularly useful when auditing contracts, as it gives complete visibility into what is actually executing."
+msgstr ""
+
+#: ../../debugger.rst:48
+msgid "Debugger showing a generated Yul file in the editor with Use generated sources enabled"
+msgstr ""
+
+#: ../../debugger.rst:51
+msgid "This option requires Solidity 0.7.2 or greater."
+msgstr ""
+
+#: ../../debugger.rst:54
+msgid "The Debugger's Navigation"
+msgstr ""
+
+#: ../../debugger.rst:56
+msgid "The navigation buttons appear at the bottom of the editor when a debug session is active. They control how you step through the transaction's execution."
+msgstr ""
+
+#: ../../debugger.rst:58
+msgid "Debugger navigation buttons including Step Backward, Step Back, Step Into, Step Forward, and breakpoint controls"
+msgstr ""
+
+#: ../../debugger.rst:62
+msgid "Step Backward"
+msgstr ""
+
+#: ../../debugger.rst:64
+msgid "Steps back to the previous opcode without entering function calls. If the previous step is inside a function call, the debugger will skip over it and land on the opcode before the call was made. Use this when you want to move backwards through execution without descending into the internals of every function along the way."
+msgstr ""
+
+#: ../../debugger.rst:67
+msgid "Step Back"
+msgstr ""
+
+#: ../../debugger.rst:69
+msgid "Steps back to the previous opcode and will enter function calls. If the previous step was inside a function, the debugger will follow execution back into that function. Use this when you need to trace execution backwards in full detail, opcode by opcode."
+msgstr ""
+
+#: ../../debugger.rst:72
+msgid "Step Into"
+msgstr ""
+
+#: ../../debugger.rst:74
+msgid "Advances to the next opcode and will enter function calls. If the next step involves a function call, the debugger will follow execution into that function. Use this when you want full visibility into what a function is doing rather than treating it as a black box."
+msgstr ""
+
+#: ../../debugger.rst:77
+msgid "Step Forward"
+msgstr ""
+
+#: ../../debugger.rst:79
+msgid "Advances to the next opcode without entering function calls. If the next step involves a function call, the debugger will skip over it and resume at the opcode after the call returns. Use this when you want to move forward through execution without stepping into every function."
+msgstr ""
+
+#: ../../debugger.rst:82
+msgid "Previous Breakpoint"
+msgstr ""
+
+#: ../../debugger.rst:84
+msgid "Moves the debugger back to the most recently passed breakpoint. Breakpoints are set by clicking a line number in the Editor. Use this to jump between points of interest without stepping through every opcode in between."
+msgstr ""
+
+#: ../../debugger.rst:87
+msgid "Next Breakpoint"
+msgstr ""
+
+#: ../../debugger.rst:89
+msgid "Moves the debugger forward to the next breakpoint ahead in the execution. If no further breakpoint exists, the debugger will not advance. Use this alongside **Previous Breakpoint** to navigate quickly through long transactions."
+msgstr ""
+
+#: ../../debugger.rst:92
+msgid "The Debugger's Panels"
+msgstr ""
+
+#: ../../debugger.rst:95
+msgid "Transaction Details"
+msgstr ""
+
+#: ../../debugger.rst:97
+msgid "The Transaction Details section is collapsible and appears at the top of the debugger panel. It shows metadata about the transaction being debugged, including:"
+msgstr ""
+
+#: ../../debugger.rst:99
+msgid "**Status**: whether the transaction succeeded or was reverted"
+msgstr ""
+
+#: ../../debugger.rst:100
+msgid "**Block** and **Timestamp**"
+msgstr ""
+
+#: ../../debugger.rst:101
+msgid "**From** and **To** addresses"
+msgstr ""
+
+#: ../../debugger.rst:102
+msgid "**Function** that was called"
+msgstr ""
+
+#: ../../debugger.rst:103
+msgid "**Value**, **Tx Fee**, **Gas Price**, **Gas Used**, **Tx Type**, **Tx Index**, and **Tx Nonce**"
+msgstr ""
+
+#: ../../debugger.rst:105
+msgid "Transaction Details panel showing metadata for a debugged transaction"
+msgstr ""
+
+#: ../../debugger.rst:109
+msgid "Call Trace"
+msgstr ""
+
+#: ../../debugger.rst:111
+msgid "The Call Trace shows the full call hierarchy of the transaction. The current step is shown in the header as **Step: X / Y**, where X is the current opcode step and Y is the total number of steps in the transaction."
+msgstr ""
+
+#: ../../debugger.rst:113
+msgid "Each entry in the trace shows the call type (e.g. **SENDER** or **CALL**), the address, and the function called. Each call entry also has three action icons that let you jump into the call, jump to its start, or jump to its end without stepping through every opcode manually."
+msgstr ""
+
+#: ../../debugger.rst:115
+msgid "Call Trace panel showing the sender and internal calls of a transaction"
+msgstr ""
+
+#: ../../debugger.rst:119
+msgid "State & Locals"
+msgstr ""
+
+#: ../../debugger.rst:121
+msgid "The **State & Locals** tab displays a JSON object with two keys:"
+msgstr ""
+
+#: ../../debugger.rst:123
+msgid "``locals``: the local variables in scope at the current execution step"
+msgstr ""
+
+#: ../../debugger.rst:124
+msgid "``state``: the state variables of the contract at the current execution step. Each variable is expanded to show its ``value``, ``type``, ``length`` (for arrays), ``constant``, and ``immutable`` flags."
+msgstr ""
+
+#: ../../debugger.rst:126
+msgid "Each entry can be expanded or collapsed using the toggle next to it."
+msgstr ""
+
+#: ../../debugger.rst:128
+msgid "State and Locals tab showing locals and state variables in JSON format"
+msgstr ""
+
+#: ../../debugger.rst:132
+msgid "Stack & Memory"
+msgstr ""
+
+#: ../../debugger.rst:134
+msgid "The **Stack & Memory** tab displays a single JSON object with four keys, each expandable:"
+msgstr ""
+
+#: ../../debugger.rst:136
+msgid "``opcode``: the current opcode the debugger is on. Updates with each step."
+msgstr ""
+
+#: ../../debugger.rst:137
+msgid "``callStack``: the call stack at the current step. It has a maximum size of 1024 elements and contains words of 256 bits."
+msgstr ""
+
+#: ../../debugger.rst:138
+msgid "``stack``: the EVM operand stack at the current step. For more info about the `stack <https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>`_."
+msgstr ""
+
+#: ../../debugger.rst:139
+msgid "``memory``: the EVM memory at the current step. Memory is cleared for each new message call, is linear, and can be addressed at byte level. **Reads** are limited to a width of 256 bits while **writes** can be either 8 bits or 256 bits wide."
+msgstr ""
+
+#: ../../debugger.rst:141
+msgid "Stack and Memory tab showing low level EVM execution state"
+msgstr ""
+
+#: ../../debugger.rst:145
+msgid "Execution Trace"
+msgstr ""
+
+#: ../../debugger.rst:147
+msgid "The Execution Trace appears below the navigation buttons. Select a call from the **Call Trace** to load the step-by-step opcode trace for that call."
+msgstr ""
+
+#: ../../debugger.rst:149
+msgid "Execution trace area prompting the user to select a call from the Call Trace"
+msgstr ""
+
+#: ../../debugger.rst:153
+msgid "Additional Info"
+msgstr ""
+
+#: ../../debugger.rst:155
+msgid "The debugger is not only useful for fixing bugs. Its granular, step-by-step visibility into transaction execution makes it an excellent tool for understanding and auditing smart contracts."
+msgstr ""
+
+#: ../../debugger.rst:157
+msgid "To learn about using the debugger, go to :doc:`Debugging Transactions </tutorial_debug>`."
+msgstr ""

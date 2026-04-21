@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-22 00:35+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../slither.md:0
+msgid "Run Slither static analysis on Solidity contracts in Remix IDE via Remixd integration to detect security vulnerabilities."
+msgstr ""
+
+#: ../../slither.md:0
+msgid "slither remix, static analysis, smart contract security, remixd, solidity"
+msgstr ""
+
+#: ../../slither.md:8
+msgid "Slither"
+msgstr ""
+
+#: ../../slither.md:10
+msgid "[Slither](https://github.com/crytic/slither) is a static analysis framework for Solidity. It runs a suite of vulnerability detectors and provides information about contract details. Slither analysis is available in Remix Desktop through the `Solidity Static Analysis` plugin."
+msgstr ""
+
+#: ../../slither.md:12
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../slither.md:14
+msgid "To use Slither analysis with Remix IDE efficiently, following tools should be installed locally on your system:"
+msgstr ""
+
+#: ../../slither.md:16
+msgid "**Slither:** [Installing Slither](https://crytic.github.io/slither/slither.html#how-to-install)"
+msgstr ""
+
+#: ../../slither.md:17
+msgid "**Solc:** [Installing Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html)"
+msgstr ""
+
+#: ../../slither.md:18
+msgid "**Solc-select:** [Solc Quickstart](https://github.com/crytic/solc-select#quickstart)"
+msgstr ""
+
+#: ../../slither.md:20
+msgid "How to use"
+msgstr ""
+
+#: ../../slither.md:22
+msgid "If you load a local project in Remix Desktop, there will be an extra checkbox shown in `Solidity Static Analysis` plugin with the label `Slither` (On Remix Web, this option will be greyed out)."
+msgstr ""
+
+#: ../../slither.md:24
+msgid "![](images/a-slither-analysis.png)"
+msgstr ""
+
+#: ../../slither.md:26
+msgid "The Slither Analysis report will be displayed on the Slither tab of the Solidity Analyzers plugin, next to the Remix analysis report for better user readability."
+msgstr ""
+
+#: ../../slither.md:28
+msgid "![](images/a-slither-analysis-success.png)"
+msgstr ""
+
+#: ../../slither.md:30
+msgid "The result of the analysis will be shown in the Remix IDE terminal"
+msgstr ""
+
+#: ../../slither.md:32
+msgid "![](images/a-slither-analysis-success-terminal.png)"
+msgstr ""
+
+#: ../../slither.md:34
+msgid "To only run Slither Analysis, deselect the `Remix` and `Solhint` checkbox and click on \"Analyze\". Now it will show only the Slither Analysis report."
+msgstr ""
+
+#: ../../slither.md:36
+msgid "By default, it doesn't show the warnings for external libraries like remix-tests.sol, hardhat/console.sol etc. To have a look at them, check the box with label `Show warnings for external libraries`."
+msgstr ""
+
+#: ../../slither.md:38
+msgid "![](images/a-slither-analysis-ext-libs.png)"
+msgstr ""
+
+#: ../../slither.md:40
+msgid "More Details"
+msgstr ""
+
+#: ../../slither.md:42
+msgid "Analysis for Slither is run using the version set in `Solidity Compiler` plugin on Remix IDE. Slither is a CLI tool and requires `solc` to run the analysis. Before running the analysis, Slither WebSocket plugin checks if current version of solc is same as the version set in Remix IDE."
+msgstr ""
+
+#: ../../slither.md:44
+msgid "If the compiler version set in Solidity Compiler is different from current version of solc installed locally, the Slither WebSocket plugin will update the `solc` to be the same as the required version `solc-select`."
+msgstr ""
+
+#: ../../slither.md:46
+msgid "For example, if current `solc` version on the system is 0.8.4 and on the Remix IDE 0.8.6 is set, the logs explain remote solc version selection."
+msgstr ""
+
+#: ../../slither.md:48
+msgid "![](images/a-slither-analysis-select.png)"
+msgstr ""
+
+#: ../../slither.md:50
+msgid "After successful analysis run:"
+msgstr ""
+
+#: ../../slither.md:52
+msgid "![](images/a-slither-analysis-select-success.png)"
+msgstr ""

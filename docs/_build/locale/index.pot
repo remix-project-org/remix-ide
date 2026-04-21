@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-22 00:35+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../index.rst:50
+msgid "Introduction"
+msgstr ""
+
+#: ../../index.rst:62
+msgid "Core Modules"
+msgstr ""
+
+#: ../../index.rst:84
+msgid "Solidity modules"
+msgstr ""
+
+#: ../../index.rst:93
+msgid "Other Compilers"
+msgstr ""
+
+#: ../../index.rst:101
+msgid "Unit Testing"
+msgstr ""
+
+#: ../../index.rst:112
+msgid "External Tool Integrations"
+msgstr ""
+
+#: ../../index.rst:121
+msgid "Guides"
+msgstr ""
+
+#: ../../index.rst:132
+msgid "Advanced"
+msgstr ""
+
+#: ../../index.rst:140
+msgid "Miscellaneous"
+msgstr ""
+
+#: ../../index.rst:-1
+msgid "Official documentation for Remix IDE — the browser-based Ethereum development environment for writing, testing, and deploying Solidity smart contracts."
+msgstr ""
+
+#: ../../index.rst:-1
+msgid "remix ide documentation, ethereum ide, solidity, smart contracts, blockchain development"
+msgstr ""
+
+#: ../../index.rst:2
+msgid "Welcome to Remix's documentation!"
+msgstr ""
+
+#: ../../index.rst:8
+msgid "**Remix IDE** is used for the entire journey of smart contract development by users at every knowledge level. It requires no setup, fosters a fast development cycle, and has a rich set of plugins with intuitive GUIs. The IDE comes in two flavors (web app or desktop app)."
+msgstr ""
+
+#: ../../index.rst:12
+msgid "**Remix Desktop**, see: `Download page <htttps://github.com/remix-project-org/remix-desktop/releases>`__"
+msgstr ""
+
+#: ../../index.rst:14
+msgid "**Remix Online IDE**, see: `https://remix.ethereum.org <https://remix.ethereum.org>`__"
+msgstr ""
+
+#: ../../index.rst:16
+msgid "**Supported browsers:** **Firefox**, **Chrome**, **Brave**."
+msgstr ""
+
+#: ../../index.rst:18
+msgid "We do not support use of Remix on tablets or mobile devices."
+msgstr ""
+
+#: ../../index.rst:21
+msgid "Remix Project"
+msgstr ""
+
+#: ../../index.rst:22
+msgid "Remix IDE is part of the `Remix Project <https://github.com/remix-project-org/remix-project>`__ which also includes the `Remix Plugin Engine <https://github.com/remix-project-org/remix-plugin>`__ and `Remix Libraries <https://github.com/remix-project-org/remix-project/tree/master/libs#remix-libraries>`__, which are low-level tools for wider use."
+msgstr ""
+
+#: ../../index.rst:25
+msgid "Remix IDE is located at `remix.ethereum.org <https://remix.ethereum.org>`__ and more information can be found in these docs. The IDE's repo is at `GitHub <https://github.com/remix-project-org/remix-project>`__."
+msgstr ""
+
+#: ../../index.rst:27
+msgid "This set of documents covers instructions on how to use Remix. Additional information can be found in our `blog <https://ethereumremix.substack.com>` (formerly on: `medium <https://medium.com/remix-ide>`__) and in our tutorial tool, `LearnEth <https://remix-learneth-plugin.readthedocs.io/en/latest/index.html>`__ located inside of Remix IDE."
+msgstr ""
+
+#: ../../index.rst:31
+msgid "Useful Links"
+msgstr ""
+
+#: ../../index.rst:33
+msgid "`Remix Desktop <https://github.com/remix-project-org/remix-desktop/releases>`__ - Remix Desktop's release page."
+msgstr ""
+
+#: ../../index.rst:35
+msgid "`Remix on Github <https://github.com/remix-project-org/remix-project>`__"
+msgstr ""
+
+#: ../../index.rst:37
+msgid "`Remix on Substack <https://ethereumremix.substack.com>`__"
+msgstr ""
+
+#: ../../index.rst:39
+msgid "`Remix on Twitter <https://twitter.com/EthereumRemix>`__"
+msgstr ""
+
+#: ../../index.rst:41
+msgid "`Remix Discord <https://discord.com/invite/qhpCQGWkmf>`__"
+msgstr ""
+
+#: ../../index.rst:43
+msgid "`Remix Alpha <https://alpha.remix.live>`__ - The version where we test new Remix release (not stable!)."
+msgstr ""
+
+#: ../../index.rst:45
+msgid "`Solidity Documentation <https://solidity.readthedocs.io>`__"
+msgstr ""
+
+#: ../../index.rst:47
+msgid "`Ethereum.org's Developer resources <https://ethereum.org/en/developers/>`__"
+msgstr ""
