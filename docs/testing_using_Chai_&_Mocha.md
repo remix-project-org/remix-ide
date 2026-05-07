@@ -101,7 +101,7 @@ To debug a transaction in one of the tests, print the transaction hash and input
 
 ## Hardhat-ethers support
 
-Remix also supports methods of [hardhat-ethers](https://hardhat.org/plugins/nomiclabs-hardhat-ethers.html#hardhat-ethers) plugin of Hardhat framework. Available methods under this plugin are:
+Remix also supports methods of [hardhat-ethers](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-ethers) plugin of Hardhat framework. Available methods under this plugin are:
 
 ```TypeScript
 interface Libraries {

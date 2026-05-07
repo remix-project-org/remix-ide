@@ -39,6 +39,7 @@ EOAs
 Ephemery
 Erigon
 Ethereum
+EthereumRemix
 Ethers
 ethers
 Etherscan

@@ -17,7 +17,7 @@ myst:
 
 - Remix Desktop is an Electron App. Here is the [release page](https://github.com/remix-project-org/remix-desktop/releases).
 
-- The Remix twitter account is [EthereumRemix](https://twitter.com/EthereumRemix).
+- The Remix X account is [EthereumRemix](https://x.com/EthereumRemix).
 
 - The Remix Project Blog for release notes and articles is: [https://ethereumremix.substack.com](https://ethereumremix.substack.com).
 

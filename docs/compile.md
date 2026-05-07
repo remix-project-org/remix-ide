@@ -67,7 +67,7 @@ When you publish your metadata to IPFS and deploy your code to the mainnet or a 
 
 ### Compile and Run script
 
-The Compile and Run script button (**E. in fig. 1**) is for compiling and then immediately running a script. It's a time saver so that you can write some code, automatically run script that sets state of the contract - thus allowing you to quickly understand how the code is working. Learn {ref}`more about Compile and Run <running_js_scripts:compile a contract and run a script in one click>`.
+The Compile and Run script button (**E. in fig. 1**) is for compiling and then immediately running a script. It's a time saver so that you can write some code, automatically run script that sets state of the contract - thus allowing you to quickly understand how the code is working. Learn {ref}`more about Compile and Run <running_js_scripts:compile and run script>`.
 
 ### Compilation Errors and Warning
 

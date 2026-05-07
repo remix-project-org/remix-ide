@@ -355,6 +355,23 @@ texinfo_documents = [
 # source_parsers = {'.md': CommonMarkParser}
 
 
+# -- Linkcheck configuration ----------------------------------------------
+
+linkcheck_ignore = [
+    # JavaScript fragment routing — linkchecker cannot follow client-side hash navigation
+    r'https://remix\.ethereum\.org/\?#',
+    # npmjs.com blocks automated requests (403)
+    r'https://www\.npmjs\.com/package/',
+    # Self-signed SSL certificate
+    r'https://sindri\.app',
+    # Server unreachable / timeout
+    r'https?://docs\.n3\.nahmii\.io',
+    # CSS text fragment anchors (#:~:text=) are browser-only, not validateable
+    r'https://soliditylang\.org/blog/.*#:~:text=',
+    # GitHub anchor validation is unreliable — rendered headings differ from raw Markdown
+    r'https://github\.com/.*#',
+]
+
 # app setup hook
 # def setup(app):
 #     app.add_config_value('recommonmark_config', {

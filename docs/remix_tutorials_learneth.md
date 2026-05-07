@@ -46,4 +46,4 @@ Your repository must follow the LearnEth conventions to work on LearnEth. Learn 
 ### Useful LearnEth Links
 
 - LearnEth Plugin source code: [LearnEth Plugin repo](https://github.com/bunsenstraat/remix-learneth-plugin/)
-- Default LearnEth content source: [Remix Workshops repo](https://github.com/ethereum/remix-workshops)
+- Default LearnEth content source: [Remix Workshops repo](https://github.com/remix-project-org/remix-workshops)

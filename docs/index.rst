@@ -36,15 +36,15 @@ Useful Links
 
 - `Remix on Substack <https://ethereumremix.substack.com>`__
 
-- `Remix on Twitter <https://twitter.com/EthereumRemix>`__
+- `Remix on X <https://x.com/EthereumRemix>`__
 
 - `Remix Discord <https://discord.com/invite/qhpCQGWkmf>`__
 
 - `Remix Alpha <https://alpha.remix.live>`__ - The version where we test new Remix release (not stable!).
 
-- `Solidity Documentation <https://solidity.readthedocs.io>`__
+- `Solidity Documentation <https://docs.soliditylang.org/en/latest/>`__
 
-- `Ethereum.org's Developer resources <https://ethereum.org/en/developers/>`__
+- `Ethereum.org's Developer resources <https://ethereum.org/developers/>`__
 
 
 .. toctree::

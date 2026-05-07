@@ -69,7 +69,7 @@ Deploy & interact with smart contracts on the in-browser chain (JSVM), local nod
 
 The File Explorer is where you can see the files.
 
-- [Documentation](https://remix-ide.readthedocs.io/en/latest/file_explorer)
+- [Documentation](https://remix-ide.readthedocs.io/en/latest/file_explorer.html)
 - Profile name: **fileManager**
   :::
 
@@ -290,7 +290,7 @@ Develop and test privacy-preserving smart contracts on the COTI network.
 
 Deploy a contract to multiple chains (one at a time) with the same address.
 
-- [Documentation](https://github.com/groksmith/remix-contract-deployer-plugin#getting-started-with-contract-deployer-plugin)
+- [Documentation](https://github.com/groksmith/remix-contract-deployer-plugin)
 - Profile name: **contract_deployer**
   :::
 

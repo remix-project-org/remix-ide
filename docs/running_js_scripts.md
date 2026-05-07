@@ -45,7 +45,7 @@ Running it using one of options mentioned above will show result in Remix termin
 
 ## Script to deploy a contract
 
-Remix accepts async/await scripts to run [ethers.js](https://docs.ethers.io/) commands. The script needs to be wrapped in a self executing function.
+Remix accepts async/await scripts to run [ethers.js](https://docs.ethers.org/v6/) commands. The script needs to be wrapped in a self executing function.
 
 ## Setup
 

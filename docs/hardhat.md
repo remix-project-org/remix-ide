@@ -7,7 +7,7 @@ myst:
 
 # Hardhat
 
-Remix IDE has built-in support for [Hardhat](https://hardhat.org/), a Ethereum development environment for compiling, deploying, testing, and debugging Solidity smart contracts. With Remix Desktop, you can connect to a local Hardhat project, giving you access to Hardhat compilation and the Hardhat Provider for deploying to a local node.
+Remix IDE has built-in support for [Hardhat](https://hardhat.org/), an Ethereum development environment for compiling, deploying, testing, and debugging Solidity smart contracts. With Remix Desktop, you can connect to a local Hardhat project, giving you access to Hardhat compilation and the Hardhat Provider for deploying to a local node.
 
 ## Enable Hardhat Compilation
 
@@ -15,10 +15,10 @@ Remix IDE has built-in support for [Hardhat](https://hardhat.org/), a Ethereum d
 
 To use Hardhat compilation with Remix Desktop efficiently:
 
-1. **Hardhat** should be installed locally on the system [https://hardhat.org/getting-started/#installation](https://hardhat.org/getting-started/#installation).
+1. **Hardhat** should be installed locally on the system [https://hardhat.org/docs/getting-started](https://hardhat.org/docs/getting-started).
 2. The folder should be a Hardhat project containing `hardhat.config.js` or `hardhat.config.ts`.
 
-### How to use
+### How to Use
 
 When you open a Hardhat project on Remix Desktop, there will be an extra checkbox in the `Solidity Compiler` plugin with the label `Enable Hardhat Compilation`.
 
@@ -35,7 +35,7 @@ The result of the compilation will be shown in the Remix IDE terminal.
 ## Hardhat Provider
 
 ```{note}
-In Hardhat, contracts are deployed by starting a local node. Read more about it in the [Hardhat documentation](https://hardhat.org/getting-started/#connecting-a-wallet-or-dapp-to-hardhat-network).
+In Hardhat, contracts are deployed by starting a local node. Read more about it in the [Hardhat documentation](https://hardhat.org/docs/getting-started).
 ```
 
 **Hardhat Provider** enables deployment to the Hardhat localhost network. This can be chosen in the **ENVIRONMENT** dropdown of the **Deploy and Run** plugin.

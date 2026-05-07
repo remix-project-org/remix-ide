@@ -35,7 +35,7 @@ Yes - here is the list of keyboard shortcuts:
 
 `Ctrl+S`: Compiles the active Solidity file
 
-`Ctrl+Shift+S`: Compiles a Solidity file and runs a script when the script is displayed in the editor.<br>(go {ref}`here <running_js_scripts:compile a contract and run a script in one click>` for more info about this functionality)
+`Ctrl+Shift+S`: Compiles a Solidity file and runs a script when the script is displayed in the editor.<br>(go {ref}`here <running_js_scripts:compile and run script>` for more info about this functionality)
 
 `Ctrl+Shift+F` : Opens the File Explorer
 

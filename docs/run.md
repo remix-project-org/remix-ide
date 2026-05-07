@@ -141,7 +141,7 @@ Development environments connect Remix to locally running nodes or L2 networks, 
 
 - **Hardhat Provider**: Connects to a locally running [Hardhat](https://hardhat.org/) node. Transactions execute instantly and do not require wallet approval, making it fast for iterative development.
 
-- **Foundry Provider**: Connects to a locally running [Anvil](https://book.getfoundry.sh/anvil/) node (part of the Foundry toolchain). Like Hardhat, it runs a local chain with pre-funded accounts and instant transaction finality.
+- **Foundry Provider**: Connects to a locally running [Anvil](https://www.getfoundry.sh/anvil) node (part of the Foundry toolchain). Like Hardhat, it runs a local chain with pre-funded accounts and instant transaction finality.
 
 - **External HTTP Provider**: Connects Remix to any remote or local Ethereum-compatible node via an RPC URL (e.g., a Geth or Erigon instance). Enter the node's HTTP endpoint when prompted. Read more about [connecting to an External Provider](#more-about-external-http-provider).
 

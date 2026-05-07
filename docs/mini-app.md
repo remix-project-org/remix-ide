@@ -30,11 +30,11 @@ On the preview page of the generated UI, you will find the Base mini app setup w
 
 ![Base mini app setup wizard in the QuickDApp preview page](images/mini-app/setup-wizard.png)
 
-The first tab on the setup wizard requires the Base App ID meta tag of an app. To get meta tags of an app, you have to create one on the [Base Developer Portal](https://www.base.dev/).
+The first tab on the setup wizard requires the Base App ID meta tag of an app. To get meta tags of an app, you have to create one on the [Base Developer Portal](https://dashboard.base.org/).
 
 ### Creating a Base app
 
-To create a Base app, navigate to www.base.dev and log in. If you don't have any existing app you will be prompted to create your first app. If you have existing apps, you will be redirected to the dashboard of your latest app.
+To create a Base app, navigate to dashboard.base.org and log in. If you don't have any existing app you will be prompted to create your first app. If you have existing apps, you will be redirected to the dashboard of your latest app.
 
 On the dashboard, click the app dropdown, and select "**Register new app**"
 
@@ -62,8 +62,6 @@ Before you register, choose your subdomain name carefully. Names are unique and 
 
 For example, if you registered a voting dApp at `myvote.remixdapp.eth` and later register a token swap dApp under the same name, `myvote.remixdapp.eth` will resolve to the token swap dApp and the voting dApp will no longer be accessible at that address.
 
-![ENS subdomain registration field in the setup wizard](images/mini-app/ens.png)
-
 ## Verifying ownership of the mini app
 
 On the next tab you will see your dApp's deployed URL ending in `.limo`.
@@ -78,4 +76,4 @@ Copy the URL and paste it in the App URL field on the Base Developer Portal and 
 
 Go back to Remix and click the "**I've Verified on Base.dev**" button. Your dApp is now accessible on the Base app.
 
-![Successfully deployed dApp accessible on the Base app](images/mini-app/sucess-screen.png)
+![Successfully deployed dApp accessible on the Base app](images/mini-app/success-screen.png)
