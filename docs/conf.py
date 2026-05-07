@@ -360,8 +360,9 @@ texinfo_documents = [
 linkcheck_ignore = [
     # JavaScript fragment routing — linkchecker cannot follow client-side hash navigation
     r'https://remix\.ethereum\.org/\?#',
-    # npmjs.com blocks automated requests (403)
+    # npmjs.com and Substack block automated requests (403)
     r'https://www\.npmjs\.com/package/',
+    r'https://ethereumremix\.substack\.com',
     # Self-signed SSL certificate
     r'https://sindri\.app',
     # Server unreachable / timeout
