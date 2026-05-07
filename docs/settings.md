@@ -50,9 +50,9 @@ The Connected Services section allows you to configure credentials and access to
 
 ![Connected Services](images/settings/connected-services.png)
 
-### Github credentials
+### GitHub credentials
 
-When performing Git operations on Github and when creating GISTs, it may be necessary to input an access token. This token has the specific permissions for your Git commands. Depending on the operation, you may also need to input your Github username & email address. Remix does not save your password info outside of your browser's localstorage.
+When performing Git operations on GitHub and when creating GISTs, it may be necessary to input an access token. This token has the specific permissions for your Git commands. Depending on the operation, you may also need to input your GitHub username & email address. Remix does not save your password info outside of your browser's localstorage.
 
 ![Remix GitHub Credentials page.](images/settings/a-settings-gh-token.png)
 

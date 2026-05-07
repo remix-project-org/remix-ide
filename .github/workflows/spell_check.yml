@@ -1,0 +1,57 @@
+name: Spell Check
+
+on:
+  pull_request:
+    paths:
+      - 'docs/**'
+      - 'styles/**'
+      - 'vale.ini'
+      - '.custom_wordlist.txt'
+
+jobs:
+  spell-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Cache virtualenv
+        uses: actions/cache@v4
+        with:
+          path: docs/.venv
+          key: venv-${{ runner.os }}-${{ hashFiles('docs/requirements.txt') }}
+          restore-keys: venv-${{ runner.os }}-
+
+      - name: Cache Vale styles
+        uses: actions/cache@v4
+        with:
+          path: styles/Vale
+          key: vale-styles-${{ hashFiles('vale.ini') }}
+
+      - name: Install Vale
+        working-directory: docs
+        run: make vale-install
+
+      - name: Run spell check
+        working-directory: docs
+        run: make spell-check
+
+      - name: Fail on spelling errors
+        working-directory: docs
+        run: |
+          if grep -q "Vale.Spelling" vale-spelling.txt; then
+            echo "::error::Spelling errors found — add valid words to styles/config/vocabularies/Remix/accept.txt"
+            cat vale-spelling.txt
+            exit 1
+          fi
+
+      - name: Upload spelling report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: spelling-report
+          path: docs/vale-spelling.txt

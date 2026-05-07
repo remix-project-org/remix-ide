@@ -3,7 +3,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = $(VENV_DIR)/bin/sphinx-build
-SPHINXAUTOBUILD = sphinx-autobuild
+SPHINXAUTOBUILD = $(VENV_DIR)/bin/sphinx-autobuild
 PAPER         =
 SOURCEDIR     = .
 BUILDDIR      = _build
@@ -11,8 +11,6 @@ PYTHON        ?= python3
 VENV_DIR      ?= .venv
 VENV          = $(VENV_DIR)/bin/activate
 VALE_CONFIG   = $(ROOT_DIR)/vale.ini
-TARGET        = *
-ALLFILES      =  *.md **/*.md
 ROOT_DIR = ..
 
 # Bootstrap: create venv and install Sphinx only when needed
@@ -20,12 +18,16 @@ $(VENV_DIR)/bin/python:
 	$(PYTHON) -m venv $(VENV_DIR)
 	. $(VENV); pip install -U pip wheel
 
-$(SPHINXBUILD): $(VENV_DIR)/bin/python
+define install_deps
 	@if [ -f "requirements.txt" ]; then \
 	  . $(VENV); pip install -r requirements.txt; \
 	else \
 	  . $(VENV); pip install -U sphinx sphinx-autobuild; \
 	fi
+endef
+
+$(SPHINXBUILD) $(SPHINXAUTOBUILD): $(VENV_DIR)/bin/python
+	$(install_deps)
 
 # Any target that calls sphinx needs the binary ready
 SPHINX_TARGETS := html dirhtml singlehtml pickle json htmlhelp qthelp applehelp devhelp epub latex latexpdf latexpdfja text man texinfo info gettext changes linkcheck doctest coverage xml pseudoxml
@@ -83,22 +85,7 @@ help:
 # Create .venv and install dependencies.
 # - If requirements.txt exists -> install from it
 # - Else install the bare minimum so `run` works today
-install:
-	test -d $(VENV_DIR) || $(PYTHON) -m venv $(VENV_DIR)
-	. $(VENV); pip install -U pip wheel
-	@if [ -f "requirements.txt" ]; then \
-	  echo "Installing from requirements.txt ..."; \
-	  . $(VENV); pip install -r "requirements.txt"; \
-	else \
-	  echo "No requirements.txt found; installing minimal deps (sphinx + sphinx-autobuild) ..."; \
-	  . $(VENV); pip install -U sphinx sphinx-autobuild; \
-	fi
-
-$(SPHINXAUTOBUILD): $(VENV_DIR)/bin/python
-	@if [ -f "requirements.txt" ]; then \
-	  . $(VENV); pip install -r requirements.txt || true; \
-	fi
-	. $(VENV); pip install -U sphinx-autobuild
+install: $(SPHINXBUILD) $(SPHINXAUTOBUILD)
 
 
 # Live-reload server (watches files, rebuilds on change, serves at 127.0.0.1:8000)
@@ -120,18 +107,26 @@ lint-md: pymarkdownlnt-install
 	  --exclude='./.git/**' \
 	  $(SOURCEDIR)
 
-vale-install: install
-	@. $(VENV); test -d $(VENV_DIR)/lib/python*/site-packages/vale || pip install vale
-	@. $(VENV); test -f $(VALE_CONFIG)
-	@. $(VENV); find $(VENV_DIR)/lib/python*/site-packages/vale/vale_bin -size 195c -exec vale --version \;
+.vale-stamp: $(VENV_DIR)/bin/python
+	@. $(VENV); pip install vale
+	@test -f $(VALE_CONFIG)
 	@. $(VENV); vale sync
+	@touch .vale-stamp
+
+vale-install: .vale-stamp
 
 spell-check: vale-install
 	@echo "Running Vale spelling check only..."
-	@tmp=$$(mktemp); \
-	  cat $(ROOT_DIR)/styles/config/vocabularies/Remix/accept.txt $(ROOT_DIR)/.custom_wordlist.txt \
-	  | sort -u > $$tmp && mv $$tmp $(ROOT_DIR)/styles/config/vocabularies/Remix/accept.txt
-	@. $(VENV); vale --filter='.Extends=="spelling"' --config=$(VALE_CONFIG) $(SOURCEDIR)/*.md > vale-spelling.txt 2>&1 || true
+	@tmp_dir=$$(mktemp -d); \
+	  cp -r $(ROOT_DIR)/styles $$tmp_dir/; \
+	  cat $(ROOT_DIR)/styles/config/vocabularies/Remix/accept.txt \
+	      $(ROOT_DIR)/.custom_wordlist.txt \
+	    | sort -u > $$tmp_dir/styles/config/vocabularies/Remix/accept.txt; \
+	  sed "s|StylesPath[[:space:]]*=.*|StylesPath = $$tmp_dir/styles|" \
+	    $(VALE_CONFIG) > $$tmp_dir/vale.ini; \
+	  . $(VENV); vale --filter='.Extends=="spelling"' \
+	    --config=$$tmp_dir/vale.ini $(SOURCEDIR)/*.md > vale-spelling.txt 2>&1 || true; \
+	  rm -rf $$tmp_dir
 	@echo "Vale spelling results saved to vale-spelling.txt"
 
 general-checks: vale-install
@@ -235,7 +230,7 @@ texinfo:
 info:
 	$(SPHINXBUILD) -b texinfo $(ALLSPHINXOPTS) $(BUILDDIR)/texinfo
 	@echo "Running Texinfo files through makeinfo..."
-	make -C $(BUILDDIR)/texinfo info
+	$(MAKE) -C $(BUILDDIR)/texinfo info
 	@echo "makeinfo finished; the Info files are in $(BUILDDIR)/texinfo."
 
 gettext:

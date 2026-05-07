@@ -15,7 +15,7 @@ Before you can use Git in any of your workspaces, you have to login with GitHub 
 
 ![Remix Top Bar showing login with GitHub button.](images/git/login-with-github.png)
 
-Alternatively, you can add username and email to the Github section of the Git plugin. You can find the Git plugin on the Icon Panel represented by a branch icon.
+Alternatively, you can add username and email to the GitHub section of the Git plugin. You can find the Git plugin on the Icon Panel represented by a branch icon.
 
 ![Git plugin settings.](images/git/gh-login-manually.png)
 

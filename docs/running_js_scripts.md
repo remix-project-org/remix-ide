@@ -108,7 +108,7 @@ The following list contains the **Default** dependencies:
 
 ### Loading other script dependencies
 
-If you don't see what you need in the Default configuration of scripts, you can load other configurations of scripts using the Script Configuration panel. Tthis panel is accessed from the dropdown on the "Run Script" button.
+If you don't see what you need in the Default configuration of scripts, you can load other configurations of scripts using the Script Configuration panel. This panel is accessed from the dropdown on the "Run Script" button.
 
 ```{note}
 If the active file in the Editor is not a script, then the "Run Script" button turns into the "Compile" button and the Open script configuration option is not present.
