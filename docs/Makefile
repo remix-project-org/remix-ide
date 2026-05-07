@@ -42,7 +42,7 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) $(SOURCEDIR)
 
 .PHONY: help install run clean html dirhtml singlehtml pickle json htmlhelp qthelp applehelp devhelp epub \
         latex latexpdf latexpdfja text man texinfo info gettext changes linkcheck doctest coverage xml pseudoxml \
-				vale-install pymarkdownlnt-install lint-md spell-check general-checks
+				vale-install pymarkdownlnt-install lint-md spell-check style-checks
 
 # Help text
 help:
@@ -78,7 +78,7 @@ help:
 	@echo "  pymarkdownlnt-install  to install PyMarkdown linter"
 	@echo "  lint-md    to run markdown linting with PyMarkdown"
 	@echo "  spell-check        to run Vale spelling checks only"
-	@echo "  general-checks     to run Vale general style checks (excluding spelling)"
+	@echo "  style-checks     to run Vale general style checks (excluding spelling)"
 
 
 
@@ -129,7 +129,7 @@ spell-check: vale-install
 	  rm -rf $$tmp_dir
 	@echo "Vale spelling results saved to vale-spelling.txt"
 
-general-checks: vale-install
+style-checks: vale-install
 	@echo "General Vale checks"
 	@. $(VENV); vale --minAlertLevel=error --filter='.Extends!="spelling"' --config=$(VALE_CONFIG) $(SOURCEDIR)/*.md
 
