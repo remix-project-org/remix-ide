@@ -22,7 +22,7 @@ Remix Project
 Remix IDE is part of the `Remix Project <https://github.com/remix-project-org/remix-project>`__ which also includes the
 `Remix Plugin Engine <https://github.com/remix-project-org/remix-plugin>`__ and `Remix Libraries <https://github.com/remix-project-org/remix-project/tree/master/libs#remix-libraries>`__, which are low-level tools for wider use.
 
-Remix IDE is located at `remix.ethereum.org <https://remix.ethereum.org>`__ and more information can be found in these docs. The IDE's repo is at `GitHub <https://github.com/remix-project-org/remix-project>`__.
+Remix IDE is located at `remix.ethereum.org <https://remix.ethereum.org>`__ and more information can be found in these docs. The IDE's repository is at `GitHub <https://github.com/remix-project-org/remix-project>`__.
 
 This set of documents covers instructions on how to use Remix.  
 Additional information can be found on our `Substack blog <https://ethereumremix.substack.com>`__ (formerly on: `medium <https://medium.com/remix-ide>`__) and in our tutorial tool, `LearnEth <https://remix-learneth-plugin.readthedocs.io/en/latest/index.html>`__ located inside of Remix IDE.

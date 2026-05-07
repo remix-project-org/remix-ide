@@ -13,7 +13,7 @@ myst:
 
 - The alpha version of Remix is located at [https://alpha.remix.live](https://alpha.remix.live). This is not a stable version.
 
-- GitHub repo: [https://github.com/remix-project-org](https://github.com/remix-project-org). The README contains instructions for running Remix-IDE locally.
+- GitHub repository: [https://github.com/remix-project-org](https://github.com/remix-project-org). The README contains instructions for running Remix-IDE locally.
 
 - Remix Desktop is an Electron App. Here is the [release page](https://github.com/remix-project-org/remix-desktop/releases).
 
@@ -54,7 +54,7 @@ https://remix.ethereum.org/?#activate=LearnEth,noir-compiler
 When you use the activate list, all other plugins that a user had loaded will be deactivated. This does not apply to the File Explorer, Solidity Compiler, Deploy & Run, the Plugin Manager, and the Settings modules.
 
 ```{note}
-In a Remix URL parameter, a plugin is referred to by its **name** as specified in its profile in the [Remix Plugins Directory repo](https://github.com/remix-project-org/remix-plugins-directory). To quickly get a plugin's name go to {doc}`Plugin List page <plugin_list>` of the docs and search for the plugin you want. There will be a link with the urls to activate the plugin.
+In a Remix URL parameter, a plugin is referred to by its **name** as specified in its profile in the [Remix Plugins Directory repository](https://github.com/remix-project-org/remix-plugins-directory). To quickly get a plugin's name go to {doc}`Plugin List page <plugin_list>` of the docs and search for the plugin you want. There will be a link with the urls to activate the plugin.
 
 ```
 

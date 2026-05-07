@@ -9,7 +9,7 @@ myst:
 
 Remix is an open source tool. Please help us improve it by:
 
-- Opening issues in our [GitHub repo](https://github.com/remix-project-org/remix-project).
+- Opening issues in our [GitHub repository](https://github.com/remix-project-org/remix-project).
 - Writing some code and making a pulling request.
 
 The Remix application is built with Typescript and React.
