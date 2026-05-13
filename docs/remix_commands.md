@@ -17,7 +17,7 @@ In the console, you can run the commands listed below. Once you start to type a 
 
 **swarmgw**: This library can be used to upload/download files to Swarm via https://swarm-gateways.net/.
 
-## Remix Commands
+## Commands
 
 **remix.execute(filepath)**: Run the script specified by file path. If filepath is empty, script currently displayed in the editor is executed.
 

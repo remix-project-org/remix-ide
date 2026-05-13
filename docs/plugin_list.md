@@ -19,10 +19,9 @@ These are plugins that are managed by the Remix team.
 
 ::::{grid} 3
 :gutter: 4
-:align: center
 
 :::{grid-item-card} Contract Verification
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=contract-verification
@@ -35,7 +34,7 @@ Verify contract code on Sourcify, Etherscan and Blockscout at the same time.
   :::
 
 :::{grid-item-card} Debugger
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=debugger
@@ -48,7 +47,7 @@ Insert breakpoints, step through a contract, and debug transactions.
   :::
 
 :::{grid-item-card} Deploy & Run
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=udapp
@@ -61,7 +60,7 @@ Deploy & interact with smart contracts on the in-browser chain (JSVM), local nod
   :::
 
 :::{grid-item-card} File Explorer
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=fileManager
@@ -74,7 +73,7 @@ The File Explorer is where you can see the files.
   :::
 
 :::{grid-item-card} Remixd
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=remixd
@@ -87,7 +86,7 @@ Connect a local filesystem folder to Remix via the `remixd` npm package.
   :::
 
 :::{grid-item-card} Solidity Compiler
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=solidity
@@ -100,7 +99,7 @@ Compiles Solidity & Yul.
   :::
 
 :::{grid-item-card} Solidity Static Analysis
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=solidityStaticAnalysis
@@ -113,7 +112,7 @@ Static code analysis with integrations for **Slither** and **Solhint**.
   :::
 
 :::{grid-item-card} Solidity Unit Testing
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=solidityUnitTesting
@@ -126,7 +125,7 @@ Run unit tests written in Solidity.
   :::
 
 :::{grid-item-card} Vyper Compiler
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=vyper
@@ -139,7 +138,7 @@ Compile Vyper code using local or remote Vyper compiler.
   :::
 
 :::{grid-item-card} Workspace Templates
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=templateSelection
@@ -151,7 +150,7 @@ Create workspaces from existing templates like the OpenZeppelin ERC20 template.
   :::
 
 :::{grid-item-card} Plugin Manager
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :img-top: images/plugin-list/pluginManager.webp
@@ -163,7 +162,7 @@ Profile name: **pluginManager**
 :::
 
 :::{grid-item-card} Slither
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :img-top: images/plugin-list/slither-logo.png
@@ -173,7 +172,7 @@ This plugin is now part of the Solidity Analyzers plugin.
 :::
 
 :::{grid-item-card} Solhint
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :img-top: images/plugin-list/solhint.png
@@ -183,7 +182,7 @@ This plugin is now part of the Solidity Analyzers plugin.
 :::
 
 :::{grid-item-card} LearnEth
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=LearnEth
@@ -195,7 +194,7 @@ Remix, Solidity, & blockchain tutorials with quizzes teaching Solidity and Remix
   :::
 
 :::{grid-item-card} Circom Compiler
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=circuit-compiler
@@ -208,7 +207,7 @@ Write, compile, and generate proofs for Zero-Knowledge (ZK) circuits using the C
   :::
 
 :::{grid-item-card} Noir Compiler
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=noir-compiler
@@ -227,10 +226,9 @@ These are the plugins that are managed by external teams.
 
 ::::{grid} 3
 :gutter: 4
-:align: center
 
 :::{grid-item-card} Arbitrum Stylus
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=remix-plugin-arbitrum
@@ -243,7 +241,7 @@ Deployment and execution of smart contracts via Arbitrum Stylus.
   :::
 
 :::{grid-item-card} BuildBear
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=buildbear
@@ -256,7 +254,7 @@ Create private, forked testnets from any EVM chain with explorer, faucet, and RP
   :::
 
 :::{grid-item-card} Cookbook.dev — Find any contract
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=cookbook.dev
@@ -269,7 +267,7 @@ Find any smart contract, build your project faster.
   :::
 
 :::{grid-item-card} COTI Plugin
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=coti-remix-plugin
@@ -282,7 +280,7 @@ Develop and test privacy-preserving smart contracts on the COTI network.
   :::
 
 :::{grid-item-card} Contract Deployer
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=contract_deployer
@@ -295,7 +293,7 @@ Deploy a contract to multiple chains (one at a time) with the same address.
   :::
 
 :::{grid-item-card} Defender Deploy
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=defender-deploy
@@ -307,7 +305,7 @@ Deploy smart contracts using OpenZeppelin Defender from Remix IDE.
   :::
 
 :::{grid-item-card} Klaytn
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=klaytn-remix-plugin
@@ -320,7 +318,7 @@ Deploy and interact with smart contracts on the Klaytn public network and local 
   :::
 
 :::{grid-item-card} Nahmii compiler
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=nahmii-compiler
@@ -334,7 +332,7 @@ Compile Solidity contracts for the Nahmii network.
   :::
 
 :::{grid-item-card} Sentio
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=sentio
@@ -347,7 +345,7 @@ Monitor and analyze your smart contracts inside Remix using Sentio.
   :::
 
 :::{grid-item-card} SolidityScan
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=solidityscan
@@ -359,7 +357,7 @@ Real-time security analysis of your Solidity smart contracts.
   :::
 
 :::{grid-item-card} Starknet
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=Starknet
@@ -372,7 +370,7 @@ Compile contracts written in Cairo to Starknet.
   :::
 
 :::{grid-item-card} Tenderly
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=tenderly
@@ -385,7 +383,7 @@ Verify contracts and import from your Tenderly project.
   :::
 
 :::{grid-item-card} Wallet Connect (Main Panel)
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=walletconnect
@@ -397,7 +395,7 @@ Approve transactions on your mobile device.
   :::
 
 :::{grid-item-card} Zokrates
-:columns: 12 6 4
+:columns: 12 6 4 4
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://remix.ethereum.org/?#activate=ZoKrates
