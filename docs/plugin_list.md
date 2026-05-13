@@ -275,7 +275,7 @@ Find any smart contract, build your project faster.
 
 Develop and test privacy-preserving smart contracts on the COTI network.
 
-- [Documentation](https://docs.coti.io/coti-documentation/running-a-coti-node)
+- [Documentation](https://docs.coti.io/coti-documentation)
 - Profile name: **coti-remix-plugin**
   :::
 
