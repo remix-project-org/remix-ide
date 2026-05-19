@@ -11,7 +11,7 @@ bool
 boolean
 Breakpoint
 breakpoint
-buildbear
+Buildbear
 Bundler
 bundler
 callee

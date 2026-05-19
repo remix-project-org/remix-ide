@@ -16,6 +16,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
+        id: setup-python
         with:
           python-version: '3.x'
 
@@ -23,8 +24,8 @@ jobs:
         uses: actions/cache@v4
         with:
           path: docs/.venv
-          key: venv-${{ runner.os }}-${{ hashFiles('docs/requirements.txt') }}
-          restore-keys: venv-${{ runner.os }}-
+          key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('docs/requirements.txt') }}
+          restore-keys: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-
 
       - name: Cache Vale styles
         uses: actions/cache@v4
