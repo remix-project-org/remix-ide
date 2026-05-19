@@ -13,7 +13,7 @@ Here is the list of Remix plugins that you will see in the Plugin Manager.
 Click a card to open the Remix IDE with the plugin enabled.
 ```
 
-## Internal Plugins
+## Internal plugins
 
 These are plugins that are managed by the Remix team.
 
@@ -220,7 +220,7 @@ Enables support for Noir circuit compilation.
   :::
   ::::
 
-## External Plugins
+## External plugins
 
 These are the plugins that are managed by external teams.
 

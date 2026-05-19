@@ -29,7 +29,7 @@ To load a Circom template, click the dropdown at the center of the Top Bar, and 
 
 This template contains `calculate_hash.circom` and the scripts needed to complete the full proof workflow in this tutorial. After generating the workspace, the Circom plugin will automatically be activated and its icon will appear in the Icon Panel.
 
-## Step 1: Compile the Circuit
+## Step 1: Compile the circuit
 
 The browser and the snarkjs library that powers this plugin cannot work with `.circom` files directly; they need a binary format they can actually execute. Compilation translates your circuit into a `.wasm` (WebAssembly) file that can be run in the browser to compute values later in the workflow.
 
@@ -37,7 +37,7 @@ To compile:
 
 1. Open `circuits/calculate_hash.circom` in the Editor so it is the active file
 2. Go to the Circom plugin panel
-3. Click **Compile calculate_hash.circom**
+3. Click "Compile `calculate_hash.circom`"
 
 This generates `calculate_hash.wasm` in `circuits/.bin/calculate_hash_js`.
 
@@ -47,7 +47,7 @@ This generates `calculate_hash.wasm` in `circuits/.bin/calculate_hash_js`.
 The **Compile** button is disabled if the active file in the Editor is not a `.circom` file.
 ```
 
-## Step 2: Generate the R1CS File
+## Step 2: Generate the R1CS file
 
 Your compiled circuit needs to be translated into a form the proving system can reason about mathematically. That form is the R1CS file. The proving system uses the R1CS file to check that a witness (your execution trace, generated in the next step) actually satisfies all the rules of the circuit. Without it, there is nothing to verify against.
 
@@ -63,7 +63,7 @@ Alternatively, you can click the **Run Setup** button on the Circom plugin with 
 
 ![Run Setup button on the Circom plugin](images/circom/run-setup.png)
 
-## Step 3: Compute the Witness
+## Step 3: Compute the witness
 
 The proof does not directly prove your private inputs. It proves that you have a valid **witness**, a complete record of every value computed during the circuit's execution: your inputs, intermediate calculations, and the final output. Because the witness captures the full execution trace, it is impossible to fake a valid one by only providing the input and output. The prover never reveals their inputs, only this trace.
 
@@ -95,7 +95,7 @@ This generates `calculate_hash.wtn` in `circuits/.bin/`.
 
 These three files together represent the circuit and a single honest execution of it. The next step is generating the cryptographic keys that allow a proof to be constructed and verified.
 
-## Generating a Proof Using Scripts
+## Generating a proof using scripts
 
 With the setup script complete, the following files are available in `zk/build/` for use in proof generation and verification:
 

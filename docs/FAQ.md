@@ -7,7 +7,7 @@ myst:
 
 # FAQ
 
-## Supported devices & Browsers
+## Supported devices & browsers
 
 ```{dropdown} Q: What browsers will Remix work on?
 :class-title: sd-fs-5 sd-font-weight-bold
@@ -45,7 +45,7 @@ Yes - here is the list of keyboard shortcuts:
 
 ```
 
-## Solidity Compiler
+## Solidity compiler
 
 ```{dropdown} Q: Error: compiler might be in a non-sane state
 :class-title: sd-fs-5 sd-font-weight-bold
@@ -70,7 +70,7 @@ Try a different browser or a newer Solidity Compiler version.
 
 ```
 
-## Deploy & Run
+## Deploy & run
 
 ```{dropdown} Q: I am using an Infura endpoint in my app, but when I try to deploy against that endpoint in Remix IDE selecting "External HTTP Provider" and putting my endpoint in, it's telling me that it can't connect
 :class-title: sd-fs-5 sd-font-weight-bold

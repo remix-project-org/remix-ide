@@ -27,7 +27,7 @@ myst:
 
 Remix is an open source project. Other projects have forked our codebase. The forked versions of Remix sites will look like Remix but are not Remix. So be careful! Forked sites are not maintained by us nor endorsed by us.
 
-## Remix with URL Parameters
+## Remix with URL parameters
 
 Using Remix with URL parameters will load the tool in the following ways:
 

@@ -23,7 +23,7 @@ Slither analysis is available in Remix Desktop through the `Solidity Static Anal
 
 ### Remix Web
 
-On Remix Web, Slither analysis is available through RemixAI. Open the RemixAI assistant, describe your contract, and ask it to run a Slither analysis.
+On Remix Web, Slither analysis is available through RemixAI. Open the RemixAI Assistant, describe your contract, and ask it to run a Slither analysis.
 
 Here's an example prompt:
 
@@ -55,13 +55,13 @@ By default, it doesn't show the warnings for external libraries like remix-tests
 
 ### More Details
 
-Analysis for Slither is run using the version set in the `Solidity Compiler` plugin. Slither is a CLI tool and requires `solc` to run. Before running the analysis, the Slither WebSocket plugin checks if the current local `solc` version matches the version set in Remix IDE.
+Analysis for Slither is run using the version set in the `Solidity Compiler` plugin. Slither is a CLI tool and requires `solc` to run. Before running the analysis, the Slither Websocket plugin checks if the current local `solc` version matches the version set in Remix IDE.
 
-If the versions differ, the Slither WebSocket plugin will use `solc-select` to switch the local `solc` version to match.
+If the versions differ, the Slither Websocket plugin will use `solc-select` to switch the local `solc` version to match.
 
 For example, if the local `solc` version is 0.8.4 and Remix IDE is set to 0.8.6, the logs will show the version switch.
 
-![Slither WebSocket plugin log showing solc version selection](images/a-slither-analysis-select.png)
+![Slither Websocket plugin log showing solc version selection](images/a-slither-analysis-select.png)
 
 After a successful analysis run:
 

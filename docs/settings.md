@@ -9,7 +9,7 @@ myst:
 
 You can access **Settings** for Remix by clicking the gear icon at the top right of Remix.
 
-## General Settings
+## General settings
 
 ![Remix General Settings Page](images/settings/a-settings-general.png)
 
@@ -32,7 +32,7 @@ The Appearance subsection allows you to customize the look of Remix. You can cho
 
 ![Remix Analytics Page.](images/settings/remix-analytics.png)
 
-## RemixAI Assistant
+## RemixAI assistant
 
 ![RemixAI Assistant Settings Page](images/settings/a-settings-ai1.png)
 
@@ -44,7 +44,7 @@ The RemixAI Assistant section allows you to configure RemixAI, manage LLM select
 
 For more information about using AI in Remix, see the {doc}`AI documentation </ai>`.
 
-## Connected Services
+## Connected services
 
 The Connected Services section allows you to configure credentials and access tokens for external services that integrate with Remix. These connections enable features like Git operations, contract verification, circuit compilation, and decentralized storage.
 

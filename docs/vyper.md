@@ -64,7 +64,7 @@ There are 4 ways to compile:
 3. Click on the play button at the top left of the Main Panel when a .vy file is the active tab.
 4. CTRL + s when a .vy file is in the active tab of the Main Panel.
 
-## Remote vs Local compiler
+## Remote vs local compiler
 
 The default is to use the remote compiler. To see the settings open up the Advanced Settings accordion box.
 

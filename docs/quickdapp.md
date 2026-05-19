@@ -49,7 +49,7 @@ For cases where more than one deployed instance of the contract exists, you will
 
 ![Selecting from multiple deployed instances](images/quickdapp/multiple-instances.png)
 
-## Generated workspace structure
+## Generated Workspace structure
 
 QuickDapp creates a new workspace named using the pattern `dapp-{contractName}-{id}`. Below is its structure.
 

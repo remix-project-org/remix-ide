@@ -55,7 +55,7 @@ contract testContract {
 
 When pasting in code, make sure you understand it before deploying or interacting with it. Don't get scammed!
 
-## Compile the Contract
+## Compile the contract
 
 With the contract above as the active tab in the Editor, compile the contract.  
 A quick way to compile is to hit **ctrl + s**. You can also compile by going to the Solidity Compiler and clicking the compile button, or by right clicking a file in the File Explorer, or by clicking the play button at the top of the Editor.

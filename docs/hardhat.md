@@ -9,7 +9,7 @@ myst:
 
 Remix IDE has built-in support for [Hardhat](https://hardhat.org/), an Ethereum development environment for compiling, deploying, testing, and debugging Solidity smart contracts. With Remix Desktop, you can connect to a local Hardhat project, giving you access to Hardhat compilation and the Hardhat Provider for deploying to a local node.
 
-## Enable Hardhat Compilation
+## Enable Hardhat compilation
 
 ### Prerequisites
 
@@ -32,7 +32,7 @@ The result of the compilation will be shown in the Remix IDE terminal.
 
 ![Successful Hardhat compilation output in Remix IDE terminal](images/hardhat/a-hardhat-compilation-success.png)
 
-## Hardhat Provider
+## Hardhat provider
 
 ```{note}
 In Hardhat, contracts are deployed by starting a local node. Read more about it in the [Hardhat documentation](https://hardhat.org/docs/getting-started).
@@ -54,7 +54,7 @@ Once the correct endpoint is filled in the modal, click `OK` and the accounts fr
 
 Now, you can start deploying the contract from Remix IDE to the Hardhat local node as usual.
 
-## `console.log` in Remix IDE
+## Using `console.log` in Remix IDE
 
 Remix IDE supports the Hardhat console library while using `Remix VM`. It can be used while making a transaction or running unit tests.
 

@@ -103,7 +103,7 @@ Remix Desktop leverages the power of your local hard drive, allowing it to handl
 
 By running locally, Remix Desktop takes advantage of your machine’s storage and performance capabilities.
 
-## Working with HardHat and Foundry
+## Working with Hardhat and Foundry
 Going between Foundry or HardHat and Remix Desktop is seamless because all are running on your hard drive.  Please see the {doc}`Working with HardHat or Foundry</debugger>` page for more information including about using Remix Desktop for deploying a HardHat or Foundry compiled file.  
 
 Similarly it is easy to use the {doc}`Debugger</debugger>` in Remix Desktop to untangle Solidity problems in a HardHat or Foundry project.

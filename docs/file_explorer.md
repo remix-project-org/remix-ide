@@ -75,7 +75,7 @@ Another way you can create files in Remix is by right-clicking on the Side Bar (
 Note that (regardless of the method) when you save a file without providing a file extension, it defaults to the `.sol` extension.
 ```
 
-## Right-Click popup menu
+## Right-click popup menu
 
 ### Right-Click on a folder
 

@@ -17,7 +17,7 @@ These are the situations where Remix's debugger becomes essential. It lets you s
 
 In this tutorial, we'll walk through using the debugger with a contract that has an intentional bug, so you can see how to identify and trace a problem through the execution flow.
 
-## Debugging a Transaction Made in Remix
+## Debugging a transaction made in Remix
 
 We'll use the following `Donation` contract as our example. Don't worry about understanding every detail yet — we'll be using the debugger to explore how it executes.
 
@@ -120,7 +120,7 @@ To fix the bug, change `balance` to `amount` in the transfer line:
 
 This ensures only the requested amount is sent, not the entire contract balance.
 
-## Starting a Debug Session from the Debugger Panel
+## Starting a debug session from the debugger panel
 
 As an alternative to clicking **Debug** in the terminal, you can start a session directly from the Debugger panel using a transaction hash.
 

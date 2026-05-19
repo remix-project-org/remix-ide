@@ -13,7 +13,7 @@ The **Search in Files** plugin is loaded by default. It also includes functional
 
 This plugin searches through text in the files of the current workspace. It does not search across workspaces.
 
-## Search and Replace
+## Search and replace
 
 Clicking on the caret to the left of the text input box will reveal the **replace** functionality.
 

@@ -88,7 +88,7 @@ The ABI is a JSON array that describes a contract's functions, inputs, and outpu
 To get the ABI of a contract you've compiled, open the Solidity Compiler plugin, compile the contract, then click **Compilation Details**. The ABI is listed in the modal that appears.
 ```
 
-## Supported Environments
+## Supported environments
 
 The Deploy & Run plugin supports several environments that determine where your transactions are sent and how they are signed. You can choose between an in-browser sandbox (including forked chains), a browser wallet, a mobile wallet, or a locally running node.
 
@@ -226,7 +226,7 @@ shows it in a pending mode. When the transaction is mined, the number of
 pending transactions updates, and the transaction is added to the log
 ({doc}`see terminal </terminal>`). -->
 
-## Using the Recorder
+## Using the recorder
 
 The Recorder is a tool used to save a sequence of transactions in a JSON file and
 re-run them later, either in the same environment or in another.
