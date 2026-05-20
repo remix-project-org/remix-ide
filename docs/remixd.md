@@ -26,7 +26,7 @@ Before you hit **Connect**, you need to install the [Remixd NPM module](https://
 The code of `remixd` is
 [here](https://github.com/remix-project-org/remix-project/tree/master/libs/remixd) .
 
-## remixd Installation
+## Remixd installation
 
 **remixd** is an NPM module and can be globally installed using the following command:
 `npm install -g @remix-project/remixd`

@@ -5,13 +5,13 @@ myst:
     "keywords": "solidity unit testing, remix testing, smart contract tests, assert, remix ide"
 ---
 
-# Solidity Unit Testing Plugin
+# Solidity Unit Testing plugin
 
 The Solidity Unit Testing plugin allows you to write and run automated tests for your Solidity smart contracts to verify they work correctly before deployment.
 
 It helps you generate test files, write test functions using a built-in assertion library (like `Assert.equal`, `Assert.notEqual`), and execute those tests in a separate environment to see pass/fail results.
 
-## Activating the Solidity Unit Testing Plugin
+## Activating the Solidity unit testing plugin
 
 To activate the plugin, go to the Plugin Manager, search "Unit Testing" and enable the "Solidity Unit Testing" plugin.
 
@@ -34,7 +34,7 @@ After specifying the test folder, click the "**Create**" button. Alternatively, 
 
 ![Test Directory](images/unit-testing/a-unit-testing-test-directory.png)
 
-## Generating Tests
+## Generating tests
 
 The plugin can generate generic test files that contain information about developing tests for a contract. The name of the generic test file is determined by the currently active `.sol` file on the Main Panel. If there is no active file, a generic test file named, **newFile_test.sol** will be created.
 
@@ -84,7 +84,7 @@ contract testSuite {
 }
 ```
 
-## Writing Tests
+## Writing tests
 
 Write sufficient unit tests to ensure that your contract works as expected under different scenarios.
 
@@ -104,7 +104,7 @@ You can use {doc}`RemixAI </ai>` to generate tests for your files.
 
 ```
 
-## Running Tests
+## Running tests
 
 Once you are done with writing tests, select the file(s) and click on `Run` to execute the tests. The execution will run in a separate environment. After completing the execution of one file, a test summary will be shown:
 
@@ -112,11 +112,11 @@ Once you are done with writing tests, select the file(s) and click on `Run` to e
 
 For failed tests, there will be more assertion details to analyze the issue. Clicking on failed test will highlight the relevant line of code in the editor.
 
-## Stopping Tests
+## Stopping tests
 
 If you have selected multiple files to run the tests and want to stop the execution, click on `Stop` button. It will stop execution after running the tests for current file.
 
-## Customizing Tests
+## Customizing tests
 
 Remix facilitates users with various types of customizations to test a contract properly.
 
@@ -155,7 +155,7 @@ Regarding `gas`, Remix estimates the required gas for each transaction internall
 
 Various test examples can be seen in [examples](https://remix-ide.readthedocs.io/en/latest/unittesting_examples.html) section.
 
-## Points to Remember
+## Points to remember
 
 - A test contract cannot have a method with parameters. Having one such method will show error: `Method 'methodname' can not have parameters inside a test contract`
 - Number of test accounts are `3` before remix-ide release v0.10.0 and `10` afterwards

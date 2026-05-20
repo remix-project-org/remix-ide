@@ -7,7 +7,7 @@ myst:
 
 # Command Line Interface
 
-## remix-tests [![](https://badge.fury.io/js/%40remix-project%2Fremix-tests.svg)](https://www.npmjs.com/package/@remix-project/remix-tests)
+[![npm badge](https://badge.fury.io/js/%40remix-project%2Fremix-tests.svg)](https://www.npmjs.com/package/@remix-project/remix-tests)
 
 `remix-tests` is a tool which can be used as a CLI (Command Line Interface) solution to run the solidity unit tests. This is the same tool which works as a library underneath Remix's `Solidity Unit Testing` plugin. It is available on NPM as `@remix-project/remix-tests`.
 
@@ -75,7 +75,9 @@ To run single test file named `simple_storage_test.sol` inside `examples` direct
 $ remix-tests examples/simple_storage_test.sol
 ```
 
-**NOTE:** `remix-tests` will assume that name of test(s) file ends with `"_test.sol"`. e.g `simple_storage_test.sol`
+```{note}
+ `remix-tests` will assume that name of test(s) file ends with `"_test.sol"`. e.g `simple_storage_test.sol`
+```
 
 ## Example
 

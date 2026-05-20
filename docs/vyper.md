@@ -19,7 +19,7 @@ The plugin can be activated by going to:
 
 ## Compiling a Vyper file
 
-A Vyper file (with a `.vy` extension) needs to be the active file in the Editor. To get some example files, click on the **Clone Vyper examples repo** button. This will clone a repo and put it in a new Workspace. Go to the File Explorer to see the files.
+A Vyper file (with a `.vy` extension) needs to be the active file in the Editor. To get some example files, click on the **Clone Vyper examples repo** button. This will clone a repository and put it in a new Workspace. Go to the File Explorer to see the files.
 
 ## Specifying Vyper version, EVM versions, and optimize
 
@@ -64,7 +64,7 @@ There are 4 ways to compile:
 3. Click on the play button at the top left of the Main Panel when a .vy file is the active tab.
 4. CTRL + s when a .vy file is in the active tab of the Main Panel.
 
-## Remote vs Local compiler
+## Remote vs local compiler
 
 The default is to use the remote compiler. To see the settings open up the Advanced Settings accordion box.
 

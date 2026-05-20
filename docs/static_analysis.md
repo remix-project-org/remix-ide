@@ -57,7 +57,7 @@ To run [Slither](https://github.com/crytic/slither#slither-the-solidity-source-a
 
 The [Solhint](https://github.com/protofire/solhint#rules) linter can be run without connecting Remix to your filesystem.
 
-## Remix Analysis
+## Remix analysis
 
 Remix Analysis has 4 categories: `Security`, `Gas & Economy`, `ERC` & `Miscellaneous`.
 

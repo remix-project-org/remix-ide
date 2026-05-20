@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-20 08:23+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../unittestingAsCLI.md:0
+msgid "Run Solidity unit tests from the command line using the remix-tests CLI tool, the same engine powering Remix IDE's testing plugin."
+msgstr ""
+
+#: ../../unittestingAsCLI.md:0
+msgid "remix-tests cli, solidity testing cli, command line testing, npm, remix"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:8
+msgid "Command Line Interface"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:10
+msgid "[![npm badge](https://badge.fury.io/js/%40remix-project%2Fremix-tests.svg)](https://www.npmjs.com/package/@remix-project/remix-tests)"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:10
+msgid "npm badge"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:12
+msgid "`remix-tests` is a tool which can be used as a CLI (Command Line Interface) solution to run the solidity unit tests. This is the same tool which works as a library underneath Remix's `Solidity Unit Testing` plugin. It is available on NPM as `@remix-project/remix-tests`."
+msgstr ""
+
+#: ../../unittestingAsCLI.md:14
+msgid "Get started"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:16
+msgid "You can install it using NPM:"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:18
+msgid "As a dev dependency:"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:24
+msgid "As a global NPM module:"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:30
+msgid "To confirm installation, run:"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:36
+msgid "You should get a version as output. For example `0.1.36`."
+msgstr ""
+
+#: ../../unittestingAsCLI.md:38
+msgid "How to use"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:40
+msgid "You can see all available options using `help` command."
+msgstr ""
+
+#: ../../unittestingAsCLI.md:60
+msgid "General structure of a command is as:"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:66
+msgid "To run all test files inside `examples` directory"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:72
+msgid "To run single test file named `simple_storage_test.sol` inside `examples` directory"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:79
+msgid "`remix-tests` will assume that name of test(s) file ends with `\"_test.sol\"`. e.g `simple_storage_test.sol`"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:82
+msgid "Example"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:84
+msgid "Consider for a simple storage contract named `simple_storage.sol`:"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:106
+msgid "Test file `simple_storage_test.sol` can be as:"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:139
+msgid "Running `simple_storage_test.sol` file will output as:"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:165
+msgid "Custom compiler context"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:167
+msgid "Most of the `remix-tests` options are there to define a custom compiler context. With an extended custom compiler context, execution of above test file will go as:"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:198
+msgid "Remember, custom compiler version will require internet connection to load compiler."
+msgstr ""
+
+#: ../../unittestingAsCLI.md:200
+msgid "As a CI solution"
+msgstr ""
+
+#: ../../unittestingAsCLI.md:202
+msgid "`remix-tests` can also be used for continuous integration (CI) testing."
+msgstr ""
+
+#: ../../unittestingAsCLI.md:204
+msgid "For implementation example, see [Su Squares contract](https://github.com/su-squares/ethereum-contract/tree/e542f37d4f8f6c7b07d90a6554424268384a4186) and [Travis build](https://app.travis-ci.com/su-squares/ethereum-contract/builds/446186067) that uses `remix-tests` for continuous integration."
+msgstr ""

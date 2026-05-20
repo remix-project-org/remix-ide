@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-20 08:23+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../slither.md:0
+msgid "Run Slither static analysis on Solidity contracts in Remix IDE to detect security vulnerabilities and get detailed contract information."
+msgstr ""
+
+#: ../../slither.md:0
+msgid "slither remix, static analysis, smart contract security, remixd, solidity"
+msgstr ""
+
+#: ../../slither.md:8
+msgid "Slither"
+msgstr ""
+
+#: ../../slither.md:10
+msgid "[Slither](https://github.com/crytic/slither) is a static analysis framework for Solidity. It runs a suite of vulnerability detectors and provides information about contract details."
+msgstr ""
+
+#: ../../slither.md:12
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../slither.md:14
+msgid "To use Slither analysis with Remix IDE efficiently, the following tools should be installed locally on your system:"
+msgstr ""
+
+#: ../../slither.md:16
+msgid "**Slither:** [Installing Slither](https://crytic.github.io/slither/slither.html#how-to-install)"
+msgstr ""
+
+#: ../../slither.md:17
+msgid "**Solc:** [Installing Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html)"
+msgstr ""
+
+#: ../../slither.md:18
+msgid "**Solc-select:** [Solc Quickstart](https://github.com/crytic/solc-select#quickstart)"
+msgstr ""
+
+#: ../../slither.md:20
+msgid "How to use"
+msgstr ""
+
+#: ../../slither.md:22
+msgid "Slither analysis is available in Remix Desktop through the `Solidity Static Analysis` plugin and on Remix Web through RemixAI."
+msgstr ""
+
+#: ../../slither.md:24
+msgid "Remix Web"
+msgstr ""
+
+#: ../../slither.md:26
+msgid "On Remix Web, Slither analysis is available through RemixAI. Open the RemixAI Assistant, describe your contract, and ask it to run a Slither analysis."
+msgstr ""
+
+#: ../../slither.md:28
+msgid "Here's an example prompt:"
+msgstr ""
+
+#: ../../slither.md:34
+msgid "The `Slither` checkbox in the Solidity Static Analysis plugin will be greyed out on Remix Web."
+msgstr ""
+
+#: ../../slither.md:36
+msgid "Remix Desktop"
+msgstr ""
+
+#: ../../slither.md:38
+msgid "If you load a local project in Remix Desktop, there will be an extra checkbox shown in `Solidity Static Analysis` plugin with the label `Slither` (On Remix Web, this option will be greyed out)."
+msgstr ""
+
+#: ../../slither.md:40
+msgid "![Slither checkbox in the Solidity Static Analysis plugin](images/a-slither-analysis.png)"
+msgstr ""
+
+#: ../../slither.md:40
+msgid "Slither checkbox in the Solidity Static Analysis plugin"
+msgstr ""
+
+#: ../../slither.md:42
+msgid "The Slither Analysis report will be displayed on the Slither tab of the Solidity Static Analysis plugin, next to the Remix analysis report for better readability."
+msgstr ""
+
+#: ../../slither.md:44
+msgid "![Slither analysis report in the Solidity Static Analysis plugin](images/a-slither-analysis-success.png)"
+msgstr ""
+
+#: ../../slither.md:44
+msgid "Slither analysis report in the Solidity Static Analysis plugin"
+msgstr ""
+
+#: ../../slither.md:46
+msgid "The result of the analysis will be shown in the Remix IDE terminal."
+msgstr ""
+
+#: ../../slither.md:48
+msgid "![Slither analysis result in the Remix IDE terminal](images/a-slither-analysis-success-terminal.png)"
+msgstr ""
+
+#: ../../slither.md:48
+msgid "Slither analysis result in the Remix IDE terminal"
+msgstr ""
+
+#: ../../slither.md:50
+msgid "To only run Slither Analysis, deselect the `Remix` and `Solhint` checkboxes and click on \"Analyze\". Now it will show only the Slither Analysis report."
+msgstr ""
+
+#: ../../slither.md:52
+msgid "By default, it doesn't show the warnings for external libraries like remix-tests.sol, hardhat/console.sol etc. To have a look at them, check the box with label `Show warnings for external libraries`."
+msgstr ""
+
+#: ../../slither.md:54
+msgid "![Slither analysis report showing warnings for external libraries](images/a-slither-analysis-ext-libs.png)"
+msgstr ""
+
+#: ../../slither.md:54
+msgid "Slither analysis report showing warnings for external libraries"
+msgstr ""
+
+#: ../../slither.md:56
+msgid "More Details"
+msgstr ""
+
+#: ../../slither.md:58
+msgid "Analysis for Slither is run using the version set in the `Solidity Compiler` plugin. Slither is a CLI tool and requires `solc` to run. Before running the analysis, the Slither Websocket plugin checks if the current local `solc` version matches the version set in Remix IDE."
+msgstr ""
+
+#: ../../slither.md:60
+msgid "If the versions differ, the Slither Websocket plugin will use `solc-select` to switch the local `solc` version to match."
+msgstr ""
+
+#: ../../slither.md:62
+msgid "For example, if the local `solc` version is 0.8.4 and Remix IDE is set to 0.8.6, the logs will show the version switch."
+msgstr ""
+
+#: ../../slither.md:64
+msgid "![Slither Websocket plugin log showing solc version selection](images/a-slither-analysis-select.png)"
+msgstr ""
+
+#: ../../slither.md:64
+msgid "Slither Websocket plugin log showing solc version selection"
+msgstr ""
+
+#: ../../slither.md:66
+msgid "After a successful analysis run:"
+msgstr ""
+
+#: ../../slither.md:68
+msgid "![Slither analysis success after solc version switch](images/a-slither-analysis-select-success.png)"
+msgstr ""
+
+#: ../../slither.md:68
+msgid "Slither analysis success after solc version switch"
+msgstr ""

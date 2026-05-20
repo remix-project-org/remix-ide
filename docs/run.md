@@ -88,7 +88,7 @@ The ABI is a JSON array that describes a contract's functions, inputs, and outpu
 To get the ABI of a contract you've compiled, open the Solidity Compiler plugin, compile the contract, then click **Compilation Details**. The ABI is listed in the modal that appears.
 ```
 
-## Supported Environments
+## Supported environments
 
 The Deploy & Run plugin supports several environments that determine where your transactions are sent and how they are signed. You can choose between an in-browser sandbox (including forked chains), a browser wallet, a mobile wallet, or a locally running node.
 
@@ -141,7 +141,7 @@ Development environments connect Remix to locally running nodes or L2 networks, 
 
 - **Hardhat Provider**: Connects to a locally running [Hardhat](https://hardhat.org/) node. Transactions execute instantly and do not require wallet approval, making it fast for iterative development.
 
-- **Foundry Provider**: Connects to a locally running [Anvil](https://book.getfoundry.sh/anvil/) node (part of the Foundry toolchain). Like Hardhat, it runs a local chain with pre-funded accounts and instant transaction finality.
+- **Foundry Provider**: Connects to a locally running [Anvil](https://www.getfoundry.sh/anvil) node (part of the Foundry toolchain). Like Hardhat, it runs a local chain with pre-funded accounts and instant transaction finality.
 
 - **External HTTP Provider**: Connects Remix to any remote or local Ethereum-compatible node via an RPC URL (e.g., a Geth or Erigon instance). Enter the node's HTTP endpoint when prompted. Read more about [connecting to an External Provider](#more-about-external-http-provider).
 
@@ -226,7 +226,7 @@ shows it in a pending mode. When the transaction is mined, the number of
 pending transactions updates, and the transaction is added to the log
 ({doc}`see terminal </terminal>`). -->
 
-## Using the Recorder
+## Using the recorder
 
 The Recorder is a tool used to save a sequence of transactions in a JSON file and
 re-run them later, either in the same environment or in another.

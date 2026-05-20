@@ -7,7 +7,7 @@ myst:
 
 # FAQ
 
-## Supported devices & Browsers
+## Supported devices & browsers
 
 ```{dropdown} Q: What browsers will Remix work on?
 :class-title: sd-fs-5 sd-font-weight-bold
@@ -35,7 +35,7 @@ Yes - here is the list of keyboard shortcuts:
 
 `Ctrl+S`: Compiles the active Solidity file
 
-`Ctrl+Shift+S`: Compiles a Solidity file and runs a script when the script is displayed in the editor.<br>(go {ref}`here <running_js_scripts:compile a contract and run a script in one click>` for more info about this functionality)
+`Ctrl+Shift+S`: Compiles a Solidity file and runs a script when the script is displayed in the editor.<br>(go {ref}`here <running_js_scripts:compile and run script>` for more info about this functionality)
 
 `Ctrl+Shift+F` : Opens the File Explorer
 
@@ -45,7 +45,7 @@ Yes - here is the list of keyboard shortcuts:
 
 ```
 
-## Solidity Compiler
+## Solidity compiler
 
 ```{dropdown} Q: Error: compiler might be in a non-sane state
 :class-title: sd-fs-5 sd-font-weight-bold
@@ -70,7 +70,7 @@ Try a different browser or a newer Solidity Compiler version.
 
 ```
 
-## Deploy & Run
+## Deploy & run
 
 ```{dropdown} Q: I am using an Infura endpoint in my app, but when I try to deploy against that endpoint in Remix IDE selecting "External HTTP Provider" and putting my endpoint in, it's telling me that it can't connect
 :class-title: sd-fs-5 sd-font-weight-bold

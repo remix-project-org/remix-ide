@@ -56,7 +56,7 @@ And in the **Deployed contracts** section, you’ll see this:
 
 And when you open up the account (which is the new deployment), you can see that it can execute code.
 
-## Account Abstraction with EIP 4337 in Remix
+## Account abstraction with EIP 4337 in Remix
 
 ### Gnosis Safe Smart Accounts in Remix
 

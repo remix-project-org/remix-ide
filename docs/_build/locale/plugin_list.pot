@@ -1,0 +1,506 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-20 08:23+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../plugin_list.md:0
+msgid "Complete list of plugins available in Remix IDE's Plugin Manager for extending the IDE with additional tools and functionality."
+msgstr ""
+
+#: ../../plugin_list.md:0
+msgid "remix plugins list, remix ide plugins, plugin manager, solidity tools"
+msgstr ""
+
+#: ../../plugin_list.md:8
+msgid "Plugin List"
+msgstr ""
+
+#: ../../plugin_list.md:10
+msgid "Here is the list of Remix plugins that you will see in the Plugin Manager."
+msgstr ""
+
+#: ../../plugin_list.md:13
+msgid "Click a card to open the Remix IDE with the plugin enabled."
+msgstr ""
+
+#: ../../plugin_list.md:16
+msgid "Internal plugins"
+msgstr ""
+
+#: ../../plugin_list.md:18
+msgid "These are plugins that are managed by the Remix team."
+msgstr ""
+
+#: ../../plugin_list.md:23
+msgid "Contract Verification"
+msgstr ""
+
+#: ../../plugin_list.md:30
+msgid "Verify contract code on Sourcify, Etherscan and Blockscout at the same time."
+msgstr ""
+
+#: ../../plugin_list.md:32
+msgid "[Documentation](https://remix-ide.readthedocs.io/en/latest/contract_verification.html)"
+msgstr ""
+
+#: ../../plugin_list.md:33
+msgid "Profile name: **contract-verification**"
+msgstr ""
+
+#: ../../plugin_list.md:36
+msgid "Debugger"
+msgstr ""
+
+#: ../../plugin_list.md:43
+msgid "Insert breakpoints, step through a contract, and debug transactions."
+msgstr ""
+
+#: ../../plugin_list.md:45
+msgid "[Documentation](https://remix-ide.readthedocs.io/en/latest/debugger.html)"
+msgstr ""
+
+#: ../../plugin_list.md:46
+msgid "Profile name: **debugger**"
+msgstr ""
+
+#: ../../plugin_list.md:49
+msgid "Deploy & Run"
+msgstr ""
+
+#: ../../plugin_list.md:56
+msgid "Deploy & interact with smart contracts on the in-browser chain (JSVM), local nodes, and public networks."
+msgstr ""
+
+#: ../../plugin_list.md:58
+msgid "[Documentation](https://remix-ide.readthedocs.io/en/latest/run.html)"
+msgstr ""
+
+#: ../../plugin_list.md:59
+msgid "Profile name: **udapp**"
+msgstr ""
+
+#: ../../plugin_list.md:62
+msgid "File Explorer"
+msgstr ""
+
+#: ../../plugin_list.md:69
+msgid "The File Explorer is where you can see the files."
+msgstr ""
+
+#: ../../plugin_list.md:71
+msgid "[Documentation](https://remix-ide.readthedocs.io/en/latest/file_explorer.html)"
+msgstr ""
+
+#: ../../plugin_list.md:72
+msgid "Profile name: **fileManager**"
+msgstr ""
+
+#: ../../plugin_list.md:75
+msgid "Remixd"
+msgstr ""
+
+#: ../../plugin_list.md:82
+msgid "Connect a local filesystem folder to Remix via the `remixd` npm package."
+msgstr ""
+
+#: ../../plugin_list.md:84
+msgid "[Documentation](https://remix-ide.readthedocs.io/en/latest/remixd.html)"
+msgstr ""
+
+#: ../../plugin_list.md:85
+msgid "Profile name: **remixd**"
+msgstr ""
+
+#: ../../plugin_list.md:88
+msgid "Solidity Compiler"
+msgstr ""
+
+#: ../../plugin_list.md:95
+msgid "Compiles Solidity & Yul."
+msgstr ""
+
+#: ../../plugin_list.md:97
+msgid "[Documentation](https://remix-ide.readthedocs.io/en/latest/compile.html)"
+msgstr ""
+
+#: ../../plugin_list.md:98
+msgid "Profile name: **solidity**"
+msgstr ""
+
+#: ../../plugin_list.md:101
+msgid "Solidity Static Analysis"
+msgstr ""
+
+#: ../../plugin_list.md:108
+msgid "Static code analysis with integrations for **Slither** and **Solhint**."
+msgstr ""
+
+#: ../../plugin_list.md:110
+msgid "[Documentation](https://remix-ide.readthedocs.io/en/latest/static_analysis.html)"
+msgstr ""
+
+#: ../../plugin_list.md:111
+msgid "Profile name: **solidityStaticAnalysis**"
+msgstr ""
+
+#: ../../plugin_list.md:114
+msgid "Solidity Unit Testing"
+msgstr ""
+
+#: ../../plugin_list.md:121
+msgid "Run unit tests written in Solidity."
+msgstr ""
+
+#: ../../plugin_list.md:123
+msgid "[Documentation](https://remix-ide.readthedocs.io/en/latest/unittesting.html)"
+msgstr ""
+
+#: ../../plugin_list.md:124
+msgid "Profile name: **solidityUnitTesting**"
+msgstr ""
+
+#: ../../plugin_list.md:127
+msgid "Vyper Compiler"
+msgstr ""
+
+#: ../../plugin_list.md:134
+msgid "Compile Vyper code using local or remote Vyper compiler."
+msgstr ""
+
+#: ../../plugin_list.md:136
+msgid "[Documentation](https://remix-ide.readthedocs.io/en/latest/vyper.html)"
+msgstr ""
+
+#: ../../plugin_list.md:137
+msgid "Profile name: **vyper**"
+msgstr ""
+
+#: ../../plugin_list.md:140
+msgid "Workspace Templates"
+msgstr ""
+
+#: ../../plugin_list.md:147
+msgid "Create workspaces from existing templates like the OpenZeppelin ERC20 template."
+msgstr ""
+
+#: ../../plugin_list.md:149
+msgid "Profile name: **templateSelection**"
+msgstr ""
+
+#: ../../plugin_list.md:152
+msgid "Plugin Manager"
+msgstr ""
+
+#: ../../plugin_list.md:159
+msgid "Displays a list of all available plugins."
+msgstr ""
+
+#: ../../plugin_list.md:161
+msgid "Profile name: **pluginManager**"
+msgstr ""
+
+#: ../../plugin_list.md:164
+msgid "Slither"
+msgstr ""
+
+#: ../../plugin_list.md:171
+#: ../../plugin_list.md:181
+msgid "This plugin is now part of the Solidity Analyzers plugin."
+msgstr ""
+
+#: ../../plugin_list.md:174
+msgid "Solhint"
+msgstr ""
+
+#: ../../plugin_list.md:184
+msgid "LearnEth"
+msgstr ""
+
+#: ../../plugin_list.md:191
+msgid "Remix, Solidity, & blockchain tutorials with quizzes teaching Solidity and Remix features."
+msgstr ""
+
+#: ../../plugin_list.md:193
+msgid "Profile name: **LearnEth**"
+msgstr ""
+
+#: ../../plugin_list.md:196
+msgid "Circom Compiler"
+msgstr ""
+
+#: ../../plugin_list.md:203
+msgid "Write, compile, and generate proofs for Zero-Knowledge (ZK) circuits using the Circom language."
+msgstr ""
+
+#: ../../plugin_list.md:205
+msgid "[Documentation](https://docs.circom.io/)"
+msgstr ""
+
+#: ../../plugin_list.md:206
+msgid "Profile name: **circuit-compiler**"
+msgstr ""
+
+#: ../../plugin_list.md:209
+msgid "Noir Compiler"
+msgstr ""
+
+#: ../../plugin_list.md:216
+msgid "Enables support for Noir circuit compilation."
+msgstr ""
+
+#: ../../plugin_list.md:218
+msgid "[Documentation](https://noir-lang.org/docs/)"
+msgstr ""
+
+#: ../../plugin_list.md:219
+msgid "Profile name: **noir-compiler**"
+msgstr ""
+
+#: ../../plugin_list.md:223
+msgid "External plugins"
+msgstr ""
+
+#: ../../plugin_list.md:225
+msgid "These are the plugins that are managed by external teams."
+msgstr ""
+
+#: ../../plugin_list.md:230
+msgid "Arbitrum Stylus"
+msgstr ""
+
+#: ../../plugin_list.md:237
+msgid "Deployment and execution of smart contracts via Arbitrum Stylus."
+msgstr ""
+
+#: ../../plugin_list.md:239
+msgid "[Website](https://docs.welldonestudio.io/code)"
+msgstr ""
+
+#: ../../plugin_list.md:240
+msgid "Profile name: **remix-plugin-arbitrum**"
+msgstr ""
+
+#: ../../plugin_list.md:243
+msgid "BuildBear"
+msgstr ""
+
+#: ../../plugin_list.md:250
+msgid "Create private, forked testnets from any EVM chain with explorer, faucet, and RPC."
+msgstr ""
+
+#: ../../plugin_list.md:252
+msgid "[Documentation](https://www.buildbear.io/resources/guides-and-tutorials/remix_plugin)"
+msgstr ""
+
+#: ../../plugin_list.md:253
+msgid "Profile name: **buildbear**"
+msgstr ""
+
+#: ../../plugin_list.md:256
+msgid "Cookbook.dev — Find any contract"
+msgstr ""
+
+#: ../../plugin_list.md:263
+msgid "Find any smart contract, build your project faster."
+msgstr ""
+
+#: ../../plugin_list.md:265
+msgid "[Website](https://github.com/CookbookDev/cookbook-remix-plugin)"
+msgstr ""
+
+#: ../../plugin_list.md:266
+msgid "Profile name: **cookbook.dev**"
+msgstr ""
+
+#: ../../plugin_list.md:269
+msgid "COTI Plugin"
+msgstr ""
+
+#: ../../plugin_list.md:276
+msgid "Develop and test privacy-preserving smart contracts on the COTI network."
+msgstr ""
+
+#: ../../plugin_list.md:278
+msgid "[Documentation](https://docs.coti.io/coti-documentation)"
+msgstr ""
+
+#: ../../plugin_list.md:279
+msgid "Profile name: **coti-remix-plugin**"
+msgstr ""
+
+#: ../../plugin_list.md:282
+msgid "Contract Deployer"
+msgstr ""
+
+#: ../../plugin_list.md:289
+msgid "Deploy a contract to multiple chains (one at a time) with the same address."
+msgstr ""
+
+#: ../../plugin_list.md:291
+msgid "[Documentation](https://github.com/groksmith/remix-contract-deployer-plugin)"
+msgstr ""
+
+#: ../../plugin_list.md:292
+msgid "Profile name: **contract_deployer**"
+msgstr ""
+
+#: ../../plugin_list.md:295
+msgid "Defender Deploy"
+msgstr ""
+
+#: ../../plugin_list.md:301
+msgid "Deploy smart contracts using OpenZeppelin Defender from Remix IDE."
+msgstr ""
+
+#: ../../plugin_list.md:303
+msgid "[Documentation](https://docs.openzeppelin.com/defender/remix-plugin)"
+msgstr ""
+
+#: ../../plugin_list.md:304
+msgid "Profile name: **defender-deploy**"
+msgstr ""
+
+#: ../../plugin_list.md:307
+msgid "Klaytn"
+msgstr ""
+
+#: ../../plugin_list.md:314
+msgid "Deploy and interact with smart contracts on the Klaytn public network and local nodes."
+msgstr ""
+
+#: ../../plugin_list.md:316
+msgid "[Website](https://github.com/klaytn-ozys/plug-and-klay)"
+msgstr ""
+
+#: ../../plugin_list.md:317
+msgid "Profile name: **klaytn-remix-plugin**"
+msgstr ""
+
+#: ../../plugin_list.md:320
+msgid "Nahmii compiler"
+msgstr ""
+
+#: ../../plugin_list.md:327
+msgid "Compile Solidity contracts for the Nahmii network."
+msgstr ""
+
+#: ../../plugin_list.md:329
+msgid "[Documentation](https://docs.n3.nahmii.io/docs/category/nahmii-30)"
+msgstr ""
+
+#: ../../plugin_list.md:330
+msgid "[Open an issue](https://github.com/nahmii-community/remix-nahmii-compiler-plugin/issues)"
+msgstr ""
+
+#: ../../plugin_list.md:331
+msgid "Profile name: **nahmii-compiler**"
+msgstr ""
+
+#: ../../plugin_list.md:334
+msgid "Sentio"
+msgstr ""
+
+#: ../../plugin_list.md:341
+msgid "Monitor and analyze your smart contracts inside Remix using Sentio."
+msgstr ""
+
+#: ../../plugin_list.md:343
+msgid "[Documentation](https://docs.sentio.xyz/docs/remix-ide-plugin)"
+msgstr ""
+
+#: ../../plugin_list.md:344
+msgid "Profile name: **sentio**"
+msgstr ""
+
+#: ../../plugin_list.md:347
+msgid "SolidityScan"
+msgstr ""
+
+#: ../../plugin_list.md:353
+msgid "Real-time security analysis of your Solidity smart contracts."
+msgstr ""
+
+#: ../../plugin_list.md:355
+msgid "[Documentation](https://docs.solidityscan.com/remix/)"
+msgstr ""
+
+#: ../../plugin_list.md:356
+msgid "Profile name: **solidityscan**"
+msgstr ""
+
+#: ../../plugin_list.md:359
+msgid "Starknet"
+msgstr ""
+
+#: ../../plugin_list.md:366
+msgid "Compile contracts written in Cairo to Starknet."
+msgstr ""
+
+#: ../../plugin_list.md:368
+msgid "[Website](https://github.com/NethermindEth/starknet-remix-plugin)"
+msgstr ""
+
+#: ../../plugin_list.md:369
+msgid "Profile name: **Starknet**"
+msgstr ""
+
+#: ../../plugin_list.md:372
+msgid "Tenderly"
+msgstr ""
+
+#: ../../plugin_list.md:379
+msgid "Verify contracts and import from your Tenderly project."
+msgstr ""
+
+#: ../../plugin_list.md:381
+msgid "[Documentation](https://docs.tenderly.co/monitoring/integrations#remix)"
+msgstr ""
+
+#: ../../plugin_list.md:382
+msgid "Profile name: **tenderly**"
+msgstr ""
+
+#: ../../plugin_list.md:385
+msgid "Wallet Connect (Main Panel)"
+msgstr ""
+
+#: ../../plugin_list.md:391
+msgid "Approve transactions on your mobile device."
+msgstr ""
+
+#: ../../plugin_list.md:393
+msgid "[Website](https://github.com/yann300/remix-walletconnect/issues)"
+msgstr ""
+
+#: ../../plugin_list.md:394
+msgid "Profile name: **walletconnect**"
+msgstr ""
+
+#: ../../plugin_list.md:397
+msgid "Zokrates"
+msgstr ""
+
+#: ../../plugin_list.md:404
+msgid "ZoKrates is a toolbox for zkSNARKs on Ethereum."
+msgstr ""
+
+#: ../../plugin_list.md:406
+msgid "[Website](https://zokrates.github.io/)"
+msgstr ""
+
+#: ../../plugin_list.md:407
+msgid "Profile name: **ZoKrates**"
+msgstr ""

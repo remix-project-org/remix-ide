@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-19 10:46+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../udapp.rst:-1
+msgid "Interact with deployed contracts in Remix IDE — call functions, send transactions, and inspect contract state in the Deploy & Run panel."
+msgstr ""
+
+#: ../../udapp.rst:-1
+msgid "remix udapp, deployed contracts, interact contracts, remix ide, send transactions"
+msgstr ""
+
+#: ../../udapp.rst:2
+msgid "Deploy & Run (part 2)"
+msgstr ""
+
+#: ../../udapp.rst:8
+msgid "This is part 2 of the documentation covering the Deploy & Run plugin. Part 1 covers :doc:`deploying and accessing a contract </run>`."
+msgstr ""
+
+#: ../../udapp.rst:11
+msgid "Interacting with deployed contracts"
+msgstr ""
+
+#: ../../udapp.rst:13
+msgid "After you deploy a contract or :ref:`load it into Remix using Add Contract <run:loading deployed contracts>`, the deployed instance will appear in the **Deployed Contracts** section on Deploy & Run."
+msgstr ""
+
+#: ../../udapp.rst:15
+msgid "Deployed Instances"
+msgstr ""
+
+#: ../../udapp.rst:18
+msgid "The deployed contract's address is visible as are a few other icons - one of which is the **pin** icon."
+msgstr ""
+
+#: ../../udapp.rst:21
+msgid "Pinned contracts"
+msgstr ""
+
+#: ../../udapp.rst:23
+msgid "When a contract is pinned, its address and ABI are stored in the ``.deploys`` folder of the current Workspace. Upon reloading Remix, pinned contracts will automatically appear in the **Deployed Contracts** section, provided that both the Workspace and the connected blockchain network remain the same as when the contract was originally pinned."
+msgstr ""
+
+#: ../../udapp.rst:26
+msgid "Functions"
+msgstr ""
+
+#: ../../udapp.rst:28
+msgid "To see a contract's functions, click on the deployed contract."
+msgstr ""
+
+#: ../../udapp.rst:38
+msgid "The functions' buttons can have different colors."
+msgstr ""
+
+#: ../../udapp.rst:40
+msgid "Blue buttons are for ``view`` or ``pure`` functions. Clicking a blue button does not create a new transaction - so there will be **no gas fees**."
+msgstr ""
+
+#: ../../udapp.rst:42
+msgid "Orange buttons are for ``non-payable`` functions. Non-payable functions change the state of the contract BUT **do not accept value** (typically ETH) being sent with the transaction. Clicking an orange button will create a transaction and will cost gas."
+msgstr ""
+
+#: ../../udapp.rst:44
+msgid "Red buttons are for ``payable`` functions. Clicking a red button will create a new transaction and this transaction can accept a **value** (typically ETH). The amount of value is set in the **Value** field which is under the Gas Limit field."
+msgstr ""
+
+#: ../../udapp.rst:46
+msgid "Calling different function types"
+msgstr ""
+
+#: ../../udapp.rst:50
+msgid "Inputting parameters"
+msgstr ""
+
+#: ../../udapp.rst:52
+msgid "A function has two views - the collapsed and the expanded view. Clicking the function brings you to the expanded view, where you can input the parameters required for the function."
+msgstr ""
+
+#: ../../udapp.rst:54
+msgid "The input box shows the expected type of each parameter."
+msgstr ""
+
+#: ../../udapp.rst:55
+msgid "Numbers and addresses do not need to be wrapped in double quotes."
+msgstr ""
+
+#: ../../udapp.rst:56
+msgid "Strings must be wrapped in double quotes."
+msgstr ""
+
+#: ../../udapp.rst:58
+msgid "Inputting Parameters in function calls"
+msgstr ""
+
+#: ../../udapp.rst:63
+msgid "Low level interactions"
+msgstr ""
+
+#: ../../udapp.rst:65
+msgid "Low level interactions are used to send funds or calldata or funds & calldata to a contract through the ``receive()`` or ``fallback()`` function. Typically, you should only need to implement the fallback function if you are following an upgrade or proxy pattern."
+msgstr ""
+
+#: ../../udapp.rst:67
+msgid "To find the low level interactions section, you have to click the contract from the Deployed Contracts section, then click the plus icon with the label \"Low level interaction\"."
+msgstr ""
+
+#: ../../udapp.rst:69
+msgid "Low level interactions section"
+msgstr ""
+
+#: ../../udapp.rst:74
+msgid "If you are executing a plain Ether transfer to a contract, you need to have the ``receive()`` function in your contract. If your contract has been deployed and you want to send it funds, you would input the amount of Ether or Wei etc. (see **A** in graphic below), and then input **NOTHING** in the calldata field of **Low level interactions** (see **B** in graphic) and click the Transact button (see **C** in graphic below)."
+msgstr ""
+
+#: ../../udapp.rst:76
+msgid "Receive function example"
+msgstr ""
+
+#: ../../udapp.rst:79
+msgid "When using low level interactions, keep the following rules in mind:"
+msgstr ""
+
+#: ../../udapp.rst:81
+msgid "If you are sending calldata to your contract with Ether, then you need to use the ``fallback()`` function and have it with the state mutability of **payable**."
+msgstr ""
+
+#: ../../udapp.rst:83
+msgid "If you are not sending ether to the contract but **are** sending call data then you need to use the ``fallback()`` function."
+msgstr ""
+
+#: ../../udapp.rst:85
+msgid "If you break the rules when using the **Low level interactions** you will see a warning."
+msgstr ""
+
+#: ../../udapp.rst:87
+msgid "Please see the `Solidity docs <https://docs.soliditylang.org/en/latest/contracts.html#receive-ether-function>`_ for more specifics about using the **fallback** and **receive** functions."
+msgstr ""
+
+#: ../../udapp.rst:90
+msgid "Scientific Notation in Function Inputs"
+msgstr ""
+
+#: ../../udapp.rst:92
+msgid "You can use scientific notation to pass numbers as function argument. For example, instead of inputting 12000000000000000000, you can input 12e18. This works for both arrays and single inputs."
+msgstr ""
+
+#: ../../udapp.rst:94
+msgid "Scientific Notation"
+msgstr ""
+
+#: ../../udapp.rst:98
+msgid "Inputting a tuple or struct to a function"
+msgstr ""
+
+#: ../../udapp.rst:100
+msgid "To pass a tuple, you need to put in an array []."
+msgstr ""
+
+#: ../../udapp.rst:102
+msgid "Similarly, to pass in a struct as a parameter of a function, it needs to be put in as an array []."
+msgstr ""
+
+#: ../../udapp.rst:106
+msgid "For Solidity versions before 0.8.0, add ``pragma abicoder v2;`` or ``pragma experimental ABIEncoderV2;`` to your file. This is enabled by default in 0.8.0 and later."
+msgstr ""
+
+#: ../../udapp.rst:109
+msgid "Example of passing nested struct to a function"
+msgstr ""
+
+#: ../../udapp.rst:111
+msgid "Consider a nested struct defined like this:"
+msgstr ""
+
+#: ../../udapp.rst:125
+msgid "If a function has the signature ``fertilizer(Garden memory gardenPlot)`` then the correct syntax is:"
+msgstr ""
+
+#: ../../udapp.rst:131
+msgid "To continue on this example, here's a sample contract:"
+msgstr ""
+
+#: ../../udapp.rst:154
+msgid "After compiling, deploying the contract and opening up the deployed instance, we can then add the following input parameters to the function named **fertilizer**:"
+msgstr ""
+
+#: ../../udapp.rst:160
+msgid "The function **fertilizer** accepts a single parameter of the type **Garden**. The type **Garden** is a **struct**. Structs are wrapped in **square brackets**. Inside **Garden** is an array that is an array of structs named **theFlowers**. It gets a set of brackets for the array and another set for the struct. Thus the double square brackets."
+msgstr ""

@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-20 08:23+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../layout.md:0
+msgid "Learn how to navigate Remix IDE's layout: Top Bar, Icon Panel, Side Panel, Main Panel, Terminal, and Status Bar."
+msgstr ""
+
+#: ../../layout.md:0
+msgid "remix ide, layout, navigation, icon panel, side panel, terminal"
+msgstr ""
+
+#: ../../layout.md:8
+msgid "Navigating Remix"
+msgstr ""
+
+#: ../../layout.md:10
+msgid "Remix's layout consists of the following components: the Top Bar, Icon Panel, Side Panel, Main Panel, Terminal, and the Status Bar."
+msgstr ""
+
+#: ../../layout.md:12
+msgid "![Layout for Remix IDE, highlighting the terminal, topbar, and, the side, main, and icon panel.](images/layout/a-layout1c.png)"
+msgstr ""
+
+#: ../../layout.md:12
+msgid "Layout for Remix IDE, highlighting the terminal, topbar, and, the side, main, and icon panel."
+msgstr ""
+
+#: ../../layout.md:14
+msgid "**Top Bar** - interface for workspace selection, GitHub authentication and associated tools, themes, and the settings panel."
+msgstr ""
+
+#: ../../layout.md:15
+msgid "**Icon Panel** - indicates which plugins have been activated and which plugin is currently in the left or Right Side Panel. Click an icon to select that plugin. Go to the Plugin Manager to activate other plugins."
+msgstr ""
+
+#: ../../layout.md:16
+msgid "**Left Side Panel** - interface for the File Explorer, Solidity Compiler, Git, Deploy & Run, and many other plugins. Visit the Plugin Manager for a full list of plugins."
+msgstr ""
+
+#: ../../layout.md:17
+msgid "**Right Side Panel** - interface for the RemixAI Assistant."
+msgstr ""
+
+#: ../../layout.md:18
+msgid "**Main Panel** - contains tabs for editing files, Main Panel plugins (plugins that require more space than Side Panel plugins), and the Home Tab."
+msgstr ""
+
+#: ../../layout.md:19
+msgid "**Terminal** - a panel for viewing transaction receipts, various logs, and for executing JavaScript scripts."
+msgstr ""
+
+#: ../../layout.md:21
+msgid "Default tools"
+msgstr ""
+
+#: ../../layout.md:23
+msgid "When the Remix IDE is loaded for the first time - the Icon Panel shows these icons by default."
+msgstr ""
+
+#: ../../layout.md:25
+msgid "![Remix IDE default icons with annotations.](images/layout/a-icons-at-load.png)"
+msgstr ""
+
+#: ../../layout.md:25
+msgid "Remix IDE default icons with annotations."
+msgstr ""
+
+#: ../../layout.md:27
+msgid "When you load more plugins, that icons automatically appear in the icon panel. To load more plugins go to the **[Plugin Manager](#plugin-manager)** and select a plugin from the list of available plugins."
+msgstr ""
+
+#: ../../layout.md:29
+msgid "Home tab"
+msgstr ""
+
+#: ../../layout.md:31
+msgid "![Remix IDE Hometab.](images/layout/a-hometab.png)"
+msgstr ""
+
+#: ../../layout.md:31
+msgid "Remix IDE Hometab."
+msgstr ""
+
+#: ../../layout.md:33
+msgid "The Home Tab is located in the Main Panel. It can be closed, just like any of the Main Panel tabs. You can also access it (even if closed) by clicking the Remix logo at the top of the icon panel."
+msgstr ""
+
+#: ../../layout.md:35
+msgid "The home tab contains links to resources, announcements, tutorials, featured plugins and methods for loading files into Remix and shortcuts for connecting Remix to your local filesystem."
+msgstr ""
+
+#: ../../layout.md:37
+msgid "Toggling components"
+msgstr ""
+
+#: ../../layout.md:39
+msgid "By default, Remix opens with the Left and Right Side Panels active. You can toggle the states of these components using the buttons on the Top Bar as shown in the image below."
+msgstr ""
+
+#: ../../layout.md:41
+msgid "![Remix toggle components](images/layout/toggle-buttons.png)"
+msgstr ""
+
+#: ../../layout.md:41
+msgid "Remix toggle components"
+msgstr ""
+
+#: ../../layout.md:43
+msgid "Plugin manager"
+msgstr ""
+
+#: ../../layout.md:45
+msgid "In Remix, you only need to load the functionality you need - and the Plugin Manager is where you manage what plugins are turned off or on."
+msgstr ""
+
+#: ../../layout.md:47
+msgid "The Plugin Manager is also the place you go when you are creating your own plugin and you want to load your local plugin into Remix. In that case, you'd click on the \"Connect to a Local Plugin\" link at the top of the Plugin Manager panel."
+msgstr ""
+
+#: ../../layout.md:49
+msgid "Notifications"
+msgstr ""
+
+#: ../../layout.md:51
+msgid "Notifications on Remix are triggered when you perform certain actions like loading workspace dependencies. When triggered, they appear on upper right of the screen."
+msgstr ""
+
+#: ../../layout.md:53
+msgid "![Remix notifications](/images/layout/notifications.jpg)"
+msgstr ""
+
+#: ../../layout.md:53
+msgid "Remix notifications"
+msgstr ""

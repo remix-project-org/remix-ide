@@ -2,7 +2,7 @@
 myst:
   html_meta:
     "description": "Import external libraries and dependencies into your Solidity contracts in Remix IDE from npm, GitHub, IPFS, or local files."
-    "keywords": "solidity import, remix import, npm packages, github imports, solidity dependencies"
+    "keywords": "solidity import, remix import, npm packages, GitHub imports, solidity dependencies"
 ---
 
 # Importing & Loading Source Files in Solidity
@@ -14,7 +14,7 @@ There are two main reasons for loading external files into Remix:
 
 ## Importing a library or dependency
 
-When importing from NPM, or a URL (like github, an IPFS gateway, or a Swarm gateway) you do not need to do anything more than use the `import` statement in your contract. The dependencies do not need to be "preloaded" into the File Explorer's current Workspace before the contract is compiled.
+When importing from NPM, or a URL (like GitHub, an IPFS gateway, or a Swarm gateway) you do not need to do anything more than use the `import` statement in your contract. The dependencies do not need to be "preloaded" into the File Explorer's current Workspace before the contract is compiled.
 
 Files loaded from the import statement are placed in the **Files Explorer's** current Workspace's `.deps` folder.
 
@@ -79,11 +79,11 @@ For a detailed explanation of the `import` keyword see the
 
 ## Importing files for manipulation
 
-When importing from the home tab widgets or with a remix command in the console, the files are placed in the **root of the current Workspace** inside a folder that shows their source - eg github or gists.
+When importing from the home tab widgets or with a remix command in the console, the files are placed in the **root of the current Workspace** inside a folder that shows their source - eg GitHub or gists.
 
 ### Import buttons on the Remix home tab
 
-The Gist, Github, Swarm, IPFS, & HTTPS buttons are to assist in getting files into Remix so you can explore.
+The Gist, GitHub, Swarm, IPFS, & HTTPS buttons are to assist in getting files into Remix so you can explore.
 
 ![](images/a-import-from.png)
 
@@ -110,7 +110,7 @@ remix.loadgist('5362adf2000afa4cbdd2c6d239e06bf5')
 
 ### Accessing files loaded from the Home tab or from a remix command
 
-When you load from github, a folder named `github` folder is created in the root of your current workspace. To import a file from the `github` folder, you would use a command like this:
+When you load from GitHub, a folder named `github` folder is created in the root of your current workspace. To import a file from the `github` folder, you would use a command like this:
 
 ```Solidity
 import "github/OpenZeppelin/openzeppelin-contracts/contracts/math/SafeMath.sol";
@@ -118,4 +118,4 @@ import "github/OpenZeppelin/openzeppelin-contracts/contracts/math/SafeMath.sol";
 
 Notice that this import statement doesn't include the version information that was in the remix.load(url) command. So it is recommended that you use the methods described at the top of this page for importing dependencies that you are not intending to edit.
 
-Assume the .sol file that contained the import statement above is in the contracts folder. Notice that this import statement didn't need to traverse back to the github folder with a relative path like: **../github**.
+Assume the .sol file that contained the import statement above is in the contracts folder. Notice that this import statement didn't need to traverse back to the `github` folder with a relative path like: `../github`.

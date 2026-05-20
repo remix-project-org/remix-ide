@@ -1,0 +1,41 @@
+name: Link Check
+
+on:
+  pull_request:
+    paths:
+      - 'docs/**'
+      - 'vale.ini'
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        id: setup-python
+        with:
+          python-version: '3.12'
+
+      - name: Cache virtualenv
+        uses: actions/cache@v4
+        with:
+          path: docs/.venv
+          key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('docs/requirements.txt') }}
+          restore-keys: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-
+
+      - name: Install dependencies
+        working-directory: docs
+        run: make install
+
+      - name: Run link check
+        working-directory: docs
+        run: make linkcheck
+
+      - name: Upload link check report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: linkcheck-report
+          path: docs/_build/linkcheck/output.txt

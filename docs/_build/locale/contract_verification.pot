@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-20 08:23+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../contract_verification.md:0
+msgid "Verify deployed smart contracts on Sourcify, Etherscan, Blockscout, and Routescan directly from Remix IDE."
+msgstr ""
+
+#: ../../contract_verification.md:0
+msgid "contract verification, etherscan verify, sourcify, remix ide, smart contract"
+msgstr ""
+
+#: ../../contract_verification.md:8
+msgid "Contract Verification"
+msgstr ""
+
+#: ../../contract_verification.md:10
+msgid "Remix IDE includes a plugin for contract verification called \"**Contract Verification**\", available in the Plugin Manager. This plugin supports contract verification on Sourcify, Etherscan, Blockscout, and Routescan. The plugin has 4 tabs: the **Verify** tab, the **Receipts** tab, the **Lookup** tab, and the **Settings** tab. You can also verify contracts directly from the [Deploy and Run](#verifying-with-deploy-and-run) plugin."
+msgstr ""
+
+#: ../../contract_verification.md:12
+msgid "Verify tab"
+msgstr ""
+
+#: ../../contract_verification.md:14
+msgid "This is the home view of the plugin where you can verify your contracts."
+msgstr ""
+
+#: ../../contract_verification.md:16
+msgid "![Contract verification home page](images/contract-verification/verify-tab.png)"
+msgstr ""
+
+#: ../../contract_verification.md:16
+msgid "Contract verification home page"
+msgstr ""
+
+#: ../../contract_verification.md:18
+msgid "To verify a contract, you need to have:"
+msgstr ""
+
+#: ../../contract_verification.md:20
+msgid "The address of a deployed contract on a public network."
+msgstr ""
+
+#: ../../contract_verification.md:21
+msgid "The same contract source code compiled in Remix, using the same compiler version, optimization settings, and EVM version that were used during deployment."
+msgstr ""
+
+#: ../../contract_verification.md:22
+msgid "Constructor arguments matching those used during deployment (if applicable)."
+msgstr ""
+
+#: ../../contract_verification.md:24
+msgid "With the above, you can select which verification services you want to use for your verification by checking their boxes. By default, all of them have valid configurations that allow you to verify without any setup. The only exception to this is verification using Etherscan on Ethereum mainnet; this requires a valid [Etherscan API key](https://docs.etherscan.io/getting-started) which you can provide on the settings tab."
+msgstr ""
+
+#: ../../contract_verification.md:26
+msgid "Verifying with constructor arguments"
+msgstr ""
+
+#: ../../contract_verification.md:28
+msgid "When a contract has arguments in the constructor, a text field will appear where you can enter the constructor arguments used during deployment."
+msgstr ""
+
+#: ../../contract_verification.md:30
+msgid "![Constructor verify page with constructor arguments.](images/contract-verification/verify-with-args.png)"
+msgstr ""
+
+#: ../../contract_verification.md:30
+msgid "Constructor verify page with constructor arguments."
+msgstr ""
+
+#: ../../contract_verification.md:32
+msgid "Verifying a proxy contract"
+msgstr ""
+
+#: ../../contract_verification.md:34
+msgid "If your contract is behind a proxy, you can also verify the proxy with the implementation contract. You just need to check the \"The deployed contract is behind a proxy\" checkbox, and provide the address of the proxy contract."
+msgstr ""
+
+#: ../../contract_verification.md:36
+msgid "![Constructor verify page showing proxy address field.](images/contract-verification/verify-by-proxy.png)"
+msgstr ""
+
+#: ../../contract_verification.md:36
+msgid "Constructor verify page showing proxy address field."
+msgstr ""
+
+#: ../../contract_verification.md:38
+msgid "The plugin will first verify the implementation contract, and then verify the proxy contract. Proxies can only be verified on Etherscan and Blockscout."
+msgstr ""
+
+#: ../../contract_verification.md:40
+msgid "Supported networks"
+msgstr ""
+
+#: ../../contract_verification.md:42
+msgid "The plugin supports hundreds of EVM-compatible networks. Notable examples include:"
+msgstr ""
+
+#: ../../contract_verification.md:44
+msgid "Ethereum mainnet and testnets (Sepolia, Holesky)"
+msgstr ""
+
+#: ../../contract_verification.md:45
+msgid "Arbitrum One, Arbitrum Nova, Arbitrum Sepolia"
+msgstr ""
+
+#: ../../contract_verification.md:46
+msgid "Base and Base Sepolia"
+msgstr ""
+
+#: ../../contract_verification.md:47
+msgid "BNB Smart Chain mainnet and testnet"
+msgstr ""
+
+#: ../../contract_verification.md:48
+msgid "Avalanche C-Chain and Fuji testnet"
+msgstr ""
+
+#: ../../contract_verification.md:49
+msgid "Optimism and OP Sepolia"
+msgstr ""
+
+#: ../../contract_verification.md:50
+msgid "Polygon and Polygon Amoy"
+msgstr ""
+
+#: ../../contract_verification.md:51
+msgid "Berachain, Blast, Celo, and many more"
+msgstr ""
+
+#: ../../contract_verification.md:53
+msgid "The full list of supported networks is available in the network dropdown inside the plugin."
+msgstr ""
+
+#: ../../contract_verification.md:55
+msgid "Receipts tab"
+msgstr ""
+
+#: ../../contract_verification.md:57
+msgid "Verification receipts are found on the receipts tab."
+msgstr ""
+
+#: ../../contract_verification.md:59
+msgid "![Contract verification receipts page with the Receipts bar highlighted.](images/contract-verification/receipts-page.png)"
+msgstr ""
+
+#: ../../contract_verification.md:59
+msgid "Contract verification receipts page with the Receipts bar highlighted."
+msgstr ""
+
+#: ../../contract_verification.md:61
+msgid "You can hover over the status symbols to get more information about failed verifications."
+msgstr ""
+
+#: ../../contract_verification.md:63
+msgid "Lookup tab"
+msgstr ""
+
+#: ../../contract_verification.md:65
+msgid "The Lookup tab is used to check if a contract is verified on the verification services, and to download its source code into the Remix File Explorer."
+msgstr ""
+
+#: ../../contract_verification.md:67
+msgid "![Contract verification lookup page with the Lookup bar highlighted.](images/contract-verification/lookup-tab.png)"
+msgstr ""
+
+#: ../../contract_verification.md:67
+msgid "Contract verification lookup page with the Lookup bar highlighted."
+msgstr ""
+
+#: ../../contract_verification.md:69
+msgid "Settings tab"
+msgstr ""
+
+#: ../../contract_verification.md:71
+msgid "In the settings tab, you can configure custom API urls for the verification services, and add your own API keys. For Etherscan, adding an API key is mandatory."
+msgstr ""
+
+#: ../../contract_verification.md:73
+msgid "![Contract verification settings page with the Settings bar highlighted.](images/contract-verification/settings-tab.png)"
+msgstr ""
+
+#: ../../contract_verification.md:73
+msgid "Contract verification settings page with the Settings bar highlighted."
+msgstr ""
+
+#: ../../contract_verification.md:75
+msgid "The settings are always stored per chain, meaning that if you change the settings for a chain, it will not affect other chains. However, the Contract Verification plugin uses the Etherscan v2 API, meaning the same API key will work for over 50 different chains."
+msgstr ""
+
+#: ../../contract_verification.md:78
+msgid "For the time being, you’ll still need to input your Etherscan v2 API key on each different chain, but at least it will be the same key for all of them."
+msgstr ""
+
+#: ../../contract_verification.md:81
+msgid "Verifying with Deploy & run"
+msgstr ""
+
+#: ../../contract_verification.md:83
+msgid "You can also verify your contracts during deployment on the Deploy and Run plugin by checking the \"Verify Contract on Explorers\" checkbox before clicking **Deploy**."
+msgstr ""
+
+#: ../../contract_verification.md:85
+msgid "![Deploy and Run plugin with the Verify Contract on Explorers checkbox highlighted.](images/contract-verification/verify-on-deploy-and-run.png)"
+msgstr ""
+
+#: ../../contract_verification.md:85
+msgid "Deploy and Run plugin with the Verify Contract on Explorers checkbox highlighted."
+msgstr ""
+
+#: ../../contract_verification.md:87
+msgid "When the checkbox is enabled, verification is automatically submitted to the configured verification services immediately after the contract is deployed. The verification uses the same service configuration set up in the Contract Verification plugin's [Settings tab](#settings-tab). Verification results can be found in the [Receipts tab](#receipts-tab) of the Contract Verification plugin."
+msgstr ""

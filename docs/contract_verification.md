@@ -21,7 +21,7 @@ To verify a contract, you need to have:
 2. The same contract source code compiled in Remix, using the same compiler version, optimization settings, and EVM version that were used during deployment.
 3. Constructor arguments matching those used during deployment (if applicable).
 
-With the above, you can select which verification services you want to use for your verification by checking their boxes. By default, all of them have valid configurations that allow you to verify without any setup. The only exception to this is verification using Etherscan on Ethereum Mainnet; this requires a valid [Etherscan API key](https://docs.etherscan.io/getting-started) which you can provide on the settings tab.
+With the above, you can select which verification services you want to use for your verification by checking their boxes. By default, all of them have valid configurations that allow you to verify without any setup. The only exception to this is verification using Etherscan on Ethereum mainnet; this requires a valid [Etherscan API key](https://docs.etherscan.io/getting-started) which you can provide on the settings tab.
 
 ### Verifying with constructor arguments
 
@@ -41,11 +41,11 @@ The plugin will first verify the implementation contract, and then verify the pr
 
 The plugin supports hundreds of EVM-compatible networks. Notable examples include:
 
-- Ethereum Mainnet and testnets (Sepolia, Holesky)
+- Ethereum mainnet and testnets (Sepolia, Holesky)
 - Arbitrum One, Arbitrum Nova, Arbitrum Sepolia
 - Base and Base Sepolia
-- BNB Smart Chain Mainnet and Testnet
-- Avalanche C-Chain and Fuji Testnet
+- BNB Smart Chain mainnet and testnet
+- Avalanche C-Chain and Fuji testnet
 - Optimism and OP Sepolia
 - Polygon and Polygon Amoy
 - Berachain, Blast, Celo, and many more
@@ -62,13 +62,13 @@ You can hover over the status symbols to get more information about failed verif
 
 ## Lookup tab
 
-The Lookup tab is used to check if a contract is verified on the verification services, and to download its source code into the Remix file explorer.
+The Lookup tab is used to check if a contract is verified on the verification services, and to download its source code into the Remix File Explorer.
 
 ![Contract verification lookup page with the Lookup bar highlighted.](images/contract-verification/lookup-tab.png)
 
 ## Settings tab
 
-In the settings tab, you can configure custom API URLs for the verification services, and add your own API keys. For Etherscan, adding an API key is mandatory.
+In the settings tab, you can configure custom API urls for the verification services, and add your own API keys. For Etherscan, adding an API key is mandatory.
 
 ![Contract verification settings page with the Settings bar highlighted.](images/contract-verification/settings-tab.png)
 
@@ -78,7 +78,7 @@ The settings are always stored per chain, meaning that if you change the setting
 For the time being, you’ll still need to input your Etherscan v2 API key on each different chain, but at least it will be the same key for all of them.
 ```
 
-## Verifying with Deploy and Run
+## Verifying with Deploy & run
 
 You can also verify your contracts during deployment on the Deploy and Run plugin by checking the "Verify Contract on Explorers" checkbox before clicking **Deploy**.
 

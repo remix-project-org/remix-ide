@@ -1,0 +1,345 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-20 08:23+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../tutorial_debug.md:0
+msgid "Learn how to debug Ethereum smart contract transactions in Remix IDE by stepping through execution and inspecting state."
+msgstr ""
+
+#: ../../tutorial_debug.md:0
+msgid "remix debug tutorial, transaction debugging, solidity, remix ide, step through"
+msgstr ""
+
+#: ../../tutorial_debug.md:8
+msgid "Debugging Transactions"
+msgstr ""
+
+#: ../../tutorial_debug.md:11
+msgid "Before using this tutorial, we recommend checking out {doc}`the Debugger Tour </debugger>` for an overview of the debugger's interface and panels."
+msgstr ""
+
+#: ../../tutorial_debug.md:14
+msgid "When developing smart contracts, things don't always behave as expected. A transaction might revert unexpectedly, a function might return the wrong value, or funds might not move the way you intended."
+msgstr ""
+
+#: ../../tutorial_debug.md:16
+msgid "These are the situations where Remix's debugger becomes essential. It lets you step through a transaction execution line by line, inspect local variables and state at each step, and pinpoint exactly where your contract's logic breaks down."
+msgstr ""
+
+#: ../../tutorial_debug.md:18
+msgid "In this tutorial, we'll walk through using the debugger with a contract that has an intentional bug, so you can see how to identify and trace a problem through the execution flow."
+msgstr ""
+
+#: ../../tutorial_debug.md:20
+msgid "Debugging a transaction made in Remix"
+msgstr ""
+
+#: ../../tutorial_debug.md:22
+msgid "We'll use the following `Donation` contract as our example. Don't worry about understanding every detail yet — we'll be using the debugger to explore how it executes."
+msgstr ""
+
+#: ../../tutorial_debug.md:64
+msgid "Make a new file in Remix and copy the code block above into it, compile it and deploy it on the Remix VM."
+msgstr ""
+
+#: ../../tutorial_debug.md:66
+msgid "![](images/tutorial-debug/deploy.png)"
+msgstr ""
+
+#: ../../tutorial_debug.md:68
+msgid "We are going to call the `Donate` function and will send 2 Ether."
+msgstr ""
+
+#: ../../tutorial_debug.md:70
+msgid "To do this: in the value input box put in **2** and **select Ether** as the unit. Do not leave the default unit as **gwei** or the change will be hard to detect."
+msgstr ""
+
+#: ../../tutorial_debug.md:72
+msgid "![](images/tutorial-debug/call-donate.png)"
+msgstr ""
+
+#: ../../tutorial_debug.md:74
+msgid "Then click the `Donate` button."
+msgstr ""
+
+#: ../../tutorial_debug.md:76
+msgid "The 2 ETH is now held by the contract. Because we are using the `Remix VM`, the transaction confirms almost instantly."
+msgstr ""
+
+#: ../../tutorial_debug.md:78
+msgid "Now let's try to move 1 ETH out of the contract using `moveFund`. In the deployed instance, find the `moveFund` inputs and provide:"
+msgstr ""
+
+#: ../../tutorial_debug.md:80
+msgid "`_to`: a **different address from the Account dropdown that did not call `donate`**. Use an account with a clean 100 ETH balance so the balance change is clearly visible. Copy the address, then switch back to the owner account to make the call."
+msgstr ""
+
+#: ../../tutorial_debug.md:81
+msgid "`_amount`: `1000000000000000000` (1 ETH in wei)"
+msgstr ""
+
+#: ../../tutorial_debug.md:84
+msgid "Before clicking `moveFund`, reset the **Value** field to **0**. Remix keeps the value from the previous `donate` call. Since `moveFund` is not payable, sending ETH with the call will cause it to revert immediately."
+msgstr ""
+
+#: ../../tutorial_debug.md:87
+msgid "![](images/tutorial-debug/call-move-fund.png)"
+msgstr ""
+
+#: ../../tutorial_debug.md:89
+msgid "Click **Transact**."
+msgstr ""
+
+#: ../../tutorial_debug.md:91
+msgid "The transaction succeeds, but check the recipient's balance by selecting their address in the **Account** dropdown. Instead of receiving 1 ETH, the entire 2 ETH contract balance was transferred. Something is wrong."
+msgstr ""
+
+#: ../../tutorial_debug.md:93
+msgid "Notice also that the terminal log shows `_amount: 1000000000000000000` (1 ETH) in the `fundMoved` event, matching what you requested. The event does not reveal the discrepancy because the contract emits `amount` (the requested value) rather than the amount actually sent. Without the debugger, the logs alone would not expose this bug."
+msgstr ""
+
+#: ../../tutorial_debug.md:95
+msgid "In the **terminal**, find the `moveFund` transaction and click its **Debug** button."
+msgstr ""
+
+#: ../../tutorial_debug.md:97
+msgid "![Debug button in the terminal transaction log](images/debugger/debug-button.png)"
+msgstr ""
+
+#: ../../tutorial_debug.md:97
+msgid "Debug button in the terminal transaction log"
+msgstr ""
+
+#: ../../tutorial_debug.md:99
+msgid "The debugger opens and highlights the current execution point in the editor. Use the **Step Forward** button to move forward through `moveFund` line by line."
+msgstr ""
+
+#: ../../tutorial_debug.md:101
+msgid "As you step through the function, watch the **State & Locals** panel. You'll see the local variables populate under the **locals** section as they are assigned:"
+msgstr ""
+
+#: ../../tutorial_debug.md:103
+msgid "`_amount`: the value you passed in: `1000000000000000000` (1 ETH in wei)"
+msgstr ""
+
+#: ../../tutorial_debug.md:104
+msgid "`balance`: the full contract balance: `2000000000000000000` (2 ETH in wei)"
+msgstr ""
+
+#: ../../tutorial_debug.md:105
+msgid "`amount`: assigned from `_amount`: `1000000000000000000` (1 ETH in wei)"
+msgstr ""
+
+#: ../../tutorial_debug.md:107
+msgid "Continue stepping until the debugger reaches the transfer line:"
+msgstr ""
+
+#: ../../tutorial_debug.md:113
+msgid "At this point, look at the **locals** section of the **State & Locals** panel. The `value` being sent by the call is `2000000000000000000` (the full contract balance), not the `1000000000000000000` (1 ETH) you requested. The function is sending `balance` instead of `amount`. The check `if (amount <= balance)` used `amount` correctly, but the transfer itself did not."
+msgstr ""
+
+#: ../../tutorial_debug.md:115
+msgid "To fix the bug, change `balance` to `amount` in the transfer line:"
+msgstr ""
+
+#: ../../tutorial_debug.md:121
+msgid "This ensures only the requested amount is sent, not the entire contract balance."
+msgstr ""
+
+#: ../../tutorial_debug.md:123
+msgid "Starting a debug session from the debugger panel"
+msgstr ""
+
+#: ../../tutorial_debug.md:125
+msgid "As an alternative to clicking **Debug** in the terminal, you can start a session directly from the Debugger panel using a transaction hash."
+msgstr ""
+
+#: ../../tutorial_debug.md:127
+msgid "Click the bug icon in the Icon Panel to open the Debugger. If you don't see the bug icon, activate the Debugger in the Plugin Manager."
+msgstr ""
+
+#: ../../tutorial_debug.md:129
+msgid "To find a transaction hash:"
+msgstr ""
+
+#: ../../tutorial_debug.md:131
+msgid "Go to a transaction in the terminal."
+msgstr ""
+
+#: ../../tutorial_debug.md:132
+msgid "Click a line with a transaction to expand the log."
+msgstr ""
+
+#: ../../tutorial_debug.md:133
+msgid "Copy the transaction hash."
+msgstr ""
+
+#: ../../tutorial_debug.md:135
+msgid "![](images/tutorial-debug/tx-hash.png)"
+msgstr ""
+
+#: ../../tutorial_debug.md:137
+msgid "Paste the hash into the Debugger and click the button with the Play icon."
+msgstr ""
+
+#: ../../tutorial_debug.md:139
+msgid "![](images/tutorial-debug/debug-with-hash.png)"
+msgstr ""
+
+#: ../../tutorial_debug.md:141
+msgid "Using the debugger"
+msgstr ""
+
+#: ../../tutorial_debug.md:143
+msgid "![](images/tutorial-debug/overview.png)"
+msgstr ""
+
+#: ../../tutorial_debug.md:145
+msgid "The debugger allows one to see detailed information about the transaction's execution. It uses the editor to display the location in the source code where the current execution is."
+msgstr ""
+
+#: ../../tutorial_debug.md:149
+msgid "The navigation part contains a slider and buttons that can be used to step through the transaction execution."
+msgstr ""
+
+#: ../../tutorial_debug.md:152
+msgid "Explanation of Debugger button capabilities"
+msgstr ""
+
+#: ../../tutorial_debug.md:154
+msgid "Step Backward Steps back to the previous opcode without entering function calls. Use this to move backwards without descending into function internals."
+msgstr ""
+
+#: ../../tutorial_debug.md:156
+msgid "Step Back Steps back to the previous opcode and **will** enter function calls. Use this to trace execution backwards in full detail."
+msgstr ""
+
+#: ../../tutorial_debug.md:158
+msgid "Step Into Advances to the next opcode and **will** enter function calls. Use this for full visibility into what a function is doing."
+msgstr ""
+
+#: ../../tutorial_debug.md:160
+msgid "Step Forward Advances to the next opcode without entering function calls. Use this to move forward without stepping into every function."
+msgstr ""
+
+#: ../../tutorial_debug.md:162
+msgid "Previous Breakpoint Moves the debugger back to the most recently passed breakpoint. Breakpoints are set by clicking a line number in the Editor."
+msgstr ""
+
+#: ../../tutorial_debug.md:164
+msgid "Next Breakpoint Moves the debugger forward to the next breakpoint ahead in the execution."
+msgstr ""
+
+#: ../../tutorial_debug.md:167
+msgid "Debugger panels"
+msgstr ""
+
+#: ../../tutorial_debug.md:169
+msgid "State & Locals"
+msgstr ""
+
+#: ../../tutorial_debug.md:171
+msgid "The **State & Locals** tab displays a JSON object with two keys:"
+msgstr ""
+
+#: ../../tutorial_debug.md:173
+msgid "`locals`: the local variables in scope at the current execution step"
+msgstr ""
+
+#: ../../tutorial_debug.md:174
+msgid "`state`: the state variables of the contract at the current execution step"
+msgstr ""
+
+#: ../../tutorial_debug.md:176
+msgid "Stack & Memory"
+msgstr ""
+
+#: ../../tutorial_debug.md:178
+msgid "The **Stack & Memory** tab displays low-level EVM execution state:"
+msgstr ""
+
+#: ../../tutorial_debug.md:180
+msgid "`opcode`: the current opcode, updated with each step"
+msgstr ""
+
+#: ../../tutorial_debug.md:181
+msgid "`callStack`: the call stack at the current step"
+msgstr ""
+
+#: ../../tutorial_debug.md:182
+msgid "`stack`: the EVM operand stack"
+msgstr ""
+
+#: ../../tutorial_debug.md:183
+msgid "`memory`: the EVM memory, cleared for each new message call"
+msgstr ""
+
+#: ../../tutorial_debug.md:185
+msgid "Breakpoints"
+msgstr ""
+
+#: ../../tutorial_debug.md:187
+msgid "Breakpoints can be added and removed by clicking on the line number in the **Editor**. When debugging, execution will jump to the first encountered breakpoint."
+msgstr ""
+
+#: ../../tutorial_debug.md:190
+msgid "If you add a breakpoint to a line that declares a variable, it might be triggered twice: once for initializing the variable to zero and a second time for assigning the actual value."
+msgstr ""
+
+#: ../../tutorial_debug.md:193
+msgid "Here's an example of this issue. If you are debugging the following contract:"
+msgstr ""
+
+#: ../../tutorial_debug.md:208
+msgid "And breakpoints are set for the lines"
+msgstr ""
+
+#: ../../tutorial_debug.md:210
+msgid "`uint p = 45;`"
+msgstr ""
+
+#: ../../tutorial_debug.md:212
+msgid "`m = 89;`"
+msgstr ""
+
+#: ../../tutorial_debug.md:214
+msgid "`uint l = 34;`"
+msgstr ""
+
+#: ../../tutorial_debug.md:216
+msgid "then clicking the **Next Breakpoint** button will stop at the following lines in the given order:"
+msgstr ""
+
+#: ../../tutorial_debug.md:219
+msgid "`uint p = 45;` (declaration of p)"
+msgstr ""
+
+#: ../../tutorial_debug.md:221
+msgid "`uint l = 34;` (declaration of l)"
+msgstr ""
+
+#: ../../tutorial_debug.md:223
+msgid "`uint p = 45;` (45 assigned to p)"
+msgstr ""
+
+#: ../../tutorial_debug.md:225
+msgid "`m = 89;` (89 assigned to m)"
+msgstr ""
+
+#: ../../tutorial_debug.md:227
+msgid "`uint l = 34;` (34 assigned to l)"
+msgstr ""
