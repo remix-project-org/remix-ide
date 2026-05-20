@@ -2,7 +2,7 @@
 extends: substitution
 message: "Use '%s' instead of '%s'."
 level: error
-ignorecase: true
+ignorecase: false
 swap:
   # Panels
   Right Panel: Right Side Panel

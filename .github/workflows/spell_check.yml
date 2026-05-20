@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-python@v5
         id: setup-python
         with:
-          python-version: '3.x'
+          python-version: '3.12'
 
       - name: Cache virtualenv
         uses: actions/cache@v4
