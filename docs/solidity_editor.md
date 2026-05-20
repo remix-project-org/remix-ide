@@ -9,7 +9,7 @@ myst:
 
 - Remix uses the Monaco editor. This is the same editor used by VSCode.
 - Remix saves the current file every 5 seconds.
-- The Remix Editor will highlight keywords in Solidity, JS, and TS.
+- The Remix Editor will highlight keywords in Solidity, JavaScript, and TypeScript.
 
 ## Editor displays information from other plugins
 
@@ -21,13 +21,13 @@ The main purpose of the Editor is, of course, to edit code. But it also works wi
 
 ![](images/a-editor-general.png)
 
-## General Operations
+## General operations
 
 Files are open as tabs. When there are too many tabs to display, scrolling with a mouse wheel will horizontally scroll the tabs.
 
 ![](images/a-editor-tabs.png)
 
-- The play button works on the active tab. If a Solidity file is active, clicking Play will compile it. If a TS or JS file is active, Play will run the script.
+- The play button works on the active tab. If a Solidity file is active, clicking Play will compile it. If a TypeScript or JavaScript file is active, Play will run the script.
 - The magnifying glass icons (+/-) on the top left corner are to increase/decrease the font size.
 - The small type on the far right of the Editor is clickable to jump to a section.
 
@@ -37,7 +37,7 @@ The Editor and Script Runner support TypeScript, which means that you can write 
 
 The default Workspace contains example TypeScript files.
 
-## Editor & Autocompile
+## Editor & autoCompile
 
 When auto-compile is enabled (in the Solidity Compiler), compilation will occur each time the current file is changed, or another file is selected.
 
@@ -69,7 +69,7 @@ And the same with Uniswap:
 
 ![](images/a-editor-auto-uni-import3.png)
 
-## Errors and Warnings
+## Errors and warnings
 
 You can tell the file was successfully compiled if no errors or warnings are displayed in the Editor. Errors are displayed using squiggly lines. A red line indicates an error, a yellow line is a warning.
 
@@ -117,7 +117,7 @@ When you click on the blue dot, a popup menu appears. In this case of a missing 
 
 If you can’t get the Quick Fix blue dot to appear, try clicking on the number for the line where the error occurs.
 
-## Gas Estimates
+## Gas estimates
 
 Gas estimates are displayed on the same line where a function is declared.
 
@@ -125,7 +125,7 @@ Gas estimates are displayed on the same line where a function is declared.
 
 Constructor gas estimates are also displayed, and consist of two components: creation cost and code deposit cost.
 
-## Go to Definition and References
+## Go to definition and references
 
 ### Definitions
 
@@ -147,7 +147,7 @@ You can jump to a reference by double-clicking on the right hand side of the lin
 
 ![](images/a-editor-ref2.png)
 
-## Highlighted References
+## Highlighted references
 
 References are highlighted in the Editor.
 
@@ -159,7 +159,7 @@ When you hover over a term with a definition, the definition will pop up. Hoveri
 
 ![](images/a-editor-hover.png)
 
-## Files with Errors turn Red
+## Files with errors turn red
 
 When a file contains an error, its name will turn red, both in the File Explorer and on its tab at the top of the Editor.
 

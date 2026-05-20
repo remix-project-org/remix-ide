@@ -7,14 +7,14 @@ myst:
 
 # Foundry
 
-[Foundry](https://getfoundry.sh/) is an Ethereum development toolkit for compiling, testing, and deploying Solidity smart contracts. With **Remix Desktop**, you can connect to a local Foundry project folder and deploy to a local Anvil chain. These features are not available on the online IDE, you must use {doc}`Remix Desktop <desktop/>` to access them.
+[Foundry](https://www.getfoundry.sh/) is an Ethereum development toolkit for compiling, testing, and deploying Solidity smart contracts. With **Remix Desktop**, you can connect to a local Foundry project folder and deploy to a local Anvil chain. These features are not available on the online IDE, you must use {doc}`Remix Desktop <desktop/>` to access them.
 
 ## Deploying to Anvil
 
 To deploy to Anvil, Foundry's local test chain, Anvil needs to be installed and running on your computer.
 
 ```{note}
-You can install Anvil by following the instructions in [this guide](https://getfoundry.sh/introduction/installation).
+You can install Anvil by following the instructions in [this guide](https://www.getfoundry.sh/introduction/installation).
 ```
 
 Then, start `Anvil` by running the command below in the Remix Desktop terminal:

@@ -3,7 +3,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = $(VENV_DIR)/bin/sphinx-build
-SPHINXAUTOBUILD = sphinx-autobuild
+SPHINXAUTOBUILD = $(VENV_DIR)/bin/sphinx-autobuild
 PAPER         =
 SOURCEDIR     = .
 BUILDDIR      = _build
@@ -11,8 +11,6 @@ PYTHON        ?= python3
 VENV_DIR      ?= .venv
 VENV          = $(VENV_DIR)/bin/activate
 VALE_CONFIG   = $(ROOT_DIR)/vale.ini
-TARGET        = *
-ALLFILES      =  *.md **/*.md
 ROOT_DIR = ..
 
 # Bootstrap: create venv and install Sphinx only when needed
@@ -20,12 +18,16 @@ $(VENV_DIR)/bin/python:
 	$(PYTHON) -m venv $(VENV_DIR)
 	. $(VENV); pip install -U pip wheel
 
-$(SPHINXBUILD): $(VENV_DIR)/bin/python
+define install_deps
 	@if [ -f "requirements.txt" ]; then \
 	  . $(VENV); pip install -r requirements.txt; \
 	else \
 	  . $(VENV); pip install -U sphinx sphinx-autobuild; \
 	fi
+endef
+
+$(SPHINXBUILD) $(SPHINXAUTOBUILD): $(VENV_DIR)/bin/python
+	$(install_deps)
 
 # Any target that calls sphinx needs the binary ready
 SPHINX_TARGETS := html dirhtml singlehtml pickle json htmlhelp qthelp applehelp devhelp epub latex latexpdf latexpdfja text man texinfo info gettext changes linkcheck doctest coverage xml pseudoxml
@@ -40,7 +42,7 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) $(SOURCEDIR)
 
 .PHONY: help install run clean html dirhtml singlehtml pickle json htmlhelp qthelp applehelp devhelp epub \
         latex latexpdf latexpdfja text man texinfo info gettext changes linkcheck doctest coverage xml pseudoxml \
-				vale-install pymarkdownlnt-install lint-md spell-check general-checks
+				vale-install pymarkdownlnt-install lint-md spell-check style-checks
 
 # Help text
 help:
@@ -48,57 +50,42 @@ help:
 	@echo "  install    to create .venv and install doc dependencies (if requirements.txt exists)"
 	@echo "  run        to watch, rebuild and serve docs locally (live reload)"
 	@echo "  clean      to remove build artifacts"
-	@echo "  html       to make standalone HTML files"
-	@echo "  dirhtml    to make HTML files named index.html in directories"
-	@echo "  singlehtml to make a single large HTML file"
-	@echo "  pickle     to make pickle files"
-	@echo "  json       to make JSON files"
-	@echo "  htmlhelp   to make HTML files and a HTML help project"
-	@echo "  qthelp     to make HTML files and a qthelp project"
-	@echo "  applehelp  to make an Apple Help Book"
-	@echo "  devhelp    to make HTML files and a Devhelp project"
-	@echo "  epub       to make an epub"
-	@echo "  latex      to make LaTeX files, set PAPER=a4 or PAPER=letter"
-	@echo "  latexpdf   to make LaTeX files and run them through pdflatex"
-	@echo "  latexpdfja to make LaTeX files and run them through platex/dvipdfmx"
-	@echo "  text       to make text files"
-	@echo "  man        to make manual pages"
-	@echo "  texinfo    to make Texinfo files"
-	@echo "  info       to make Texinfo files and run them through makeinfo"
-	@echo "  gettext    to make PO message catalogs"
+	@echo "  html       to build HTML docs into _build/html/"
+	@echo "  dirhtml    to build HTML docs with index.html per directory into _build/dirhtml/"
+	@echo "  singlehtml to build all docs into a single HTML page in _build/singlehtml/"
+	@echo "  pickle     to build serialized docs for use by other Sphinx tools (in _build/pickle/)"
+	@echo "  json       to build docs as JSON fragments for custom frontends (in _build/json/)"
+	@echo "  htmlhelp   to build HTML plus a .hhp project file for Windows HTML Help"
+	@echo "  qthelp     to build HTML plus a .qhcp project file for Qt Assistant"
+	@echo "  applehelp  to build an Apple Help Book for macOS Help Viewer"
+	@echo "  devhelp    to build HTML plus a .devhelpproject file for GNOME Devhelp"
+	@echo "  epub       to build an .epub e-book suitable for e-readers"
+	@echo "  latex      to build LaTeX source files (set PAPER=a4 or PAPER=letter)"
+	@echo "  latexpdf   to build LaTeX source files and compile them to PDF with pdflatex"
+	@echo "  latexpdfja to build LaTeX source files and compile them to PDF with platex/dvipdfmx"
+	@echo "  text       to build plain-text versions of all pages into _build/text/"
+	@echo "  man        to build Unix man pages into _build/man/ (install with man -l)"
+	@echo "  texinfo    to build Texinfo source files into _build/texinfo/"
+	@echo "  info       to build Texinfo source files and compile them to .info with makeinfo"
+	@echo "  gettext    to extract translatable strings into .pot files in _build/locale/"
 	@echo "  changes    to make an overview of all changed/added/deprecated items"
 	@echo "  xml        to make Docutils-native XML files"
 	@echo "  pseudoxml  to make pseudoxml-XML files for display purposes"
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
-	@echo "  coverage   to run coverage check of the documentation (if enabled)"
+	@echo "  coverage   to report which Python objects lack documentation (requires coverage extension)"
 	@echo "  vale-install       to install Vale for style checking"
 	@echo "  pymarkdownlnt-install  to install PyMarkdown linter"
 	@echo "  lint-md    to run markdown linting with PyMarkdown"
 	@echo "  spell-check        to run Vale spelling checks only"
-	@echo "  general-checks     to run Vale general style checks (excluding spelling)"
+	@echo "  style-checks     to run Vale general style checks (excluding spelling)"
 
 
 
 # Create .venv and install dependencies.
 # - If requirements.txt exists -> install from it
 # - Else install the bare minimum so `run` works today
-install:
-	test -d $(VENV_DIR) || $(PYTHON) -m venv $(VENV_DIR)
-	. $(VENV); pip install -U pip wheel
-	@if [ -f "requirements.txt" ]; then \
-	  echo "Installing from requirements.txt ..."; \
-	  . $(VENV); pip install -r "requirements.txt"; \
-	else \
-	  echo "No requirements.txt found; installing minimal deps (sphinx + sphinx-autobuild) ..."; \
-	  . $(VENV); pip install -U sphinx sphinx-autobuild; \
-	fi
-
-$(SPHINXAUTOBUILD): $(VENV_DIR)/bin/python
-	@if [ -f "requirements.txt" ]; then \
-	  . $(VENV); pip install -r requirements.txt || true; \
-	fi
-	. $(VENV); pip install -U sphinx-autobuild
+install: $(SPHINXBUILD) $(SPHINXAUTOBUILD)
 
 
 # Live-reload server (watches files, rebuilds on change, serves at 127.0.0.1:8000)
@@ -120,21 +107,29 @@ lint-md: pymarkdownlnt-install
 	  --exclude='./.git/**' \
 	  $(SOURCEDIR)
 
-vale-install: install
-	@. $(VENV); test -d $(VENV_DIR)/lib/python*/site-packages/vale || pip install vale
-	@. $(VENV); test -f $(VALE_CONFIG)
-	@. $(VENV); find $(VENV_DIR)/lib/python*/site-packages/vale/vale_bin -size 195c -exec vale --version \;
+.vale-stamp: $(VENV_DIR)/bin/python
+	@. $(VENV); pip install vale
+	@test -f $(VALE_CONFIG)
 	@. $(VENV); vale sync
+	@touch .vale-stamp
+
+vale-install: .vale-stamp
 
 spell-check: vale-install
 	@echo "Running Vale spelling check only..."
-	@tmp=$$(mktemp); \
-	  cat $(ROOT_DIR)/styles/config/vocabularies/Remix/accept.txt $(ROOT_DIR)/.custom_wordlist.txt \
-	  | sort -u > $$tmp && mv $$tmp $(ROOT_DIR)/styles/config/vocabularies/Remix/accept.txt
-	@. $(VENV); vale --filter='.Extends=="spelling"' --config=$(VALE_CONFIG) $(SOURCEDIR)/*.md > vale-spelling.txt 2>&1 || true
+	@tmp_dir=$$(mktemp -d); \
+	  cp -r $(ROOT_DIR)/styles $$tmp_dir/; \
+	  cat $(ROOT_DIR)/styles/config/vocabularies/Remix/accept.txt \
+	      $(ROOT_DIR)/.custom_wordlist.txt \
+	    | sort -u > $$tmp_dir/styles/config/vocabularies/Remix/accept.txt; \
+	  sed "s|StylesPath[[:space:]]*=.*|StylesPath = $$tmp_dir/styles|" \
+	    $(VALE_CONFIG) > $$tmp_dir/vale.ini; \
+	  . $(VENV); vale --filter='.Extends=="spelling"' \
+	    --config=$$tmp_dir/vale.ini $(SOURCEDIR)/*.md > vale-spelling.txt 2>&1 || true; \
+	  rm -rf $$tmp_dir
 	@echo "Vale spelling results saved to vale-spelling.txt"
 
-general-checks: vale-install
+style-checks: vale-install
 	@echo "General Vale checks"
 	@. $(VENV); vale --minAlertLevel=error --filter='.Extends!="spelling"' --config=$(VALE_CONFIG) $(SOURCEDIR)/*.md
 
@@ -235,7 +230,7 @@ texinfo:
 info:
 	$(SPHINXBUILD) -b texinfo $(ALLSPHINXOPTS) $(BUILDDIR)/texinfo
 	@echo "Running Texinfo files through makeinfo..."
-	make -C $(BUILDDIR)/texinfo info
+	$(MAKE) -C $(BUILDDIR)/texinfo info
 	@echo "makeinfo finished; the Info files are in $(BUILDDIR)/texinfo."
 
 gettext:

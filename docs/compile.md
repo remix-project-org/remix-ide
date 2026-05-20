@@ -9,7 +9,7 @@ myst:
 
 Clicking the Solidity icon in the icon panel brings you to the Solidity Compiler. The default view of the Solidity Compiler shows the basic configuration. To open the Advanced Configuration panel, click the **Advanced Configuration** button (**C. in fig. 1**). For details on advanced features - see below.
 
-## Solidity Compiler Basics
+## Solidity compiler basics
 
 ### Selecting a contract to compile
 
@@ -49,13 +49,13 @@ To select the desired contract, use the **Contract** selectbox (**F. in fig. 1**
 
 ### Compilation Details and Publishing
 
-Using the publish button, you can upload your contract to **IPFS** or **Swarm** (only non abstract contracts can be published to Swarm).
+Using the publish button, you can upload your contract to **ipfs** or **Swarm** (only non abstract contracts can be published to Swarm).
 
 When publishing a contract that imports other contracts, the main contract and all of its imported contracts will be published - each to their own address.
 
 **Published data contains the contract's metadata and the solidity source code.**
 
-After either **Publish on IPFS** or **Publish on Swarm** is clicked a modal will pop up. This modal contains the contract's address as well as the addresses of the contracts that it imported and the address of the contract's **metadata**.
+After either **Publish on ipfs** or **Publish on Swarm** is clicked a modal will pop up. This modal contains the contract's address as well as the addresses of the contracts that it imported and the address of the contract's **metadata**.
 
 When the "Compilation Details" button is clicked (**G. in fig. 1**), a modal opens displaying detailed information about the current selected contract.
 
@@ -63,11 +63,11 @@ If you just want to get the **ABI** or the **Bytecode** - click the appropriate 
 
 ### Passive Contract Verification
 
-When you publish your metadata to IPFS and deploy your code to the mainnet or a public testnet, the contract verification service **[Sourcify](https://sourcify.dev/)**, will verify your contracts without you needing to do anything.
+When you publish your metadata to ipfs and deploy your code to the mainnet or a public testnet, the contract verification service **[Sourcify](https://sourcify.dev/)**, will verify your contracts without you needing to do anything.
 
 ### Compile and Run script
 
-The Compile and Run script button (**E. in fig. 1**) is for compiling and then immediately running a script. It's a time saver so that you can write some code, automatically run script that sets state of the contract - thus allowing you to quickly understand how the code is working. Learn {ref}`more about Compile and Run <running_js_scripts:compile a contract and run a script in one click>`.
+The Compile and Run script button (**E. in fig. 1**) is for compiling and then immediately running a script. It's a time saver so that you can write some code, automatically run script that sets state of the contract - thus allowing you to quickly understand how the code is working. Learn {ref}`more about Compile and Run <running_js_scripts:compile and run script>`.
 
 ### Compilation Errors and Warning
 
@@ -76,7 +76,7 @@ At each compilation, the static analysis tab builds a report.
 
 It is important to address reported issues even if the compiler doesn't complain. ({doc}`more about static analysis </static_analysis>`)
 
-## Advanced Compiler Configurations
+## Advanced compiler configurations
 
 Clicking on Advanced Compiler Configurations will open this panel (**M. in fig. 2 below**).
 

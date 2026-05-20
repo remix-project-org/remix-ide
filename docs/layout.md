@@ -18,7 +18,7 @@ Remix's layout consists of the following components: the Top Bar, Icon Panel, Si
 - **Main Panel** - contains tabs for editing files, Main Panel plugins (plugins that require more space than Side Panel plugins), and the Home Tab.
 - **Terminal** - a panel for viewing transaction receipts, various logs, and for executing JavaScript scripts.
 
-## Default Tools
+## Default tools
 
 When the Remix IDE is loaded for the first time - the Icon Panel shows these icons by default.
 
@@ -26,7 +26,7 @@ When the Remix IDE is loaded for the first time - the Icon Panel shows these ico
 
 When you load more plugins, that icons automatically appear in the icon panel. To load more plugins go to the **[Plugin Manager](#plugin-manager)** and select a plugin from the list of available plugins.
 
-## Home Tab
+## Home tab
 
 ![Remix IDE Hometab.](images/layout/a-hometab.png)
 
@@ -34,13 +34,13 @@ The Home Tab is located in the Main Panel. It can be closed, just like any of th
 
 The home tab contains links to resources, announcements, tutorials, featured plugins and methods for loading files into Remix and shortcuts for connecting Remix to your local filesystem.
 
-## Toggling Components
+## Toggling components
 
 By default, Remix opens with the Left and Right Side Panels active. You can toggle the states of these components using the buttons on the Top Bar as shown in the image below.
 
 ![Remix toggle components](images/layout/toggle-buttons.png)
 
-## Plugin Manager
+## Plugin manager
 
 In Remix, you only need to load the functionality you need - and the Plugin Manager is where you manage what plugins are turned off or on.
 

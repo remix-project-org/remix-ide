@@ -7,7 +7,7 @@ myst:
 
 # Running Scripts
 
-Remix IDE supports execution of JS & TS scripts.  For some script examples using Ethers.js, go to the scripts folder in the Default Workspace or the Basic Workspace.
+Remix IDE supports execution of JavaScript & TypeScript files. For some script examples using Ethers.js, go to the scripts folder in the Default Workspace or the Basic Workspace.
 
 ## Why run scripts in Remix?
 
@@ -45,7 +45,7 @@ Running it using one of options mentioned above will show result in Remix termin
 
 ## Script to deploy a contract
 
-Remix accepts async/await scripts to run [ethers.js](https://docs.ethers.io/) commands. The script needs to be wrapped in a self executing function.
+Remix accepts async/await scripts to run [ethers.js](https://docs.ethers.org/v6/) commands. The script needs to be wrapped in a self executing function.
 
 ## Setup
 
@@ -56,7 +56,8 @@ Remix accepts async/await scripts to run [ethers.js](https://docs.ethers.io/) co
 3. In the Deploy & Run plugin, choose the Environment for your script.
    - Async/await scripts work on in all of the Environments: the Remix VM, Injected Provider (usually MetaMask), and External HTTP Provider.
 
-## Compile and Run script
+## Compile and run script
+
 In the Solidity Compiler, there is a button called "Compile and Run script".
 
 When drafting a contract, it can be helpful to run a script just after the compilation succeeds that will deploy and set the state.
@@ -81,15 +82,15 @@ When you are ready to deploy the code for real, remove the NatSpec comment `@cus
 ## Adding external dependencies
 
 Remix has organized JS/TS dependencies into sets called "Configurations".  
-These dependencies are available for use in your scripts.  
+These dependencies are available for use in your scripts.
 
-The following list contains the **Default** dependencies: 
+The following list contains the **Default** dependencies:
 
 - ethers (v5): [Ethers v5 docs](https://docs.ethers.org/v5/)
 - zokrates-js: [Zokrates docs](https://zokrates.github.io/toolbox/zokrates_js.html)
 - web3: [Web3js docs](https://web3js.readthedocs.io/en/v1.10.0/)
 - zksync-ethers: [Zksync ethers docs](https://www.npmjs.com/package/zksync-ethers)
-- starknet: [JS library for Starknet docs](https://www.npmjs.com/package/starknet)
+- starknet: [JavaScript library for Starknet docs](https://www.npmjs.com/package/starknet)
 - snarkjs: [Snarkjs docs](https://github.com/iden3/snarkjs)
 - circomlibjs: [Circomlibjs docs](https://github.com/iden3/circomlibjs)
 - ffjavascript: [Finite Field Library in Javascript docs](https://github.com/iden3/ffjavascript)
@@ -105,10 +106,9 @@ The following list contains the **Default** dependencies:
 - multihashes: [Multihashes docs](https://www.npmjs.com/package/multihashes)
 - openai: [TypeScript library for Openai docs](https://www.npmjs.com/package/openai)
 
-
 ### Loading other script dependencies
 
-If you don't see what you need in the Default configuration of scripts, you can load other configurations of scripts using the Script Configuration panel. Tthis panel is accessed from the dropdown on the "Run Script" button.
+If you don't see what you need in the Default configuration of scripts, you can load other configurations of scripts using the Script Configuration panel. This panel is accessed from the dropdown on the "Run Script" button.
 
 ```{note}
 If the active file in the Editor is not a script, then the "Run Script" button turns into the "Compile" button and the Open script configuration option is not present.
@@ -131,5 +131,3 @@ If you try to import an unsupported module, you will get the error below:
 ```bash
 <module_name> module require is not supported by Remix IDE
 ```
-
-

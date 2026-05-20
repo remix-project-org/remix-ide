@@ -17,7 +17,7 @@ Please note that in order to generate these artifact files, the **Generate contr
 
 You can write scripts that can access either of these files.
 
-## Library Deployment with filename.json
+## Library deployment with filename.json
 
 By default Remix automatically deploys needed libraries.
 

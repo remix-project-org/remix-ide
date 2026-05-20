@@ -9,7 +9,7 @@ myst:
 
 You can access **Settings** for Remix by clicking the gear icon at the top right of Remix.
 
-## General Settings
+## General settings
 
 ![Remix General Settings Page](images/settings/a-settings-general.png)
 
@@ -32,7 +32,7 @@ The Appearance subsection allows you to customize the look of Remix. You can cho
 
 ![Remix Analytics Page.](images/settings/remix-analytics.png)
 
-## RemixAI Assistant
+## RemixAI assistant
 
 ![RemixAI Assistant Settings Page](images/settings/a-settings-ai1.png)
 
@@ -44,15 +44,15 @@ The RemixAI Assistant section allows you to configure RemixAI, manage LLM select
 
 For more information about using AI in Remix, see the {doc}`AI documentation </ai>`.
 
-## Connected Services
+## Connected services
 
 The Connected Services section allows you to configure credentials and access tokens for external services that integrate with Remix. These connections enable features like Git operations, contract verification, circuit compilation, and decentralized storage.
 
 ![Connected Services](images/settings/connected-services.png)
 
-### Github credentials
+### GitHub credentials
 
-When performing Git operations on Github and when creating GISTs, it may be necessary to input an access token. This token has the specific permissions for your Git commands. Depending on the operation, you may also need to input your Github username & email address. Remix does not save your password info outside of your browser's localstorage.
+When performing Git operations on GitHub and when creating GISTs, it may be necessary to input an access token. This token has the specific permissions for your Git commands. Depending on the operation, you may also need to input your GitHub username & email address. Remix does not save your password info outside of your browser's localstorage.
 
 ![Remix GitHub Credentials page.](images/settings/a-settings-gh-token.png)
 
@@ -100,7 +100,7 @@ Just like the Swarm settings above, IPFS settings are for publishing your contra
 
 Other options are to:
 
-- Use your own Infura IPFS node. This requires a subscription. [Learn more](https://infura.io/product/ipfs).
+- Use your own Infura IPFS node. This requires a subscription. [Learn more](https://www.infura.io/product/ipfs).
 - Use any external IPFS which doesn’t require any authentication.
 - Use your own local IPFS node (which usually runs under http://localhost:5001)
 

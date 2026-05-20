@@ -6,6 +6,7 @@ TODO
 .tern-port
 .idea
 .vscode
+docs/.vale-stamp
 docs/_build/html
 docs/_build/linkcheck
 docs/_build/gettext/.doctrees

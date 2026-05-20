@@ -13,11 +13,11 @@ myst:
 
 - The alpha version of Remix is located at [https://alpha.remix.live](https://alpha.remix.live). This is not a stable version.
 
-- GitHub repo: [https://github.com/remix-project-org](https://github.com/remix-project-org). The README contains instructions for running Remix-IDE locally.
+- GitHub repository: [https://github.com/remix-project-org](https://github.com/remix-project-org). The README contains instructions for running Remix-IDE locally.
 
 - Remix Desktop is an Electron App. Here is the [release page](https://github.com/remix-project-org/remix-desktop/releases).
 
-- The Remix twitter account is [EthereumRemix](https://twitter.com/EthereumRemix).
+- The Remix X account is [EthereumRemix](https://x.com/EthereumRemix).
 
 - The Remix Project Blog for release notes and articles is: [https://ethereumremix.substack.com](https://ethereumremix.substack.com).
 
@@ -27,7 +27,7 @@ myst:
 
 Remix is an open source project. Other projects have forked our codebase. The forked versions of Remix sites will look like Remix but are not Remix. So be careful! Forked sites are not maintained by us nor endorsed by us.
 
-## Remix with URL Parameters
+## Remix with URL parameters
 
 Using Remix with URL parameters will load the tool in the following ways:
 
@@ -54,7 +54,7 @@ https://remix.ethereum.org/?#activate=LearnEth,noir-compiler
 When you use the activate list, all other plugins that a user had loaded will be deactivated. This does not apply to the File Explorer, Solidity Compiler, Deploy & Run, the Plugin Manager, and the Settings modules.
 
 ```{note}
-In a Remix URL parameter, a plugin is referred to by its **name** as specified in its profile in the [Remix Plugins Directory repo](https://github.com/remix-project-org/remix-plugins-directory). To quickly get a plugin's name go to {doc}`Plugin List page <plugin_list>` of the docs and search for the plugin you want. There will be a link with the urls to activate the plugin.
+In a Remix URL parameter, a plugin is referred to by its **name** as specified in its profile in the [Remix Plugins Directory repository](https://github.com/remix-project-org/remix-plugins-directory). To quickly get a plugin's name go to {doc}`Plugin List page <plugin_list>` of the docs and search for the plugin you want. There will be a link with the urls to activate the plugin.
 
 ```
 
@@ -118,7 +118,7 @@ https://remix.ethereum.org/?#code=Ly8gU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IE1JVAoKcH
 
 #### Load contracts from Etherscan via address
 
-The `address` parameter takes an address and loads the **verified contract** found for the address on Ethereum Mainnet and saves it into the `etherscan-code-sample` workspace of the File Explorer:
+The `address` parameter takes an address and loads the **verified contract** found for the address on Ethereum mainnet and saves it into the `etherscan-code-sample` workspace of the File Explorer:
 
 ```text
 https://remix.ethereum.org/#address=0xdac17f958d2ee523a2206206994597c13d831ec7
@@ -132,7 +132,7 @@ With a GitHub URL of a Solidity contract like this one:
 https://github.com/remix-project-org/remix-project/blob/master/apps/remix-ide/contracts/app/solidity/mode.sol
 ```
 
-Then delete the **GitHub** part and type in **remix.ethereum.org** in its place, like this:
+Then delete the **GitHub** part and type in `remix.ethereum.org` in its place, like this:
 
 ```text
 https://remix.ethereum.org/ethereum/remix-project/blob/master/apps/remix-ide/contracts/app/solidity/mode.sol
