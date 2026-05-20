@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-20 08:23+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../circom.md:0
+msgid "Write, compile, and test ZK circuits in Remix IDE using the Circom plugin to generate proofs and verify them on-chain or off-chain with no local setup required."
+msgstr ""
+
+#: ../../circom.md:0
+msgid "circom, zero knowledge, zk proof, circom compiler, snarkjs, groth16, r1cs, witness, remix ide, zkp"
+msgstr ""
+
+#: ../../circom.md:8
+msgid "Circom Compiler"
+msgstr ""
+
+#: ../../circom.md:10
+msgid "Circom is a low-level language for writing ZK (zero-knowledge) circuits, programs that express computations as mathematical constraints, making them provable without revealing private inputs. The Remix Circom plugin brings the entire workflow into the browser, with no local setup required. This tutorial walks you through writing a circuit and verifying a proof using the **Hash Checker** template as a worked example."
+msgstr ""
+
+#: ../../circom.md:12
+msgid "How it works"
+msgstr ""
+
+#: ../../circom.md:14
+msgid "Generating a ZK proof in Remix involves three broad stages:"
+msgstr ""
+
+#: ../../circom.md:16
+msgid "**Build the circuit**: You write your computation in Circom, compile it into a format the browser can execute, and generate the constraint file that defines the rules the computation must follow."
+msgstr ""
+
+#: ../../circom.md:18
+msgid "**Execute the circuit**: You provide your private inputs and compute the witness, the full record of how the circuit ran with those inputs. This is what you will eventually prove, without revealing the inputs themselves."
+msgstr ""
+
+#: ../../circom.md:20
+msgid "**Set up keys, generate, and verify the proof**: A one-time trusted setup produces the cryptographic keys tied to your circuit. Those keys, combined with the witness, are used to generate the proof. The proof is then verified either off-chain using a verification key, or on-chain using a generated Solidity contract."
+msgstr ""
+
+#: ../../circom.md:22
+msgid "Each step in this tutorial maps to one of these stages."
+msgstr ""
+
+#: ../../circom.md:24
+msgid "Loading a Circom template"
+msgstr ""
+
+#: ../../circom.md:26
+msgid "To load a Circom template, click the dropdown at the center of the Top Bar, and click the revealed \"**Create new Workspace**\" button. On the templates modal under \"Workspace Templates\", scroll till you find \"Circom ZKP\" and select the **Hash Checker** template."
+msgstr ""
+
+#: ../../circom.md:28
+msgid "![Circom ZKP template selection in the Remix workspace templates modal](images/circom/circom-template.png)"
+msgstr ""
+
+#: ../../circom.md:28
+msgid "Circom ZKP template selection in the Remix workspace templates modal"
+msgstr ""
+
+#: ../../circom.md:30
+msgid "This template contains `calculate_hash.circom` and the scripts needed to complete the full proof workflow in this tutorial. After generating the workspace, the Circom plugin will automatically be activated and its icon will appear in the Icon Panel."
+msgstr ""
+
+#: ../../circom.md:32
+msgid "Step 1: Compile the circuit"
+msgstr ""
+
+#: ../../circom.md:34
+msgid "The browser and the snarkjs library that powers this plugin cannot work with `.circom` files directly; they need a binary format they can actually execute. Compilation translates your circuit into a `.wasm` (WebAssembly) file that can be run in the browser to compute values later in the workflow."
+msgstr ""
+
+#: ../../circom.md:36
+msgid "To compile:"
+msgstr ""
+
+#: ../../circom.md:38
+msgid "Open `circuits/calculate_hash.circom` in the Editor so it is the active file"
+msgstr ""
+
+#: ../../circom.md:39
+msgid "Go to the Circom plugin panel"
+msgstr ""
+
+#: ../../circom.md:40
+msgid "Click \"Compile `calculate_hash.circom`\""
+msgstr ""
+
+#: ../../circom.md:42
+msgid "This generates `calculate_hash.wasm` in `circuits/.bin/calculate_hash_js`."
+msgstr ""
+
+#: ../../circom.md:44
+msgid "![Circom compile button in the Circom plugin panel](images/circom/compile-circom.png)"
+msgstr ""
+
+#: ../../circom.md:44
+msgid "Circom compile button in the Circom plugin panel"
+msgstr ""
+
+#: ../../circom.md:47
+msgid "The **Compile** button is disabled if the active file in the Editor is not a `.circom` file."
+msgstr ""
+
+#: ../../circom.md:50
+msgid "Step 2: Generate the R1CS file"
+msgstr ""
+
+#: ../../circom.md:52
+msgid "Your compiled circuit needs to be translated into a form the proving system can reason about mathematically. That form is the R1CS file. The proving system uses the R1CS file to check that a witness (your execution trace, generated in the next step) actually satisfies all the rules of the circuit. Without it, there is nothing to verify against."
+msgstr ""
+
+#: ../../circom.md:54
+msgid "This is also the point where you choose a **proving scheme**. The proving scheme defines the mathematics used to construct and verify your proof. The R1CS file itself is scheme-agnostic, but the cryptographic keys generated from it in a later stage will be tied to whichever scheme you choose here. This tutorial uses **Groth16**."
+msgstr ""
+
+#: ../../circom.md:56
+msgid "To generate the R1CS file tied to the Groth16 scheme, run the `scripts/groth16/groth16_trusted_setup.ts` script. Similarly, to tie the R1CS file to the Plonk scheme, run the `scripts/plonk/plonk_trusted_setup.ts` script."
+msgstr ""
+
+#: ../../circom.md:58
+msgid "![Setup script in the Remix editor](images/circom/setup-script.png)"
+msgstr ""
+
+#: ../../circom.md:58
+msgid "Setup script in the Remix editor"
+msgstr ""
+
+#: ../../circom.md:60
+msgid "This script generates `calculate_hash.r1cs` in `circuits/.bin/`."
+msgstr ""
+
+#: ../../circom.md:62
+msgid "Alternatively, you can click the **Run Setup** button on the Circom plugin with Groth16 selected to get the same result."
+msgstr ""
+
+#: ../../circom.md:64
+msgid "![Run Setup button on the Circom plugin](images/circom/run-setup.png)"
+msgstr ""
+
+#: ../../circom.md:64
+msgid "Run Setup button on the Circom plugin"
+msgstr ""
+
+#: ../../circom.md:66
+msgid "Step 3: Compute the witness"
+msgstr ""
+
+#: ../../circom.md:68
+msgid "The proof does not directly prove your private inputs. It proves that you have a valid **witness**, a complete record of every value computed during the circuit's execution: your inputs, intermediate calculations, and the final output. Because the witness captures the full execution trace, it is impossible to fake a valid one by only providing the input and output. The prover never reveals their inputs, only this trace."
+msgstr ""
+
+#: ../../circom.md:70
+msgid "To compute the witness, expand the **Compute Witness** section in the plugin, enter your private input values, and click **Compute**."
+msgstr ""
+
+#: ../../circom.md:72
+msgid "You can use the values below:"
+msgstr ""
+
+#: ../../circom.md:84
+msgid "![Compute Witness section in the Circom plugin](images/circom/compute-witness.png)"
+msgstr ""
+
+#: ../../circom.md:84
+msgid "Compute Witness section in the Circom plugin"
+msgstr ""
+
+#: ../../circom.md:86
+msgid "This generates `calculate_hash.wtn` in `circuits/.bin/`."
+msgstr ""
+
+#: ../../circom.md:88
+msgid "Files Generated So Far"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "File"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "Location"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "Purpose"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "`calculate_hash.wasm`"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "`circuits/.bin/`"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "Compiled circuit, used to compute the witness"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "`calculate_hash.r1cs`"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "Constraint rulebook, used to validate the witness"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "`calculate_hash.wtn`"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "The witness itself, the input to proof generation"
+msgstr ""
+
+#: ../../circom.md:96
+msgid "These three files together represent the circuit and a single honest execution of it. The next step is generating the cryptographic keys that allow a proof to be constructed and verified."
+msgstr ""
+
+#: ../../circom.md:98
+msgid "Generating a proof using scripts"
+msgstr ""
+
+#: ../../circom.md:100
+msgid "With the setup script complete, the following files are available in `zk/build/` for use in proof generation and verification:"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "`verification_key.json`"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "`zk/build/`"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "Used to verify proofs off-chain"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "`zk_verifier.sol`"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "Solidity contract for on-chain verification"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "`zk_setup.txt`"
+msgstr ""
+
+#: ../../circom.md:46
+msgid "Stores the `zkey_final` reference for proof generation"
+msgstr ""
+
+#: ../../circom.md:108
+msgid "Generating and Verifying the Proof"
+msgstr ""
+
+#: ../../circom.md:110
+msgid "With the cryptographic keys generated by `groth16_trusted_setup.ts` in Step 2, this script performs the actual proof generation and verification using Groth16."
+msgstr ""
+
+#: ../../circom.md:112
+msgid "Verification takes the proof, the public signals, and the verification key, and confirms mathematically that the proof was correctly constructed from a valid witness, without running the circuit again or revealing the private inputs."
+msgstr ""
+
+#: ../../circom.md:114
+msgid "To run the script, open `scripts/groth16/run_verification.ts` in the Editor and click the **Run** button in the top bar. The script picks up the witness and keys produced in the previous steps, generates the proof, and verifies it in one pass."
+msgstr ""
+
+#: ../../circom.md:116
+msgid "The two core operations the script performs are:"
+msgstr ""
+
+#: ../../circom.md:131
+msgid "The result appears in the Remix terminal. A successful verification prints:"
+msgstr ""

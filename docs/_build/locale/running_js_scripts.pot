@@ -1,0 +1,253 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-20 08:23+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../running_js_scripts.md:0
+msgid "Execute JavaScript and TypeScript scripts in Remix IDE to automate deployment, testing, and interaction with smart contracts."
+msgstr ""
+
+#: ../../running_js_scripts.md:0
+msgid "remix scripts, javascript remix, ethers.js, run scripts, remix ide automation"
+msgstr ""
+
+#: ../../running_js_scripts.md:8
+msgid "Running Scripts"
+msgstr ""
+
+#: ../../running_js_scripts.md:10
+msgid "Remix IDE supports execution of JavaScript & TypeScript files. For some script examples using Ethers.js, go to the scripts folder in the Default Workspace or the Basic Workspace."
+msgstr ""
+
+#: ../../running_js_scripts.md:12
+msgid "Why run scripts in Remix?"
+msgstr ""
+
+#: ../../running_js_scripts.md:14
+msgid "To mimic how the front-end of your dapp will use ethers.js"
+msgstr ""
+
+#: ../../running_js_scripts.md:15
+msgid "To quickly deploy and interact with a bunch of instances of a contract without going through the Remix GUI."
+msgstr ""
+
+#: ../../running_js_scripts.md:16
+msgid "To run tests on a previous deployed contract."
+msgstr ""
+
+#: ../../running_js_scripts.md:18
+msgid "Writing and running scripts"
+msgstr ""
+
+#: ../../running_js_scripts.md:20
+msgid "Create a file with `.js` or `.ts` extension and put your logic inside it. To run a script:"
+msgstr ""
+
+#: ../../running_js_scripts.md:22
+msgid "Click the play button at the upper left of the Main Panel when the script is the active file in the Editor."
+msgstr ""
+
+#: ../../running_js_scripts.md:24
+msgid "Right click on the script name in the `File Explorers` and click on the **Run** option."
+msgstr ""
+
+#: ../../running_js_scripts.md:26
+msgid "`Ctrl+Shift+S` when the script is displayed in the editor."
+msgstr ""
+
+#: ../../running_js_scripts.md:28
+msgid "Make the script the active file in the editor and run `remix.exeCurrent()` from Remix terminal"
+msgstr ""
+
+#: ../../running_js_scripts.md:30
+msgid "Here is a sample .js script:"
+msgstr ""
+
+#: ../../running_js_scripts.md:44
+msgid "Running it using one of options mentioned above will show result in Remix terminal"
+msgstr ""
+
+#: ../../running_js_scripts.md:46
+msgid "Script to deploy a contract"
+msgstr ""
+
+#: ../../running_js_scripts.md:48
+msgid "Remix accepts async/await scripts to run [ethers.js](https://docs.ethers.org/v6/) commands. The script needs to be wrapped in a self executing function."
+msgstr ""
+
+#: ../../running_js_scripts.md:50
+msgid "Setup"
+msgstr ""
+
+#: ../../running_js_scripts.md:52
+msgid "Scripts will need to access the contract's ABI. The ABI is located in the contract's metadata file. Make sure that this metadata file will be created by going to the **Settings** module and checking that the **Generate contract metadata** option is indeed **checked**. (It is enabled by default)"
+msgstr ""
+
+#: ../../running_js_scripts.md:54
+msgid "Compile a Solidity file - to generate the contract metadata."
+msgstr ""
+
+#: ../../running_js_scripts.md:56
+msgid "In the Deploy & Run plugin, choose the Environment for your script."
+msgstr ""
+
+#: ../../running_js_scripts.md:57
+msgid "Async/await scripts work on in all of the Environments: the Remix VM, Injected Provider (usually MetaMask), and External HTTP Provider."
+msgstr ""
+
+#: ../../running_js_scripts.md:59
+msgid "Compile and run script"
+msgstr ""
+
+#: ../../running_js_scripts.md:61
+msgid "In the Solidity Compiler, there is a button called \"Compile and Run script\"."
+msgstr ""
+
+#: ../../running_js_scripts.md:63
+msgid "When drafting a contract, it can be helpful to run a script just after the compilation succeeds that will deploy and set the state."
+msgstr ""
+
+#: ../../running_js_scripts.md:65
+msgid "The script can contains Mocha tests to be run."
+msgstr ""
+
+#: ../../running_js_scripts.md:67
+msgid "In order to connect a contract with a script, add the **NatSpec** tag `@custom:dev-run-script` to the contract followed by the absolute file path, like:"
+msgstr ""
+
+#: ../../running_js_scripts.md:78
+msgid "When you are ready to deploy the code for real, remove the NatSpec comment `@custom:dev-run-script`."
+msgstr ""
+
+#: ../../running_js_scripts.md:80
+msgid "**ShortCut**: `Ctrl+Shift+S` , when editing a solidity file, will compile that file and then will run the script. In contrast, `ctrl+S` will only start the compiling."
+msgstr ""
+
+#: ../../running_js_scripts.md:82
+msgid "Adding external dependencies"
+msgstr ""
+
+#: ../../running_js_scripts.md:84
+msgid "Remix has organized JS/TS dependencies into sets called \"Configurations\".   These dependencies are available for use in your scripts."
+msgstr ""
+
+#: ../../running_js_scripts.md:87
+msgid "The following list contains the **Default** dependencies:"
+msgstr ""
+
+#: ../../running_js_scripts.md:89
+msgid "ethers (v5): [Ethers v5 docs](https://docs.ethers.org/v5/)"
+msgstr ""
+
+#: ../../running_js_scripts.md:90
+msgid "zokrates-js: [Zokrates docs](https://zokrates.github.io/toolbox/zokrates_js.html)"
+msgstr ""
+
+#: ../../running_js_scripts.md:91
+msgid "web3: [Web3js docs](https://web3js.readthedocs.io/en/v1.10.0/)"
+msgstr ""
+
+#: ../../running_js_scripts.md:92
+msgid "zksync-ethers: [Zksync ethers docs](https://www.npmjs.com/package/zksync-ethers)"
+msgstr ""
+
+#: ../../running_js_scripts.md:93
+msgid "starknet: [JavaScript library for Starknet docs](https://www.npmjs.com/package/starknet)"
+msgstr ""
+
+#: ../../running_js_scripts.md:94
+msgid "snarkjs: [Snarkjs docs](https://github.com/iden3/snarkjs)"
+msgstr ""
+
+#: ../../running_js_scripts.md:95
+msgid "circomlibjs: [Circomlibjs docs](https://github.com/iden3/circomlibjs)"
+msgstr ""
+
+#: ../../running_js_scripts.md:96
+msgid "ffjavascript: [Finite Field Library in Javascript docs](https://github.com/iden3/ffjavascript)"
+msgstr ""
+
+#: ../../running_js_scripts.md:97
+msgid "big-integer: [Big integer docs](https://www.npmjs.com/package/big-integer)"
+msgstr ""
+
+#: ../../running_js_scripts.md:98
+msgid "@zk-kit/incremental-merkle-tree: [Incremental Merkle tree implementation in TypeScript docs](https://www.npmjs.com/package/@zk-kit/incremental-merkle-tree.sol)"
+msgstr ""
+
+#: ../../running_js_scripts.md:99
+msgid "sindri: [Sindri CLI TypeScript SDK](https://www.npmjs.com/package/sindri)"
+msgstr ""
+
+#: ../../running_js_scripts.md:100
+msgid "@semaphore-protocol/data: [Semaphore data docs](https://www.npmjs.com/package/@semaphore-protocol/data)"
+msgstr ""
+
+#: ../../running_js_scripts.md:101
+msgid "@semaphore-protocol/group: [Semaphore group docs](https://www.npmjs.com/package/@semaphore-protocol/group)"
+msgstr ""
+
+#: ../../running_js_scripts.md:102
+msgid "@semaphore-protocol/identity: [Semaphore identity docs](https://www.npmjs.com/package/@semaphore-protocol/identity)"
+msgstr ""
+
+#: ../../running_js_scripts.md:103
+msgid "@semaphore-protocol/proof: [Semaphore proof docs](https://www.npmjs.com/package/@semaphore-protocol/proof)"
+msgstr ""
+
+#: ../../running_js_scripts.md:104
+msgid "crypto-js: [Cryptojs docs](https://www.npmjs.com/package/crypto-js)"
+msgstr ""
+
+#: ../../running_js_scripts.md:105
+msgid "aes-js: [AES-JS docs](https://www.npmjs.com/package/aes-js)"
+msgstr ""
+
+#: ../../running_js_scripts.md:106
+msgid "multihashes: [Multihashes docs](https://www.npmjs.com/package/multihashes)"
+msgstr ""
+
+#: ../../running_js_scripts.md:107
+msgid "openai: [TypeScript library for Openai docs](https://www.npmjs.com/package/openai)"
+msgstr ""
+
+#: ../../running_js_scripts.md:109
+msgid "Loading other script dependencies"
+msgstr ""
+
+#: ../../running_js_scripts.md:111
+msgid "If you don't see what you need in the Default configuration of scripts, you can load other configurations of scripts using the Script Configuration panel. This panel is accessed from the dropdown on the \"Run Script\" button."
+msgstr ""
+
+#: ../../running_js_scripts.md:114
+msgid "If the active file in the Editor is not a script, then the \"Run Script\" button turns into the \"Compile\" button and the Open script configuration option is not present."
+msgstr ""
+
+#: ../../running_js_scripts.md:117
+msgid "![Script config](./images/running-scripts/script-config.png)"
+msgstr ""
+
+#: ../../running_js_scripts.md:117
+msgid "Script config"
+msgstr ""
+
+#: ../../running_js_scripts.md:119
+msgid "It is not necessary to install the scripts to use; just use the `import` or `require` keyword. For example:"
+msgstr ""
+
+#: ../../running_js_scripts.md:129
+msgid "If you try to import an unsupported module, you will get the error below:"
+msgstr ""

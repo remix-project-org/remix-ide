@@ -1,0 +1,513 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 - 2026, Remix Team
+# This file is distributed under the same license as the Remix - Ethereum IDE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Remix - Ethereum IDE 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-20 08:23+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../ai.rst:-1
+msgid "RemixAI is Remix IDE's built-in AI assistant and Copilot for Solidity smart contract development, code completion, and explanation."
+msgstr ""
+
+#: ../../ai.rst:-1
+msgid "remixai, ai assistant, code completion, solidity ai, remix ide ai"
+msgstr ""
+
+#: ../../ai.rst:2
+msgid "AI Tools"
+msgstr ""
+
+#: ../../ai.rst:8
+msgid "Remix has its own AI tool named **RemixAI** and a sub-project called **RemixAI Copilot** for code completion."
+msgstr ""
+
+#: ../../ai.rst:11
+msgid "When you load Remix, the **RemixAI Assistant** appears in the Right Side Panel."
+msgstr ""
+
+#: ../../ai.rst:13
+msgid "RemixAI Assistant Right Side Panel"
+msgstr ""
+
+#: ../../ai.rst:17
+msgid "You can minimize the RemixAI Assistant by clicking the minimize icon at the top left of the Right Side Panel."
+msgstr ""
+
+#: ../../ai.rst:27
+msgid "RemixAI is also integrated into other parts of the tool including:"
+msgstr ""
+
+#: ../../ai.rst:29
+msgid "The **Explain contract** button at the bottom of the Editor when a ``.sol`` file is active."
+msgstr ""
+
+#: ../../ai.rst:30
+msgid "The **Explain compiler error** button when an error is thrown in the Solidity Compiler."
+msgstr ""
+
+#: ../../ai.rst:31
+msgid "**Right-click menu options** in the Editor."
+msgstr ""
+
+#: ../../ai.rst:32
+msgid "**Code requests in the Editor** by prepending an AI code request in a file with a double slash (``//``)."
+msgstr ""
+
+#: ../../ai.rst:34
+msgid "The RemixAI Assistant retains your conversation history within a session, so you can refer back to earlier responses or continue a previous request."
+msgstr ""
+
+#: ../../ai.rst:38
+msgid "Choosing an LLM for code explanations"
+msgstr ""
+
+#: ../../ai.rst:40
+msgid "In the RemixAI Assistant, there is a choice of LLMs for use in **code explanations** and in the AI Assistant."
+msgstr ""
+
+#: ../../ai.rst:43
+msgid "The default LLM is **MistralAI**. Click the MistralAI button and a modal will pop up where you can select **Anthropic**, **OpenAI**, or **MistralAI**."
+msgstr ""
+
+#: ../../ai.rst:46
+msgid "RemixAI LLM dropdown menu"
+msgstr ""
+
+#: ../../ai.rst:49
+msgid "The RemixAI Assistant responds in the language in which it is asked and can answer questions about Solidity, JavaScript/TypeScript, Vyper, and other programming languages."
+msgstr ""
+
+#: ../../ai.rst:53
+msgid "Using a local LLM for privacy"
+msgstr ""
+
+#: ../../ai.rst:55
+msgid "When using an LLM, unless the model is running locally, your inputs may be used by the provider for training or retention. This means the information you submit could be stored or reused."
+msgstr ""
+
+#: ../../ai.rst:59
+msgid "If you want to use AI tools while keeping your information private, you can use a **local LLM**."
+msgstr ""
+
+#: ../../ai.rst:62
+msgid "Remix supports **Ollama**, a local AI model runner that allows you to download and run large language models (LLMs) directly on your own machine."
+msgstr ""
+
+#: ../../ai.rst:65
+msgid "The Ollama LLMs supported by Remix include:"
+msgstr ""
+
+#: ../../ai.rst:67
+msgid "``codestral:latest``"
+msgstr ""
+
+#: ../../ai.rst:68
+msgid "``qwen3-coder:latest``"
+msgstr ""
+
+#: ../../ai.rst:69
+msgid "``gpt-oss:latest``"
+msgstr ""
+
+#: ../../ai.rst:70
+msgid "``deepseek-coder-v2:latest`` (recommended for code completion)"
+msgstr ""
+
+#: ../../ai.rst:72
+msgid "In addition to privacy, Remix’s Ollama integration provides:"
+msgstr ""
+
+#: ../../ai.rst:74
+msgid "**No API rate throttling** – no usage fees or rate limits"
+msgstr ""
+
+#: ../../ai.rst:75
+msgid "**Offline capability** – works without an internet connection"
+msgstr ""
+
+#: ../../ai.rst:76
+msgid "**Fill-in-the-Middle (FIM) support** – advanced code completion features"
+msgstr ""
+
+#: ../../ai.rst:79
+msgid "The Ollama integration does not support agentic workflows available in the online RemixAI service, such as Remix MCP or generating and editing Workspaces. Its capabilities are limited to code completion and conversational interactions."
+msgstr ""
+
+#: ../../ai.rst:86
+msgid "Setting up Ollama in Remix"
+msgstr ""
+
+#: ../../ai.rst:87
+msgid "Before using Ollama with Remix, ensure the following requirements are met:"
+msgstr ""
+
+#: ../../ai.rst:89
+msgid "**Ollama is installed** on your system. Visit the `Ollama website <https://ollama.com/>`_ to download and install it."
+msgstr ""
+
+#: ../../ai.rst:91
+msgid "**At least one supported or recommended model** is installed locally."
+msgstr ""
+
+#: ../../ai.rst:93
+msgid "After completing the setup, start the Ollama server by running:"
+msgstr ""
+
+#: ../../ai.rst:99
+msgid "By default, the Ollama service listens on:"
+msgstr ""
+
+#: ../../ai.rst:105
+msgid "You can confirm that Ollama is running by visiting the URL above. If it is running, you should see the message below."
+msgstr ""
+
+#: ../../ai.rst:107
+msgid "Ollama is running text in browser."
+msgstr ""
+
+#: ../../ai.rst:110
+msgid "Next, to allow the Remix IDE to communicate with your local Ollama instance, you must configure **CORS**. See `how to setup CORS for Ollama <https://objectgraph.com/blog/ollama-cors/>`_ for instructions specific to your operating system."
+msgstr ""
+
+#: ../../ai.rst:115
+msgid "Once configured, restart the Ollama service and your terminal instance to apply the changes."
+msgstr ""
+
+#: ../../ai.rst:118
+msgid "You can check if Remix is on your Ollama allowlist by running the command below:"
+msgstr ""
+
+#: ../../ai.rst:127
+msgid "If \"remix.ethereum.org\" is configured properly, you will get the message below:"
+msgstr ""
+
+#: ../../ai.rst:144
+msgid "If you run into any issues check out our `Ollama troubleshooting guide <https://github.com/remix-project-org/remix-project/blob/master/OLLAMA_SETUP.md#troubleshooting>`_."
+msgstr ""
+
+#: ../../ai.rst:146
+msgid "After the setup, select Ollama as the model on RemixAI and it will automatically detect the supported models you have on your device. You can select your preferred model and use it for code completion and assistance."
+msgstr ""
+
+#: ../../ai.rst:148
+msgid "RemixAI assistant with Ollama as the model"
+msgstr ""
+
+#: ../../ai.rst:152
+msgid "Running Ollama in the cloud with Remix"
+msgstr ""
+
+#: ../../ai.rst:154
+msgid "Large language models (LLMs) are resource-intensive and may not run efficiently on all local machines. If system resources or disk space are a concern, you can run a private LLM on another machine or in the cloud and configure Ollama to connect to it remotely."
+msgstr ""
+
+#: ../../ai.rst:159
+msgid "Remix supports this by allowing you to specify the Ollama server URL."
+msgstr ""
+
+#: ../../ai.rst:161
+msgid "Follow the steps below to configure a remote Ollama instance in Remix:"
+msgstr ""
+
+#: ../../ai.rst:163
+msgid "Click the **gear icon** in the top-right corner of Remix to open the **Settings** panel."
+msgstr ""
+
+#: ../../ai.rst:164
+msgid "Navigate to the **RemixAI Assistant** section."
+msgstr ""
+
+#: ../../ai.rst:165
+msgid "Under **Ollama URL Configuration**, enter the URL of the machine running Ollama."
+msgstr ""
+
+#: ../../ai.rst:167
+msgid "Remix settings showing the Ollama config"
+msgstr ""
+
+#: ../../ai.rst:181
+msgid "RemixAI accepts audio input"
+msgstr ""
+
+#: ../../ai.rst:183
+msgid "RemixAI allows you to interact with the AI Assistant using **audio input**, making it easier to ask questions or give instructions without typing."
+msgstr ""
+
+#: ../../ai.rst:185
+msgid "To use audio input:"
+msgstr ""
+
+#: ../../ai.rst:187
+msgid "Open the **RemixAI Assistant** in the Right Side Panel."
+msgstr ""
+
+#: ../../ai.rst:188
+msgid "Click the **microphone icon** in the Assistant input area."
+msgstr ""
+
+#: ../../ai.rst:189
+msgid "Speak your question or instruction clearly."
+msgstr ""
+
+#: ../../ai.rst:190
+msgid "RemixAI will transcribe your speech and respond as if the input were typed."
+msgstr ""
+
+#: ../../ai.rst:192
+msgid "RemixAI audio button"
+msgstr ""
+
+#: ../../ai.rst:195
+msgid "Audio input is especially useful for:"
+msgstr ""
+
+#: ../../ai.rst:197
+msgid "Quickly asking questions while reviewing code"
+msgstr ""
+
+#: ../../ai.rst:198
+msgid "Explaining issues in natural language"
+msgstr ""
+
+#: ../../ai.rst:199
+msgid "Hands-free interaction during development"
+msgstr ""
+
+#: ../../ai.rst:203
+msgid "Audio input requires microphone access enabled in your browser. The availability of audio input may depend on browser support and permissions."
+msgstr ""
+
+#: ../../ai.rst:208
+msgid "Model Context Protocol (MCP)"
+msgstr ""
+
+#: ../../ai.rst:210
+msgid "Remix supports **Model Context Protocol (MCP)** servers, which give the RemixAI access to external tools and libraries during agentic workflows."
+msgstr ""
+
+#: ../../ai.rst:212
+msgid "You can manage the MCP servers available to you in **Settings > RemixAI Assistant**. Here you can turn the available servers on and off, depending on your preferences."
+msgstr ""
+
+#: ../../ai.rst:214
+msgid "Remix MCP Connected Services panel"
+msgstr ""
+
+#: ../../ai.rst:218
+msgid "The following MCP servers are available in RemixAI:"
+msgstr ""
+
+#: ../../ai.rst:220
+msgid "**Remix IDE Server** (Built-in) – Always connected. Gives the AI direct access to your workspace files and IDE features such as compilation, file management, and Slither static analysis."
+msgstr ""
+
+#: ../../ai.rst:223
+msgid "**OpenZeppelin Contracts** – Gives the AI access to OpenZeppelin's audited contract library, so it can suggest secure, battle-tested implementations rather than generating patterns from scratch."
+msgstr ""
+
+#: ../../ai.rst:226
+msgid "**Web Search** – Allows the AI to retrieve up-to-date information such as recent protocol changes, audit reports, and external documentation."
+msgstr ""
+
+#: ../../ai.rst:229
+msgid "The following MCP servers are additionally available to **Beta testers**:"
+msgstr ""
+
+#: ../../ai.rst:231
+msgid "**ethSkills** – A curated Ethereum knowledge base designed specifically for AI agents. It covers production-ready guidance across gas costs, L2s, token standards, DeFi protocols, security patterns, contract auditing, and more, helping the AI avoid stale or hallucinated answers about Ethereum development."
+msgstr ""
+
+#: ../../ai.rst:235
+msgid "**Alchemy** – Allows the AI to query live on-chain data including account balances, transaction histories, and contract state via Alchemy's infrastructure."
+msgstr ""
+
+#: ../../ai.rst:237
+msgid "**Etherscan** – Allows the AI to look up deployed contracts, inspect verified source code, and retrieve transaction data directly from the block explorer."
+msgstr ""
+
+#: ../../ai.rst:239
+msgid "**The Graph API** – Allows the AI to query indexed blockchain data via GraphQL subgraphs, useful for retrieving protocol analytics and historical event data."
+msgstr ""
+
+#: ../../ai.rst:244
+msgid "Sample prompts"
+msgstr ""
+
+#: ../../ai.rst:246
+msgid "The examples below show how to phrase requests to get the most out of the RemixAI Assistant. Each section explains the intent behind the prompt type and gives one example."
+msgstr ""
+
+#: ../../ai.rst:248
+msgid "**Writing contracts**"
+msgstr ""
+
+#: ../../ai.rst:250
+msgid "Ask RemixAI to generate a contract from a plain-language description. Be specific about the behaviour you want (access control, token standards, limits) and the AI will produce a starting implementation you can refine."
+msgstr ""
+
+#: ../../ai.rst:252
+msgid "*Write an ERC-20 token contract with a mint function restricted to the owner and a maximum supply of 1 million tokens.*"
+msgstr ""
+
+#: ../../ai.rst:254
+msgid "**Security review**"
+msgstr ""
+
+#: ../../ai.rst:256
+msgid "Ask RemixAI to analyse a specific contract or the active file for vulnerabilities. You can target a particular class of issue or ask for a general review. Slither static analysis is built into the Remix IDE Server, so the AI can run it and incorporate the results without any additional setup."
+msgstr ""
+
+#: ../../ai.rst:258
+msgid "*Review the active contract for reentrancy vulnerabilities and suggest fixes.*"
+msgstr ""
+
+#: ../../ai.rst:260
+msgid "**Using OpenZeppelin** *(OpenZeppelin MCP)*"
+msgstr ""
+
+#: ../../ai.rst:262
+msgid "Ask RemixAI to suggest or apply an OpenZeppelin implementation instead of writing custom logic. The AI has access to the full OpenZeppelin library and can recommend the right base contract for your use case."
+msgstr ""
+
+#: ../../ai.rst:264
+msgid "*Replace the access control in this contract with OpenZeppelin's Ownable.*"
+msgstr ""
+
+#: ../../ai.rst:266
+msgid "**Querying live on-chain data** *(Alchemy / Etherscan, Beta)*"
+msgstr ""
+
+#: ../../ai.rst:268
+msgid "Ask RemixAI to look up real-time blockchain data such as balances, transactions, or verified source code. Useful for investigating a deployed contract or checking an address without leaving the IDE."
+msgstr ""
+
+#: ../../ai.rst:270
+msgid "*Fetch the verified source code and recent transactions for this contract address: 0x...*"
+msgstr ""
+
+#: ../../ai.rst:272
+msgid "**Querying indexed protocol data** *(The Graph, Beta)*"
+msgstr ""
+
+#: ../../ai.rst:274
+msgid "Ask RemixAI to query a subgraph for aggregated or historical data. Useful for retrieving protocol-level metrics or event histories that are not available from a single contract call."
+msgstr ""
+
+#: ../../ai.rst:276
+msgid "*Get the total value locked in Aave on Ethereum over the last 7 days using a subgraph query.*"
+msgstr ""
+
+#: ../../ai.rst:278
+msgid "**General Solidity and Ethereum questions**"
+msgstr ""
+
+#: ../../ai.rst:280
+msgid "Ask RemixAI about language features, best practices, or protocol mechanics. The Web Search MCP server allows it to retrieve up-to-date information, so it can answer questions about recent changes that postdate its training data."
+msgstr ""
+
+#: ../../ai.rst:282
+msgid "*What changed in Solidity 0.8.24 that could affect a contract I wrote for 0.8.20?*"
+msgstr ""
+
+#: ../../ai.rst:285
+msgid "Code completion"
+msgstr ""
+
+#: ../../ai.rst:287
+msgid "When you type a space or start a new line, the RemixAI Assistant may propose code suggestions. This feature is known as **code completion**."
+msgstr ""
+
+#: ../../ai.rst:290
+msgid "The suggestions take into account what has already been written in the file."
+msgstr ""
+
+#: ../../ai.rst:292
+msgid "The toggle to enable code completion is located at the bottom-left of the Main Panel when a file is active. Once enabled, code completion uses the **MistralAI** LLM by default. If Ollama is configured as the active model, code completion will use the selected Ollama model instead."
+msgstr ""
+
+#: ../../ai.rst:295
+msgid "Remix AI Copilot button"
+msgstr ""
+
+#: ../../ai.rst:300
+msgid "All other RemixAI tools are always enabled."
+msgstr ""
+
+#: ../../ai.rst:304
+msgid "Editor: Right-click Menu"
+msgstr ""
+
+#: ../../ai.rst:306
+msgid "When you right-click a function in the Editor, a popup menu appears with options powered by RemixAI, including:"
+msgstr ""
+
+#: ../../ai.rst:309
+msgid "**Explain this function**"
+msgstr ""
+
+#: ../../ai.rst:310
+msgid "**Explain this code**"
+msgstr ""
+
+#: ../../ai.rst:311
+msgid "**Generate documentation**"
+msgstr ""
+
+#: ../../ai.rst:313
+msgid "Remix AI right click menu"
+msgstr ""
+
+#: ../../ai.rst:316
+msgid "The **Explain this code** option can be triggered with or without selecting code. If no code is selected, RemixAI considers the code surrounding the cursor."
+msgstr ""
+
+#: ../../ai.rst:321
+msgid "Editor: Code Completion"
+msgstr ""
+
+#: ../../ai.rst:323
+msgid "RemixAI completion proposal"
+msgstr ""
+
+#: ../../ai.rst:326
+msgid "Press ``Tab`` to accept the suggestion."
+msgstr ""
+
+#: ../../ai.rst:328
+msgid "RemixAI accepted completion"
+msgstr ""
+
+#: ../../ai.rst:332
+msgid "Ask RemixAI with //"
+msgstr ""
+
+#: ../../ai.rst:334
+msgid "With the AI Copilot enabled, start a comment with ``//`` to send a code request directly from the Editor. Example:"
+msgstr ""
+
+#: ../../ai.rst:344
+msgid "Compilers: Explain Error"
+msgstr ""
+
+#: ../../ai.rst:346
+msgid "In the error cards of both the Solidity Compiler and the Vyper Compiler, there is an **Ask RemixAI** button that helps explain compiler errors."
+msgstr ""
+
+#: ../../ai.rst:349
+msgid "Click the button to send the error message to RemixAI. The Assistant will explain the cause of the error and suggest how to fix it."
+msgstr ""
+
+#: ../../ai.rst:352
+msgid "Compiler Explain Error"
+msgstr ""
