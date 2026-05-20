@@ -61,7 +61,7 @@ dapp-mytoken-a1b2c3/
 └── preview.png
 ```
 
-- **dapp.config.json** - Contains the contract address, ABI, and chain ID needed to connect the UI to your deployed contract.
-- **src/** - Contains the AI-generated React components, styles, and application logic that make up your dApp's front end.
-- **contracts/** - A copy of the Solidity source files used to generate the dApp.
-- **preview.png** - A thumbnail screenshot of the dApp, generated automatically when you first preview it.
+- `dapp.config.json` - Contains the contract address, ABI, and chain ID needed to connect the UI to your deployed contract.
+- `src/` - Contains the AI-generated React components, styles, and application logic that make up your dApp's front end.
+- `contracts/` - A copy of the Solidity source files used to generate the dApp.
+- `preview.png` - A thumbnail screenshot of the dApp, generated automatically when you first preview it.

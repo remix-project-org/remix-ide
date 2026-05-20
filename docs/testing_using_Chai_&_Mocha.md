@@ -2,7 +2,7 @@
 myst:
   html_meta:
     "description": "Test JavaScript and TypeScript scripts in Remix IDE using the Chai assertion library and Mocha test framework."
-    "keywords": "chai mocha remix, javascript testing, remix ide, mocha tests, chai assertions"
+    "keywords": "chai mocha remix, JavaScript testing, remix ide, mocha tests, chai assertions"
 ---
 
 # Testing using Chai & Mocha
@@ -11,7 +11,7 @@ _(Supported since Remix IDE v0.22.0)_
 
 Remix supports testing of your files in JavaScript using assertion library [Chai](https://www.chaijs.com/) & test framework [Mocha](https://mochajs.org/)
 
-_Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework._
+_Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any JavaScript testing framework._
 
 _Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun._
 

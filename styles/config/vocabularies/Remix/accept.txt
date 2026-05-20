@@ -9,7 +9,6 @@ Blockhash
 Blockscout
 bool
 boolean
-Breakpoint
 breakpoint
 Buildbear
 Bundler
@@ -61,7 +60,7 @@ Hometab
 http
 https
 Infura
-ipfs
+IPFS
 JavaScript
 js
 Klaytn
@@ -107,7 +106,7 @@ Sepolia
 Sindri
 sindri
 snarkjs
-Solc
+solc
 Solhint
 solidityscan
 Sourcify

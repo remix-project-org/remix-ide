@@ -118,7 +118,7 @@ https://remix.ethereum.org/?#code=Ly8gU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IE1JVAoKcH
 
 #### Load contracts from Etherscan via address
 
-The `address` parameter takes an address and loads the **verified contract** found for the address on Ethereum Mainnet and saves it into the `etherscan-code-sample` workspace of the File Explorer:
+The `address` parameter takes an address and loads the **verified contract** found for the address on Ethereum mainnet and saves it into the `etherscan-code-sample` workspace of the File Explorer:
 
 ```text
 https://remix.ethereum.org/#address=0xdac17f958d2ee523a2206206994597c13d831ec7
@@ -132,7 +132,7 @@ With a GitHub URL of a Solidity contract like this one:
 https://github.com/remix-project-org/remix-project/blob/master/apps/remix-ide/contracts/app/solidity/mode.sol
 ```
 
-Then delete the **GitHub** part and type in **remix.ethereum.org** in its place, like this:
+Then delete the **GitHub** part and type in `remix.ethereum.org` in its place, like this:
 
 ```text
 https://remix.ethereum.org/ethereum/remix-project/blob/master/apps/remix-ide/contracts/app/solidity/mode.sol
