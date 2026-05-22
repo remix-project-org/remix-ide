@@ -95,7 +95,9 @@ Example:
 #### HTTP vs HTTPS in the `remixd` command
 
 If your browser is on https://remix.ethereum.org (**secure http**) then use https in the command:<br>
+<!-- vale Vale.Spelling = NO -->
 `remixd -s <absolute-path-to-the-shared-folder> --remix-ide https://remix.ethereum.org`
+<!-- vale Vale.Spelling = YES -->
 
 Or if you are using **http** in the browser, then use **http** in the `remixd` command.
 

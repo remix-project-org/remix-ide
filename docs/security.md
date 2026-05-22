@@ -33,12 +33,12 @@ import "@openzeppelin/contracts@4.7.3/token/ERC20/ERC20.sol";
 
 - Always be sure to address or understand every warning.
 
-- Remix is a subdomain of [ethereum.org](ethereum.org) - so the only valid Remix urls are:
-  - [remix.ethereum.org](remix.ethereum.org)
+- Remix is a subdomain of [ethereum.org](ethereum.org) - so the only valid Remix URLs are:
+  - [remix.ethereum.org](https://remix.ethereum.org)
   - [remix-alpha.ethereum.org](remix-alpha.ethereum.org)
   - [remix-beta.ethereum.org](remix-beta.ethereum.org)
 
-If you are directed to some site that looks like Remix but has a **similar but different url** - it is NOT Remix and is likely a scam.
+If you are directed to some site that looks like Remix but has a **similar but different URL** - it is NOT Remix and is likely a scam.
 
 ## Remix's ease makes its users a target
 
