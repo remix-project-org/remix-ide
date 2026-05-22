@@ -70,7 +70,7 @@ At the top of this plugin is the Environment selectbox. Here you can choose wher
 
 For a brief synopsis:
 
-- **Injected Provider** is used to connect Remix with a Browser Wallet (e.g. Metamask) which is generally for deploying to a public network.
+- **Injected Provider** is used to connect Remix with a Browser Wallet (e.g. MetaMask) which is generally for deploying to a public network.
 
 - **Remix VM** is a test blockchain in the browser. There are quite a few "flavors" of the Remix VM. Each "flavor" is associated with a different hard fork with the name in parentheses - e.g. Remix VM (Shanghai) or for the choice of a chain to fork into the Remix VM.
 

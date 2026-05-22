@@ -14,15 +14,15 @@ There are two main reasons for loading external files into Remix:
 
 ## Importing a library or dependency
 
-When importing from NPM, or a URL (like GitHub, an IPFS gateway, or a Swarm gateway) you do not need to do anything more than use the `import` statement in your contract. The dependencies do not need to be "preloaded" into the File Explorer's current Workspace before the contract is compiled.
+When importing from npm, or a URL (like GitHub, an IPFS gateway, or a Swarm gateway) you do not need to do anything more than use the `import` statement in your contract. The dependencies do not need to be "preloaded" into the File Explorer's current Workspace before the contract is compiled.
 
 Files loaded from the import statement are placed in the **Files Explorer's** current Workspace's `.deps` folder.
 
-Under the hood, Remix checks to see if the files are already loaded in the **.deps** directory. If not, it gets them via unpkg if it is an NPM lib.
+Under the hood, Remix checks to see if the files are already loaded in the **.deps** directory. If not, it gets them via unpkg if it is an npm lib.
 
 Here are some example import statements:
 
-### Import from NPM
+### Import from npm
 
 ```Solidity
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -32,13 +32,15 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts@4.2.0/token/ERC20/ERC20.sol";
 ```
 
-**Note:** In the example above, **@openzeppelin** is the name of the npm library. In the following example the library's name does not begin with an @ - but Remix will go and check npm for a library of that name.
+```{note}
+In the example above, **@openzeppelin** is the name of the npm library. In the following example the library's name does not begin with an @ - but Remix will go and check npm for a library of that name.
+```
 
 ```Solidity
 import "solidity-linked-list/contracts/StructuredLinkedList.sol";
 ```
 
-### Import from a Github URL
+### Import from a GitHub URL
 
 ```Solidity
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.5.0/contracts/math/SafeMath.sol";

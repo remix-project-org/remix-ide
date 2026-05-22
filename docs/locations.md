@@ -132,7 +132,7 @@ With a GitHub URL of a Solidity contract like this one:
 https://github.com/remix-project-org/remix-project/blob/master/apps/remix-ide/contracts/app/solidity/mode.sol
 ```
 
-Then delete the **GitHub** part and type in `remix.ethereum.org` in its place, like this:
+Then delete the **GitHub** part and type `remix.ethereum.org` in its place, like this:
 
 ```text
 https://remix.ethereum.org/ethereum/remix-project/blob/master/apps/remix-ide/contracts/app/solidity/mode.sol

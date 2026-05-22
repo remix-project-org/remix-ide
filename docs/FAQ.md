@@ -148,7 +148,7 @@ The input of initPeepToPeeps takes a struct. If you input
 **A:** Try deleting the state folder to refresh the local VM. Note that this resets the local VM, any deployed contracts and account state in the VM will be lost.
 ```
 
-## Plugin Developers
+## Plugin developers
 
 ```{dropdown} Q: Where do plugin developers go with their questions?
 :class-title: sd-fs-5 sd-font-weight-bold

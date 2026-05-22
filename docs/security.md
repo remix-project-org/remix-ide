@@ -7,11 +7,13 @@ myst:
 
 # Using Remix Safely
 
+<!-- vale Vale.Repetition = NO -->
 - It is dangerous to send transactions on contracts you don't understand (even if it's a get rich quick scheme that you've copied & pasted from a Discord DM or a youtube video and you really really want to get rich).
+<!-- vale Vale.Repetition = YES -->
 
 - Check our [article](https://medium.com/remix-ide/remix-in-youtube-crypto-scams-71c338da32d?source=friends_link&sk=bb6efbbf88bc3e496611943d282ad797) on a current scam promoting "liquidity front runner bots".
 
-- Always check that you are loading Remix over HTTPS unless you have a specific reason for accessing it with HTTP (e.g. for using Remix locally or for a connection you trust).
+- Always check that you are loading Remix over `https` unless you have a specific reason for accessing it with `http` (e.g. for using Remix locally or for a connection you trust).
 
 - Make sure all your imports include the **version number** otherwise you don't know what version of files you are getting and the builds are not reproducible.
 
@@ -36,7 +38,7 @@ import "@openzeppelin/contracts@4.7.3/token/ERC20/ERC20.sol";
   - [remix-alpha.ethereum.org](remix-alpha.ethereum.org)
   - [remix-beta.ethereum.org](remix-beta.ethereum.org)
 
-If you are directed to some site that looks like Remix but has a **similar but different URL** - it is NOT Remix and is likely a scam.
+If you are directed to some site that looks like Remix but has a **similar but different url** - it is NOT Remix and is likely a scam.
 
 ## Remix's ease makes its users a target
 

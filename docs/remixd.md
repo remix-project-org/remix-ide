@@ -19,7 +19,7 @@ Once you click **connect to localhost** or activate Remixd from the **Plugin Man
 
 ![](images/a-remixd-modal.png)
 
-The Remixd plugin is a **WebSocket plugin** and it has no UI other than this modal dialog box - so you won't see a Remixd icon in the icon panel.
+The Remixd plugin is a **Websocket plugin** and it has no UI other than this modal dialog box - so you won't see a Remixd icon in the icon panel.
 
 Before you hit **Connect**, you need to install the [Remixd NPM module](https://www.npmjs.com/package/@remix-project/remixd) and run the **Remixd** command.
 
@@ -28,13 +28,14 @@ The code of `remixd` is
 
 ## Remixd installation
 
-**remixd** is an NPM module and can be globally installed using the following command:
+<!-- vale Vale.Terms = NO -->
+**remixd** is an npm module and can be globally installed using the following command:
 `npm install -g @remix-project/remixd`
 
 Or just install it in the directory of your choice by removing the -g flag:
 `npm install @remix-project/remixd`
 
-**NOTE:** When the Remixd NPM module is installed, it also installs [Slither](https://github.com/crytic/slither), [solc-select](https://github.com/crytic/solc-select?tab=readme-ov-file#quickstart) and sets [solc](https://docs.soliditylang.org/en/latest/installing-solidity.html) to latest version i.e. 0.8.15 currently.
+**NOTE:** When the Remixd npm module is installed, it also installs [Slither](https://github.com/crytic/slither), [solc-select](https://github.com/crytic/solc-select?tab=readme-ov-file#quickstart) and sets [solc](https://docs.soliditylang.org/en/latest/installing-solidity.html) to latest version i.e. 0.8.15 currently.
 
 **ALSO NOTE:** `Python3.6+ (pip3)` needs to already be installed on the System. (This packaging of Slither with the Remixd module is supported since Remixd v0.6.3). In case of any discrepancy, Slither can also be installed along with other dependencies using command `remixd -i slither`
 
@@ -48,7 +49,7 @@ The command: `remixd -v` or `remixd --version` will return your version number.
 
 Because **Remixd** creates a bridge from the browser to your local filesystem, it is important that you have the latest version of script.
 
-For users who had installed the version of Remixd from the **VERY** old NPM address or for users who do not know which NPM address they had installed it from, run these 2 steps:
+For users who had installed the version of Remixd from the **VERY** old npm address or for users who do not know which npm address they had installed it from, run these 2 steps:
 
 1. uninstall the old one: **npm uninstall -g remixd**
 2. install the new: **npm install -g @remix-project/remixd**
@@ -69,6 +70,7 @@ The `remixd` command is:<br>
 If you are using Remix from localhost or you are not running the command from your working directory, you'll need to use the command with flags.
 
 ### remixd options
+<!-- vale Vale.Terms = YES -->
 
 ```shell
 Usage: remixd [options]
@@ -99,7 +101,7 @@ Or if you are using **http** in the browser, then use **http** in the `remixd` c
 
 #### Read/Write permission & Read-only mode
 
-The folder is shared using **a WebSocket connection** between `Remix IDE`
+The folder is shared using **a Websocket connection** between `Remix IDE`
 and `remixd`.
 
 Be sure the user executing `remixd` has read/write permission on the
@@ -109,12 +111,12 @@ Alternatively, there is an option to run `remixd` in read-only mode, use `--read
 
 ### Ports Usage
 
-`remixd` functions by making WebSocket connections with Remix IDE on different ports. Ports are defined according to specific purpose. Port usage details are as:
+`remixd` functions by making Websocket connections with Remix IDE on different ports. Ports are defined according to specific purpose. Port usage details are as:
 
-- **65520** : For `remixd` WebSocket listener, to share local file system with Remix IDE. Shared folder will be loaded in the Remix IDE `File Explorers` workspace named `localhost`
-- **65522** : For `hardhat` WebSocket listener, to enable the Hardhat Compilation using Remix IDE `Solidity Compiler` plugin, if shared folder is a Hardhat project.
-- **65523** : For `slither` WebSocket listener, to enable the Slither Analysis using Remix IDE `Solidity Static Analysis` plugin
-- **65524** : For `truffle` WebSocket listener, to enable the Truffle Compilation using Remix IDE `Solidity Compiler` plugin, if shared folder is a Truffle project.
+- **65520** : For `remixd` Websocket listener, to share local file system with Remix IDE. Shared folder will be loaded in the Remix IDE `File Explorers` workspace named `localhost`
+- **65522** : For `hardhat` Websocket listener, to enable the Hardhat Compilation using Remix IDE `Solidity Compiler` plugin, if shared folder is a Hardhat project.
+- **65523** : For `slither` Websocket listener, to enable the Slither Analysis using Remix IDE `Solidity Static Analysis` plugin
+- **65524** : For `truffle` Websocket listener, to enable the Truffle Compilation using Remix IDE `Solidity Compiler` plugin, if shared folder is a Truffle project.
 
 **Note:** Please make sure your system is secured enough and these ports are not opened nor forwarded.
 
@@ -135,7 +137,7 @@ Alternatively, there is an option to run `remixd` in read-only mode, use `--read
   https://ipfsgw.komputing.org
 ```
 
-(the package:// urls in the list above are for remix desktop)
+(the package:// URLs in the list above are for remix desktop)
 
 ### Clicking Connect on the modal
 

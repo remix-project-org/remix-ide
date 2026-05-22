@@ -42,7 +42,7 @@ Phantom), set your environment to **Browser Extension** and choose your preferre
 Before clicking **Deploy**, you can configure two additional fields:
 
 - **Gas Limit**: Sets the maximum amount of gas allowed for the deployment transaction. Remix pre-fills a sensible default, but you can increase it if your contract is complex or if the deployment reverts due to an out-of-gas error.
-- **Value**: The amount of ETH (or WEI, Gwei, etc.) sent along with the deployment transaction. Only relevant if your contract has a payable constructor. Otherwise, leave it at 0.
+- **Value**: The amount of ETH (or wei, gwei, etc.) sent along with the deployment transaction. Only relevant if your contract has a payable constructor. Otherwise, leave it at 0.
 
 Clicking "**Deploy**" sends a transaction that deploys the selected contract. When
 the transaction is mined, the newly created instance will be added
@@ -143,7 +143,7 @@ Development environments connect Remix to locally running nodes or L2 networks, 
 
 - **Foundry Provider**: Connects to a locally running [Anvil](https://www.getfoundry.sh/anvil) node (part of the Foundry toolchain). Like Hardhat, it runs a local chain with pre-funded accounts and instant transaction finality.
 
-- **External HTTP Provider**: Connects Remix to any remote or local Ethereum-compatible node via an RPC URL (e.g., a Geth or Erigon instance). Enter the node's HTTP endpoint when prompted. Read more about [connecting to an External Provider](#more-about-external-http-provider).
+- **External HTTP Provider**: Connects Remix to any remote or local Ethereum-compatible node via an RPC URL (e.g., a Geth or Erigon instance). Enter the node's http endpoint when prompted. Read more about [connecting to an External Provider](#more-about-external-http-provider).
 
 ```{note}
 When using a local provider (Hardhat or Foundry), make sure the node is running before selecting the environment in Remix.
