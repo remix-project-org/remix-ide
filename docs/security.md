@@ -34,7 +34,7 @@ import "@openzeppelin/contracts@4.7.3/token/ERC20/ERC20.sol";
 
 - Always be sure to address or understand every warning.
 
-- Remix is a subdomain of [ethereum.org](ethereum.org) and [remix.live](https://remix.live) - so the only valid Remix URLs are:
+- Remix is a subdomain of [ethereum.org](https://ethereum.org) and [remix.live](https://remix.live) - so the only valid Remix URLs are:
   - [remix.ethereum.org](https://remix.ethereum.org)
   - [alpha.remix.live](https://alpha.remix.live)
   - [beta.remix.live](https://beta.remix.live)
