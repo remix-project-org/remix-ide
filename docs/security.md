@@ -8,6 +8,7 @@ myst:
 # Using Remix Safely
 
 <!-- vale Vale.Repetition = NO -->
+
 - It is dangerous to send transactions on contracts you don't understand (even if it's a get rich quick scheme that you've copied & pasted from a Discord DM or a youtube video and you really really want to get rich).
 <!-- vale Vale.Repetition = YES -->
 
@@ -33,10 +34,10 @@ import "@openzeppelin/contracts@4.7.3/token/ERC20/ERC20.sol";
 
 - Always be sure to address or understand every warning.
 
-- Remix is a subdomain of [ethereum.org](ethereum.org) - so the only valid Remix URLs are:
+- Remix is a subdomain of [ethereum.org](ethereum.org) and [remix.live](https://remix.live) - so the only valid Remix URLs are:
   - [remix.ethereum.org](https://remix.ethereum.org)
-  - [remix-alpha.ethereum.org](remix-alpha.ethereum.org)
-  - [remix-beta.ethereum.org](remix-beta.ethereum.org)
+  - [alpha.remix.live](https://alpha.remix.live)
+  - [beta.remix.live](https://beta.remix.live)
 
 If you are directed to some site that looks like Remix but has a **similar but different URL** - it is NOT Remix and is likely a scam.
 
