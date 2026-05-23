@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "QuickDapp is a Remix IDE feature that uses AI to generate React front-end interfaces for deployed Solidity contracts, supporting standard web dApps and Base mini apps."
+    "keywords": "QuickDapp, Remix IDE, Solidity, dApp, AI-generated UI, React, Farcaster Frame, Base mini app, smart contract, front-end"
+---
+
 # QuickDapp: Generating UIs for your Contracts
 
 QuickDapp is a feature in Remix IDE that uses AI to generate front-end interfaces for your deployed Solidity contracts. Instead of manually building a UI, you can describe the dApp you want, optionally providing a reference image or Figma design, and QuickDapp will generate a ready-to-use React application in a new workspace. It supports both standard web dApps and Base mini apps (Farcaster Frames).
