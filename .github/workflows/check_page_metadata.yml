@@ -1,0 +1,17 @@
+name: Metadata Check
+
+on:
+  pull_request:
+    branches: ["master"]
+    paths:
+      - "docs/**"
+jobs:
+  check-metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run metadata check
+        run: node docs/scripts/check-metadata.js
