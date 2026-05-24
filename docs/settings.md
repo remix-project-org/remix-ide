@@ -32,7 +32,7 @@ The Appearance subsection allows you to customize the look of Remix. You can cho
 
 ![Remix Analytics Page.](images/settings/remix-analytics.png)
 
-## RemixAI assistant
+## RemixAI Assistant
 
 ![RemixAI Assistant Settings Page](images/settings/a-settings-ai1.png)
 

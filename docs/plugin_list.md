@@ -5,6 +5,8 @@ myst:
     "keywords": "remix plugins list, remix ide plugins, plugin manager, solidity tools"
 ---
 
+<!-- vale off -->
+
 # Plugin List
 
 Here is the list of Remix plugins that you will see in the Plugin Manager.
@@ -401,7 +403,7 @@ Approve transactions on your mobile device.
 :link: https://remix.ethereum.org/?#activate=ZoKrates
 :img-top: images/plugin-list/zokrates-logo.png
 
-ZoKrates is a toolbox for zkSNARKs on Ethereum.
+Zokrates is a toolbox for zkSNARKs on Ethereum.
 
 - [Website](https://zokrates.github.io/)
 - Profile name: **ZoKrates**

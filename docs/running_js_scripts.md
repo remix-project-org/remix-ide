@@ -7,11 +7,11 @@ myst:
 
 # Running Scripts
 
-Remix IDE supports execution of JavaScript & TypeScript files. For some script examples using Ethers.js, go to the scripts folder in the Default Workspace or the Basic Workspace.
+Remix IDE supports execution of JavaScript & TypeScript files. For some script examples using ethers.js, go to the scripts folder in the Default Workspace or the Basic Workspace.
 
 ## Why run scripts in Remix?
 
-- To mimic how the front-end of your dapp will use ethers.js
+- To mimic how the front-end of your dApp will use ethers.js
 - To quickly deploy and interact with a bunch of instances of a contract without going through the Remix GUI.
 - To run tests on a previous deployed contract.
 
@@ -86,25 +86,25 @@ These dependencies are available for use in your scripts.
 
 The following list contains the **Default** dependencies:
 
-- ethers (v5): [Ethers v5 docs](https://docs.ethers.org/v5/)
-- zokrates-js: [Zokrates docs](https://zokrates.github.io/toolbox/zokrates_js.html)
-- web3: [Web3js docs](https://web3js.readthedocs.io/en/v1.10.0/)
-- zksync-ethers: [Zksync ethers docs](https://www.npmjs.com/package/zksync-ethers)
-- starknet: [JavaScript library for Starknet docs](https://www.npmjs.com/package/starknet)
-- snarkjs: [Snarkjs docs](https://github.com/iden3/snarkjs)
-- circomlibjs: [Circomlibjs docs](https://github.com/iden3/circomlibjs)
-- ffjavascript: [Finite Field Library in Javascript docs](https://github.com/iden3/ffjavascript)
-- big-integer: [Big integer docs](https://www.npmjs.com/package/big-integer)
-- @zk-kit/incremental-merkle-tree: [Incremental Merkle tree implementation in TypeScript docs](https://www.npmjs.com/package/@zk-kit/incremental-merkle-tree.sol)
-- sindri: [Sindri CLI TypeScript SDK](https://www.npmjs.com/package/sindri)
-- @semaphore-protocol/data: [Semaphore data docs](https://www.npmjs.com/package/@semaphore-protocol/data)
-- @semaphore-protocol/group: [Semaphore group docs](https://www.npmjs.com/package/@semaphore-protocol/group)
-- @semaphore-protocol/identity: [Semaphore identity docs](https://www.npmjs.com/package/@semaphore-protocol/identity)
-- @semaphore-protocol/proof: [Semaphore proof docs](https://www.npmjs.com/package/@semaphore-protocol/proof)
-- crypto-js: [Cryptojs docs](https://www.npmjs.com/package/crypto-js)
-- aes-js: [AES-JS docs](https://www.npmjs.com/package/aes-js)
-- multihashes: [Multihashes docs](https://www.npmjs.com/package/multihashes)
-- openai: [TypeScript library for Openai docs](https://www.npmjs.com/package/openai)
+- `ethers (v5)`: [Ethers v5 docs](https://docs.ethers.org/v5/)
+- `zokrates-js`: [Zokrates docs](https://zokrates.github.io/toolbox/zokrates_js.html)
+- `web3`: [Web3js docs](https://web3js.readthedocs.io/en/v1.10.0/)
+- `zksync-ethers`: [Zksync Ethers docs](https://www.npmjs.com/package/zksync-ethers)
+- `starknet`: [JavaScript library for Starknet docs](https://www.npmjs.com/package/starknet)
+- `snarkjs`: [Snarkjs docs](https://github.com/iden3/snarkjs)
+- `circomlibjs`: [Circomlibjs docs](https://github.com/iden3/circomlibjs)
+- `ffjavascript`: [Finite Field Library in Javascript docs](https://github.com/iden3/ffjavascript)
+- `big-integer`: [Big integer docs](https://www.npmjs.com/package/big-integer)
+- `@zk-kit/incremental-merkle-tree`: [Incremental Merkle tree implementation in TypeScript docs](https://www.npmjs.com/package/@zk-kit/incremental-merkle-tree.sol)
+- `sindri`: [Sindri CLI TypeScript SDK](https://www.npmjs.com/package/sindri)
+- `@semaphore-protocol/data`: [Semaphore data docs](https://www.npmjs.com/package/@semaphore-protocol/data)
+- `@semaphore-protocol/group`: [Semaphore group docs](https://www.npmjs.com/package/@semaphore-protocol/group)
+- `@semaphore-protocol/identity`: [Semaphore identity docs](https://www.npmjs.com/package/@semaphore-protocol/identity)
+- `@semaphore-protocol/proof`: [Semaphore proof docs](https://www.npmjs.com/package/@semaphore-protocol/proof)
+- `crypto-js`: [Cryptojs docs](https://www.npmjs.com/package/crypto-js)
+- `aes-js`: [AES-JS docs](https://www.npmjs.com/package/aes-js)
+- `multihashes`: [Multihashes docs](https://www.npmjs.com/package/multihashes)
+- `openai`: [TypeScript library for Openai docs](https://www.npmjs.com/package/openai)
 
 ### Loading other script dependencies
 
