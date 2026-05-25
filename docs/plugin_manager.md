@@ -29,7 +29,7 @@ A modal will appear like the one below where you can view and erase the granted 
 
 ![](images/a-plugin-manager-modal.png)
 
-## Plugin Devs: Load a local plugin
+## Plugin devs: load a local plugin
 
 A plugin in development can be loaded into Remix IDE by clicking the "Connect to a Local Plugin" link at the top of the Plugin Manager panel.
 

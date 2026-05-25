@@ -68,7 +68,7 @@ The Lookup tab is used to check if a contract is verified on the verification se
 
 ## Settings tab
 
-In the settings tab, you can configure custom API urls for the verification services, and add your own API keys. For Etherscan, adding an API key is mandatory.
+In the settings tab, you can configure custom API URLs for the verification services, and add your own API keys. For Etherscan, adding an API key is mandatory.
 
 ![Contract verification settings page with the Settings bar highlighted.](images/contract-verification/settings-tab.png)
 

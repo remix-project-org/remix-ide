@@ -96,7 +96,7 @@ Compile a contract. And deploy using the newly created [SMART] account.
 
 Your wallet will issue you a signature request.
 
-![Metamask signature request.](images/account-abstraction-7702/a-aa-gssa-sig-request.png)
+![MetaMask signature request.](images/account-abstraction-7702/a-aa-gssa-sig-request.png)
 
 In the image above from a wallet, the Safe address and an address for “Interacting with” can be seen.
 

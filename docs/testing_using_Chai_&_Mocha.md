@@ -38,7 +38,7 @@ describe("Sample", function () {
 
 ## Run tests
 
-Once done with writing the tests, right click on file name in `File Explorers` plugin. It will show some options along with option to `Run`. This `Run` option is used to run the JS scripts
+Once done with writing the tests, right click on file name in `File Explorers` plugin. It will show some options along with option to `Run`. This `Run` option is used to run the JavaScript scripts.
 
 ![](images/run_with_mocha_option.png)
 
