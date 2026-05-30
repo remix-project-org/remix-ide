@@ -79,6 +79,7 @@ remappings
 Remix's
 remixd
 Remixd
+RemixAI
 Rinkeby
 Ropsten
 Routescan
