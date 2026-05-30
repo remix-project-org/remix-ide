@@ -76,7 +76,6 @@ param
 Pectra
 pluginManager
 preloaded
-reentrancy
 remappings
 Remix's
 remixd

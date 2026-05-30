@@ -67,6 +67,7 @@ Team members will never DM you on Discord claiming to be support, or ask for you
 
 These interactive tutorials by WTF Academy are available in the LearnEth plugin. Each one walks through a real vulnerability class with hands-on exercises.
 
+<!-- vale Vale.Spelling = NO -->
 ::::{grid} 3
 :gutter: 3
 
@@ -119,6 +120,7 @@ Understand how price oracles can be manipulated within a single transaction to e
 :::
 
 ::::
+<!-- vale Vale.Spelling = YES -->
 
 These are not exhaustive. LearnEth includes additional tutorials covering more vulnerability classes. Open the LearnEth plugin in the Plugin Manager to browse the full list.
 
