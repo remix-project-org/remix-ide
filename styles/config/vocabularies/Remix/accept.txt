@@ -1,4 +1,6 @@
 agentic
+auditable
+misconfigured
 APIs
 Arbitrum
 autoCompile
@@ -124,7 +126,6 @@ wei
 Workspace's
 Xinghuo
 Yul
-youtube
 zkSNARKs
 zkSync
 Zokrates

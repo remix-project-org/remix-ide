@@ -11,7 +11,7 @@ Remix is widely used by developers at every level, from first-time smart contrac
 
 ## Verifying the Remix URL
 
-Remix is hosted at [remix.ethereum.org](https://remix.ethereum.org) (a subdomain of ethereum.org) and at [remix.live](https://remix.live). The only valid Remix URLs are:
+Remix is hosted at [remix.ethereum.org](https://remix.ethereum.org) (a subdomain of [ethereum.org](https://ethereum.org)) and at [remix.live](https://remix.live). The only valid Remix URLs are:
 
 - Stable: [remix.ethereum.org](https://remix.ethereum.org)
 - Alpha: [alpha.remix.live](https://alpha.remix.live)
@@ -30,7 +30,7 @@ Our only social profiles include:
 Team members will never DM you on Discord claiming to be support, or ask for your private keys, or ask you to click shady links. Always use the #community channel to ask your questions.
 ```
 
-## Safe Development Practices
+## Safe development practices
 
 - Make sure all your imports include the **version number** otherwise you don't know what version of files you are getting and the builds are not reproducible.
 
@@ -57,7 +57,7 @@ Team members will never DM you on Discord claiming to be support, or ask for you
 
 <!-- vale Vale.Repetition = YES -->
 
-## Scam Awareness
+## Scam awareness
 
 - Check our [article](https://medium.com/remix-ide/remix-in-youtube-crypto-scams-71c338da32d?source=friends_link&sk=bb6efbbf88bc3e496611943d282ad797) on a known scam promoting "liquidity front runner bots".
 
@@ -122,7 +122,7 @@ Understand how price oracles can be manipulated within a single transaction to e
 
 These are not exhaustive. LearnEth includes additional tutorials covering more vulnerability classes. Open the LearnEth plugin in the Plugin Manager to browse the full list.
 
-## Static Analysis
+## Static analysis
 
 Remix includes a Static Analysis plugin that runs security and quality checks on your Solidity code before deployment. It integrates three tools:
 
@@ -132,7 +132,7 @@ Remix includes a Static Analysis plugin that runs security and quality checks on
 
 See {doc}`Static Analysis </static_analysis>` for usage details.
 
-## Contract Verification
+## Contract verification
 
 Verifying a contract publishes its source code and makes it auditable by anyone. Remix integrates with [Sourcify](https://sourcify.dev) to make this as frictionless as possible:
 
@@ -141,7 +141,7 @@ Verifying a contract publishes its source code and makes it auditable by anyone.
 
 See {doc}`Contract Verification </contract_verification>` for details.
 
-## AI Privacy
+## AI privacy
 
 When using the RemixAI Assistant, any code you share is sent to the configured LLM. If your code contains sensitive logic or proprietary algorithms, consider using a private LLM instead:
 
