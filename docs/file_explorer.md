@@ -25,8 +25,11 @@ Thus, it is important to have an alternative file backup/saving strategy.
 
 **Some recommended strategies include:**
 
+- [Enabling Cloud storage](#cloud-storage)
 - [Using Remix Desktop](#remix-desktop)
 - Using [remote Git repositories](#connecting-remix-to-remote-git-repositories)
+
+### Cloud storage
 
 ### Remix Desktop
 
