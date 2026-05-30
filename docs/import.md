@@ -10,19 +10,21 @@ myst:
 There are two main reasons for loading external files into Remix:
 
 - **to import a library or dependency** (for files you will NOT be editing)
-- **to load some files for manipulation, editing and play** (for files you might want to edit)
+- **to load some files for manipulation and editing** (for files you might want to edit)
 
 ## Importing a library or dependency
 
 When importing from npm, or a URL (like GitHub, an IPFS gateway, or a Swarm gateway) you do not need to do anything more than use the `import` statement in your contract. The dependencies do not need to be "preloaded" into the File Explorer's current Workspace before the contract is compiled.
 
-Files loaded from the import statement are placed in the **Files Explorer's** current Workspace's `.deps` folder.
+Files loaded from the import statement are placed in the **File Explorer's** current Workspace's `.deps` folder.
 
 Under the hood, Remix checks to see if the files are already loaded in the **.deps** directory. If not, it gets them via unpkg if it is an npm lib.
 
 Here are some example import statements:
 
 ### Import from npm
+
+Use an npm package name directly in the import path. Remix resolves the package automatically via unpkg.
 
 ```Solidity
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -33,7 +35,7 @@ import "@openzeppelin/contracts@4.2.0/token/ERC20/ERC20.sol";
 ```
 
 ```{note}
-In the example above, **@openzeppelin** is the name of the npm library. In the following example the library's name does not begin with an @ - but Remix will go and check npm for a library of that name.
+In the scoped-package example above, **@openzeppelin** is the name of the npm library. In the following example the library's name does not begin with an @ - but Remix will go and check npm for a library of that name.
 ```
 
 ```Solidity
@@ -42,19 +44,25 @@ import "solidity-linked-list/contracts/StructuredLinkedList.sol";
 
 ### Import from a GitHub URL
 
+Paste a full GitHub URL to import a file directly from a public repository.
+
 ```Solidity
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.5.0/contracts/math/SafeMath.sol";
 ```
 
-You should specify the release tag (where available), otherwise you will get the latest code in the master branch. For OpenZeppelin Contracts you should only use code published in an official release, the example above imports from OpenZeppelin Contracts v2.5.0.
+You should specify the release tag (where available), otherwise you will get the latest code in the main branch. For OpenZeppelin Contracts you should only use code published in an official release, the example above imports from OpenZeppelin Contracts v2.5.0.
 
 ### Import from Swarm
+
+Use a `bzz-raw://` URI to import a file stored on the Swarm decentralized storage network.
 
 ```Solidity
 import 'bzz-raw://5766400e5d6d822f2029b827331b354c41e0b61f73440851dd0d06f603dd91e5';
 ```
 
 ### Import from IPFS
+
+Use an `ipfs://` URI to import a file stored on the IPFS network.
 
 ```Solidity
 import 'ipfs://Qmdyq9ZmWcaryd1mgGZ4PttRNctLGUSAMpPqufsk6uRMKh';
@@ -68,11 +76,13 @@ To import a file NOT in the **.deps** folder, use a relative path (**./**). For 
 import "./myLovelyLovelyLib.sol";
 ```
 
-**Note:** It is not possible to import across Workspaces.
+```{warning}
+Imports cannot reference files in a different Workspace. Both the contract and its dependencies must be in the same Workspace.
+```
 
 ### Importing a file from your computer's filesystem
 
-This method uses **Remixd** - the remix daemon. Please go to the {doc}`remixd docs </remixd>` for instructions about how to bridge the divide between the browser and your computer's filesystem.
+This method uses **Remix Desktop**, which has direct access to your computer's filesystem. Open the folder you want to work with from within the Remix Desktop app and its files will appear in the File Explorer.
 
 ### More about the import keyword
 
@@ -93,7 +103,7 @@ Clicking on any of the Import buttons will bring up a modal like this one:
 
 ![](images/a-gist-modal.png)
 
-No need to wrap the input in quotes.
+No need to wrap the URL or ID in quotes.
 
 ### Loading with a remix command in the console
 
@@ -102,17 +112,17 @@ The 2 remix commands for loading are:
 - remix.loadurl(url)
 - remix.loadgist(id)
 
-```Solidity
+```js
 remix.loadurl('https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.5.0/contracts/math/SafeMath.sol')
 ```
 
-```Solidity
+```js
 remix.loadgist('5362adf2000afa4cbdd2c6d239e06bf5')
 ```
 
 ### Accessing files loaded from the Home tab or from a remix command
 
-When you load from GitHub, a folder named `github` folder is created in the root of your current workspace. To import a file from the `github` folder, you would use a command like this:
+When you load from GitHub, a folder named `github` is created in the root of your current workspace. To import a file from the `github` folder, you would use a command like this:
 
 ```Solidity
 import "github/OpenZeppelin/openzeppelin-contracts/contracts/math/SafeMath.sol";

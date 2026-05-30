@@ -1,8 +1,8 @@
 ---
 myst:
   html_meta:
-    "description": "Integrate Remix IDE with a Hardhat project using Remixd to compile and debug contracts with the Hardhat provider."
-    "keywords": "hardhat remix, hardhat integration, remixd, hardhat provider, ethereum development"
+    "description": "Integrate Remix IDE with a Hardhat project using Remix Desktop to compile and debug contracts with the Hardhat provider."
+    "keywords": "hardhat remix, hardhat integration, remix desktop, hardhat provider, ethereum development"
 ---
 
 # Hardhat
