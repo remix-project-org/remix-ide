@@ -128,4 +128,5 @@ Yul
 zkSNARKs
 zkSync
 Zokrates
+reentrancy
 repo
