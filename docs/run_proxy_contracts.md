@@ -53,7 +53,7 @@ Upgrading deploys your new implementation contract as a separate transaction, th
 Your implementation contract must include an `_authorizeUpgrade` function. Without it, the upgrade transaction will revert. OpenZeppelin's UUPS base contract requires you to override this function with access control (typically `onlyOwner`) to prevent unauthorized upgrades.
 ```
 
-## See Also
+## See also
 
 - [OpenZeppelin Upgrades documentation](https://docs.openzeppelin.com/upgrades-plugins/proxies)
 - [ERC-1967 standard](https://eips.ethereum.org/EIPS/eip-1967)
