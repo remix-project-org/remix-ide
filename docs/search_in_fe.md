@@ -9,7 +9,7 @@ myst:
 
 The **Search in Files** plugin is loaded by default. It also includes functionality to search & replace as well as searching with regular expressions.
 
-![](images/a-search.png)
+![Search in Files plugin panel](images/a-search.png)
 
 This plugin searches through text in the files of the current workspace. It does not search across workspaces.
 
@@ -17,4 +17,4 @@ This plugin searches through text in the files of the current workspace. It does
 
 Clicking on the caret to the left of the text input box will reveal the **replace** functionality.
 
-![](images/a-search-open.png)
+![Search in Files panel with replace field expanded](images/a-search-open.png)

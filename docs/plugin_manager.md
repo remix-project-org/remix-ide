@@ -27,7 +27,7 @@ You can view the permissions that you have granted to plugins by clicking on the
 
 A modal will appear like the one below where you can view and erase the granted permission.
 
-![](images/a-plugin-manager-modal.png)
+![Plugin Manager permissions modal showing granted plugin permissions](images/a-plugin-manager-modal.png)
 
 ## Plugin devs: load a local plugin
 

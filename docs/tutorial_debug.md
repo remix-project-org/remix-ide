@@ -63,13 +63,13 @@ contract Donation {
 
 Make a new file in Remix and copy the code block above into it, compile it and deploy it on the Remix VM.
 
-![](images/tutorial-debug/deploy.png)
+![Deploy and Run panel showing the Donation contract deployed to Remix VM](images/tutorial-debug/deploy.png)
 
 We are going to call the `Donate` function and will send 2 Ether.
 
 To do this: in the value input box put in **2** and **select Ether** as the unit. Do not leave the default unit as **gwei** or the change will be hard to detect.
 
-![](images/tutorial-debug/call-donate.png)
+![Deploy and Run panel showing the Donate function call with 2 Ether value](images/tutorial-debug/call-donate.png)
 
 Then click the `Donate` button.
 
@@ -84,7 +84,7 @@ Now let's try to move 1 ETH out of the contract using `moveFund`. In the deploye
 Before clicking `moveFund`, reset the **Value** field to **0**. Remix keeps the value from the previous `donate` call. Since `moveFund` is not payable, sending ETH with the call will cause it to revert immediately.
 ```
 
-![](images/tutorial-debug/call-move-fund.png)
+![Deploy and Run panel showing the moveFund function inputs with address and amount](images/tutorial-debug/call-move-fund.png)
 
 Click **Transact**.
 
@@ -132,15 +132,15 @@ To find a transaction hash:
 2. Click a line with a transaction to expand the log.
 3. Copy the transaction hash.
 
-![](images/tutorial-debug/tx-hash.png)
+![Terminal transaction log showing an expanded entry with a copyable transaction hash](images/tutorial-debug/tx-hash.png)
 
 Paste the hash into the Debugger and click the button with the Play icon.
 
-![](images/tutorial-debug/debug-with-hash.png)
+![Debugger panel showing a transaction hash pasted in with the Play button](images/tutorial-debug/debug-with-hash.png)
 
 ## Using the debugger
 
-![](images/tutorial-debug/overview.png)
+![Debugger panel overview showing execution controls and state information](images/tutorial-debug/overview.png)
 
 The debugger allows one to see detailed information about the
 transaction's execution. It uses the editor to display the
