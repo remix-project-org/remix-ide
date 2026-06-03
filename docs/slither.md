@@ -2,7 +2,7 @@
 myst:
   html_meta:
     "description": "Run Slither static analysis on Solidity contracts in Remix IDE to detect security vulnerabilities and get detailed contract information."
-    "keywords": "slither remix, static analysis, smart contract security, remixd, solidity"
+    "keywords": "slither remix, static analysis, smart contract security, solidity"
 ---
 
 # Slither

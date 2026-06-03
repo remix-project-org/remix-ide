@@ -7,6 +7,12 @@ myst:
 
 # Remixd: Access your Local Filesystem
 
+```{warning}
+**Remixd is deprecated.** For workflows that require access to your local filesystem, use {doc}`Remix Desktop </desktop>` instead. Remix Desktop has native filesystem access without the need to run a separate daemon process.
+
+Download Remix Desktop from the [releases page](https://github.com/remix-project-org/remix-project/releases).
+```
+
 [![npm version](https://badge.fury.io/js/%40remix-project%2Fremixd.svg)](https://www.npmjs.com/package/@remix-project/remixd)
 
 To give the Remix IDE (the web app) access to a folder on your computer, you need to use **Remixd** - the plugin along with **Remixd** - the cli/npm module.
@@ -29,6 +35,7 @@ The code of `remixd` is
 ## Remixd installation
 
 <!-- vale Vale.Terms = NO -->
+
 **remixd** is an npm module and can be globally installed using the following command:
 `npm install -g @remix-project/remixd`
 
@@ -70,6 +77,7 @@ The `remixd` command is:<br>
 If you are using Remix from localhost or you are not running the command from your working directory, you'll need to use the command with flags.
 
 ### remixd options
+
 <!-- vale Vale.Terms = YES -->
 
 ```shell
@@ -99,7 +107,6 @@ If your browser is on `https://remix.ethereum.org` (**secure http**) then use HT
 ```shell
 remixd -s <absolute-path-to-the-shared-folder> --remix-ide https://remix.ethereum.org
 ```
-
 
 Or if you are using **http** in the browser, then use **http** in the `remixd` command.
 

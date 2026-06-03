@@ -74,18 +74,7 @@ The File Explorer is where you can see the files.
 - Profile name: **fileManager**
   :::
 
-:::{grid-item-card} Remixd
-:columns: 12 6 4 4
-:class-card: plugin-card sd-border-1 sd-rounded-2
-:link-type: url
-:link: https://remix.ethereum.org/?#activate=remixd
-:img-top: images/plugin-list/remixd.png
 
-Connect a local filesystem folder to Remix via the `remixd` npm package.
-
-- [Documentation](https://remix-ide.readthedocs.io/en/latest/remixd.html)
-- Profile name: **remixd**
-  :::
 
 :::{grid-item-card} Solidity Compiler
 :columns: 12 6 4 4
