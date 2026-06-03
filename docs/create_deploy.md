@@ -111,7 +111,7 @@ The newly created instance is displayed in the **Deployed Contracts** section.
 
 ## Interacting with the deployed instance
 
-Clicking on the caret to the left of the instance of TESTCONTRACT will expand it so its functions are visible.
+Clicking on the caret to the left of the instance of `TESTCONTRACT` will expand it so its functions are visible.
 
 This new instance contains the 3 functions (`setP`, `setPN`, `get`).
 

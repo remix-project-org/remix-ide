@@ -78,6 +78,8 @@ The plugin receives a zip file and extracts the following files into your worksp
 On the plugin UI, the **"Proof Artifacts"** section appears along with buttons to view the four main generated files ("View Proof", "View Public Inputs", "View Verifier.sol", "View verify.ts").
 
 .. image:: ./images/noir/generated-proof.png
+   :alt: Noir plugin UI showing the Proof Artifacts section with buttons to view generated proof files
+
 
 Verifying proofs
 ----------------

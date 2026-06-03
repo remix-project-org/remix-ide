@@ -53,6 +53,9 @@ function checkImageAltText() {
         console.error(`  FAIL  ${location}: ${error}`);
       }
     });
+    const errorFiles = [...new Set(errors.map((e) => e.file))];
+    console.error(`\nFiles with errors:`);
+    errorFiles.forEach((f) => console.error(`  docs/${f}`));
     console.error(
       `\n${errors.length} error(s) in ${docFiles.length} file(s) checked.`,
     );
