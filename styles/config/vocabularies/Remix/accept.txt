@@ -1,4 +1,6 @@
 agentic
+auditable
+misconfigured
 APIs
 Arbitrum
 autoCompile
@@ -74,11 +76,11 @@ param
 Pectra
 pluginManager
 preloaded
-reentrancy
 remappings
 Remix's
 remixd
 Remixd
+RemixAI
 Rinkeby
 Ropsten
 Routescan
@@ -123,8 +125,8 @@ wei
 Workspace's
 Xinghuo
 Yul
-youtube
 zkSNARKs
 zkSync
 Zokrates
+reentrancy
 repo
