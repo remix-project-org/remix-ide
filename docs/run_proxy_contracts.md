@@ -13,7 +13,7 @@ A UUPS contract is an implementation contract that contains both the business lo
 
 ## Deploying
 
-To try this out, you will need a UUPS contract. Go to [wizard.openzeppelin.com](https://wizard.openzeppelin.com), select a contract, and in the **Upgradeability** section check **UUPS**. Copy the generated file into Remix, compile it, and open **Deploy & Run**.
+To try this out, you will need a UUPS contract. Create a new Workspace in Remix and click the Contract Wizard.  In the Wizard's **Upgradeability** section check **UUPS** and in the **Access Control section**, choose **Ownable**.  Then compile it, and open Deploy & Run.
 
 ```{note}
 UUPS contracts use an `initialize` function instead of a constructor. Call `initialize` via the proxy after deployment to set up initial state. The constructor is intentionally disabled with `_disableInitializers()`.
