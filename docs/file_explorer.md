@@ -25,15 +25,38 @@ Thus, it is important to have an alternative file backup/saving strategy.
 
 **Some recommended strategies include:**
 
+- [Enabling Cloud storage](#cloud-storage)
 - [Using Remix Desktop](#remix-desktop)
 - Using [remote Git repositories](#connecting-remix-to-remote-git-repositories)
+
+### Cloud storage
+
+```{note}
+Cloud storage is currently only available to users in our beta program.
+```
+
+Enabling cloud storage on Remix web saves your work to your Remix account, auto-syncing every change so nothing is lost to browser crashes. Your files are available on any device when you are logged in.
+
+Snapshots of your workspace are taken automatically as you work. Each snapshot captures the workspace state at a single point in time and is not a complete backup; it may be seconds to minutes behind your actual files. Each snapshot is kept for 7 days before being removed. You can download all snapshots currently within that window as a single zip file to inspect locally.
+
+To enable cloud storage, click the switch at the top left of the Top Bar as shown in the image below.
+
+![](images/file-explorer/cloud-storage.png)
+
+When you enable cloud storage, the files saved on your browser do not get moved to cloud automatically. If you want to migrate the files saved to your browser storage to cloud, click the Workspaces dropdown, and click "migrate local workspaces to cloud".
+
+![](images/file-explorer/move-local-to-cloud.png)
+
+You will see a list of all the workspaces in your browser storage, choose the ones you want to migrate and click the "Migrate" button.
+
+![](images/file-explorer/migrate-workspaces.png)
 
 ### Remix Desktop
 
 Remix Desktop is a version of the Remix IDE that exists as a native app on your computer instead of a browser app. Since it's a native app on your computer, the files are saved directly to your hard drive. You can download Remix Desktop on [the releases page](https://github.com/remix-project-org/remix-desktop/releases).
 
 ```{tip}
-For more information, see the {doc}`Remix Desktop <desktop/>` documentation. 
+For more information, see the {doc}`Remix Desktop <desktop/>` documentation.
 
 ```
 
