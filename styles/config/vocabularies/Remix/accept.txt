@@ -70,6 +70,7 @@ noobies
 Noir
 npm
 Ollama
+Ownable
 onchain
 OpenAI
 param
