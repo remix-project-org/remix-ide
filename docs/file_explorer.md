@@ -41,15 +41,15 @@ Snapshots of your workspace are taken automatically as you work. Each snapshot c
 
 To enable cloud storage, click the switch at the top left of the Top Bar as shown in the image below.
 
-![](images/file-explorer/cloud-storage.png)
+![Cloud storage toggle switch highlighted in the Remix Top Bar.](images/file-explorer/cloud-storage.png)
 
 When you enable cloud storage, the files saved on your browser do not get moved to cloud automatically. If you want to migrate the files saved to your browser storage to cloud, click the Workspaces dropdown, and click "migrate local workspaces to cloud".
 
-![](images/file-explorer/move-local-to-cloud.png)
+![Open Workspaces dropdown with the migrate local workspaces to cloud option highlighted.](images/file-explorer/move-local-to-cloud.png)
 
 You will see a list of all the workspaces in your browser storage, choose the ones you want to migrate and click the "Migrate" button.
 
-![](images/file-explorer/migrate-workspaces.png)
+![Migrate Workspaces to Cloud dialog listing browser workspaces to select.](images/file-explorer/migrate-workspaces.png)
 
 ### Remix Desktop
 

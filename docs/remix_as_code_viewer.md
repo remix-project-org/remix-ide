@@ -23,7 +23,7 @@ and reload. It will fetch the contracts verified on Etherscan.
 
 Contracts verified on Ethereum mainnet and on other test networks (Ropsten, Rinkeby, Kovan & Goerli) will be loaded in respective directories under `etherscan-code-sample` workspace.
 
-![](images/a-code-viewer-etherscan.png)
+![Remix IDE showing contracts loaded from Etherscan in the Etherscan-code-sample workspace](images/a-code-viewer-etherscan.png)
 
 This works for Etherscan testnet URLs `https://ropsten.etherscan.io`, `https://goerli.etherscan.io/` etc. If they are similarly updated, contracts will be loaded in Remix.
 
@@ -39,4 +39,4 @@ change `github.com` to `remix.ethereum.org` like:
 
 and reload. It will open the same file in Remix IDE.
 
-![](images/a-code-viewer-github.png)
+![Remix IDE showing a Solidity file loaded from a GitHub URL](images/a-code-viewer-github.png)

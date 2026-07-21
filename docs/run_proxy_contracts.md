@@ -21,21 +21,21 @@ UUPS contracts use an `initialize` function instead of a constructor. Call `init
 
 When a UUPS contract is selected in Deploy & Run's Contract dropdown, you'll see some switches below the Deploy button:
 
-![](images/proxy-contracts/proxy-checkboxes.png)
+![Deploy and Run panel showing proxy deployment checkboxes for a UUPS contract](images/proxy-contracts/proxy-checkboxes.png)
 
 Turn on the **Deploy with Proxy** switch. This will create two transactions: one for the implementation (your contract) and the other for the ERC1967 proxy contract. You will get two modals to check through:
 
-![](images/proxy-contracts/a-proxy-modal1.png)
+![First proxy deployment confirmation modal](images/proxy-contracts/a-proxy-modal1.png)
 
 and then
 
-![](images/proxy-contracts/a-proxy-modal2.png)
+![Second proxy deployment confirmation modal](images/proxy-contracts/a-proxy-modal2.png)
 
 If you are deploying to the **Remix VM**, these modals will appear one after the other. If you are connected to the mainnet or a public testnet, then the second modal will appear after the first transaction has gone through.
 
 After the ERC1967 proxy contract is deployed, in the Deployed Contracts section, you'll see two deployed instances.
 
-![](images/proxy-contracts/a-deployed-instances.png)
+![Deployed Contracts section showing two instances after proxy deployment](images/proxy-contracts/a-deployed-instances.png)
 
 To interact with your implementation contract **DO NOT** use the instance of your contract. Instead, you should **use the ERC1967 Proxy**. The proxy will have all the functions of your implementation.
 
@@ -43,7 +43,7 @@ To interact with your implementation contract **DO NOT** use the instance of you
 
 To upgrade, turn on the **Upgrade with Proxy** switch to reveal the address input:
 
-![](images/proxy-contracts/a-proxy-upgrade.png)
+![Deploy and Run panel showing the Upgrade with Proxy options](images/proxy-contracts/a-proxy-upgrade.png)
 
 You'll either need to use the last deployed ERC1967 contract, or input the address of the ERC1967 contract that you want to use.
 

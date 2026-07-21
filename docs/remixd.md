@@ -19,11 +19,11 @@ To give the Remix IDE (the web app) access to a folder on your computer, you nee
 
 The **Remixd** plugin can be activated from the plugin manager or in the **File Explorer** - see the image below. The **connect to localhost** - will activate the **Remixd** plugin.
 
-![](images/a-remixd-fe.png)
+![File Explorer showing the connect to localhost option for Remixd](images/a-remixd-fe.png)
 
 Once you click **connect to localhost** or activate Remixd from the **Plugin Manager**, a modal will come up:
 
-![](images/a-remixd-modal.png)
+![Remixd connection modal for configuring the local filesystem connection](images/a-remixd-modal.png)
 
 The Remixd plugin is a **Websocket plugin** and it has no UI other than this modal dialog box - so you won't see a Remixd icon in the icon panel.
 
@@ -163,7 +163,7 @@ Please make sure you have the remixd running in the background.
 
 Assuming you don't get the 2nd modal, your connection to the `remixd` daemon is successful. The shared folder will be visible in the File Explorer's workspace under **localhost**.
 
-![](images/a-ws-localhost.png)
+![File Explorer showing the shared folder under the localhost workspace](images/a-ws-localhost.png)
 
 ### Creating & deleting folders & files
 

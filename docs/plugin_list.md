@@ -382,7 +382,7 @@ Compile contracts written in Cairo to Starknet.
 
 Verify contracts and import from your Tenderly project.
 
-- [Documentation](https://docs.tenderly.co/monitoring/integrations#remix)
+- [Documentation](https://docs.tenderly.co/)
 - Profile name: **tenderly**
   :::
 

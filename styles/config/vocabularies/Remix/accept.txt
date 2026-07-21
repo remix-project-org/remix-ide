@@ -70,6 +70,7 @@ noobies
 Noir
 npm
 Ollama
+Ownable
 onchain
 OpenAI
 param
@@ -128,5 +129,8 @@ Yul
 zkSNARKs
 zkSync
 Zokrates
+moveFund
 reentrancy
 repo
+testContract
+tooltip

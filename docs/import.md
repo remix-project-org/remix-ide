@@ -97,11 +97,11 @@ When importing from the home tab widgets or with a remix command in the console,
 
 The Gist, GitHub, Swarm, IPFS, & HTTPS buttons are to assist in getting files into Remix so you can explore.
 
-![](images/a-import-from.png)
+![Remix home tab showing import buttons for Gist, GitHub, Swarm, IPFS, and HTTPS](images/a-import-from.png)
 
 Clicking on any of the Import buttons will bring up a modal like this one:
 
-![](images/a-gist-modal.png)
+![Import modal for entering a URL or ID](images/a-gist-modal.png)
 
 No need to wrap the URL or ID in quotes.
 

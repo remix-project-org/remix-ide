@@ -17,7 +17,7 @@ Let's go through a basic workflow:
 
 ## Creating a new file
 
-![](images/file-explorer/a-file-explorer-new-file2.png)
+![File Explorer showing the new file icon](images/file-explorer/a-file-explorer-new-file2.png)
 
 In the File Explorer, create a new file by clicking on the new file icon, and name it. The `.sol` is default extension in Remix, if a file is named without an extension, `.sol` will appended.
 
@@ -90,11 +90,11 @@ The Remix VM comes with 10 accounts funded with 100 ether.
 
 **NOTE:** When you are in the **Remix VM** and you reload the browser - the **Remix VM** will also restart to its fresh & default state. For a more realistic testing environment, use a public testnet.
 
-![](images/create_deploy/a-run-remix-vm-accounts.png)
+![Deploy and Run panel showing Remix VM environment with funded accounts](images/create_deploy/a-run-remix-vm-accounts.png)
 
 ## Deploying a contract
 
-![](images/create_deploy/a-run-testContract.png)
+![Deploy and Run panel showing testContract deployment with constructor parameter input](images/create_deploy/a-run-testContract.png)
 
 The constructor of `testContract` needs a parameter of the type `uint256`.
 Input a uint256 and click on `Deploy`.
@@ -107,11 +107,11 @@ The terminal will give information about the transaction.
 
 The newly created instance is displayed in the **Deployed Contracts** section.
 
-![](images/create_deploy/a-remix-vm-inst ance.png)
+![Deployed Contracts section showing a testContract instance](images/create_deploy/a-remix-vm-inst ance.png)
 
 ## Interacting with the deployed instance
 
-Clicking on the caret to the left of the instance of TESTCONTRACT will expand it so its functions are visible.
+Clicking on the caret to the left of the instance of `TESTCONTRACT` will expand it so its functions are visible.
 
 This new instance contains the 3 functions (`setP`, `setPN`, `get`).
 
@@ -119,7 +119,7 @@ Clicking on `setP` or `setPN` will create a new transaction.
 
 `setP` is a `payable` function (payable functions have red buttons). With a payable function, value (ETH) can be sent to the contract. The amount of ETH is chosen in the VALUE input field and the unit of ETH is selected in the box to the right.
 
-![](images/create_deploy/a-remix-vm-value.png)
+![Deployed contract instance showing the payable setP function with value input field](images/create_deploy/a-remix-vm-value.png)
 
 `setPN` is not payable (an orange button - depending on the theme). It is not possible to send value (Ether) to this function.
 
@@ -127,4 +127,4 @@ Clicking on `setP` or `setPN` will create a new transaction.
 
 The value that gets returned appears just below the `get` button.
 
-![](images/create_deploy/a-remix-vm-view.png)
+![Deployed contract instance showing the get view function with its returned value](images/create_deploy/a-remix-vm-view.png)

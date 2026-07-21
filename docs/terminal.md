@@ -7,7 +7,7 @@ myst:
 
 # Terminal
 
-![](images/a-terminal-and-more.png)
+![Remix IDE terminal panel](images/a-terminal-and-more.png)
 
 Features, available in the terminal:
 

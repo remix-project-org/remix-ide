@@ -108,7 +108,7 @@ You can use {doc}`RemixAI </ai>` to generate tests for your files.
 
 Once you are done with writing tests, select the file(s) and click on `Run` to execute the tests. The execution will run in a separate environment. After completing the execution of one file, a test summary will be shown:
 
-![](images/unit-testing/a-unit-testing-run-result.png)
+![Unit testing run results showing test pass and fail summary](images/unit-testing/a-unit-testing-run-result.png)
 
 For failed tests, there will be more assertion details to analyze the issue. Clicking on failed test will highlight the relevant line of code in the editor.
 
@@ -124,7 +124,7 @@ Remix facilitates users with various types of customizations to test a contract 
 
 Solidity Unit Testing refers to the Solidity Compiler plugin for compiler configurations. Configure `Compiler`, `EVM Version`, `Enable Optimization` & `runs` in the Solidity Compiler plugin and this will be used in the Solidity Unit Testing plugin for contract compilation before running unit tests.
 
-![](images/unit-testing/a-unit-testing-custom-compiler-config.png)
+![Solidity Compiler plugin showing custom compiler configuration for unit testing](images/unit-testing/a-unit-testing-custom-compiler-config.png)
 
 ### 2. Custom Transaction Context
 
