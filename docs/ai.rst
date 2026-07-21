@@ -5,27 +5,17 @@ AI Tools
    :description: RemixAI is Remix IDE's built-in AI assistant and Copilot for Solidity smart contract development, code completion, and explanation.
    :keywords: remixai, ai assistant, code completion, solidity ai, remix ide ai
 
-Remix has its own AI tool named **RemixAI** and a sub-project called
-**RemixAI Copilot** for code completion.
-
-When you load Remix, the **RemixAI Assistant** appears in the Right Side Panel.
+Remix has its own AI tool named **RemixAI Assistant**, which appears in the Right Side Panel when you load Remix. To use the RemixAI Assistant, you need to be logged into your Remix account and have available credits. You can get usage credits by subscribing to our `Starter or Pro plans <https://remix.ethereum.org/?call=planManager//open//plans>`_ or buying AI credits. Alternatively, you can `provide your own API key`_ from any of our supported providers and use the RemixAI Assistant with tokens from your own account. However, even with usage credits some advanced AI-features are reserved for Pro and Starter plans.
 
 .. image:: images/ai/remix-ai-panel.png
    :alt: RemixAI Assistant Right Side Panel
 
-.. tip::
-   You can minimize the RemixAI Assistant by clicking the minimize icon at the
-   top left of the Right Side Panel.
 
-.. video:: images/ai/maximize-ai.mp4
-  :autoplay:
-  :playsinline:
-  :muted:
-  :loop:
-  :width: 100%
+RemixAI is also integrated into other parts of the IDE including:
 
-RemixAI is also integrated into other parts of the tool including:
-
+- `The Code Helper <#>`_
+- `Gas optimization audits <#>`_
+- `Security audits <#>`_
 - The **Explain contract** button at the bottom of the Editor when a ``.sol`` file is active.
 - The **Explain compiler error** button when an error is thrown in the Solidity Compiler.
 - **Right-click menu options** in the Editor.
@@ -33,6 +23,8 @@ RemixAI is also integrated into other parts of the tool including:
 
 The RemixAI Assistant retains your conversation history within a session, so you can refer back to earlier responses or continue a previous request.
 
+.. note::
+   The chat history is stored in your browser's storage, thus, you will not be able to access it when you login in to your Remix account on another device.
 
 Choosing an LLM for code explanations
 -------------------------------------
@@ -40,8 +32,8 @@ Choosing an LLM for code explanations
 In the RemixAI Assistant, there is a choice of LLMs for use in **code explanations**
 and in the AI Assistant.
 
-The default LLM is **MistralAI**. Click the MistralAI button and a modal will pop up
-where you can select **Anthropic**, **OpenAI**, or **MistralAI**.
+The default LLM is **Mistral Medium**. Click the MistralAI button and a modal will pop up
+where you can select models from **Anthropic**, **OpenAI**, **Mistral**, **Local Models (Ollama)**, and Open Weight models .
 
 .. image:: images/ai/available-models.png
    :alt: RemixAI LLM dropdown menu
@@ -167,18 +159,52 @@ Follow the steps below to configure a remote Ollama instance in Remix:
 .. image:: images/ai/ollama-cloud.png
    :alt: Remix settings showing the Ollama config
 
-.. TODO: Uncomment after PR that implements video is merged
-.. .. video:: ./images/ai/cloud-ollama.mp4
-..   :nocontrols:
-..   :autoplay:
-..   :playsinline:
-..   :muted:
-..   :loop:
-..   :width: 100%
 
 
-RemixAI accepts audio input
+
+
+Adding AI Skills to RemixAI
 ---------------------------
+
+**Skills** are collections of instructions and reference material that give RemixAI deeper, more specialized knowledge for a particular domain. Remix provides a library of built-in Skills covering verticals such as **Wallets**, **L2s**, **DeFi**, and **Security**, so you can equip the Assistant with focused expertise for the task at hand. You can also upload your own Skills to extend RemixAI with your own instructions and knowledge.
+
+To open the Skills modal, type ``/load-skills`` in the RemixAI Assistant chat. From there you can browse and enable the built-in Skills or upload your own.
+
+.. image:: images/ai/skills.png
+   :alt: image
+
+
+
+.. _code helper:
+
+RemixAI Code Helper (Pro & Starter plans)
+-----------------------------------------
+The code helper provides instant code reviews focused on security and gas optimization. To activate the code helper, highlight a piece of code or a function and you will get an instant review. 
+
+.. image:: images/ai/code-helper.jpg
+   :alt: image
+
+
+From the code helper pop up you can ask RemixAI to analyze the entire file instead of that part or open of that part in RemixAI to ask follow up questions about it.
+
+
+Gas optimization with RemixAI (Pro & Starter plans)
+---------------------------------------------------
+
+
+
+.. _provide your own API key:
+
+Using external API keys for RemixAI (Pro & Starter plans)
+---------------------------------------------------------
+RemixAI allows you to add your own API keys and use your own available tokens. To add your own API keys, click the **Settings** icon on the top right of the Top Bar, select RemixAI Assistant, and scroll to the bottom. You will find the option under the "Bring Your Own Keys" Section. Currently, we support keys from Anthropic, OpenAI, Mistral, and Moonshot/Kimi.
+
+.. image:: images/ai/external-providers.png
+   :alt:
+
+
+Using audio as input for RemixAI
+--------------------------------
 
 RemixAI allows you to interact with the AI Assistant using **audio input**, making it easier to ask questions or give instructions without typing.
 
@@ -225,9 +251,6 @@ The following MCP servers are available in RemixAI:
   generating patterns from scratch.
 - **Web Search** – Allows the AI to retrieve up-to-date information such as recent 
   protocol changes, audit reports, and external documentation.
-
-The following MCP servers are additionally available to **Beta testers**:
-
 - **ethSkills** – A curated Ethereum knowledge base designed specifically for AI 
   agents. It covers production-ready guidance across gas costs, L2s, token standards, 
   DeFi protocols, security patterns, contract auditing, and more, helping the AI avoid 
@@ -263,13 +286,13 @@ Ask RemixAI to suggest or apply an OpenZeppelin implementation instead of writin
 
   *Replace the access control in this contract with OpenZeppelin's Ownable.*
 
-**Querying live on-chain data** *(Alchemy / Etherscan, Beta)*
+**Querying live on-chain data** *(Alchemy / Etherscan)*
 
 Ask RemixAI to look up real-time blockchain data such as balances, transactions, or verified source code. Useful for investigating a deployed contract or checking an address without leaving the IDE.
 
   *Fetch the verified source code and recent transactions for this contract address: 0x...*
 
-**Querying indexed protocol data** *(The Graph, Beta)*
+**Querying indexed protocol data** *(The Graph)*
 
 Ask RemixAI to query a subgraph for aggregated or historical data. Useful for retrieving protocol-level metrics or event histories that are not available from a single contract call.
 
