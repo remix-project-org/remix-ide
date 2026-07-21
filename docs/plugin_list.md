@@ -74,6 +74,19 @@ The File Explorer is where you can see the files.
 - Profile name: **fileManager**
   :::
 
+:::{grid-item-card} Git plugin
+:columns: 12 6 4 4
+:class-card: plugin-card sd-border-1 sd-rounded-2
+:link-type: url
+:link: https://remix.ethereum.org/?#activate=dgit
+:img-top: images/plugin-list/Git-logo-black.png
+
+Enables version control using Git.
+
+- [Documentation](https://remix-ide.readthedocs.io/en/latest/git.html)
+- Profile name: **dgit**
+  :::
+
 
 
 :::{grid-item-card} Solidity Compiler
