@@ -5,7 +5,7 @@ AI Tools
    :description: RemixAI is Remix IDE's built-in AI assistant and Copilot for Solidity smart contract development, code completion, and explanation.
    :keywords: remixai, ai assistant, code completion, solidity ai, remix ide ai
 
-Remix has its own AI tool named **RemixAI Assistant**, which appears in the Right Side Panel when you load Remix. To use the RemixAI Assistant, you need to be logged into your Remix account and have available credits. You can get usage credits by subscribing to our `Starter or Pro plans <https://remix.ethereum.org/?call=planManager//open//plans>`_ or buying AI credits. Alternatively, you can `provide your own API key`_ from any of our supported providers and use the RemixAI Assistant with tokens from your own account. However, even with usage credits some advanced AI-features are reserved for Pro and Starter plans.
+Remix has its own AI tool named **RemixAI Assistant**, which appears in the Right Side Panel when you load Remix. To use the RemixAI Assistant, you need to be logged into your Remix account. The **Free plan** already gives you access to RemixAI, including the QuickDApp Front-end Generator (without hosting) and Basic AI Skills Access, with AI model usage billed at usage-based pricing. Subscribing to our `Starter or Pro plans <https://remix.ethereum.org/?call=planManager//open//plans>`_ or buying AI credits gets you usage credits and unlocks additional advanced AI features. Starter and Pro plans also let you `provide your own API key`_ from any of our supported providers, so you can use the RemixAI Assistant with tokens from your own account instead of your Remix credits.
 
 .. image:: images/ai/remix-ai-panel.png
    :alt: RemixAI Assistant Right Side Panel
@@ -13,9 +13,9 @@ Remix has its own AI tool named **RemixAI Assistant**, which appears in the Righ
 
 RemixAI is also integrated into other parts of the IDE including:
 
-- `The Code Helper <#>`_
-- `Gas optimization audits <#>`_
-- `Security audits <#>`_
+- `The Code Helper <code helper_>`_
+- `Gas optimization audits <gas optimization audits_>`_
+- `Security audits <security audits_>`_
 - The **Explain contract** button at the bottom of the Editor when a ``.sol`` file is active.
 - The **Explain compiler error** button when an error is thrown in the Solidity Compiler.
 - **Right-click menu options** in the Editor.
@@ -33,7 +33,7 @@ In the RemixAI Assistant, there is a choice of LLMs for use in **code explanatio
 and in the AI Assistant.
 
 The default LLM is **Mistral Medium**. Click the MistralAI button and a modal will pop up
-where you can select models from **Anthropic**, **OpenAI**, **Mistral**, **Local Models (Ollama)**, and Open Weight models .
+where you can select models from **Anthropic**, **OpenAI**, **Mistral**, **Local Models (Ollama)**, and Open Weight models.
 
 .. image:: images/ai/available-models.png
    :alt: RemixAI LLM dropdown menu
@@ -168,7 +168,7 @@ Adding AI Skills to RemixAI
 
 **Skills** are collections of instructions and reference material that give RemixAI deeper, more specialized knowledge for a particular domain. Remix provides a library of built-in Skills covering verticals such as **Wallets**, **L2s**, **DeFi**, and **Security**, so you can equip the Assistant with focused expertise for the task at hand. You can also upload your own Skills to extend RemixAI with your own instructions and knowledge.
 
-To open the Skills modal, type ``/load-skills`` in the RemixAI Assistant chat. From there you can browse and enable the built-in Skills or upload your own.
+To open the Skills modal, type ``/load-skills`` in the RemixAI Assistant chat. From there you can browse and enable the built-in Skills or upload your own. Enabled Skills are loaded into a ``skills`` folder in your workspace, and RemixAI references them for the rest of the conversation.
 
 .. image:: images/ai/skills.png
    :alt: image
@@ -188,8 +188,52 @@ The code helper provides instant code reviews focused on security and gas optimi
 From the code helper pop up you can ask RemixAI to analyze the entire file instead of that part or open of that part in RemixAI to ask follow up questions about it.
 
 
+.. _gas optimization audits:
+
 Gas optimization with RemixAI (Pro & Starter plans)
 ---------------------------------------------------
+On Ethereum and other EVM chains, every computation and storage operation your contract performs costs gas, which your users pay for in real money each time they call it. RemixAI supports **Gas optimization audits** to help you find and fix inefficiencies that inflate these costs before you deploy.
+
+To start one, enter ``/start-gas-optimization-audit`` in the prompt box, or click the **Tools** pill. RemixAI will ask which contract you want to optimize, then list the focus areas it will check, including:
+
+- **Loop optimization** – e.g. ``for`` loops over arrays or mappings
+- **Storage vs. memory** – e.g. unnecessary storage reads or writes
+- **Function visibility** – e.g. ``public`` vs. ``external``/``internal``
+- **Data packing** – e.g. how structs and variables are packed into storage slots
+- **Avoiding redundant computations** – e.g. caching values instead of recomputing them
+
+This checklist is derived from the `RareSkills Book of Gas Optimization <https://www.rareskills.io/post/gas-optimization>`_.
+
+.. warning::
+   Some of these optimizations change how your contract behaves, not just
+   what it costs, and the compiler won't stop you. Reordering fields breaks
+   storage layout on a proxy upgrade; caching a value that later changes
+   gives a stale read. Re-run Slither and the Cyfrin Audit checklist before
+   deploying, and if you're upgrading, verify storage-layout compatibility
+   separately (Slither won't catch a layout collision on its own).
+
+
+
+.. _security audits:
+
+Security audits with RemixAI
+-----------------------------
+Unlike a regular application, a smart contract can't be patched after it's deployed, so a vulnerability that slips through can mean an irreversible loss of funds. RemixAI can audit your contracts with a **Slither** scan, and you can also select from over 47 **security checklists**, sourced from the Cyfrin Audit Checklists repo, covering a wide range of attack categories, all from within Remix. Auditing with checklists means you know exactly which vulnerabilities RemixAI is checking for, rather than relying on Slither's static analysis alone.
+
+Start an audit by opening the **AI Assistant** and typing ``/audit``, or by clicking the **Tools** pill. By default, this runs a Slither scan against your contract.
+
+To go beyond the default Slither scan, load one or more checklists before you start the audit:
+
+1. Type ``/load-security-audit-checklist`` into the prompt box, or click the **Tools** pill.
+2. Select the checklists that are closely related to your contract. A checklist you've already loaded shows an **in workspace** badge.
+
+.. image:: images/ai/audit-checklist.png
+   :alt: image
+
+When you then start the audit with ``/audit``, the Checklist Modal opens again. If you've already selected the checklists you want, hit the **X** button to close it and continue with your existing selection. RemixAI will then ask which contract you want to audit. It runs a Slither scan together with a security audit based on the checklists you selected, and saves the result to the ``audit_report`` folder. The checklists themselves are stored in the workspace's ``audit`` folder.
+
+.. important::
+   Loading too many checklists at once can make your audits take a long time to run and use a lot of AI resources.
 
 
 
@@ -318,6 +362,16 @@ when a file is active. Once enabled, code completion uses the **MistralAI** LLM 
 .. image:: images/ai/copilot-switch.png
    :alt: Remix AI Copilot button
 
+As you type, RemixAI proposes a suggestion inline.
+
+.. image:: images/ai/a-ai-completion-proposal.png
+   :alt: RemixAI completion proposal
+
+Press ``Tab`` to accept the suggestion.
+
+.. image:: images/ai/a-ai-completion-accepted.png
+   :alt: RemixAI accepted completion
+
 .. note::
 
    All other RemixAI tools are always enabled.
@@ -339,17 +393,6 @@ powered by RemixAI, including:
 The **Explain this code** option can be triggered with or without selecting code.
 If no code is selected, RemixAI considers the code surrounding the cursor.
 
-
-Editor: Code Completion
------------------------
-
-.. image:: images/ai/a-ai-completion-proposal.png
-   :alt: RemixAI completion proposal
-
-Press ``Tab`` to accept the suggestion.
-
-.. image:: images/ai/a-ai-completion-accepted.png
-   :alt: RemixAI accepted completion
 
 Ask RemixAI with //
 ---------------------------
