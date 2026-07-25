@@ -67,7 +67,7 @@ When performing Git operations on GitHub and when creating GISTs, it may be nece
 See the {doc}`Contract Verification plugin Docs </contract_verification>` for more info.
 
 ```{tip}
-Visit the [Etherscan API page](https://etherscan.io/myapikey) to get your Etherscan API key.
+Visit the [Etherscan API page](https://etherscan.io/api) to get your Etherscan API key.
 ```
 
 ![Remix Etherscan Access Token page.](images/settings/a-settings-etherscan.png)

@@ -171,7 +171,7 @@ Adding AI Skills to RemixAI
 To open the Skills modal, type ``/load-skills`` in the RemixAI Assistant chat. From there you can browse and enable the built-in Skills or upload your own. Enabled Skills are loaded into a ``skills`` folder in your workspace, and RemixAI references them for the rest of the conversation.
 
 .. image:: images/ai/skills.png
-   :alt: image
+   :alt: RemixAI Skills library modal
 
 
 
@@ -182,7 +182,7 @@ RemixAI Code Helper (Pro & Starter plans)
 The code helper provides instant code reviews focused on security and gas optimization. To activate the code helper, highlight a piece of code or a function and you will get an instant review. 
 
 .. image:: images/ai/code-helper.jpg
-   :alt: image
+   :alt: RemixAI Code Helper analysis popup
 
 
 From the code helper pop up you can ask RemixAI to analyze the entire file instead of that part or open of that part in RemixAI to ask follow up questions about it.
@@ -228,7 +228,7 @@ To go beyond the default Slither scan, load one or more checklists before you st
 2. Select the checklists that are closely related to your contract. A checklist you've already loaded shows an **in workspace** badge.
 
 .. image:: images/ai/audit-checklist.png
-   :alt: image
+   :alt: RemixAI security audit checklist modal
 
 When you then start the audit with ``/audit``, the Checklist Modal opens again. If you've already selected the checklists you want, hit the **X** button to close it and continue with your existing selection. RemixAI will then ask which contract you want to audit. It runs a Slither scan together with a security audit based on the checklists you selected, and saves the result to the ``audit_report`` folder. The checklists themselves are stored in the workspace's ``audit`` folder.
 
@@ -244,7 +244,7 @@ Using external API keys for RemixAI (Pro & Starter plans)
 RemixAI allows you to add your own API keys and use your own available tokens. To add your own API keys, click the **Settings** icon on the top right of the Top Bar, select RemixAI Assistant, and scroll to the bottom. You will find the option under the "Bring Your Own Keys" Section. Currently, we support keys from Anthropic, OpenAI, Mistral, and Moonshot/Kimi.
 
 .. image:: images/ai/external-providers.png
-   :alt:
+   :alt: RemixAI Assistant Bring Your Own API Keys settings
 
 
 Using audio as input for RemixAI
