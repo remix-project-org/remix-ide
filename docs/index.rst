@@ -127,6 +127,7 @@ Useful Links
    :caption: Guides
    
    create_deploy
+   subgraph
    import
    contract_verification
    running_js_scripts
