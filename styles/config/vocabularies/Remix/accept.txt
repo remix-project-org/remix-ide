@@ -101,9 +101,6 @@ Starknet
 Storages
 Su
 Subgraph
-subgraph
-Subgraphs
-subgraphs
 swarmgw
 templateSelection
 testnet
