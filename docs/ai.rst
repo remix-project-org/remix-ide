@@ -240,7 +240,7 @@ When you then start the audit with ``/audit``, the Checklist Modal opens again. 
    Loading too many checklists at once can make your audits take a long time to run and use a lot of AI resources.
 
 
-You can access security audits, gas optimization, and AI skills from the pills above the AI Assistant, shown in the image below:
+You can access security audits, gas optimization, AI skills, and other AI features from the pills above the AI Assistant, shown in the image below:
 
 .. image:: images/ai/pills.png
    :alt: RemixAI pills
