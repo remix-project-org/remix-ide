@@ -5,7 +5,14 @@ AI Tools
    :description: RemixAI is Remix IDE's built-in AI assistant and Copilot for Solidity smart contract development, code completion, and explanation.
    :keywords: remixai, ai assistant, code completion, solidity ai, remix ide ai
 
-Remix has its own AI tool named **RemixAI Assistant**, which appears in the Right Side Panel when you load Remix. To use the RemixAI Assistant, you need to be logged into your Remix account. The **Free plan** already gives you access to RemixAI, including the QuickDApp Front-end Generator (without hosting) and Basic AI Skills Access, with AI model usage billed at usage-based pricing. Subscribing to our `Starter or Pro plans <https://remix.ethereum.org/?call=planManager//open//plans>`_ or buying AI credits gets you usage credits and unlocks additional advanced AI features. Starter and Pro plans also let you `provide your own API key`_ from any of our supported providers, so you can use the RemixAI Assistant with tokens from your own account instead of your Remix credits.
+Remix has its own AI tool named **RemixAI Assistant**, which appears in the Right Side Panel once you log into your Remix account.
+
+Access to RemixAI varies by your Remix plan:
+
+- **Free Plan**: This provides access to Basic AI Skills and the QuickDApp Front-end Generator (excluding hosting), with AI model consumption billed on usage-based pricing.
+- **Starter & Pro Plans**: Subscribing to our `Starter or Pro plans <https://remix.ethereum.org/?call=planManager//open//plans>`_ unlocks more AI capabilities and includes an initial gift of RemixAI credits.
+
+Users of all levels can either buy credits or can `connect their own API keys from supported providers <provide your own API key_>`_ to utilize tokens from their personal accounts rather than Remix credits.
 
 .. image:: images/ai/remix-ai-panel.png
    :alt: RemixAI Assistant Right Side Panel
@@ -16,7 +23,7 @@ RemixAI is also integrated into other parts of the IDE including:
 - `The Code Helper <code helper_>`_
 - `Gas optimization audits <gas optimization audits_>`_
 - `Security audits <security audits_>`_
-- The **Explain contract** button at the bottom of the Editor when a ``.sol`` file is active.
+- `The Explain contract button <explain contract_>`_
 - The **Explain compiler error** button when an error is thrown in the Solidity Compiler.
 - **Right-click menu options** in the Editor.
 - **Code requests in the Editor** by prepending an AI code request in a file with a double slash (``//``).
@@ -24,7 +31,7 @@ RemixAI is also integrated into other parts of the IDE including:
 The RemixAI Assistant retains your conversation history within a session, so you can refer back to earlier responses or continue a previous request.
 
 .. note::
-   The chat history is stored in your browser's storage, thus, you will not be able to access it when you login in to your Remix account on another device.
+   The chat history is stored in your browser's storage, thus, you will not be able to access it when you log in to your Remix account on another device.
 
 Choosing an LLM for code explanations
 -------------------------------------
@@ -112,9 +119,9 @@ You can check if Remix is on your Ollama allowlist by running the command below:
 .. code-block:: shell
 
    curl -X OPTIONS http://localhost:11434 \
-  -H "Origin: https://remix.ethereum.org" \
-  -H "Access-Control-Request-Method: GET" \
-  -I
+   -H "Origin: https://remix.ethereum.org" \
+   -H "Access-Control-Request-Method: GET" \
+   -I
 
 If "remix.ethereum.org" is configured properly, you will get the message below:
 
@@ -158,9 +165,6 @@ Follow the steps below to configure a remote Ollama instance in Remix:
 
 .. image:: images/ai/ollama-cloud.png
    :alt: Remix settings showing the Ollama config
-
-
-
 
 
 Adding AI Skills to RemixAI
@@ -247,31 +251,6 @@ RemixAI allows you to add your own API keys and use your own available tokens. T
    :alt: RemixAI Assistant Bring Your Own API Keys settings
 
 
-Using audio as input for RemixAI
---------------------------------
-
-RemixAI allows you to interact with the AI Assistant using **audio input**, making it easier to ask questions or give instructions without typing.
-
-To use audio input:
-
-1. Open the **RemixAI Assistant** in the Right Side Panel.
-2. Click the **microphone icon** in the Assistant input area.
-3. Speak your question or instruction clearly.
-4. RemixAI will transcribe your speech and respond as if the input were typed.
-
-.. image:: images/ai/ai-with-audio.png
-   :alt: RemixAI audio button
-
-Audio input is especially useful for:
-
-- Quickly asking questions while reviewing code
-- Explaining issues in natural language
-- Hands-free interaction during development
-
-.. note::
-
-   Audio input requires microphone access enabled in your browser. The availability of audio input may depend on
-   browser support and permissions.
 
 
 Model Context Protocol (MCP)
@@ -375,6 +354,16 @@ Press ``Tab`` to accept the suggestion.
 .. note::
 
    All other RemixAI tools are always enabled.
+
+
+.. _explain contract:
+
+Editor: Explain Contract
+-------------------------
+
+At the bottom of the Editor, when a ``.sol`` file is active, there is an **Explain contract** button.
+
+Click the button to send the active contract to RemixAI. The Assistant will explain what the contract does.
 
 
 Editor: Right-click Menu
