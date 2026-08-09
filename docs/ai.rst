@@ -67,6 +67,8 @@ The Ollama LLMs supported by Remix include:
 - ``qwen3-coder:latest``
 - ``gpt-oss:latest``
 - ``deepseek-coder-v2:latest`` (recommended for code completion)
+- ``codegemma:7b``
+- ``codegemma:2b`` (lightweight option)
 
 In addition to privacy, Remix’s Ollama integration provides:
 
