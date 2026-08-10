@@ -13,6 +13,13 @@ build:
     # nodejs: "20"
     # rust: "1.70"
     # golang: "1.20"
+  jobs:
+    post_build:
+      # Generate one plain-text file per page (e.g. ai.txt) alongside the
+      # HTML output, so each page has an LLM-readable text version at the
+      # same URL path (e.g. /en/latest/ai.txt).
+      - python -m sphinx -q -b text docs $READTHEDOCS_OUTPUT/text
+      - cp -r $READTHEDOCS_OUTPUT/text/. $READTHEDOCS_OUTPUT/html/
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:

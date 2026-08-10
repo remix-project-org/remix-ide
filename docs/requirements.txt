@@ -6,3 +6,4 @@ sphinx-copybutton
 sphinx-design
 sphinxcontrib-video
 sphinxext-opengraph
+sphinx-llms-txt
