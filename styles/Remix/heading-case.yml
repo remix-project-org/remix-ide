@@ -5,6 +5,7 @@ scope: heading.h2
 match: $sentence
 exceptions:
   - AI
+  - API
   - APIs
   - Arbitrum
   - Berachain
@@ -30,6 +31,7 @@ exceptions:
   - Geth
   - GitHub
   - Goerli
+  - Graph
   - Holesky
   - Infura
   - JavaScript
@@ -52,6 +54,8 @@ exceptions:
   - Solidity
   - Sourcify
   - Starknet
+  - Subgraph
+  - Subgraphs
   - Tenderly
   - TypeScript
   - UDApp
@@ -87,6 +91,7 @@ scope: heading.h3
 match: $sentence
 exceptions:
   - AI
+  - API
   - APIs
   - Arbitrum
   - Berachain
@@ -112,6 +117,7 @@ exceptions:
   - Geth
   - GitHub
   - Goerli
+  - Graph
   - Holesky
   - Infura
   - JavaScript
@@ -134,6 +140,8 @@ exceptions:
   - Solidity
   - Sourcify
   - Starknet
+  - Subgraph
+  - Subgraphs
   - Tenderly
   - TypeScript
   - UDApp
@@ -169,6 +177,7 @@ scope: heading.h4
 match: $sentence
 exceptions:
   - AI
+  - API
   - APIs
   - Arbitrum
   - Berachain
@@ -194,6 +203,7 @@ exceptions:
   - Geth
   - GitHub
   - Goerli
+  - Graph
   - Holesky
   - Infura
   - JavaScript
@@ -216,6 +226,8 @@ exceptions:
   - Solidity
   - Sourcify
   - Starknet
+  - Subgraph
+  - Subgraphs
   - Tenderly
   - TypeScript
   - UDApp

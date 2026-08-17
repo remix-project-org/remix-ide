@@ -100,6 +100,7 @@ Sourcify
 Starknet
 Storages
 Su
+Subgraph
 swarmgw
 templateSelection
 testnet
