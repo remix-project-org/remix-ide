@@ -152,6 +152,7 @@ Useful Links
    subgraph
    import
    contract_verification
+   naming-contracts
    running_js_scripts
 
 .. toctree::
