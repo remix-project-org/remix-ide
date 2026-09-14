@@ -180,10 +180,11 @@ html_js_files = [
     "js/utils.js",
     "js/loaders.js",
     "js/initialize.js",
-    "js/cookbook-integration.js"
+    "js/cookbook-integration.js",
+    "js/api-console.js"
 ]
 
-html_css_files = ["css/fonts.css", "css/tokens.css", "css/custom.css"]
+html_css_files = ["css/fonts.css", "css/tokens.css", "css/custom.css", "css/api-console.css"]
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied

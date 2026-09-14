@@ -21,8 +21,10 @@ Celo
 Chai
 Circom
 circomlibjs
+Claude
 Coinbase
 config
+custodies
 contract_deployer
 DApp
 dApp
@@ -51,6 +53,7 @@ GitHub
 Gitter
 Goerli
 gwei
+hardcoding
 Holesky
 Hometab
 
@@ -74,6 +77,7 @@ Ownable
 onchain
 OpenAI
 param
+passcode
 Pectra
 pluginManager
 preloaded
@@ -116,6 +120,7 @@ UIs
 uncheck
 Uniswap
 unpkg
+validator
 Upgradeability
 VM's
 VSCode
