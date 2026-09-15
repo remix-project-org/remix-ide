@@ -108,7 +108,7 @@ lint-md: pymarkdownlnt-install
 	  $(SOURCEDIR)
 
 .vale-stamp: $(VENV_DIR)/bin/python
-	@. $(VENV); pip install vale
+	@. $(VENV); pip install vale==3.21.0.0
 	@test -f $(VALE_CONFIG)
 	@. $(VENV); vale sync
 	@touch .vale-stamp

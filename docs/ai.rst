@@ -208,7 +208,7 @@ To start one, enter ``/start-gas-optimization-audit`` in the prompt box, or clic
 - **Data packing** – e.g. how structs and variables are packed into storage slots
 - **Avoiding redundant computations** – e.g. caching values instead of recomputing them
 
-This checklist is derived from the `RareSkills Book of Gas Optimization <https://www.rareskills.io/post/gas-optimization>`_.
+This checklist is derived from the `RareSkills Book of Gas Optimization <https://rareskills.io/post/gas-optimization>`_.
 
 .. warning::
    Some of these optimizations change how your contract behaves, not just
