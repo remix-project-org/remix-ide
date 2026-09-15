@@ -158,6 +158,18 @@ Useful Links
 .. toctree::
    :hidden:
    :maxdepth: 2
+   :caption: x402
+
+   x402/x402-Guide
+   x402/claude-setup
+   x402/compile
+   x402/compile-and-deploy
+   x402/analyze
+   x402/http
+
+.. toctree::
+   :hidden:
+   :maxdepth: 2
    :caption: Advanced
 
    contract_metadata
