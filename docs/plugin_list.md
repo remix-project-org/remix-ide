@@ -118,7 +118,7 @@ Static code analysis with integrations for **Slither** and **Solhint**.
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://app.remix.live/?#activate=solidityUnitTesting
-:img-top: images/pi-sut.png
+:img-top: images/plugin-list/pi-sut.png
 
 Run unit tests written in Solidity.
 
@@ -260,7 +260,7 @@ Create private, forked testnets from any EVM chain with explorer, faucet, and RP
 :class-card: plugin-card sd-border-1 sd-rounded-2
 :link-type: url
 :link: https://app.remix.live/?#activate=cookbook.dev
-:img-top: images/cookbook.svg
+:img-top: images/plugin-list/cookbook.svg
 
 Find any smart contract, build your project faster.
 
