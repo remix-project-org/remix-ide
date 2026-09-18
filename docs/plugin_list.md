@@ -204,7 +204,7 @@ Remix, Solidity, & blockchain tutorials with quizzes teaching Solidity and Remix
 
 Write, compile, and generate proofs for Zero-Knowledge (ZK) circuits using the Circom language.
 
-- [Documentation](https://docs.circom.io/)
+- [Documentation](https://iden3.io/circom)
 - Profile name: **circuit-compiler**
   :::
 
@@ -380,7 +380,7 @@ Compile contracts written in Cairo to Starknet.
 
 Verify contracts and import from your Tenderly project.
 
-- [Documentation](https://docs.tenderly.co/)
+- [Documentation](https://docs.tenderly.co/introduction)
 - Profile name: **tenderly**
   :::
 
