@@ -9,7 +9,7 @@ const preloadFonts = () => {
     const link = document.createElement("link");
     link.rel = "preload";
     link.as = "font";
-    link.href = `_static/fonts/${filename}`;
+    link.href = docRootPath(`_static/fonts/${filename}`);
     link.crossOrigin = "";
     document.head.appendChild(link);
   });
@@ -55,11 +55,15 @@ const updateEditButtonLabel = () => {
 const preloadColorModeIcons = () => {
   const icons = COLOR_MODES.map(({ icon }) => icon);
   icons.forEach((path, idx) => {
-    fetch(path)
-      .then(response => response.text())
+    fetch(docRootPath(path))
+      .then(response => {
+        if (!response.ok) throw new Error(`${response.status} for ${path}`);
+        return response.text();
+      })
       .then(data => {
         loadedSvgs[icons[idx].value] = data;
       })
+      .catch(error => console.warn(`Could not preload icon: ${error.message}`))
   })
 }
 

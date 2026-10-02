@@ -1,12 +1,30 @@
+/**
+ * Resolves a path that is relative to the documentation root.
+ *
+ * Icon paths are written as `_static/img/...`, which a page one directory
+ * deep (`x402/http.html`, say) would otherwise resolve against its own
+ * directory and 404 on. Sphinx records the depth on the html element, so
+ * prefix with that. Absolute and root-relative paths are left alone.
+ */
+const docRootPath = (path) => {
+  if (/^([a-z]+:)?\/\//i.test(path) || path.startsWith("/")) return path;
+  return `${document.documentElement.dataset.contentRoot || ""}${path}`;
+}
+
 const appendSvg = (path, container, className) => {
-  fetch(path)
-    .then(response => response.text())
+  fetch(docRootPath(path))
+    .then(response => {
+      // Without this, an error page gets injected as markup below.
+      if (!response.ok) throw new Error(`${response.status} for ${path}`);
+      return response.text();
+    })
     .then(data => {
       const logoContainer = document.createElement("div");
       className && logoContainer.classList.add(className);
       logoContainer.innerHTML = data;
       container.appendChild(logoContainer);
-    });
+    })
+    .catch(error => console.warn(`Could not load icon: ${error.message}`));
 }
 
 const getModeIconSrc = (mode) => {
