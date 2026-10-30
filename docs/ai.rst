@@ -363,7 +363,7 @@ Ask RemixAI about language features, best practices, or protocol mechanics. The 
   *What changed in Solidity 0.8.24 that could affect a contract I wrote for 0.8.20?*
 
 Code Completion
----------------
+-------------------
 
 When you type a space or start a new line, RemixAI may suggest code inline. This
 feature is known as **code completion**, and the suggestions take into account
@@ -382,7 +382,7 @@ Ollama model, which must support fill-in-the-middle (FIM).
 .. _explain contract:
 
 Editor: Explain Contract
--------------------------
+---------------------------
 
 At the bottom of the Editor, when a ``.sol`` file is active, there is an **Explain contract** button.
 
@@ -390,7 +390,7 @@ Click the button to send the active contract to RemixAI. The Assistant will expl
 
 
 Editor: Right-click Menu
-------------------------
+--------------------------
 
 When you right-click a function in the Editor, a popup menu appears with options
 powered by RemixAI:
@@ -404,7 +404,7 @@ If no code is selected, RemixAI considers the code surrounding the cursor.
 
 
 Compilers: Explain Error
-------------------------
+--------------------------
 
 In the error cards of both the Solidity Compiler and the Vyper Compiler, there is
 an **Ask RemixAI** button that helps explain compiler errors.

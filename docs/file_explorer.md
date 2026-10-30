@@ -32,7 +32,7 @@ Thus, it is important to have an alternative file backup/saving strategy.
 ### Cloud storage
 
 ```{note}
-Cloud storage is only available to users in our paid plans.
+Cloud storage is only available to users of our paid plans.
 ```
 
 Enabling cloud storage on Remix web saves your work to your Remix account, auto-syncing every change so nothing is lost to browser crashes. Your files are available on any device when you are logged in.
