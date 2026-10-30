@@ -10,7 +10,7 @@ Remix has its own AI tool named **RemixAI Assistant**, which appears in the Righ
 Access to RemixAI varies by your Remix plan:
 
 - **Free Plan**: This provides access to Basic AI Skills and the QuickDApp Front-end Generator (excluding hosting), with AI model consumption billed on usage-based pricing.
-- **Starter & Pro Plans**: Subscribing to our `Starter or Pro plans <https://app.remix.live/?call=planManager//open//plans>`_ unlocks more AI capabilities and includes an initial gift of RemixAI credits.
+- **Lite, Starter & Pro Plans**: Subscribing to our `Lite, Starter or Pro plans <https://app.remix.live/?call=planManager//open//plans>`_ unlocks more AI capabilities and includes an initial gift of RemixAI credits as well as a monthly allotment of credits.
 
 Users of all levels can either buy credits or can `connect their own API keys from supported providers <provide your own API key_>`_ to utilize tokens from their personal accounts rather than Remix credits.
 
@@ -31,7 +31,7 @@ The RemixAI Assistant saves your conversations, so you can return to an earlier 
 
 Conversations are stored in your browser and can be synced to the cloud. The chat history shows whether your conversations are synced.
 
-Choosing an LLM for code explanations
+Choosing an LLM for Code Explanations
 -------------------------------------
 
 In the RemixAI Assistant, there is a choice of LLMs for use in **code explanations**
@@ -47,7 +47,7 @@ and **Local (Ollama)**. AWS Bedrock models need your own API key. You can also u
 The RemixAI Assistant responds in the language in which it is asked and can answer
 questions about Solidity, JavaScript/TypeScript, Vyper, and other programming languages.
 
-Using low-cost models
+Using Low-cost Models
 ^^^^^^^^^^^^^^^^^^^^^
 
 To make your credits last longer, click the **low-cost AI** toggle next to the model name
@@ -67,7 +67,7 @@ When you buy the starter credit pack, Remix turns the toggle on for you and swit
 the assistant to a low-cost model. A message in the chat tells you which model it switched to,
 and you can turn the toggle off at any time to choose a different model.
 
-Using a local LLM for privacy
+Using a Local LLM for Privacy
 -----------------------------
 
 When using an LLM, unless the model is running locally, your inputs may be used
@@ -199,8 +199,10 @@ To open the Skills modal, type ``/load-skills`` in the RemixAI Assistant chat. F
 
 .. _code helper:
 
-RemixAI Code Helper (Pro & Starter plans)
+RemixAI Code Helper
 -----------------------------------------
+This is a feature available in the paid plans.
+
 The code helper provides instant code reviews focused on security and gas optimization. To activate the code helper, highlight a piece of code or a function and you will get an instant review. 
 
 .. image:: images/ai/code-helper.jpg
@@ -212,7 +214,7 @@ From the code helper pop up you can ask RemixAI to analyze the entire file inste
 
 .. _gas optimization audits:
 
-Gas optimization with RemixAI
+Gas Optimization with RemixAI
 ---------------------------------------------------
 This is a feature available in the paid plans.
 
@@ -269,7 +271,7 @@ You can access security audits, gas optimization, AI skills, and other AI featur
 
 .. _provide your own API key:
 
-Using External API keys for RemixAI
+Using External API Keys for RemixAI
 ---------------------------------------------------------
 This is a feature available in the paid plans.
 
@@ -319,7 +321,7 @@ The following MCP servers are available in RemixAI:
   subgraphs, useful for retrieving protocol analytics and historical event data.
 
 
-Sample prompts
+Sample Prompts
 ^^^^^^^^^^^^^^
 
 The examples below show how to phrase requests to get the most out of the RemixAI Assistant. Each section explains the intent behind the prompt type and gives one example.
@@ -360,7 +362,7 @@ Ask RemixAI about language features, best practices, or protocol mechanics. The 
 
   *What changed in Solidity 0.8.24 that could affect a contract I wrote for 0.8.20?*
 
-Code completion
+Code Completion
 ---------------
 
 When you type a space or start a new line, RemixAI may suggest code inline. This
