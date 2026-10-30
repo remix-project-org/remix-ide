@@ -165,7 +165,7 @@ After the setup, select Ollama as the model on RemixAI and it will automatically
 .. image:: images/ai/ollama-remix.png
    :alt: RemixAI assistant with Ollama as the model
 
-Running Ollama in the cloud with Remix
+Running Ollama in the Cloud with Remix
 --------------------------------------
 
 Large language models (LLMs) are resource-intensive and may not run efficiently on
@@ -212,8 +212,10 @@ From the code helper pop up you can ask RemixAI to analyze the entire file inste
 
 .. _gas optimization audits:
 
-Gas optimization with RemixAI (Pro & Starter plans)
+Gas optimization with RemixAI
 ---------------------------------------------------
+This is a feature available in the paid plans.
+
 On Ethereum and other EVM chains, every computation and storage operation your contract performs costs gas, which your users pay for in real money each time they call it. RemixAI supports **Gas optimization audits** to help you find and fix inefficiencies that inflate these costs before you deploy.
 
 To start one, enter ``/gas-audit`` in the prompt box, or click the **Audit** pill. RemixAI will ask which contract you want to optimize, then list the focus areas it will check, including:
@@ -238,8 +240,10 @@ This checklist is derived from the `RareSkills Book of Gas Optimization <https:/
 
 .. _security audits:
 
-Security audits with RemixAI
+Security Audits with RemixAI
 -----------------------------
+This is a feature available in the paid plans.
+
 Unlike a regular application, a smart contract can't be patched after it's deployed, so a vulnerability that slips through can mean an irreversible loss of funds. RemixAI can audit your contracts with a **Slither** scan, and you can also select from over 47 **security checklists**, sourced from the Cyfrin Audit Checklists repo, covering a wide range of attack categories, all from within Remix. Auditing with checklists means you know exactly which vulnerabilities RemixAI is checking for, rather than relying on Slither's static analysis alone.
 
 Start an audit by opening the **AI Assistant** and typing ``/audit``, or by clicking the **Audit** pill. By default, this runs a Slither scan against your contract.
@@ -265,8 +269,10 @@ You can access security audits, gas optimization, AI skills, and other AI featur
 
 .. _provide your own API key:
 
-Using external API keys for RemixAI (Pro & Starter plans)
+Using External API keys for RemixAI
 ---------------------------------------------------------
+This is a feature available in the paid plans.
+
 RemixAI allows you to add your own API keys and use your own available tokens. To add your own API keys, click the **Settings** icon on the top right of the Top Bar, select RemixAI Assistant, and scroll to the bottom. You will find the option under the **Bring Your Own API Keys** section. Currently, you can add an **OpenRouter API Key** and an **AWS Bedrock API Key**.
 
 .. image:: images/ai/external-providers.png
