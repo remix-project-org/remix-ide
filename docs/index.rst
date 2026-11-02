@@ -88,6 +88,7 @@ Useful Links
 
    file_explorer
    workspaces
+   swarm-collab
    ai
    git
    search_in_fe
