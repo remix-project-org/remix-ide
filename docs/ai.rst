@@ -275,7 +275,7 @@ If your model is set to **Auto**, RemixAI asks you to choose a model for the aud
 .. image:: images/ai/audit-model-choice.png
    :alt: Choose the audit model screen
 
-When the audit finishes, RemixAI saves the reports to ``audit_reports/<ContractName>/run-<timestamp>/`` and offers to rewrite the summary for a specific audience, such as beginners, developers, investors, or compliance officers. Select an audience and click **Generate audience version**, or select **No thanks** to skip it.
+When the audit finishes, RemixAI saves the reports to ``audit_reports/<ContractName>/run-<timestamp>/`` and offers to create a summary for a specific audience, such as beginners, developers, investors, or compliance officers. Select an audience and click **Generate audience version**, or select **No thanks** to skip it.
 
 .. image:: images/ai/audit-complete.png
    :alt: Audit complete message with audience picker
