@@ -244,25 +244,43 @@ This checklist is derived from the `RareSkills Book of Gas Optimization <https:/
 
 Security Audits with RemixAI
 -----------------------------
-This is a feature available in the paid plans.
+.. note::
+   This is a feature available in the paid plans.
 
-Unlike a regular application, a smart contract can't be patched after it's deployed, so a vulnerability that slips through can mean an irreversible loss of funds. RemixAI can audit your contracts with a **Slither** scan, and you can also select from over 47 **security checklists**, sourced from the Cyfrin Audit Checklists repo, covering a wide range of attack categories, all from within Remix. Auditing with checklists means you know exactly which vulnerabilities RemixAI is checking for, rather than relying on Slither's static analysis alone.
+Unlike a regular application, a smart contract can't be patched after it's deployed, so a vulnerability that slips through can mean an irreversible loss of funds. RemixAI can audit your contracts against security checklists from the `Cyfrin Audit Checklist <https://github.com/Cyfrin/audit-checklist>`_, which covers more than 50 attack categories. Because you choose the checklists, you know exactly which vulnerabilities RemixAI is checking for.
 
-Start an audit by opening the **AI Assistant** and typing ``/audit``, or by clicking the **Audit** pill. By default, this runs a Slither scan against your contract.
+To start an audit, open the contract you want to audit and click the **Security Audit** pill at the bottom of the Main Panel.
 
-To go beyond the default Slither scan, load one or more checklists before you start the audit:
+.. image:: images/ai/security-audit-pill.png
+   :alt: Security Audit pill in the Main Panel
 
-1. Type ``/load-audit-checklist`` into the prompt box, or click the **Audit** pill.
-2. Select the checklists that are closely related to your contract. A checklist you've already loaded shows an **in workspace** badge.
+This opens the Security Checklist modal. Pick the categories that suit your contract, or click **AI match** to let RemixAI choose them for you.
 
-.. image:: images/ai/audit-checklist.png
-   :alt: RemixAI security audit checklist modal
+.. image:: images/ai/audit-ai-match.png
+   :alt: Security Checklist modal with AI Match results
 
-When you then start the audit with ``/audit``, the Checklist Modal opens again. If you've already selected the checklists you want, hit the **X** button to close it and continue with your existing selection. RemixAI will then ask which contract you want to audit. It runs a Slither scan together with a security audit based on the checklists you selected, and saves the result to the ``audit_report`` folder. The checklists themselves are stored in the workspace's ``audit`` folder.
+AI Match reads your contract and selects the categories that apply to it. Each matched category is marked with an **AI** badge showing how confident RemixAI is that the category applies:
+
+- **high**: the contract clearly uses the feature this category covers.
+- **medium**: the contract likely uses it.
+- **low**: there is some sign of it in the contract, but the evidence is weak.
+
+Hover over the badge to see the reason RemixAI matched that category. Review the selection, add or remove categories as needed, then click the **Audit** button at the bottom of the modal to start the audit. The checklists you select are saved in the ``audits/<ContractName>/`` folder of your workspace, and a category you've already saved for that contract shows an **in workspace** badge.
 
 .. important::
-   Loading too many checklists at once can make your audits take a long time to run and use a lot of AI resources.
+   Selecting too many categories at once can make your audits take a long time to run and use a lot of AI resources.
 
+If your model is set to **Auto**, RemixAI asks you to choose a model for the audit before it starts. Auto often routes to a small model, and a frontier model catches noticeably more issues. Pick one of the listed models, or click **Keep Auto** to continue with Auto. The model you pick becomes your model selection across RemixAI.
+
+.. image:: images/ai/audit-model-choice.png
+   :alt: Choose the audit model screen
+
+When the audit finishes, RemixAI saves the reports to ``audit_reports/<ContractName>/run-<timestamp>/`` and offers to rewrite the summary for a specific audience, such as beginners, developers, investors, or compliance officers. Select an audience and click **Generate audience version**, or select **No thanks** to skip it.
+
+.. image:: images/ai/audit-complete.png
+   :alt: Audit complete message with audience picker
+
+You can also start an audit from the **AI Assistant**. Type ``/audit`` in the prompt box or click the **Audit** pill above it. This opens the same Security Checklist modal. To pick checklists without starting an audit, type ``/load-audit-checklist`` instead.
 
 You can access security audits, gas optimization, AI skills, and other AI features from the pills above the prompt box in the AI Assistant: **Code**, **Explain**, **Learn**, **Deploy**, **Audit**, and **Skills**.
 
