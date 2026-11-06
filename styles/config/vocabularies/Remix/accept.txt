@@ -23,6 +23,7 @@ Circom
 circomlibjs
 Claude
 Coinbase
+Collab
 config
 custodies
 contract_deployer
